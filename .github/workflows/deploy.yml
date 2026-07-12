@@ -28,40 +28,78 @@ jobs:
         run: npm install
 
       # ⚠️ 저장소 이름이 "slides"가 아니라면, 아래 REPO_NAME 값을 저장소 이름으로 바꿔주세요.
-      - name: Build every course under courses/ and generate landing page
+      - name: Build every course under courses/ and generate landing pages
         env:
           REPO_NAME: slides
         run: |
           set -e
+          ROOT="$(pwd)"
           mkdir -p dist
-          {
-            echo "<!DOCTYPE html><html lang='en'><head><meta charset='UTF-8'>"
-            echo "<meta name='viewport' content='width=device-width, initial-scale=1.0'>"
-            echo "<title>PRISM Lab - Lecture Slides</title>"
-            echo "<style>
-              body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;
-                   max-width:720px;margin:60px auto;padding:0 20px;color:#333;}
-              h1{color:#5b21b6;}
-              ul{list-style:none;padding:0;}
-              li{margin:12px 0;}
-              a{display:block;padding:14px 18px;border:1px solid #e9d5ff;border-radius:8px;
-                 background:#fafdff;color:#5b21b6;text-decoration:none;font-weight:600;}
-              a:hover{background:#f3e8ff;}
-            </style></head><body>"
-            echo "<h1>PRISM Lab Lecture Slides</h1><ul>"
-            for dir in courses/*/; do
-              name=$(basename "$dir")
-              echo "<li><a href='./${name}/'>${name}</a></li>"
-            done
-            echo "</ul></body></html>"
-          } > dist/index.html
 
+          # 공통 스타일이 담긴 목록 페이지를 만드는 함수
+          # 사용법: write_index_page <출력파일경로> <제목> <링크1> <링크2> ...
+          write_index_page() {
+            local out_file="$1"
+            local title="$2"
+            shift 2
+            {
+              echo "<!DOCTYPE html><html lang='en'><head><meta charset='UTF-8'>"
+              echo "<meta name='viewport' content='width=device-width, initial-scale=1.0'>"
+              echo "<title>${title}</title>"
+              echo "<style>
+                body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;
+                     max-width:720px;margin:60px auto;padding:0 20px;color:#333;}
+                h1{color:#5b21b6;}
+                ul{list-style:none;padding:0;}
+                li{margin:12px 0;}
+                a{display:block;padding:14px 18px;border:1px solid #e9d5ff;border-radius:8px;
+                   background:#fafdff;color:#5b21b6;text-decoration:none;font-weight:600;}
+                a:hover{background:#f3e8ff;}
+              </style></head><body>"
+              echo "<h1>${title}</h1><ul>"
+              for entry in "$@"; do
+                echo "<li><a href='./${entry}/'>${entry}</a></li>"
+              done
+              echo "</ul></body></html>"
+            } > "$out_file"
+          }
+
+          # ---- 최상위 목록 페이지 (과목 목록) ----
+          course_names=()
           for dir in courses/*/; do
-            name=$(basename "$dir")
-            echo "::group::Building course: $name"
-            npx slidev build "${dir}slides.md" --out "$(pwd)/dist/${name}" --base "/${REPO_NAME}/${name}/"
-            echo "✓ $name build succeeded"
-            echo "::endgroup::"
+            course_names+=("$(basename "$dir")")
+          done
+          write_index_page "dist/index.html" "PRISM Lab Lecture Slides" "${course_names[@]}"
+
+          # ---- 과목별 빌드 ----
+          for dir in courses/*/; do
+            course=$(basename "$dir")
+
+            if [ -f "${dir}slides.md" ]; then
+              # 강의를 안 나눈 단일 슬라이드 과목
+              echo "::group::Building single-deck course: $course"
+              npx slidev build "${dir}slides.md" --out "${ROOT}/dist/${course}" --base "/${REPO_NAME}/${course}/"
+              echo "::endgroup::"
+            else
+              # lecture-1/, lecture-2/ 처럼 하위 폴더로 나뉜 과목
+              echo "::group::Building multi-lecture course: $course"
+              mkdir -p "dist/${course}"
+
+              lecture_names=()
+              for lec in "${dir}"*/; do
+                [ -f "${lec}slides.md" ] || continue
+                lecture_names+=("$(basename "$lec")")
+              done
+              write_index_page "dist/${course}/index.html" "$course" "${lecture_names[@]}"
+
+              for lec in "${dir}"*/; do
+                [ -f "${lec}slides.md" ] || continue
+                lname=$(basename "$lec")
+                echo "  Building lecture: $lname"
+                npx slidev build "${lec}slides.md" --out "${ROOT}/dist/${course}/${lname}" --base "/${REPO_NAME}/${course}/${lname}/"
+              done
+              echo "::endgroup::"
+            fi
           done
 
       - name: Setup Pages
