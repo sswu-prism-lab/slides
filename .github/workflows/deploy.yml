@@ -32,6 +32,7 @@ jobs:
         env:
           REPO_NAME: slides
         run: |
+          set -e
           mkdir -p dist
           {
             echo "<!DOCTYPE html><html lang='en'><head><meta charset='UTF-8'>"
@@ -57,8 +58,10 @@ jobs:
 
           for dir in courses/*/; do
             name=$(basename "$dir")
-            echo "Building course: $name"
-            npx slidev build "${dir}slides.md" --out "dist/${name}" --base "/${REPO_NAME}/${name}/"
+            echo "::group::Building course: $name"
+            npx slidev build "${dir}slides.md" --out "$(pwd)/dist/${name}" --base "/${REPO_NAME}/${name}/"
+            echo "✓ $name build succeeded"
+            echo "::endgroup::"
           done
 
       - name: Setup Pages
