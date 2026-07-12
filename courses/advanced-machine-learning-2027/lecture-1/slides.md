@@ -1,20 +1,24 @@
 ---
 theme: default
-title: PRISM Lab - Lecture 1
+title: AML - Lecture 1
 info: |
-  ## PRISM Lab Lecture Slides
+  ## Advanced Machine Learning Lecture Slides
   Pattern Recognition and Intelligent System Modeling Lab, Sungshin Women's University
 class: text-center
 transition: slide-left
 mdc: true
 ---
 
-# Welcome to PRISM Lab Lectures
+# Advanced Machine Learning
 
-Deep Learning for Biomedical Signal Processing
+Lecture 1
 
-<div class="pt-4">
-  <span class="opacity-70">Prof. Wonjun Ko · PRISM Lab · Sungshin Women's University</span>
+<div class="pt-5">
+  <span class="opacity-70">Wonjun Ko, Ph.D.<br>Assistant Professor<br>School of AI Convergence<br>Sungshin Women's University</span>
+</div>
+
+<div class="pt-3">
+  <span class="opacity-50">Spring 2027</span>
 </div>
 
 ---
