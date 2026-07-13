@@ -109,12 +109,16 @@ layout: prism
 heading: What I Studied - Neuroimaging Analysis
 ---
 
-<div class="absolute top-0 left-20">
-  <img src="https://raw.githubusercontent.com/sswu-prism-lab/slides/main/images/general/fig3.png" style="height: 12rem; border-radius: 4px;" />
+<div class="absolute top-0 left-0">
+  <img src="https://raw.githubusercontent.com/sswu-prism-lab/slides/main/images/general/fig3.png" style="height: 10rem; border-radius: 4px;" />
+</div>
+
+<div class="absolute top-0 right-0">
+  <img src="https://raw.githubusercontent.com/sswu-prism-lab/slides/main/images/general/fig5.png" style="height: 10rem; border-radius: 4px;" />
 </div>
 
 <div class="absolute bottom-0 left-15">
-  <img src="https://raw.githubusercontent.com/sswu-prism-lab/slides/main/images/general/fig5.png" style="height: 11rem; border-radius: 4px;" />
+  <img src="https://raw.githubusercontent.com/sswu-prism-lab/slides/main/images/general/fig9.png" style="height: 11.5rem; border-radius: 4px;" />
 </div>
 
 <div class="absolute bottom-0 right-15">
@@ -126,18 +130,25 @@ layout: prism
 heading: What I Studied - Biomedical Data Mining
 ---
 
-<div class="absolute top-0 left-35">
+<div class="absolute top-0 left-10">
   <img src="https://raw.githubusercontent.com/sswu-prism-lab/slides/main/images/general/fig6.png" style="height: 10rem; border-radius: 4px;" />
 </div>
 
-<div class="absolute bottom-0 left-15">
-  <img src="https://raw.githubusercontent.com/sswu-prism-lab/slides/main/images/general/fig7.png" style="height: 13rem; border-radius: 4px;" />
+<div class="absolute top-0 right-10">
+  <img src="https://raw.githubusercontent.com/sswu-prism-lab/slides/main/images/general/fig7.png" style="height: 10rem; border-radius: 4px;" />
 </div>
 
-<div class="absolute bottom-0 right-15">
-  <img src="https://raw.githubusercontent.com/sswu-prism-lab/slides/main/images/general/fig8.png" style="height: 13rem; border-radius: 4px;" />
+<div class="absolute bottom-0 left-0">
+  <img src="https://raw.githubusercontent.com/sswu-prism-lab/slides/main/images/general/fig8.png" style="height: 12rem; border-radius: 4px;" />
 </div>
 
+<div class="absolute bottom-0 left-53">
+  <img src="https://raw.githubusercontent.com/sswu-prism-lab/slides/main/images/general/fig10.png" style="height: 12rem; border-radius: 4px;" />
+</div>
+
+<div class="absolute bottom-0 right-0">
+  <img src="https://raw.githubusercontent.com/sswu-prism-lab/slides/main/images/general/fig12.png" style="height: 12rem; border-radius: 4px;" />
+</div>
 ---
 
 # Today's Topics
