@@ -12,7 +12,7 @@ mdc: true
 <div class="absolute top-0 left-0 right-0 border-t border-gray-300"></div>
 
 <div class="absolute top-6 left-10 flex items-center gap-3">
-  <img src="https://raw.githubusercontent.com/sswu-prism-lab/slides/images/general/sswu_logo.ai" class="h-12" />
+  <img src="https://raw.githubusercontent.com/sswu-prism-lab/slides/images/general/sswu_logo.jpeg" class="h-12" />
 </div>
 
 <div class="h-full flex flex-col items-center justify-center text-center px-10">
