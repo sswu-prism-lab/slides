@@ -2,7 +2,7 @@ import pymupdf
 
 PDF_PATH = "C:/Users/dwigh/slides/images/general/"
 
-for i in range(8):
+for i in range(12, 13):
     FILENAME = PDF_PATH + "fig" + str(i) + ".pdf"
     OUTPUT_PATH = PDF_PATH + "fig" + str(i) + ".png"
     doc = pymupdf.open(FILENAME)[0]

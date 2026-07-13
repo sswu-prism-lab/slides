@@ -79,12 +79,12 @@ heading: Who am I?
     - Senior researcher, R&D/M&T Data Analytics, Data Intelligence, SK hynix Inc.
   - Assistant Professor (Sep. 2023 ~ Current)
     - School of AI Convergence, Sungshin Women's University
-    - 수정관 A-704; [e-mail](mailto:wjko@sungshin.ac.kr); [Website](https://sswu-prism-lab.github.io/)
+    - 수정관 A-704; [e-mail](mailto:wjko@sungshin.ac.kr){style="color:#c2410c;"}; [Website](https://sswu-prism-lab.github.io/){style="background: linear-gradient(90deg, rgb(188,90,93), rgb(242,221,134), rgb(111,142,114), rgb(75,85,210), rgb(119,94,145)); -webkit-background-clip: text; background-clip: text; color: transparent; -webkit-text-fill-color: transparent; text-decoration: underline;"}
 
 - Research Interests
   - Topological deep learning; Bayesian deep learning
   - 28 papers (16 papers as the main author) in biomedicine-related fields
-    - [Google Scholar](https://scholar.google.com/citations?user=mzssJTUAAAAJ&hl=ko&oi=ao)
+    - [Google Scholar](https://scholar.google.com/citations?user=mzssJTUAAAAJ&hl=ko&oi=ao){style="color:#4285F4;"} | [ORCiD](https://orcid.org/0000-0001-7496-9007){style="color:#A6CE39;"}
   - New Basic Research Project (Outstanding Young Scientist) Program, National Research Foundation, Ministry of Science and ICT, Korea Government (about $400,000 over three years)
 
 ---
@@ -92,8 +92,50 @@ layout: prism
 heading: What I Studied - Brain Signal Representation
 ---
 
+<div class="absolute top-0 left-5">
+  <img src="https://raw.githubusercontent.com/sswu-prism-lab/slides/main/images/general/fig0.png" style="height: 23rem; border-radius: 4px;" />
+</div>
+
 <div class="absolute top-0 right-5">
-  <img src="https://raw.githubusercontent.com/sswu-prism-lab/slides/main/images/general/fig0.png" style="height: 11rem; border-radius: 4px;" />
+  <img src="https://raw.githubusercontent.com/sswu-prism-lab/slides/main/images/general/fig1.png" style="height: 10rem; border-radius: 4px;" />
+</div>
+
+<div class="absolute bottom-0 right-5">
+  <img src="https://raw.githubusercontent.com/sswu-prism-lab/slides/main/images/general/fig2.png" style="height: 8rem; border-radius: 4px;" />
+</div>
+
+---
+layout: prism
+heading: What I Studied - Neuroimaging Analysis
+---
+
+<div class="absolute top-0 left-20">
+  <img src="https://raw.githubusercontent.com/sswu-prism-lab/slides/main/images/general/fig3.png" style="height: 12rem; border-radius: 4px;" />
+</div>
+
+<div class="absolute bottom-0 left-15">
+  <img src="https://raw.githubusercontent.com/sswu-prism-lab/slides/main/images/general/fig5.png" style="height: 11rem; border-radius: 4px;" />
+</div>
+
+<div class="absolute bottom-0 right-15">
+  <img src="https://raw.githubusercontent.com/sswu-prism-lab/slides/main/images/general/fig4.png" style="height: 11.5rem; border-radius: 4px;" />
+</div>
+
+---
+layout: prism
+heading: What I Studied - Biomedical Data Mining
+---
+
+<div class="absolute top-0 left-35">
+  <img src="https://raw.githubusercontent.com/sswu-prism-lab/slides/main/images/general/fig6.png" style="height: 10rem; border-radius: 4px;" />
+</div>
+
+<div class="absolute bottom-0 left-15">
+  <img src="https://raw.githubusercontent.com/sswu-prism-lab/slides/main/images/general/fig7.png" style="height: 13rem; border-radius: 4px;" />
+</div>
+
+<div class="absolute bottom-0 right-15">
+  <img src="https://raw.githubusercontent.com/sswu-prism-lab/slides/main/images/general/fig8.png" style="height: 13rem; border-radius: 4px;" />
 </div>
 
 ---

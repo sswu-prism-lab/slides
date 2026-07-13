@@ -41,7 +41,7 @@ defineProps({
   position: relative;
   margin: 1.2em 0 0 0;
   padding: 0;
-  line-height: 1.4;
+  line-height: 1.35;
 }
 .slidev-layout ul > li:first-child {
   margin-top: 0;
