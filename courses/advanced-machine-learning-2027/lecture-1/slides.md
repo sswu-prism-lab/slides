@@ -1,5 +1,8 @@
 ---
-theme: default
+theme: seriph
+themeConfig:
+  primary: '#5c60a8'
+background: '#ffffff' # Sets a custom hex background color
 title: AML - Lecture 1
 info: |
   ## Advanced Machine Learning Lecture Slides
@@ -11,24 +14,77 @@ mdc: true
 
 <div class="absolute top-0 left-0 right-0 border-t border-gray-300"></div>
 
-<div class="absolute top-6 left-10 flex items-center gap-3">
-  <img src="https://raw.githubusercontent.com/sswu-prism-lab/slides/images/general/sswu_logo.jpeg" class="h-12" />
+<div class="absolute top-4 left-6 flex items-center gap-3">
+  <img src="https://raw.githubusercontent.com/sswu-prism-lab/slides/main/images/general/sswu_logo.jpeg" style="height: 4rem;" />
 </div>
 
-<div class="h-full flex flex-col items-center justify-center text-center px-10">
-  <h1 class="text-5xl font-bold" style="color:#5c60a8;">Advanced Machine Learning</h1>
-  <p class="text-2xl mt-3" style="color:#9aa0a6;">Week 01: Course Introduction</p>
+<div class="h-full flex flex-col items-center justify-center text-center px-10" style="padding-top: 4rem;">
+  <h1 style="color:#5c60a8; font-size: 3.5rem; font-weight: bold; margin: 0rem;">Advanced Machine Learning</h1>
+  <p style="color:#9aa0a6; font-size: 1.5rem; margin-top: 0.25rem;">Week 01: Course Introduction</p>
 
-  <p class="text-2xl mt-20" style="color:#1a1a2e;">Wonjun Ko, Ph.D.</p>
+  <p style="color:#1a1a2e; font-size: 1.5rem; margin-top: 5rem;">Wonjun Ko, Ph.D.</p>
 
-  <div class="mt-6 leading-relaxed" style="color:#1a1a2e;">
-    <p>Assistant Professor</p>
-    <p>School of AI Convergence</p>
-    <p>Sungshin Women's University</p>
+  <div style="color:#1a1a2e; margin-top: 1.5rem; line-height: 1.3;">
+    <p style="margin: 0;">Assistant Professor</p>
+    <p style="margin: 0;">School of AI Convergence</p>
+    <p style="margin: 0;">Sungshin Women's University</p>
   </div>
 
-  <p class="mt-10 text-xl" style="color:#1a1a2e;">Spring 2027</p>
+  <p style="color:#1a1a2e; font-size: 1.25rem; margin-top: 2.5rem;">Spring 2027</p>
 </div>
+
+---
+layout: prism
+heading: Course Schedule
+---
+
+<div class="absolute left-10 right-10" style="top: 0rem; bottom: 5rem; display: grid; grid-template-columns: 1fr 1fr; column-gap: 5rem; align-items: center;">
+  <div>
+    <p style="margin: 0.7rem 0; font-size: 1.3rem;"><span style="color:#4a6fa5; font-weight:bold;">W01</span> <span style="color:#111;">Course Introduction</span></p>
+    <p style="margin: 0.7rem 0; font-size: 1.3rem;"><span style="color:#4a6fa5; font-weight:bold;">W02</span> <span style="color:#9aa0a6;">Preliminaries</span></p>
+    <p style="margin: 0.7rem 0; font-size: 1.3rem;"><span style="color:#4a6fa5; font-weight:bold;">W03</span> <span style="color:#9aa0a6;">Probabilistic Distributions</span></p>
+    <p style="margin: 0.7rem 0; font-size: 1.3rem;"><span style="color:#4a6fa5; font-weight:bold;">W04</span> <span style="color:#9aa0a6;">Linear Regression Models</span></p>
+    <p style="margin: 0.7rem 0; font-size: 1.3rem;"><span style="color:#4a6fa5; font-weight:bold;">W05</span> <span style="color:#9aa0a6;">Linear Classification Models</span></p>
+    <p style="margin: 0.7rem 0; font-size: 1.3rem;"><span style="color:#4a6fa5; font-weight:bold;">W06</span> <span style="color:#9aa0a6;">Kernel Methods</span></p>
+    <p style="margin: 0.7rem 0; font-size: 1.3rem;"><span style="color:#4a6fa5; font-weight:bold;">W07</span> <span style="color:#9aa0a6;">Midterm Review</span></p>
+    <p style="margin: 0.7rem 0; font-size: 1.3rem;"><span style="color:#4a6fa5; font-weight:bold;">W08</span> <span style="color:#9aa0a6;">Midterm Exam</span></p>
+  </div>
+  <div>
+    <p style="margin: 0.7rem 0; font-size: 1.3rem;"><span style="color:#4a6fa5; font-weight:bold;">W09</span> <span style="color:#9aa0a6;">Graphical Models</span></p>
+    <p style="margin: 0.7rem 0; font-size: 1.3rem;"><span style="color:#4a6fa5; font-weight:bold;">W10</span> <span style="color:#9aa0a6;">Mixture Models</span></p>
+    <p style="margin: 0.7rem 0; font-size: 1.3rem;"><span style="color:#4a6fa5; font-weight:bold;">W11</span> <span style="color:#9aa0a6;">Approximate Inference</span></p>
+    <p style="margin: 0.7rem 0; font-size: 1.3rem;"><span style="color:#4a6fa5; font-weight:bold;">W12</span> <span style="color:#9aa0a6;">Sampling Methods</span></p>
+    <p style="margin: 0.7rem 0; font-size: 1.3rem;"><span style="color:#4a6fa5; font-weight:bold;">W13</span> <span style="color:#9aa0a6;">Continuous Latent Variables</span></p>
+    <p style="margin: 0.7rem 0; font-size: 1.3rem;"><span style="color:#4a6fa5; font-weight:bold;">W14</span> <span style="color:#9aa0a6;">Final Review</span></p>
+    <p style="margin: 0.7rem 0; font-size: 1.3rem;"><span style="color:#4a6fa5; font-weight:bold;">W15</span> <span style="color:#9aa0a6;">Final Exam</span></p>
+  </div>
+</div>
+
+---
+layout: prism
+heading: Who am I?
+---
+
+<div class="absolute top-0 right-5">
+  <img src="https://raw.githubusercontent.com/sswu-prism-lab/slides/main/images/general/fig_01_01.JPG" style="height: 11rem; border-radius: 4px;" />
+</div>
+
+- Education
+  - Ph.D. in Brain and Cognitive Engineering (Sep. 2017 ~ Aug. 2022)
+    - Ph.D. Dissertation Title: Deep Representation Learning in Biomedicine
+  - B.Sc. in Physics (Mar. 2013 ~ Feb. 2017)
+
+- Work Experience
+  - Data Scientist (Aug. 2022 ~ Aug. 2023)
+    - Senior researcher, R&D/M&T Data Analytics, Data Intelligence, SK hynix Inc.
+  - Assistant Professor (Sep. 2023 ~ Current)
+    - School of AI Convergence, Sungshin Women's University
+    - 수정관 A-704; wjko@sungshin.ac.kr; https://sites.google.com/sungshin.ac.kr/prism
+
+- Research Interests
+  - Topological deep learning; Bayesian deep learning
+  - 27 papers (15 papers as the main author) in biomedicine-related fields
+  - New Basic Research Project (Outstanding Young Scientist) Program, National Research Foundation, Ministry of Science and ICT, Korea Government (about $400,000 over three years)
 
 ---
 
