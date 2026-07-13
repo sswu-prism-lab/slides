@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "slidev --open",
-    "dev:aml-lec1": "slidev courses/advanced-machine-learning-2027/lecture-1/slides.md --open",
+    "dev:aml-lec1": "cd courses/advanced-machine-learning-2027/lecture-1 && slidev --open",
     "dev:aml-lec2": "slidev courses/advanced-machine-learning-2027/lecture-2/slides.md --open",
     "build": "slidev build",
     "export": "slidev export"

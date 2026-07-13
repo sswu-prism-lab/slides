@@ -9,16 +9,25 @@ transition: slide-left
 mdc: true
 ---
 
-# Advanced Machine Learning
+<div class="absolute top-0 left-0 right-0 border-t border-gray-300"></div>
 
-Lecture 1
-
-<div class="pt-5">
-  <span class="opacity-70">Wonjun Ko, Ph.D.<br>Assistant Professor<br>School of AI Convergence<br>Sungshin Women's University</span>
+<div class="absolute top-6 left-10 flex items-center gap-3">
+  <img src="/bs_05_c.jpg" class="h-12" />
 </div>
 
-<div class="pt-3">
-  <span class="opacity-50">Spring 2027</span>
+<div class="h-full flex flex-col items-center justify-center text-center px-10">
+  <h1 class="text-5xl font-bold" style="color:#5c60a8;">Advanced Machine Learning</h1>
+  <p class="text-2xl mt-3" style="color:#9aa0a6;">Week 01: Course Introduction</p>
+
+  <p class="text-2xl mt-20" style="color:#1a1a2e;">Wonjun Ko, Ph.D.</p>
+
+  <div class="mt-6 leading-relaxed" style="color:#1a1a2e;">
+    <p>Assistant Professor</p>
+    <p>School of AI Convergence</p>
+    <p>Sungshin Women's University</p>
+  </div>
+
+  <p class="mt-10 text-xl" style="color:#1a1a2e;">Spring 2027</p>
 </div>
 
 ---
