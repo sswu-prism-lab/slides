@@ -22,7 +22,7 @@ defineProps({
     </div>
 
     <div class="absolute bottom-6 right-10" style="font-size: 1rem; color:#333;">
-      {{ $slidev.nav.currentPage }}/{{ $slidev.nav.total }}
+      {{ $slidev.nav.currentPage - 1 }}/{{ $slidev.nav.total - 2 }}
     </div>
   </div>
 </template>

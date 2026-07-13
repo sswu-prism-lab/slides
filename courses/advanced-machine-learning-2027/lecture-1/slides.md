@@ -79,8 +79,8 @@ heading: Who am I?
     - Senior researcher, R&D/M&T Data Analytics, Data Intelligence, SK hynix Inc.
   - Assistant Professor (Sep. 2023 ~ Current)
     - School of AI Convergence, Sungshin Women's University
-    - 수정관 A-704; [e-mail](mailto:wjko@sungshin.ac.kr){style="color:#c2410c;"}; [Website](https://sswu-prism-lab.github.io/){style="background: linear-gradient(90deg, rgb(188,90,93), rgb(242,221,134), rgb(111,142,114), rgb(75,85,210), rgb(119,94,145)); -webkit-background-clip: text; background-clip: text; color: transparent; -webkit-text-fill-color: transparent; text-decoration: underline;"}
-
+    - 수정관 A-704; [e-mail](mailto:wjko@sungshin.ac.kr){style="color:#c2410c;"} | [Website](https://sswu-prism-lab.github.io/){style="background: linear-gradient(90deg, rgb(188,90,93), rgb(242,221,134), rgb(111,142,114), rgb(75,85,210), rgb(119,94,145)); -webkit-background-clip: text; background-clip: text; color: transparent; -webkit-text-fill-color: transparent; text-decoration: underline;"}
+  
 - Research Interests
   - Topological deep learning; Bayesian deep learning
   - 28 papers (16 papers as the main author) in biomedicine-related fields
@@ -146,7 +146,7 @@ heading: What I Studied - Biomedical Data Mining
   <img src="https://raw.githubusercontent.com/sswu-prism-lab/slides/main/images/general/fig10.png" style="height: 12rem; border-radius: 4px;" />
 </div>
 
-
+<div class="absolute bottom-0 right-0">
   <img src="https://raw.githubusercontent.com/sswu-prism-lab/slides/main/images/general/fig12.png" style="height: 12rem; border-radius: 4px;" />
 </div>
 
@@ -163,11 +163,11 @@ heading: The Course in a Nutshell
 
 - Title: Advanced Machine Learning
 
-<div style="height: 1.5rem;"></div>
+<div style="height: 2.5rem;"></div>
 
 - After finishing this course, students will establish a solid, advanced-level foundation in machine learning algorithms.
 
-<div style="height: 1.5rem;"></div>
+<div style="height: 2.5rem;"></div>
 
 - Grading will be mainly based on:
   - Two exams (35% for the midterm and 45% for the final exam)
@@ -180,71 +180,46 @@ heading: The Course in a Nutshell
 </div>
 
 ---
-
-# Today's Topics
-
-<v-clicks>
-
-- Introduction to representation learning
-- EEG / fMRI data structures
-- Statistical mechanics perspective on deep learning
-- Live demo
-
-</v-clicks>
-
+layout: prism
+heading: Course Schedule Again (TBA)
 ---
 
-# Math example (KaTeX)
-
-TeX 문법 그대로 씁니다 — 별도 변환 없이:
-
-$$
-\mathcal{L}(\theta) = -\sum_{i=1}^{N} y_i \log \hat{y}_i(\theta) + \lambda \|\theta\|_2^2
-$$
-
-인라인 수식도 가능해요: 자유 에너지는 $F = U - TS$ 로 정의됩니다.
-
----
-
-# Image example
-
-이미지 파일은 `public/` 폴더에 넣고, 슬라이드에서는 `/파일명`으로 참조하세요.
-
-```md
-![EEG electrode layout](/eeg-layout.png)
-```
-
-<!--
-public/eeg-layout.png 파일을 실제로 넣으시면 이 슬라이드에 이미지가 나타납니다.
--->
-
----
-
-# Step-by-step reveal (click animation)
-
-<v-click>
-
-**Step 1.** Raw EEG signal is collected from multiple channels.
-
-</v-click>
-
-<v-click>
-
-**Step 2.** Signal is decomposed into frequency bands (e.g., theta, alpha, beta).
-
-</v-click>
-
-<v-click>
-
-**Step 3.** A graph neural network models inter-channel relationships.
-
-</v-click>
+<div class="absolute left-10 right-10" style="top: 0; bottom: 0rem; display: grid; grid-template-columns: 1fr 1fr; column-gap: 5rem; align-items: center;">
+  <div>
+    <p style="margin: .5rem 0; font-size: 1.3rem;"><span style="color:#4a6fa5; font-weight:bold;">W01</span> <span style="color:#111;">TBA</span></p>
+    <p style="margin: .5rem 0; font-size: 1.3rem;"><span style="color:#4a6fa5; font-weight:bold;">W02</span> <span style="color:#111;">TBA</span></p>
+    <p style="margin: .5rem 0; font-size: 1.3rem;"><span style="color:#4a6fa5; font-weight:bold;">W03</span> <span style="color:#111;">TBA</span></p>
+    <p style="margin: .5rem 0 0 0; font-size: 1.3rem;"><span style="color:#4a6fa5; font-weight:bold;">W04</span> <span style="color:#111;">TBA</span></p>
+    <p style="margin: 0 0 1rem 1.5rem; font-size: 1.1rem; color:#111;"><span style="font-size:0.75em; color:#4a6fa5;">▶</span> <i>Homework 1</i></p>
+    <p style="margin: .5rem 0; font-size: 1.3rem;"><span style="color:#4a6fa5; font-weight:bold;">W05</span> <span style="color:#111;">TBA</span></p>
+    <p style="margin: .5rem 0; font-size: 1.3rem;"><span style="color:#4a6fa5; font-weight:bold;">W06</span> <span style="color:#111;">TBA</span></p>
+    <p style="margin: .5rem 0 0 0; font-size: 1.3rem;"><span style="color:#4a6fa5; font-weight:bold;">W07</span> <span style="color:#111;">TBA</span></p>
+    <p style="margin: 0 0 1rem 1.5rem; font-size: 1.1rem; color:#111;"><span style="font-size:0.75em; color:#4a6fa5;">▶</span> <i>Homework 2</i></p>
+    <p style="margin: .5rem 0 0 0; font-size: 1.3rem;"><span style="color:#4a6fa5; font-weight:bold;">W08</span> <span style="color:#111;">TBA</span></p>
+    <p style="margin: 0 0 1rem 1.5rem; font-size: 1.1rem; color:#111;"><span style="font-size:0.75em; color:#4a6fa5;">▶</span> <i>Midterm exam</i></p>
+  </div>
+  <div>
+    <p style="margin: 1rem 0; font-size: 1.3rem;"><span style="color:#4a6fa5; font-weight:bold;">W09</span> <span style="color:#111;">TBA</span></p>
+<p style="margin: 1rem 0 0 0; font-size: 1.3rem;"><span style="color:#4a6fa5; font-weight:bold;">W10</span> <span style="color:#111;">TBA</span></p>
+    <p style="margin: 0 0 1rem 1.5rem; font-size: 1.1rem; color:#111;"><span style="font-size:0.75em; color:#4a6fa5;">▶</span> <i>Homework 3</i></p>
+    <p style="margin: 1rem 0; font-size: 1.3rem;"><span style="color:#4a6fa5; font-weight:bold;">W11</span> <span style="color:#111;">TBA</span></p>
+<p style="margin: 1rem 0 0 0; font-size: 1.3rem;"><span style="color:#4a6fa5; font-weight:bold;">W12</span> <span style="color:#111;">TBA</span></p>
+    <p style="margin: 0 0 1rem 1.5rem; font-size: 1.1rem; color:#111;"><span style="font-size:0.75em; color:#4a6fa5;">▶</span> <i>Homework 4</i></p>
+    <p style="margin: 1rem 0; font-size: 1.3rem;"><span style="color:#4a6fa5; font-weight:bold;">W13</span> <span style="color:#111;">TBA</span></p>
+    <p style="margin: 1rem 0; font-size: 1.3rem;"><span style="color:#4a6fa5; font-weight:bold;">W14</span> <span style="color:#111;">TBA</span></p>
+<p style="margin: 1rem 0 0 0; font-size: 1.3rem;"><span style="color:#4a6fa5; font-weight:bold;">W15</span> <span style="color:#111;">TBA</span></p>
+    <p style="margin: 0 0 1rem 1.5rem; font-size: 1.1rem; color:#111;"><span style="font-size:0.75em; color:#4a6fa5;">▶</span> <i>Final exam</i></p>
+  </div>
+</div>
 
 ---
 layout: center
 class: text-center
 ---
 
-# Thank you!
+# ***Thank you!***
+<br></br>
 
-Contact: wjko@sungshin.ac.kr
+_Contact:_ [wjko@sungshin.ac.kr](mailto:wjko@sungshin.ac.kr){style="color:#c2410c;"}
+
+_Website:_ [https://sswu-prism-lab.github.io/](https://sswu-prism-lab.github.io/){style="background: linear-gradient(90deg, rgb(188,90,93), rgb(242,221,134), rgb(111,142,114), rgb(75,85,210), rgb(119,94,145)); -webkit-background-clip: text; background-clip: text; color: transparent; -webkit-text-fill-color: transparent; text-decoration: underline;"}
