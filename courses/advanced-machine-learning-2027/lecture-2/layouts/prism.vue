@@ -80,4 +80,106 @@ defineProps({
 .slidev-layout li > p {
   margin: 0;
 }
+
+.hl {
+  color: #5c60a8;
+  font-style: italic;
+  font-weight: 600;
+}
+
+.sub-item {
+  position: relative;
+  margin: 0;
+  padding-left: 1.3em;
+  font-size: 0.9em;
+  left: 3.8em;
+  width: calc(100% - 5.3em); /* left(4em) + padding-left(1.3em)만큼 빼서 오른쪽 끝에 안 넘치게 */
+  box-sizing: border-box;
+  overflow-wrap: break-word;
+}
+.sub-item::before {
+  content: "▶";
+  font-size: 1em;
+  color: #6b74b3;
+  position: absolute;
+  left: 0;
+}
+
+/* sub-item 안의 문단(<p>) 기본 여백 제거 → 세로 간격도 없어짐 */
+.sub-item p {
+  margin: 0;
+}
+
+.subsub-item {
+  position: relative;
+  margin: 0;
+  padding-left: 1.4em;
+  font-size: 0.8em;
+  left: 5.9em;
+  width: calc(100% - 7.3em);
+  box-sizing: border-box;
+  overflow-wrap: break-word;
+}
+.subsub-item::before {
+  content: "✔";
+  color: #6b74b3;
+  position: absolute;
+  left: 0;
+}
+.subsub-item p {
+  margin: 0;
+}
+
+/* 수식 사이의 여백 */
+.slidev-layout .katex-display {
+  margin: -0.3em 0;
+}
+
+/* 이미지 가운데 정렬을 위해 */
+.img-center {
+  display: block;
+  margin: 1rem auto;
+}
+
+/* 이미지 가로 배치를 위해 */
+.img-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.3rem;
+  margin: 1rem auto;
+  width: 100%;
+}
+.img-row img {
+  flex: 1 1 0;
+  min-width: 0;
+  width: auto;
+  max-width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+/* Theorem 박스 */
+.theorem-box {
+  border: 1px solid #4ba08f;
+  border-radius: 8px;
+  margin: 1.5rem auto; /* 좌우를 auto로 → 가운데 정렬 */
+  width: 85%; /* 원하는 비율로 조절 */
+  overflow: hidden;
+}
+.theorem-box-title {
+  background: #4ba08f;
+  color: white;
+  font-weight: bold;
+  font-size: 1.1em;
+  padding: 0.6rem 1.2rem;
+}
+.theorem-box-body {
+  background: #f2f9f7;
+  padding: 1rem 1.2rem;
+  text-align: justify;
+}
+.theorem-box-body p {
+  margin: 0.5em 0;
+}
 </style>
