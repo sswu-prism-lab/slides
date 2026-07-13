@@ -146,9 +146,39 @@ heading: What I Studied - Biomedical Data Mining
   <img src="https://raw.githubusercontent.com/sswu-prism-lab/slides/main/images/general/fig10.png" style="height: 12rem; border-radius: 4px;" />
 </div>
 
-<div class="absolute bottom-0 right-0">
+
   <img src="https://raw.githubusercontent.com/sswu-prism-lab/slides/main/images/general/fig12.png" style="height: 12rem; border-radius: 4px;" />
 </div>
+
+---
+layout: prism
+heading: The Course in a Nutshell
+---
+
+<div class="absolute bottom-0 right-0">
+  <img src="https://raw.githubusercontent.com/sswu-prism-lab/slides/main/images/aml/aml-2027/PRML_bookcover.jpg" style="float: right; width: 11rem; margin: 0 0 1rem 3rem;" />
+</div>
+
+<div style="margin-top: 1.5rem;">
+
+- Title: Advanced Machine Learning
+
+<div style="height: 1.5rem;"></div>
+
+- After finishing this course, students will establish a solid, advanced-level foundation in machine learning algorithms.
+
+<div style="height: 1.5rem;"></div>
+
+- Grading will be mainly based on:
+  - Two exams (35% for the midterm and 45% for the final exam)
+  - Four homeworks (5% for each)
+  - Attendance (0%, Note that four or more times absence will automatically result in the F grade)
+  - Text: Bishop, Christoper. _Pattern Recognition and Machine Learning_, 2008. 
+    - [Free Online PDF Available](https://www.microsoft.com/en-us/research/wp-content/uploads/2006/01/Bishop-Pattern-Recognition-and-Machine-Learning-2006.pdf)
+    - 번역서: 크리스토퍼 비숍. _패턴 인식과 머신 러닝_, 제이펍, 2018.
+  - Lecture notes that can be brought to the exam will be provided.
+</div>
+
 ---
 
 # Today's Topics
