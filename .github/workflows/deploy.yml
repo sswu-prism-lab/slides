@@ -27,6 +27,9 @@ jobs:
       - name: Install dependencies
         run: npm install
 
+      - name: Install Playwright (for PDF export)
+        run: npx playwright install --with-deps chromium
+
       # ⚠️ 저장소 이름이 "slides"가 아니라면, 아래 REPO_NAME 값을 저장소 이름으로 바꿔주세요.
       - name: Build every course under courses/ and generate landing pages
         env:
@@ -100,6 +103,7 @@ jobs:
               # 강의를 안 나눈 단일 슬라이드 과목
               echo "::group::Building single-deck course: $course"
               (cd "$dir" && npx slidev build --out "${ROOT}/dist/${course}" --base "/${REPO_NAME}/${course}/")
+              cp "dist/${course}/index.html" "dist/${course}/404.html"
               echo "::endgroup::"
             else
               # lecture-1/, lecture-2/ 처럼 하위 폴더로 나뉜 과목
@@ -120,6 +124,7 @@ jobs:
                 lname=$(basename "$lec")
                 echo "  Building lecture: $lname"
                 (cd "$lec" && npx slidev build --out "${ROOT}/dist/${course}/${lname}" --base "/${REPO_NAME}/${course}/${lname}/")
+                cp "dist/${course}/${lname}/index.html" "dist/${course}/${lname}/404.html"
               done
               echo "::endgroup::"
             fi

@@ -2,13 +2,6 @@
 defineProps({
   heading: { type: String, default: '' }
 })
-
-function toggleLang() {
-  const target = $slidev.configs.otherLangUrl
-  if (!target) return
-  const page = $slidev.nav.currentPage
-  window.location.href = target + page
-}
 </script>
 
 <template>
@@ -21,36 +14,6 @@ function toggleLang() {
     </div>
 
     <div class="absolute left-10 right-10" style="top: 6rem; bottom: 5rem; overflow: auto;">
-      <slot />
-    </div>
-
-    <div class="absolute bottom-6 left-10 flex items-center gap-3">
-      <img src="https://raw.githubusercontent.com/sswu-prism-lab/slides/main/images/general/PRISM.png" style="height: 3rem;" />
-    </div>
-
-    <div class="absolute bottom-6 right-10" style="font-size: 1rem; color:#333;">
-      {{ $slidev.nav.currentPage - 1 }}/{{ $slidev.nav.total - 2 }}
-    </div>
-  </div>
-
-    <div class="slidev-layout relative h-full">
-    <div class="absolute top-0 left-0 right-0 border-t border-gray-300"></div>
-
-    <div class="absolute top-6 left-10 flex items-center gap-3">
-      <img src="https://raw.githubusercontent.com/sswu-prism-lab/slides/main/images/general/bs_05_c_cropped.png" style="height: 3.5rem;" />
-      <h1 style="color:#6b74b3; font-size: 2.25rem; font-weight: bold; margin: 0;">{{ heading }}</h1>
-    </div>
-
-    <!-- 언어 전환 버튼: otherLangUrl이 설정된 덱에서만 나타남 -->
-    <button
-      v-if="$slidev.configs.otherLangUrl"
-      class="lang-toggle"
-      @click="toggleLang"
-    >
-      🌐 {{ $slidev.configs.otherLangUrl.includes('-ko') ? '한국어' : 'ENG' }}
-    </button>
-
-    <div class="absolute left-10 right-10" style="top: 5rem; bottom: 4rem; overflow-x: hidden; overflow-y: auto;">
       <slot />
     </div>
 
@@ -218,25 +181,5 @@ function toggleLang() {
 }
 .theorem-box-body p {
   margin: 0.5em 0;
-}
-
-/* 언어 변환 토글 버튼 */
-.lang-toggle {
-  position: fixed;
-  top: 1.5rem;
-  right: 1.5rem;
-  z-index: 100;
-  background: #6b6eb3;
-  color: white;
-  border: none;
-  padding: 0.4em 1em;
-  border-radius: 999px;
-  font-size: 0.8rem;
-  font-weight: 600;
-  cursor: pointer;
-  opacity: 0.25;
-}
-.lang-toggle:hover {
-  opacity: 1;
 }
 </style>

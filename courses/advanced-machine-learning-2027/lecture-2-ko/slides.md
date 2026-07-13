@@ -11,7 +11,7 @@ info: |
 class: text-center
 transition: slide-left
 mdc: true
-otherLangUrl: /slides/advanced-machine-learning-2027/lecture-2-ko/
+otherLangUrl: /slides/advanced-machine-learning-2027/lecture-2/
 ---
 
 <div class="absolute top-0 left-0 right-0 border-t border-gray-300"></div>
