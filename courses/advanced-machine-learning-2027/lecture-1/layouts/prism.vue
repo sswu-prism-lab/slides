@@ -5,7 +5,7 @@ defineProps({
 </script>
 
 <template>
-  <div class="relative h-full">
+  <div class="slidev-layout relative h-full">
     <div class="absolute top-0 left-0 right-0 border-t border-gray-300"></div>
 
     <div class="absolute top-6 left-10 flex items-center gap-3">
@@ -28,28 +28,54 @@ defineProps({
 </template>
 
 <style>
-.slidev-layout ul {
+.slidev-layout ul,
+.slidev-layout ul ul,
+.slidev-layout ul ul ul {
   list-style: none;
   padding-left: 1.3em;
   margin: 0;
 }
+
+/* 1단계(최상위) 항목: 섹션 사이 여백 + 불릿 크기 키움 */
 .slidev-layout ul > li {
   position: relative;
-  margin: 0.35em 0;
+  margin: 1.2em 0 0 0;
+  padding: 0;
+  line-height: 1.4;
+}
+.slidev-layout ul > li:first-child {
+  margin-top: 0;
 }
 .slidev-layout ul > li::before {
-  content: "•";
+  content: "●";
   color: #6b74b3;
   position: absolute;
-  left: -1.2em;
+  left: -1.4em;
+  font-size: 1em; /* ← 1단계 불릿만 키움 */
+}
+
+/* 2단계 항목: 글자 크기 축소 */
+.slidev-layout ul ul > li {
+  margin: 0;
+  font-size: 0.9em;
 }
 .slidev-layout ul ul > li::before {
   content: "▶";
-  font-size: 0.75em;
+  font-size: 1em;
   color: #6b74b3;
 }
+
+/* 3단계 항목: 글자 크기 더 축소 */
+.slidev-layout ul ul ul > li {
+  margin: 0;
+  font-size: 0.8em;
+}
 .slidev-layout ul ul ul > li::before {
-  content: "✓";
+  content: "✔";
   color: #6b74b3;
+}
+
+.slidev-layout li > p {
+  margin: 0;
 }
 </style>
