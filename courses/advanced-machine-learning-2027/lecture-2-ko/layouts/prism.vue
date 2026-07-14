@@ -25,7 +25,8 @@ function toggleLang() {
     </div>
 
     <div class="absolute bottom-6 left-10 flex items-center gap-3">
-      <img src="https://raw.githubusercontent.com/sswu-prism-lab/slides/main/images/general/PRISM.png" style="height: 3rem;" />
+      <img src="https://raw.githubusercontent.com/sswu-prism-lab/slides/main/images/general/PRISM.png" class="dark:hidden" style="height: 3rem;" />
+      <img src="https://raw.githubusercontent.com/sswu-prism-lab/slides/main/images/general/PRISM_dark.png" class="hidden dark:block" style="height: 3rem;" />
     </div>
 
     <div class="absolute bottom-6 right-10" style="font-size: 1rem;" :class="'text-gray-700 dark:text-gray-300'">
