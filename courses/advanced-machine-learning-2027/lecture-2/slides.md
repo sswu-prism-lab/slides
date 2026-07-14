@@ -788,7 +788,22 @@ Many pattern recognition and machine learning algorithms are developed to tackle
 layout: prism
 heading: Table of Contents
 ---
-abcd
+
+<div style="margin-top: 0rem; margin-left: 3rem">
+
+<div>
+    <p style="margin: 0.8rem 0; font-size: 1.3rem;"><span style="color:#DBE3EA; font-weight:bold;">Introduction</span></p>
+    <p style="margin: 0.8rem 0; font-size: 1.3rem;"><span style="color:#DBE3EA; font-weight:bold;">Probability Theory</span></p>
+    <p style="margin: 0.8rem 0; font-size: 1.3rem;"><span style="color:#DBE3EA; font-weight:bold;">Model Selection & Curse of Dimensionality</span></p>
+    <p style="margin: 0 0; font-size: 1.3rem;"><span style="color:#4a6fa5; font-weight:bold;">Decision Theory</span></p>
+      <p style="margin: 0 0 0 1.5rem; font-size: 1.1rem; color:#111;"><span style="font-size:0.75em; color:#111;">Decision Theory</span></p>
+      <p style="margin: 0 0 0 1.5rem; font-size: 1.1rem; color:#111;"><span style="font-size:0.75em; color:#111;">Minimizing Misclassified Rate</span></p>
+      <p style="margin: 0 0 0 1.5rem; font-size: 1.1rem; color:#111;"><span style="font-size:0.75em; color:#111;">Reject Option</span></p>
+      <p style="margin: 0 0 0 1.5rem; font-size: 1.1rem; color:#111;"><span style="font-size:0.75em; color:#111;">Inference and Decision</span></p>
+    <p style="margin: 0.8rem 0; font-size: 1.3rem;"><span style="color:#DBE3EA; font-weight:bold;">Information Theory</span></p>
+  </div>
+
+</div>
 
 ---
 layout: prism
@@ -966,7 +981,18 @@ layout: prism
 heading: Table of Contents
 ---
 
-abcd
+<div style="margin-top: 0rem; margin-left: 3rem">
+
+<div>
+    <p style="margin: 0.8rem 0; font-size: 1.3rem;"><span style="color:#DBE3EA; font-weight:bold;">Introduction</span></p>
+    <p style="margin: 0.8rem 0; font-size: 1.3rem;"><span style="color:#DBE3EA; font-weight:bold;">Probability Theory</span></p>
+    <p style="margin: 0.8rem 0; font-size: 1.3rem;"><span style="color:#DBE3EA; font-weight:bold;">Model Selection & Curse of Dimensionality</span></p>
+    <p style="margin: 0.8rem 0; font-size: 1.3rem;"><span style="color:#DBE3EA; font-weight:bold;">Decision Theory</span></p>
+    <p style="margin: 0 0; font-size: 1.3rem;"><span style="color:#4a6fa5; font-weight:bold;">Information Theory</span></p>
+      <p style="margin: 0 0 0 1.5rem; font-size: 1.1rem; color:#111;"><span style="font-size:0.75em; color:#111;">Information Theory</span></p>
+  </div>
+
+</div>
 
 ---
 layout: prism
