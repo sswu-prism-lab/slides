@@ -11,7 +11,7 @@ info: |
 class: text-center
 transition: slide-left
 mdc: true
-otherLangUrl: /slides/advanced-machine-learning-2027/lecture-2-ko/
+otherLangUrl: /slides/advanced-machine-learning-2027/lecture-2/
 ---
 <style>
 .dark .slidev-page,
