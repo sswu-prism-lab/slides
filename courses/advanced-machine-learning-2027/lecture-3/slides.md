@@ -27,7 +27,7 @@ otherLangUrl: /slides/advanced-machine-learning-2027/lecture-3-ko/
 <div class="absolute top-0 left-0 right-0 border-t border-gray-300"></div>
 
 <div class="absolute top-4 left-6 flex items-center gap-3">
-  <img src="https://raw.githubusercontent.com/sswu-prism-lab/slides/main/images/general/sswu_logo.jpeg" class="dark:hidden" style="height: 4rem;" />
+  <img src="https://raw.githubusercontent.com/sswu-prism-lab/slides/main/images/general/sswu_logo.png" class="dark:hidden" style="height: 4rem;" />
   <img src="https://raw.githubusercontent.com/sswu-prism-lab/slides/main/images/general/sswu_logo_dark.png" class="hidden dark:block" style="height: 4rem;" />
 </div>
 
