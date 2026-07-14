@@ -18,12 +18,12 @@ export default defineConfig({
     docFooter: { prev: '이전', next: '다음' },
     nav: [
       { text: 'Home', link: '/' },
-      { text: 'Advanced Machine Learning 2027', link: '/advanced-machine-learning-2027/' },
+      { text: 'Advanced Machine Learning', link: '/advanced-machine-learning-2027/' },
     ],
     sidebar: {
       '/advanced-machine-learning-2027/': [
         {
-          text: '고급 기계학습 (2027)',
+          text: '고급기계학습',
           items: [
             { text: '개요', link: '/advanced-machine-learning-2027/' },
           ],
@@ -87,6 +87,31 @@ export default defineConfig({
             { text: '문제 3 실습', link: '/advanced-machine-learning-2027/lecture-8-c02/lab-3' },
             { text: '문제 4 실습', link: '/advanced-machine-learning-2027/lecture-8-c02/lab-4' },
             { text: '문제 6 실습', link: '/advanced-machine-learning-2027/lecture-8-c02/lab-6' },
+          ],
+        },
+        {
+          text: 'Y25-W14 · 기말고사 예제 문제',
+          collapsed: true,
+          items: [
+            { text: '소개', link: '/advanced-machine-learning-2027/lecture-14/' },
+            { text: '문제 1 · 그래프 모델 그리기', link: '/advanced-machine-learning-2027/lecture-14/problem-01' },
+            { text: '문제 2 · 베이즈망 계산', link: '/advanced-machine-learning-2027/lecture-14/problem-02' },
+            { text: '문제 3 · k-평균 군집화', link: '/advanced-machine-learning-2027/lecture-14/problem-03' },
+            { text: '문제 4 · EM 알고리즘', link: '/advanced-machine-learning-2027/lecture-14/problem-04' },
+            { text: '문제 5 · 변분 추론 (ELBO)', link: '/advanced-machine-learning-2027/lecture-14/problem-05' },
+            { text: '문제 6 · 단일 가우시안 변분', link: '/advanced-machine-learning-2027/lecture-14/problem-06' },
+            { text: '문제 7 · 거부 표집법', link: '/advanced-machine-learning-2027/lecture-14/problem-07' },
+            { text: '문제 8 · 중요도 표집법', link: '/advanced-machine-learning-2027/lecture-14/problem-08' },
+            { text: '문제 9 · 조각 표집법', link: '/advanced-machine-learning-2027/lecture-14/problem-09' },
+            { text: '문제 10 · 주성분 분석', link: '/advanced-machine-learning-2027/lecture-14/problem-10' },
+            { text: '문제 2 실습', link: '/advanced-machine-learning-2027/lecture-14/lab-02' },
+            { text: '문제 3 실습', link: '/advanced-machine-learning-2027/lecture-14/lab-03' },
+            { text: '문제 4 실습', link: '/advanced-machine-learning-2027/lecture-14/lab-04' },
+            { text: '문제 6 실습', link: '/advanced-machine-learning-2027/lecture-14/lab-06' },
+            { text: '문제 7 실습', link: '/advanced-machine-learning-2027/lecture-14/lab-07' },
+            { text: '문제 8 실습', link: '/advanced-machine-learning-2027/lecture-14/lab-08' },
+            { text: '문제 9 실습', link: '/advanced-machine-learning-2027/lecture-14/lab-09' },
+            { text: '문제 10 실습', link: '/advanced-machine-learning-2027/lecture-14/lab-10' },
           ],
         },
       ],
