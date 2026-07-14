@@ -37,6 +37,7 @@ export default defineConfig({
             { text: '2장 · 확률 분포', link: '/advanced-machine-learning-2027/lecture-notes/chapter-02' },
             { text: '3장 · 선형 회귀 모델', link: '/advanced-machine-learning-2027/lecture-notes/chapter-03' },
             { text: '4장 · 선형 분류 모델', link: '/advanced-machine-learning-2027/lecture-notes/chapter-04' },
+            { text: '5장 · 커널 방법론', link: '/advanced-machine-learning-2027/lecture-notes/chapter-05' },
           ],
         },
         {
