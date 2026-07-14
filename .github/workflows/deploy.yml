@@ -1,175 +1,35 @@
-
-Claude가 응답을 완료했습니다
-워크플로는 최신 상태야.
-Action은 정상적으로 수행되었어.
-한국어 버전은 첫 페이지 자체가 404가 아니야, 영문, 한국어 슬라이드는 각각 정상적으로 뜨는데, 다만 언어 전환 토글 버튼을 눌러서 각자의 화면으로 넘어가면 404 에러가 뜨네.
-
-토글 버튼의 미설정된 언어 URL 추적 중
-토글 버튼의 미설정된 언어 URL 추적 중
-좋은 단서예요! 원인을 정확히 좁히려면, 실제로 이동한 **주소(URL)**가 필요해요.
-
-예를 들면, 영문판과 한국어판을 각자 개별적으로 켜서 4페이지로 가면,
-영문판: https://sswu-prism-lab.github.io/slides/advanced-machine-learning-2027/lecture-2/4
-국문판: https://sswu-prism-lab.github.io/slides/advanced-machine-learning-2027/lecture-2-ko/4
-의 링크이고 각자 잘 동작해.
-
-그런데, 영문판(또는 국문판)에서 언어 전환 옵션 버튼을 누르면, 제대로 위의 링크로 이동하긴 하는데, 404 에러가 떠. 혹시 index.html 파일과 연관이 있을까?
-
-
-브라우저 캐시 문제와 네트워크 검증을 제안했습니다
-브라우저 캐시 문제와 네트워크 검증을 제안했습니다
-좋은 단서예요. 직접 타이핑한 주소는 되는데 버튼으로 이동했을 때만 404라면, 주소 자체는 맞는데 그 특정 요청에 대해 브라우저가 예전(수정 전) 404 응답을 캐싱해뒀을 가능성이 커요 — 오늘 대화에서 몇 번 겪었던 것과 같은 패턴이에요.
-
-먼저 확인해주세요
-시크릿/프라이빗 창(Ctrl+Shift+N)을 열어서, 거기서 처음부터 영문판(또는 한국어판) 4페이지에 접속한 다음 언어 전환 버튼을 눌러보세요.
-
-시크릿 창에서는 정상 작동한다면 → 캐시 문제가 맞아요. 일반 창에서는 하드 리프레시(Ctrl+Shift+R)로 해결될 거예요. (이전에 404.html을 워크플로에 추가하시기 전에 이미 그 버튼을 한 번이라도 눌러보셨다면, 그때 떴던 진짜 404 응답이 브라우저에 캐싱되어 있을 가능성이 높습니다.)
-시크릿 창에서도 여전히 404라면 → 아래 확인이 필요해요.
-그래도 안 되면 — Network 탭으로 정확한 요청 확인
-F12 → Network 탭 켜고 → 언어 전환 버튼 클릭 → 새로 생긴 요청(맨 위, 문서 타입)을 클릭해서:
-
-Request URL이 주소창에 실제로 표시된 URL과 글자 하나까지 완전히 똑같은지 (혹시 슬래시(/)가 하나 빠지거나 중복되지는 않았는지)
-Status Code가 정확히 몇인지 (404인지, 다른 코드인지)
-이 두 가지를 캡쳐해서 보여주시면 정확히 뭐가 다른지 짚어드릴게요. 우선 시크릿 창 테스트부터 해보시겠어요?
-
-일단 캐시 문제는 아니야.
-Request URL도 정상이고 status도 404야.
-
-그리고, 현재 꼭 언어 변환이 아니더라도, 예를 들어 영문판 슬라이드에서 인터넷 창을 새로고침하면 404 에러가 떠. 이게 연관이 있을수도 있을까?
-
-
-GitHub Pages의 404.html 폴백 라우팅 메커니즘 검토 중
-GitHub Pages의 404.html 폴백 라우팅 메커니즘 검토 중
-확인해봐야 할 부분이 있어요 — GitHub Pages가 폴더별로 따로 둔 404.html을 인식하지 못할 수도 있어요. 이게 맞는지 빠르게 확인해볼게요.
-
-
-404 라우팅 문제를 다중 SPA 구조로 해결하려 설계했다
-404 라우팅 문제를 다중 SPA 구조로 해결하려 설계했다
-좋은 소식이 있어요 — 확인해보니 GitHub Pages는 폴더별로 따로 둔 404.html을 아예 인식하지 않아요. 사이트 전체에서 딱 하나(가장 최상위에 있는 것)만 사용한다는 게 공식적으로 확인됐어요. 그래서 제가 각 강의 폴더 안에 넣어드린 404.html들은 전부 무시되고 있었던 거예요 — 이게 근본 원인이었습니다.
-
-새로운 해결책
-여러 개의 독립된 Slidev 앱(과목/강의마다 따로 빌드됨)이 한 사이트 안에 흩어져 있는 특수한 구조라서, 표준적인 "SPA 404 우회" 기법을 살짝 응용해야 해요:
-
-사이트 최상위에 딱 하나의 404.html을 두고, 여기서 "지금 요청된 진짜 주소"를 기억해뒀다가, 그 주소가 속한 **강의 덱의 index.html**로 이동시킴
-각 강의 덱의 index.html에는 작은 스크립트를 심어서, 이동해오자마자 "기억해둔 진짜 주소"를 다시 복원(주소창만 바꿔치기)해서 Slidev가 정확한 슬라이드로 이동하게 함
-
-YAML 들여쓰기 문제를 진단하고 파일 분리 방식으로 해결책을 모색했다
-YAML 들여쓰기 문제를 진단하고 파일 분리 방식으로 해결책을 모색했다
-원인을 찾았어요 — YAML 블록 안에 넣은 파이썬 코드 부분의 들여쓰기가 깨져서 워크플로 파일 자체가 문법 오류가 났어요. 별도 파이썬 스크립트 파일로 분리하고, 404.html 생성도 기존에 잘 쓰던 echo 방식으로 바꿔서 이 문제를 원천 차단할게요.
-
-
-스크립트 배치와 404 생성 로직을 검증했다
-스크립트 배치와 404 생성 로직을 검증했다
-주입 스크립트가 정상 동작하는 걸 확인했어요 (<head> 바로 뒤, module 스크립트보다 앞에 정확히 삽입되고, 중복 실행 시 건너뛰는 것도 확인됨).
-
-
-경로 매칭 검증을 완료하고 솔루션 정리를 준비했다
-경로 매칭 검증을 완료하고 솔루션 정리를 준비했다
-
-404.html 생성 로직 및 정규식 매칭 테스트
-
-스크립트
-The test validates that the path matching works correctly across both English and Korean deck configurations, properly extracting the index folder path for the redirect. Now I'm ready to wrap up by copying the files to outputs and walking through the solution.
-
-완료
-완벽하게 동작하는 걸 확인했어요 — 영문/한국어 덱 모두 정확히 해당 강의 폴더로 리다이렉트 경로를 뽑아냅니다.
-
-
-명령 실행함, 파일 읽음
-명령 실행함, 파일 읽음
-적용 방법
-**scripts/inject_restore_script.py**를 저장소 최상위(slides 폴더, package.json과 같은 위치)의 scripts/ 폴더에 새로 추가
-.github/workflows/deploy.yml 전체를 이걸로 교체
-커밋 & 푸시
-이번에 정확히 뭐가 바뀌었나
-이전 (동작 안 함)	지금 (동작함)
-각 강의 폴더 안에 404.html 복사	❌ GitHub Pages가 아예 안 읽음
-—	✅ 사이트 최상위에 404.html 하나만 생성
-—	✅ 각 강의 덱의 index.html에 "원래 주소 복원" 스크립트 자동 삽입
-동작 흐름
-방문자가 .../lecture-2/4로 직접 접속하거나 새로고침
-GitHub Pages는 그 경로에 실제 파일이 없으니 **사이트 최상위의 404.html**로 응답
-이 파일이 "지금 요청된 진짜 주소"(.../lecture-2/4)를 브라우저에 잠깐 저장해두고, 그 주소가 속한 강의(.../lecture-2/)의 index.html로 이동
-그 index.html이 열리자마자, 심어둔 복원 스크립트가 저장해둔 진짜 주소로 주소창을 다시 바꿔치기
-Slidev가 그 주소를 읽고 정확히 4번 슬라이드를 보여줌
-로컬에서 실제 정규식 매칭과 스크립트 삽입 위치까지 직접 테스트해서 확인했으니, 이번엔 확실할 거예요. 반영하시고 확인해보세요 — 언어 전환 버튼도, 새로고침도 이제 정상 작동할 겁니다!
-
-
-Deploy
-YML 
-
-Inject restore script
-PY 
-1783994927409_image.png
-좋아, 그 문제는 해결됐어.
-이제 웹 상에 뜨는 슬라이드 선택 화면을 약간 수정하고 싶어. 스크린샷에서, "Lecture 2 Ko" box가 안보이게 숨김 처리하는 방법이 있을까?
-
-
-필터링으로 특정 폴더를 목록에서 제외하는 방법 구상했다
-필터링으로 특정 폴더를 목록에서 제외하는 방법 구상했다
-좋은 아이디어예요. 워크플로에서 목록 생성 부분만 살짝 고치면 돼요 — -ko로 끝나는 폴더는 계속 빌드는 되지만 목록에는 안 나오게 하는 방식이에요. (언어 전환 버튼이나 직접 URL로는 여전히 접근 가능합니다.)
-
-
--ko로 끝나는 강의 폴더는 목록 페이지에서 숨기되, 빌드는 그대로 진행
--ko로 끝나는 강의 폴더는 목록 페이지에서 숨기되, 빌드는 그대로 진행
-응 알려줘.
-
-
-미해결된 소통 문제를 인식하고 재검토 중
-미해결된 소통 문제를 인식하고 재검토 중
-정리
-바뀐 부분은 이거예요 — lecture_entries를 모으는 반복문 안에서, 폴더 이름이 -ko로 끝나면 목록 배열에 추가하지 않고 건너뛰도록 했어요:
-
-bash
-case "$lslug" in *-ko) continue ;; esac
-어떻게 동작하나요
-빌드 자체는 그대로 됩니다 — lecture-2-ko는 여전히 정상적으로 빌드되고 배포돼요
-다만 과목 목록 페이지(스크린샷의 화면)에서만 안 보이게 됩니다
-URL을 직접 알고 있거나, 슬라이드 안의 언어 전환 버튼을 통해서는 여전히 정상 접근 가능해요
-.github/workflows/deploy.yml 전체를 이걸로 교체하시고 커밋 & 푸시해서 확인해보세요. 스크린샷처럼 "Lecture 2 Ko" 항목만 목록에서 사라지고 "Lecture 1"과 "Lecture 2"만 보일 거예요!
-
-
-Deploy
-YML 
-
-
-
-
-
-Claude는 AI이며 실수할 수 있습니다. 응답을 다시 한번 확인해 주세요.
-Deploy · YML
 name: Deploy Slides to GitHub Pages
- 
+
 on:
   push:
     branches: [main]
   workflow_dispatch:
- 
+
 permissions:
   contents: read
   pages: write
   id-token: write
- 
+
 concurrency:
   group: pages
   cancel-in-progress: false
- 
+
 jobs:
   build:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
- 
+
       - uses: actions/setup-node@v4
         with:
           node-version: "lts/*"
- 
+
       - name: Install dependencies
         run: npm install
- 
+
       - name: Install Playwright (for PDF export)
         run: npx playwright install --with-deps chromium
- 
+
       # ⚠️ 저장소 이름이 "slides"가 아니라면, 아래 REPO_NAME 값을 저장소 이름으로 바꿔주세요.
       - name: Build every course under courses/ and generate landing pages
         env:
@@ -178,7 +38,7 @@ jobs:
           set -e
           ROOT="$(pwd)"
           mkdir -p dist
- 
+
           # 폴더 안에 title.txt가 있으면 그 첫 줄을 표시 이름으로 쓰고,
           # 없으면 폴더 이름을 "advanced-machine-learning-2027" -> "Advanced Machine Learning 2027"
           # 처럼 하이픈을 공백으로 바꾸고 각 단어 첫 글자를 대문자로 만들어 사용합니다.
@@ -191,7 +51,7 @@ jobs:
               echo "$folder" | sed 's/-/ /g' | awk '{for(i=1;i<=NF;i++){$i=toupper(substr($i,1,1)) substr($i,2)}; print}'
             fi
           }
- 
+
           # 공통 스타일이 담긴 목록 페이지를 만드는 함수
           # 사용법: write_index_page <출력파일경로> <제목> "슬러그1::표시이름1" "슬러그2::표시이름2" ...
           write_index_page() {
@@ -221,7 +81,7 @@ jobs:
               echo "</ul></body></html>"
             } > "$out_file"
           }
- 
+
           # ---- 최상위 목록 페이지 (과목 목록) ----
           course_entries=()
           for dir in courses/*/; do
@@ -230,7 +90,7 @@ jobs:
             course_entries+=("${slug}::${label}")
           done
           write_index_page "dist/index.html" "PRISM Lab Lecture Slides" "${course_entries[@]}"
- 
+
           # ---- 사이트 최상위 404.html (GitHub Pages는 이 파일 하나만 인식합니다) ----
           # 어떤 강의 덱 안의 특정 슬라이드 번호로 직접/새로고침 접속하면 이 파일이 대신 응답합니다.
           # "지금 요청된 진짜 주소"를 세션에 기억해두고, 그 주소가 속한 강의 덱의 index.html로 이동시킵니다.
@@ -246,13 +106,13 @@ jobs:
             echo "</script>"
             echo "</head><body></body></html>"
           } > dist/404.html
- 
+
           # 위 404.html이 넘겨준 "진짜 주소"를 각 덱의 index.html 로드 시점에 복원하는 스크립트를
           # 심어주는 함수 (스크립트 본체는 scripts/inject_restore_script.py 에 따로 있습니다).
           inject_restore_script() {
             python3 "${ROOT}/scripts/inject_restore_script.py" "$1"
           }
- 
+
           # ---- 과목별 빌드 ----
           # ⚠️ Slidev/Vite에는 "slides.md를 하위 경로로 지정해서 실행하면 public/ 자산 해석이
           #    깨지는" 알려진 버그가 있어서, 항상 해당 폴더 "안으로 들어가서"(cd) 경로 인자
@@ -260,7 +120,7 @@ jobs:
           for dir in courses/*/; do
             course=$(basename "$dir")
             course_label=$(display_name "$dir" "$course")
- 
+
             if [ -f "${dir}slides.md" ]; then
               # 강의를 안 나눈 단일 슬라이드 과목
               echo "::group::Building single-deck course: $course"
@@ -271,7 +131,7 @@ jobs:
               # lecture-1/, lecture-2/ 처럼 하위 폴더로 나뉜 과목
               echo "::group::Building multi-lecture course: $course"
               mkdir -p "dist/${course}"
- 
+
               lecture_entries=()
               for lec in "${dir}"*/; do
                 [ -f "${lec}slides.md" ] || continue
@@ -283,7 +143,7 @@ jobs:
                 lecture_entries+=("${lslug}::${llabel}")
               done
               write_index_page "dist/${course}/index.html" "$course_label" "${lecture_entries[@]}"
- 
+
               for lec in "${dir}"*/; do
                 [ -f "${lec}slides.md" ] || continue
                 lname=$(basename "$lec")
@@ -294,14 +154,14 @@ jobs:
               echo "::endgroup::"
             fi
           done
- 
+
       - name: Setup Pages
         uses: actions/configure-pages@v4
- 
+
       - uses: actions/upload-pages-artifact@v3
         with:
           path: dist
- 
+
   deploy:
     needs: build
     runs-on: ubuntu-latest
@@ -312,20 +172,3 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
- 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
