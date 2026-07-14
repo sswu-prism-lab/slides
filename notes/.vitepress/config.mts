@@ -35,6 +35,8 @@ export default defineConfig({
             { text: '소개', link: '/advanced-machine-learning-2027/lecture-notes/' },
             { text: '1장 · 소개', link: '/advanced-machine-learning-2027/lecture-notes/chapter-01' },
             { text: '2장 · 확률 분포', link: '/advanced-machine-learning-2027/lecture-notes/chapter-02' },
+            { text: '3장 · 선형 회귀 모델', link: '/advanced-machine-learning-2027/lecture-notes/chapter-03' },
+            { text: '4장 · 선형 분류 모델', link: '/advanced-machine-learning-2027/lecture-notes/chapter-04' },
           ],
         },
         {

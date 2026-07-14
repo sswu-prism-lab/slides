@@ -60,11 +60,21 @@
   margin-left: 1px;
 }
 
-/* Tighter, readable math blocks */
+/* Let very wide equations scroll horizontally instead of bleeding under the
+   TOC sidebar. The flexbox `min-width: 0` on the content column is what makes
+   the overflow actually trigger a scrollbar (otherwise the column just grows
+   to fit the widest equation). */
+.VPDoc .container,
+.VPDoc .content,
+.VPDoc .content-container,
+.vp-doc {
+  min-width: 0;
+}
 .vp-doc mjx-container[display='true'] {
+  display: block;
   overflow-x: auto;
   overflow-y: hidden;
-  padding: 2px 0;
+  padding: 4px 0;
 }
 
 /* Data / result tables a little more compact */

@@ -2,6 +2,10 @@
 
 > 주어진 데이터에서 어떤 특정한 패턴을 찾아내는 것은 아주 중요한 문제이다. 이 문제에 대해 인류는 오랜 시간 동안 답을 구해왔으며, 성공적으로 패턴을 찾아내곤 했다. 요하네스 케플러<span class="gloss">Johannes Kepler</span>는 티코 브라헤<span class="gloss">Tycho Brahe</span>가 16세기에 관찰하여 축적해 놓은 대량의 천문학 데이터에서 패턴을 찾아내어 케플러의 행성 운동 법칙을 발견했다.
 
+<div class="fig">
+<img src="https://raw.githubusercontent.com/sswu-prism-lab/slides/main/images/aml/aml-note/photos/sec01.png" style="max-width:34rem;" />
+</div>
+
 ## 1.1 다항식 곡선 피팅
 
 - 아래와 같은 다항식을 이용한 **회귀**<span class="gloss">regression</span> 문제를 생각하자.

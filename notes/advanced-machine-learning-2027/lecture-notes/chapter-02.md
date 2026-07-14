@@ -2,6 +2,10 @@
 
 > 확률 분포는 복잡한 모델을 만드는 데 중요한 역할을 한다. 핵심 문제 중 하나는, 관찰된 데이터가 주어졌을 때 그를 가장 잘 표현하는 확률 분포를 모델링하는 것이다.
 
+<div class="fig">
+<img src="https://raw.githubusercontent.com/sswu-prism-lab/slides/main/images/aml/aml-note/photos/sec02.png" style="max-width:34rem;" />
+</div>
+
 ## 2.1 이산 확률 변수
 
 - 이진 **확률 변수**<span class="gloss">random variable</span> $x\in\{0,1\}$에서 $x=1$일 확률을 $\mu$로 두면 $p(x=1\mid\mu)=\mu$, $p(x=0\mid\mu)=1-\mu$이다. 이 분포를 **베르누이 분포**<span class="gloss">Bernoulli distribution</span>라 한다.
