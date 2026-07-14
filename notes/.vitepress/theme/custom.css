@@ -4,6 +4,23 @@
   --vp-c-brand-2: #3172b7;   /* ssblue */
   --vp-c-brand-3: #5c60a8;   /* ssviolet */
   --vp-c-brand-soft: rgba(74, 114, 148, 0.14);
+
+  /* Lab "rainbow" gradient applied to the hero name ("PRISM Lab") */
+  --vp-home-hero-name-color: transparent;
+  --vp-home-hero-name-background: linear-gradient(90deg,
+    rgb(188, 90, 93), rgb(242, 221, 134), rgb(111, 142, 114),
+    rgb(75, 85, 210), rgb(119, 94, 145));
+}
+
+/* Same rainbow gradient on the top-left navbar title ("PRISM Lab Lecture Notes") */
+.VPNavBarTitle .title {
+  background: linear-gradient(90deg,
+    rgb(188, 90, 93), rgb(242, 221, 134), rgb(111, 142, 114),
+    rgb(75, 85, 210), rgb(119, 94, 145));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  -webkit-text-fill-color: transparent;
 }
 
 /* ---- Problem box: reuse the native ::: info container, restyled to look

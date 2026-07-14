@@ -17,8 +17,8 @@ export default defineConfig({
     outline: { level: [2, 3], label: '목차' },
     docFooter: { prev: '이전', next: '다음' },
     nav: [
-      { text: '홈', link: '/' },
-      { text: '고급 기계학습 2027', link: '/advanced-machine-learning-2027/' },
+      { text: 'Home', link: '/' },
+      { text: 'Advanced Machine Learning 2027', link: '/advanced-machine-learning-2027/' },
     ],
     sidebar: {
       '/advanced-machine-learning-2027/': [

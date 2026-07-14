@@ -35,7 +35,12 @@ async function run() {
 
   try {
     const py = await ensurePyodide()
-    const code = codeEl.value ? codeEl.value.textContent.trim() : ''
+    // VitePress wraps fenced code in <div class="language-python"> with a
+    // <span class="lang">python</span> label and a copy button. Read ONLY the
+    // <code> element so that label text is never prepended to the source.
+    const container = codeEl.value
+    const codeNode = container ? container.querySelector('pre code, code') : null
+    const code = (codeNode ? codeNode.textContent : (container ? container.textContent : '')).trim()
 
     let buffer = ''
     py.setStdout({

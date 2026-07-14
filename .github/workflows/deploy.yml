@@ -90,8 +90,8 @@ jobs:
             course_entries+=("${slug}::${label}")
           done
           # 노트 사이트(VitePress, /notes/)를 최상위 목록에 추가합니다.
-          course_entries+=("notes::📝 강의 노트 (W07 등)")
-          write_index_page "dist/index.html" "PRISM Lab Lecture Slides" "${course_entries[@]}"
+          course_entries+=("notes::📝 Advanced Machine Learning - Notes (Last Update: July 2026)")
+          write_index_page "dist/index.html" "Prof. Ko's Lectures" "${course_entries[@]}"
 
           # ---- 사이트 최상위 404.html (GitHub Pages는 이 파일 하나만 인식합니다) ----
           # 어떤 강의 덱 안의 특정 슬라이드 번호로 직접/새로고침 접속하면 이 파일이 대신 응답합니다.
