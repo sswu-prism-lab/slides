@@ -40,6 +40,8 @@ export default defineConfig({
             { text: '5장 · 커널 방법론', link: '/advanced-machine-learning-2027/lecture-notes/chapter-05' },
             { text: '6장 · 그래프 모델', link: '/advanced-machine-learning-2027/lecture-notes/chapter-06' },
             { text: '7장 · 혼합 모델과 EM', link: '/advanced-machine-learning-2027/lecture-notes/chapter-07' },
+            { text: '8장 · 근사 추정', link: '/advanced-machine-learning-2027/lecture-notes/chapter-08' },
+            { text: '9장 · 표집법', link: '/advanced-machine-learning-2027/lecture-notes/chapter-09' },
           ],
         },
         {
