@@ -239,4 +239,28 @@ function toggleLang() {
 .lang-toggle:hover {
   opacity: 1;
 }
+
+/* enumerate */
+.sub-item-enum {
+  position: relative;
+  margin: 0;
+  left: 3.7em;
+  width: calc(100% - 5.3em);
+  box-sizing: border-box;
+  overflow-wrap: break-word;
+  font-size: 0.9em;
+}
+.sub-item-enum ol {
+  margin: 0;
+  padding-left: 1.3em;
+}
+.sub-item-enum li {
+  margin: 0.2em 0;
+}
+.sub-item-enum li::marker {
+  color: #6b74b3;
+}
+.sub-item-enum p {
+  margin: 0;
+}
 </style>

@@ -667,7 +667,7 @@ heading: Bayesian Curve Fitting (1/2)
 
 <div class="sub-item">
 
-In machine learning, Bayesian methods are used for _marginalizing_ $\mathbf{w}$ by conducting integrations to all possible $\mathbf{w}$.
+In machine learning and pattern recognition, Bayesian methods are used for _marginalizing_ $\mathbf{w}$ by conducting integrations to all possible $\mathbf{w}$.
 
 </div>
 
@@ -954,10 +954,9 @@ heading: Inference and Decision
 
 - A classification problem can be divided into two phases:
 
-<div class="sub-item">
+<div class="sub-item-enum">
 
 1. [Inference stage]{.hl} trains a model using training dataset.
-
 2. [Decision stage]{.hl} allocates optimal classes based on the learned posteriors.
 
 </div>
@@ -966,12 +965,10 @@ heading: Inference and Decision
 
 - There are three approaches to solve the decision problem:
 
-<div class="sub-item">
+<div class="sub-item-enum">
 
 1. [Generative model]{.hl} _models_ distributions of the input and output values.
-
 2. [Discriminative model]{.hl} directly _models_ the posterior.
-
 3. Without probabilities, we could discover a discriminant function that maps training samples to respective class.
 
 </div>
