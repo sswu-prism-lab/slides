@@ -42,6 +42,8 @@ export default defineConfig({
             { text: '7장 · 혼합 모델과 EM', link: '/advanced-machine-learning-2027/lecture-notes/chapter-07' },
             { text: '8장 · 근사 추정', link: '/advanced-machine-learning-2027/lecture-notes/chapter-08' },
             { text: '9장 · 표집법', link: '/advanced-machine-learning-2027/lecture-notes/chapter-09' },
+            { text: '10장 · 연속 잠재 변수', link: '/advanced-machine-learning-2027/lecture-notes/chapter-10' },
+            { text: '부록 · 분포·행렬·변분법·라그랑주', link: '/advanced-machine-learning-2027/lecture-notes/appendix' },
           ],
         },
         {
