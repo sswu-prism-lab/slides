@@ -11,6 +11,8 @@
     "dev:aml-lec3-ko": "slidev courses/advanced-machine-learning-2027/lecture-3-ko/slides.md --open",
     "dev:aml-lec4": "slidev courses/advanced-machine-learning-2027/lecture-4/slides.md --open",
     "dev:aml-lec4-ko": "slidev courses/advanced-machine-learning-2027/lecture-4-ko/slides.md --open",
+    "dev:aml-lec5": "slidev courses/advanced-machine-learning-2027/lecture-5/slides.md --open",
+    "dev:aml-lec5-ko": "slidev courses/advanced-machine-learning-2027/lecture-5-ko/slides.md --open",
     "build": "slidev build",
     "export": "slidev export"
   },
