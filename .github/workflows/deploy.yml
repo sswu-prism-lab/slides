@@ -89,6 +89,8 @@ jobs:
             label=$(display_name "$dir" "$slug")
             course_entries+=("${slug}::${label}")
           done
+          # 노트 사이트(VitePress, /notes/)를 최상위 목록에 추가합니다.
+          course_entries+=("notes::📝 강의 노트 (W07 등)")
           write_index_page "dist/index.html" "PRISM Lab Lecture Slides" "${course_entries[@]}"
 
           # ---- 사이트 최상위 404.html (GitHub Pages는 이 파일 하나만 인식합니다) ----
@@ -154,6 +156,16 @@ jobs:
               echo "::endgroup::"
             fi
           done
+
+      # ---- 노트 사이트 빌드 (VitePress, note-style 주차: W07 등) ----
+      # Slidev 덱과 별개로 notes/ 아래 VitePress 사이트를 빌드하여 dist/notes/ 로 복사합니다.
+      # 최종 URL: https://<user>.github.io/slides/notes/
+      - name: Build lecture notes (VitePress)
+        run: |
+          set -e
+          npx vitepress build notes
+          mkdir -p dist/notes
+          cp -r notes/.vitepress/dist/. dist/notes/
 
       - name: Setup Pages
         uses: actions/configure-pages@v4

@@ -33,6 +33,8 @@
     "dev:aml-lec14-ko": "slidev courses/advanced-machine-learning-2027/lecture-14-ko/slides.md --open",
     "dev:aml-lec15": "slidev courses/advanced-machine-learning-2027/lecture-15/slides.md --open",
     "dev:aml-lec15-ko": "slidev courses/advanced-machine-learning-2027/lecture-15-ko/slides.md --open",
+    "notes:dev": "vitepress dev notes",
+    "notes:build": "vitepress build notes",
     "build": "slidev build",
     "export": "slidev export"
   },
@@ -43,6 +45,8 @@
     "vue": "^3.5.33"
   },
   "devDependencies": {
-    "playwright-chromium": "^1.61.1"
+    "markdown-it-mathjax3": "^4.3.2",
+    "playwright-chromium": "^1.61.1",
+    "vitepress": "^1.6.3"
   }
 }

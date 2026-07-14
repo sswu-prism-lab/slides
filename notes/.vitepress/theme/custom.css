@@ -1,0 +1,57 @@
+/* PRISM Lab notes — brand palette (matches the Slidev prism theme / LaTeX boxes) */
+:root {
+  --vp-c-brand-1: #4a7294;   /* ssdarkblue */
+  --vp-c-brand-2: #3172b7;   /* ssblue */
+  --vp-c-brand-3: #5c60a8;   /* ssviolet */
+  --vp-c-brand-soft: rgba(74, 114, 148, 0.14);
+}
+
+/* ---- Problem box: reuse the native ::: info container, restyled to look
+   like the LaTeX mycolorbox2 (ssdarkblue header + light fill). ---- */
+.custom-block.info {
+  border: 1px solid #4a7294;
+  border-radius: 10px;
+  background: color-mix(in srgb, #4a7294 5%, var(--vp-c-bg));
+  padding: 16px 20px 8px;
+}
+.custom-block.info .custom-block-title {
+  color: #fff;
+  background: #4a7294;
+  font-weight: 700;
+  border-radius: 6px;
+  padding: 4px 12px;
+  display: inline-block;
+  margin-bottom: 10px;
+}
+
+/* ---- Solution: native ::: details, tuned for "click to reveal". ---- */
+.custom-block.details {
+  border: 1px dashed color-mix(in srgb, #4a7294 55%, var(--vp-c-bg));
+  border-radius: 10px;
+  background: var(--vp-c-bg-soft);
+}
+.custom-block.details summary {
+  font-weight: 700;
+  color: #4a7294;
+}
+
+/* Superscript English glosses, like sensitivity^ in the LaTeX source */
+.gloss {
+  font-size: 0.72em;
+  vertical-align: super;
+  color: var(--vp-c-text-2);
+  margin-left: 1px;
+}
+
+/* Tighter, readable math blocks */
+.vp-doc mjx-container[display='true'] {
+  overflow-x: auto;
+  overflow-y: hidden;
+  padding: 2px 0;
+}
+
+/* Data / result tables a little more compact */
+.vp-doc table {
+  display: table;
+  width: auto;
+}
