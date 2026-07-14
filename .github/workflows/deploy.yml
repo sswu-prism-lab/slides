@@ -91,6 +91,28 @@ jobs:
           done
           write_index_page "dist/index.html" "PRISM Lab Lecture Slides" "${course_entries[@]}"
 
+          # ---- 사이트 최상위 404.html (GitHub Pages는 이 파일 하나만 인식합니다) ----
+          # 어떤 강의 덱 안의 특정 슬라이드 번호로 직접/새로고침 접속하면 이 파일이 대신 응답합니다.
+          # "지금 요청된 진짜 주소"를 세션에 기억해두고, 그 주소가 속한 강의 덱의 index.html로 이동시킵니다.
+          {
+            echo "<!DOCTYPE html><html><head><meta charset=\"utf-8\">"
+            echo "<script>"
+            echo "  var path = location.pathname + location.search + location.hash;"
+            echo "  sessionStorage.setItem('slidev-redirect-path', path);"
+            echo "  var re = new RegExp('^(/${REPO_NAME}/[^/]+/[^/]+/)');"
+            echo "  var m = location.pathname.match(re);"
+            echo "  var target = m ? m[1] : '/${REPO_NAME}/';"
+            echo "  location.replace(target);"
+            echo "</script>"
+            echo "</head><body></body></html>"
+          } > dist/404.html
+
+          # 위 404.html이 넘겨준 "진짜 주소"를 각 덱의 index.html 로드 시점에 복원하는 스크립트를
+          # 심어주는 함수 (스크립트 본체는 scripts/inject_restore_script.py 에 따로 있습니다).
+          inject_restore_script() {
+            python3 "${ROOT}/scripts/inject_restore_script.py" "$1"
+          }
+
           # ---- 과목별 빌드 ----
           # ⚠️ Slidev/Vite에는 "slides.md를 하위 경로로 지정해서 실행하면 public/ 자산 해석이
           #    깨지는" 알려진 버그가 있어서, 항상 해당 폴더 "안으로 들어가서"(cd) 경로 인자
@@ -103,7 +125,7 @@ jobs:
               # 강의를 안 나눈 단일 슬라이드 과목
               echo "::group::Building single-deck course: $course"
               (cd "$dir" && npx slidev build --out "${ROOT}/dist/${course}" --base "/${REPO_NAME}/${course}/")
-              cp "dist/${course}/index.html" "dist/${course}/404.html"
+              inject_restore_script "dist/${course}/index.html"
               echo "::endgroup::"
             else
               # lecture-1/, lecture-2/ 처럼 하위 폴더로 나뉜 과목
@@ -124,7 +146,7 @@ jobs:
                 lname=$(basename "$lec")
                 echo "  Building lecture: $lname"
                 (cd "$lec" && npx slidev build --out "${ROOT}/dist/${course}/${lname}" --base "/${REPO_NAME}/${course}/${lname}/")
-                cp "dist/${course}/${lname}/index.html" "dist/${course}/${lname}/404.html"
+                inject_restore_script "dist/${course}/${lname}/index.html"
               done
               echo "::endgroup::"
             fi
