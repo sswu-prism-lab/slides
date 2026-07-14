@@ -13,10 +13,21 @@ transition: slide-left
 mdc: true
 ---
 
+<style>
+.dark .slidev-page,
+.dark .slidev-layout,
+.dark .slide-container,
+.dark #slide-content,
+.dark .slidev-nav-go-container {
+  background: #000000 !important;
+}
+</style>
+
 <div class="absolute top-0 left-0 right-0 border-t border-gray-300"></div>
 
 <div class="absolute top-4 left-6 flex items-center gap-3">
-  <img src="https://raw.githubusercontent.com/sswu-prism-lab/slides/main/images/general/sswu_logo.jpeg" style="height: 4rem;" />
+  <img src="https://raw.githubusercontent.com/sswu-prism-lab/slides/main/images/general/sswu_logo.png" class="dark:hidden" style="height: 4rem;" />
+  <img src="https://raw.githubusercontent.com/sswu-prism-lab/slides/main/images/general/sswu_logo_dark.png" class="hidden dark:block" style="height: 4rem;" />
 </div>
 
 <div class="h-full flex flex-col items-center justify-center text-center px-10" style="padding-top: 4rem;">
