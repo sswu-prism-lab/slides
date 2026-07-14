@@ -73,9 +73,11 @@
   width: auto;
 }
 
-/* Figures (converted from the LaTeX lecture notes) */
+/* Figures (converted from the LaTeX lecture notes) — always centered */
 .fig { text-align: center; margin: 1.3rem 0; }
-.fig img { max-width: 100%; border-radius: 6px; background: #fff; }
+.fig > img { display: block; margin: 0.2rem auto; max-width: 100%; border-radius: 6px; background: #fff; }
 .fig .cap { font-size: 0.82em; color: var(--vp-c-text-2); margin-top: 0.4rem; line-height: 1.4; }
-.fig-row { display: flex; flex-wrap: wrap; gap: 10px; justify-content: center; align-items: flex-start; }
+.fig-row { display: flex; flex-wrap: wrap; gap: 10px; justify-content: center; align-items: flex-start; margin: 0 auto; }
 .fig-row img { max-width: 46%; border-radius: 6px; background: #fff; }
+/* Any bare image inside note prose is centered too */
+.vp-doc p > img { display: block; margin: 0.6rem auto; }

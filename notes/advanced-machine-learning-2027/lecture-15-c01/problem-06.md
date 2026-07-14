@@ -12,8 +12,6 @@ p(D=1\mid B=b,C=c)=\begin{cases}\tfrac14, & b+c=0\\[2pt]\tfrac34, & \text{otherw
 $$
 
 이 때, $p(A=1\mid E=1)$, $p(B=1\mid C=1,E=1)$을 각각 구하시오.
-
-> ℹ️ 원문에 누락된 "부모 $=0$"일 때의 조건부확률은 **여집합 관례** $p(x{=}1\mid \text{부모}{=}0)=1-p(x{=}1\mid \text{부모}{=}1)$로 보완하였다. 즉 $p(B{=}1\mid A{=}0)=\tfrac13$, $p(C{=}1\mid A{=}0)=\tfrac14$, $p(E{=}1\mid D{=}0)=\tfrac15$.
 :::
 
 ::: details 풀이 및 해설
