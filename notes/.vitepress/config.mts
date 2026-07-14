@@ -29,6 +29,14 @@ export default defineConfig({
           ],
         },
         {
+          text: '📖 강의노트 (교재)',
+          collapsed: false,
+          items: [
+            { text: '소개', link: '/advanced-machine-learning-2027/lecture-notes/' },
+            { text: '1장 · 소개', link: '/advanced-machine-learning-2027/lecture-notes/chapter-01' },
+          ],
+        },
+        {
           text: 'Y25-W07 · 중간고사 예제 문제',
           collapsed: true,
           items: [

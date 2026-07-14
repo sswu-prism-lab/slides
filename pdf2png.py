@@ -3,12 +3,12 @@ import glob
 import os
 
 # 대상 폴더 (역슬래시 대신 슬래시 사용)
-target_dir = "C:/Users/dwigh/slides/images/general"
+target_dir = "C:/Users/dwigh/slides/images/aml/aml-note/"
 
 # dpi를 높이면 더 선명해집니다 (200~300 추천)
 DPI = 300
 
-pdf_files = glob.glob(os.path.join(target_dir, "*.jpg"))
+pdf_files = glob.glob(os.path.join(target_dir, "*.pdf"))
 
 if not pdf_files:
     print(f"'{target_dir}' 안에 pdf 파일이 없습니다.")

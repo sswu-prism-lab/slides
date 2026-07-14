@@ -72,3 +72,10 @@
   display: table;
   width: auto;
 }
+
+/* Figures (converted from the LaTeX lecture notes) */
+.fig { text-align: center; margin: 1.3rem 0; }
+.fig img { max-width: 100%; border-radius: 6px; background: #fff; }
+.fig .cap { font-size: 0.82em; color: var(--vp-c-text-2); margin-top: 0.4rem; line-height: 1.4; }
+.fig-row { display: flex; flex-wrap: wrap; gap: 10px; justify-content: center; align-items: flex-start; }
+.fig-row img { max-width: 46%; border-radius: 6px; background: #fff; }

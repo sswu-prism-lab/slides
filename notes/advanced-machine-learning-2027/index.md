@@ -1,8 +1,12 @@
 # 고급기계학습 -강의노트
 
-이 섹션은 슬라이드가 아닌 **노트·문제풀이형** 주차 자료를 모읍니다. 슬라이드 강의(1–6주차 등)는 별도의 [슬라이드 사이트](https://sswu-prism-lab.github.io/slides/advanced-machine-learning-2027/)에서 제공됩니다.
+이 섹션은 슬라이드가 아닌 **노트·문제풀이형** 자료를 모읍니다. 슬라이드 강의(1–6주차 등)는 별도의 [슬라이드 사이트](https://sswu-prism-lab.github.io/slides/advanced-machine-learning-2027/)에서 제공됩니다.
 
-## 주차 목록
+## 📖 강의노트 (교재)
+
+Bishop PRML 구성의 강의노트 전체입니다. → **[강의노트 바로가기](./lecture-notes/)**
+
+## 주차 목록 (시험 문제)
 
 | 주차 | 제목 | 형태 |
 | --- | --- | --- |

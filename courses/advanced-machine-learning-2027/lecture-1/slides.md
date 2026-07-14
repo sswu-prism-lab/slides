@@ -34,15 +34,15 @@ mdc: true
   <h1 style="color:#5c60a8; font-size: 3.5rem; font-weight: bold; margin: 0rem;">Advanced Machine Learning</h1>
   <p style="color:#9aa0a6; font-size: 1.5rem; margin-top: 0.25rem;">Week 01: Course Introduction</p>
 
-  <p style="color:#1a1a2e; font-size: 1.5rem; margin-top: 5rem;">Wonjun Ko, Ph.D.</p>
+  <p class="text-gray-800 dark:text-gray-100" style="font-size: 1.5rem; margin-top: 5rem;">Wonjun Ko, Ph.D.</p>
 
-  <div style="color:#1a1a2e; margin-top: 1.5rem; line-height: 1.3;">
+  <div class="text-gray-800 dark:text-gray-100" style="margin-top: 1.5rem; line-height: 1.3;">
     <p style="margin: 0;">Assistant Professor</p>
     <p style="margin: 0;">School of AI Convergence</p>
     <p style="margin: 0;">Sungshin Women's University</p>
   </div>
 
-  <p style="color:#1a1a2e; font-size: 1.25rem; margin-top: 2.5rem;">Spring 2027</p>
+  <p class="text-gray-800 dark:text-gray-100" style="font-size: 1.25rem; margin-top: 2.5rem;">Spring 2027</p>
 </div>
 
 ---
@@ -52,7 +52,7 @@ heading: Course Schedule
 
 <div class="absolute left-10 right-10" style="top: 1rem; bottom: 5rem; display: grid; grid-template-columns: 1fr 1fr; column-gap: 5rem; align-items: center;">
   <div>
-    <p style="margin: 1rem 0; font-size: 1.3rem;"><span style="color:#4a6fa5; font-weight:bold;">W01</span> <span style="color:#111;">Course Introduction</span></p>
+    <p style="margin: 1rem 0; font-size: 1.3rem;"><span style="color:#4a6fa5; font-weight:bold;">W01</span> <span class="text-gray-900 dark:text-gray-100">Course Introduction</span></p>
     <p style="margin: 1rem 0; font-size: 1.3rem;"><span style="color:#4a6fa5; font-weight:bold;">W02</span> <span style="color:#9aa0a6;">Preliminaries</span></p>
     <p style="margin: 1rem 0; font-size: 1.3rem;"><span style="color:#4a6fa5; font-weight:bold;">W03</span> <span style="color:#9aa0a6;">Probabilistic Distributions</span></p>
     <p style="margin: 1rem 0; font-size: 1.3rem;"><span style="color:#4a6fa5; font-weight:bold;">W04</span> <span style="color:#9aa0a6;">Linear Regression Models</span></p>
@@ -199,29 +199,29 @@ heading: Course Schedule Again (TBA)
 
 <div class="absolute left-10 right-10" style="top: 0; bottom: 0rem; display: grid; grid-template-columns: 1fr 1fr; column-gap: 5rem; align-items: center;">
   <div>
-    <p style="margin: .5rem 0; font-size: 1.3rem;"><span style="color:#4a6fa5; font-weight:bold;">W01</span> <span style="color:#111;">TBA</span></p>
-    <p style="margin: .5rem 0; font-size: 1.3rem;"><span style="color:#4a6fa5; font-weight:bold;">W02</span> <span style="color:#111;">TBA</span></p>
-    <p style="margin: .5rem 0; font-size: 1.3rem;"><span style="color:#4a6fa5; font-weight:bold;">W03</span> <span style="color:#111;">TBA</span></p>
-    <p style="margin: .5rem 0 0 0; font-size: 1.3rem;"><span style="color:#4a6fa5; font-weight:bold;">W04</span> <span style="color:#111;">TBA</span></p>
-    <p style="margin: 0 0 1rem 1.5rem; font-size: 1.1rem; color:#111;"><span style="font-size:0.75em; color:#4a6fa5;">▶</span> <i>Homework 1</i></p>
-    <p style="margin: .5rem 0; font-size: 1.3rem;"><span style="color:#4a6fa5; font-weight:bold;">W05</span> <span style="color:#111;">TBA</span></p>
-    <p style="margin: .5rem 0; font-size: 1.3rem;"><span style="color:#4a6fa5; font-weight:bold;">W06</span> <span style="color:#111;">TBA</span></p>
-    <p style="margin: .5rem 0 0 0; font-size: 1.3rem;"><span style="color:#4a6fa5; font-weight:bold;">W07</span> <span style="color:#111;">TBA</span></p>
-    <p style="margin: 0 0 1rem 1.5rem; font-size: 1.1rem; color:#111;"><span style="font-size:0.75em; color:#4a6fa5;">▶</span> <i>Homework 2</i></p>
-    <p style="margin: .5rem 0 0 0; font-size: 1.3rem;"><span style="color:#4a6fa5; font-weight:bold;">W08</span> <span style="color:#111;">TBA</span></p>
-    <p style="margin: 0 0 1rem 1.5rem; font-size: 1.1rem; color:#111;"><span style="font-size:0.75em; color:#4a6fa5;">▶</span> <i>Midterm exam</i></p>
+    <p style="margin: .5rem 0; font-size: 1.3rem;"><span style="color:#4a6fa5; font-weight:bold;">W01</span> <span class="text-gray-900 dark:text-gray-100">TBA</span></p>
+    <p style="margin: .5rem 0; font-size: 1.3rem;"><span style="color:#4a6fa5; font-weight:bold;">W02</span> <span class="text-gray-900 dark:text-gray-100">TBA</span></p>
+    <p style="margin: .5rem 0; font-size: 1.3rem;"><span style="color:#4a6fa5; font-weight:bold;">W03</span> <span class="text-gray-900 dark:text-gray-100">TBA</span></p>
+    <p style="margin: .5rem 0 0 0; font-size: 1.3rem;"><span style="color:#4a6fa5; font-weight:bold;">W04</span> <span class="text-gray-900 dark:text-gray-100">TBA</span></p>
+    <p style="margin: 0 0 1rem 1.5rem; font-size: 1.1rem; color:#111;"><span style="font-size:0.75em; color:#4a6fa5;">▶</span> <span class="text-gray-900 dark:text-gray-100"><i>Homework 1</i></span></p>
+    <p style="margin: .5rem 0; font-size: 1.3rem;"><span style="color:#4a6fa5; font-weight:bold;">W05</span> <span class="text-gray-900 dark:text-gray-100">TBA</span></p>
+    <p style="margin: .5rem 0; font-size: 1.3rem;"><span style="color:#4a6fa5; font-weight:bold;">W06</span> <span class="text-gray-900 dark:text-gray-100">TBA</span></p>
+    <p style="margin: .5rem 0 0 0; font-size: 1.3rem;"><span style="color:#4a6fa5; font-weight:bold;">W07</span> <span class="text-gray-900 dark:text-gray-100">TBA</span></p>
+    <p style="margin: 0 0 1rem 1.5rem; font-size: 1.1rem; color:#111;"><span style="font-size:0.75em; color:#4a6fa5;">▶</span> <span class="text-gray-900 dark:text-gray-100"><i>Homework 1</i></span></p>
+    <p style="margin: .5rem 0 0 0; font-size: 1.3rem;"><span style="color:#4a6fa5; font-weight:bold;">W08</span> <span class="text-gray-900 dark:text-gray-100">TBA</span></p>
+    <p style="margin: 0 0 1rem 1.5rem; font-size: 1.1rem; color:#111;"><span style="font-size:0.75em; color:#4a6fa5;">▶</span> <span class="text-gray-900 dark:text-gray-100"><i>Homework 1</i></span></p>
   </div>
   <div>
-    <p style="margin: 1rem 0; font-size: 1.3rem;"><span style="color:#4a6fa5; font-weight:bold;">W09</span> <span style="color:#111;">TBA</span></p>
-<p style="margin: 1rem 0 0 0; font-size: 1.3rem;"><span style="color:#4a6fa5; font-weight:bold;">W10</span> <span style="color:#111;">TBA</span></p>
-    <p style="margin: 0 0 1rem 1.5rem; font-size: 1.1rem; color:#111;"><span style="font-size:0.75em; color:#4a6fa5;">▶</span> <i>Homework 3</i></p>
-    <p style="margin: 1rem 0; font-size: 1.3rem;"><span style="color:#4a6fa5; font-weight:bold;">W11</span> <span style="color:#111;">TBA</span></p>
-<p style="margin: 1rem 0 0 0; font-size: 1.3rem;"><span style="color:#4a6fa5; font-weight:bold;">W12</span> <span style="color:#111;">TBA</span></p>
-    <p style="margin: 0 0 1rem 1.5rem; font-size: 1.1rem; color:#111;"><span style="font-size:0.75em; color:#4a6fa5;">▶</span> <i>Homework 4</i></p>
-    <p style="margin: 1rem 0; font-size: 1.3rem;"><span style="color:#4a6fa5; font-weight:bold;">W13</span> <span style="color:#111;">TBA</span></p>
-    <p style="margin: 1rem 0; font-size: 1.3rem;"><span style="color:#4a6fa5; font-weight:bold;">W14</span> <span style="color:#111;">TBA</span></p>
-<p style="margin: 1rem 0 0 0; font-size: 1.3rem;"><span style="color:#4a6fa5; font-weight:bold;">W15</span> <span style="color:#111;">TBA</span></p>
-    <p style="margin: 0 0 1rem 1.5rem; font-size: 1.1rem; color:#111;"><span style="font-size:0.75em; color:#4a6fa5;">▶</span> <i>Final exam</i></p>
+    <p style="margin: 1rem 0; font-size: 1.3rem;"><span style="color:#4a6fa5; font-weight:bold;">W09</span> <span class="text-gray-900 dark:text-gray-100">TBA</span></p>
+    <p style="margin: 1rem 0 0 0; font-size: 1.3rem;"><span style="color:#4a6fa5; font-weight:bold;">W10</span> <span class="text-gray-900 dark:text-gray-100">TBA</span></p>
+    <p style="margin: 0 0 1rem 1.5rem; font-size: 1.1rem; color:#111;"><span style="font-size:0.75em; color:#4a6fa5;">▶</span> <span class="text-gray-900 dark:text-gray-100"><i>Homework 1</i></span></p>
+    <p style="margin: 1rem 0; font-size: 1.3rem;"><span style="color:#4a6fa5; font-weight:bold;">W11</span> <span class="text-gray-900 dark:text-gray-100">TBA</span></p>
+<p style="margin: 1rem 0 0 0; font-size: 1.3rem;"><span style="color:#4a6fa5; font-weight:bold;">W12</span> <span class="text-gray-900 dark:text-gray-100">TBA</span></p>
+    <p style="margin: 0 0 1rem 1.5rem; font-size: 1.1rem; color:#111;"><span style="font-size:0.75em; color:#4a6fa5;">▶</span> <span class="text-gray-900 dark:text-gray-100"><i>Homework 1</i></span></p>
+    <p style="margin: 1rem 0; font-size: 1.3rem;"><span style="color:#4a6fa5; font-weight:bold;">W13</span> <span class="text-gray-900 dark:text-gray-100">TBA</span></p>
+    <p style="margin: 1rem 0; font-size: 1.3rem;"><span style="color:#4a6fa5; font-weight:bold;">W14</span> <span class="text-gray-900 dark:text-gray-100">TBA</span></p>
+<p style="margin: 1rem 0 0 0; font-size: 1.3rem;"><span style="color:#4a6fa5; font-weight:bold;">W15</span> <span class="text-gray-900 dark:text-gray-100">TBA</span></p>
+    <p style="margin: 0 0 1rem 1.5rem; font-size: 1.1rem; color:#111;"><span style="font-size:0.75em; color:#4a6fa5;">▶</span> <span class="text-gray-900 dark:text-gray-100"><i>Homework 1</i></span></p>
   </div>
 </div>
 
