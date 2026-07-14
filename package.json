@@ -7,6 +7,8 @@
     "dev:aml-lec1": "cd courses/advanced-machine-learning-2027/lecture-1 && slidev --open",
     "dev:aml-lec2": "slidev courses/advanced-machine-learning-2027/lecture-2/slides.md --open",
     "dev:aml-lec2-ko": "slidev courses/advanced-machine-learning-2027/lecture-2-ko/slides.md --open",
+    "dev:aml-lec3": "slidev courses/advanced-machine-learning-2027/lecture-3/slides.md --open",
+    "dev:aml-lec3-ko": "slidev courses/advanced-machine-learning-2027/lecture-3-ko/slides.md --open",
     "build": "slidev build",
     "export": "slidev export"
   },
