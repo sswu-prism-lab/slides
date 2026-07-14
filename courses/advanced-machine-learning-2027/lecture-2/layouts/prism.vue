@@ -28,7 +28,7 @@ function toggleLang() {
       <img src="https://raw.githubusercontent.com/sswu-prism-lab/slides/main/images/general/PRISM.png" style="height: 3rem;" />
     </div>
 
-    <div class="absolute bottom-6 right-10" style="font-size: 1rem; color:#333;">
+    <div class="absolute bottom-6 right-10" style="font-size: 1rem;" :class="'text-gray-700 dark:text-gray-300'">
       {{ $slidev.nav.currentPage - 1 }}/{{ $slidev.nav.total - 2 }}
     </div>
   </div>
@@ -200,8 +200,8 @@ function toggleLang() {
 .theorem-box {
   border: 1px solid #4ba08f;
   border-radius: 8px;
-  margin: 1.5rem auto; /* 좌우를 auto로 → 가운데 정렬 */
-  width: 85%; /* 원하는 비율로 조절 */
+  margin: 1.5rem auto;
+  width: 90%;
   overflow: hidden;
 }
 .theorem-box-title {
@@ -213,11 +213,24 @@ function toggleLang() {
 }
 .theorem-box-body {
   background: #f2f9f7;
+  color: #1a1a2e;
   padding: 1rem 1.2rem;
   text-align: justify;
 }
 .theorem-box-body p {
   margin: 0.5em 0;
+}
+
+/* ---- 다크모드 전용 오버라이드 ---- */
+.dark .theorem-box {
+  border-color: #2d6a5f;
+}
+.dark .theorem-box-title {
+  background: #2d6a5f;
+}
+.dark .theorem-box-body {
+  background: #1a2420;
+  color: #e5e7eb;
 }
 
 /* 언어 변환 토글 버튼 */

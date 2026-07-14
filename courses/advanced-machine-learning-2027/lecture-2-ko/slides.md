@@ -3,16 +3,25 @@ theme: seriph
 themeConfig:
   primary: '#5c60a8'
 background: '#ffffff' # Sets a custom hex background color
-title: AML - Lecture 2 (KO)
+title: AML - Lecture 2
 download: true
 info: |
-  ## 고급 기계학습 강의 슬라이드 (한국어판)
+  ## Advanced Machine Learning Lecture Slides
   Pattern Recognition and Intelligent System Modeling Lab, Sungshin Women's University
 class: text-center
 transition: slide-left
 mdc: true
-otherLangUrl: /slides/advanced-machine-learning-2027/lecture-2/
+otherLangUrl: /slides/advanced-machine-learning-2027/lecture-2-ko/
 ---
+<style>
+.dark .slidev-page,
+.dark .slidev-layout,
+.dark .slide-container,
+.dark #slide-content,
+.dark .slidev-nav-go-container {
+  background: #000000 !important;
+}
+</style>
 
 <div class="absolute top-0 left-0 right-0 border-t border-gray-300"></div>
 
@@ -24,15 +33,15 @@ otherLangUrl: /slides/advanced-machine-learning-2027/lecture-2/
   <h1 style="color:#5c60a8; font-size: 3.5rem; font-weight: bold; margin: 0rem;">고급 기계학습</h1>
   <p style="color:#9aa0a6; font-size: 1.5rem; margin-top: 0.25rem;">2주차: 강좌 소개</p>
 
-  <p style="color:#1a1a2e; font-size: 1.5rem; margin-top: 5rem;">고원준 (Wonjun Ko), Ph.D.</p>
+  <p class="text-gray-800 dark:text-gray-100" style="font-size: 1.5rem; margin-top: 5rem;">고원준 (Wonjun Ko), Ph.D.</p>
 
-  <div style="color:#1a1a2e; margin-top: 1.5rem; line-height: 1.3;">
+  <div class="text-gray-800 dark:text-gray-100" style="margin-top: 1.5rem; line-height: 1.3;">
     <p style="margin: 0;">조교수</p>
     <p style="margin: 0;">인공지능융합학부</p>
     <p style="margin: 0;">성신여자대학교</p>
   </div>
 
-  <p style="color:#1a1a2e; font-size: 1.25rem; margin-top: 2.5rem;">2027년 봄학기</p>
+  <p class="text-gray-800 dark:text-gray-100" style="font-size: 1.25rem; margin-top: 2.5rem;">2027년 봄학기</p>
 </div>
 
 ---
@@ -43,7 +52,7 @@ heading: 강좌 일정
 <div class="absolute left-10 right-10" style="top: 1rem; bottom: 5rem; display: grid; grid-template-columns: 1fr 1fr; column-gap: 5rem; align-items: center;">
   <div>
     <p style="margin: 1rem 0; font-size: 1.3rem;"><span style="color:#4a6fa5; font-weight:bold;">W01</span> <span style="color:#9aa0a6;">강좌 소개</span></p>
-    <p style="margin: 1rem 0; font-size: 1.3rem;"><span style="color:#4a6fa5; font-weight:bold;">W02</span> <span style="color:#111;">예비 지식</span></p>
+    <p style="margin: 1rem 0; font-size: 1.3rem;"><span style="color:#4a6fa5; font-weight:bold;">W02</span> <span class="text-gray-900 dark:text-gray-100">예비 지식</span></p>
     <p style="margin: 1rem 0; font-size: 1.3rem;"><span style="color:#4a6fa5; font-weight:bold;">W03</span> <span style="color:#9aa0a6;">확률 분포</span></p>
     <p style="margin: 1rem 0; font-size: 1.3rem;"><span style="color:#4a6fa5; font-weight:bold;">W04</span> <span style="color:#9aa0a6;">선형 회귀 모델</span></p>
     <p style="margin: 1rem 0; font-size: 1.3rem;"><span style="color:#4a6fa5; font-weight:bold;">W05</span> <span style="color:#9aa0a6;">선형 분류 모델</span></p>
@@ -70,8 +79,8 @@ heading: 목차
 
 <div>
     <p style="margin: 0 0; font-size: 1.3rem;"><span style="color:#4a6fa5; font-weight:bold;">서론</span></p>
-    <p style="margin: 0 0 0 1.5rem; font-size: 1.1rem; color:#111;"><span style="font-size:0.75em; color:#111;">서론</span></p>
-    <p style="margin: 0 0 1rem 1.5rem; font-size: 1.1rem; color:#111;"><span style="font-size:0.75em; color:#111;">다항식 곡선 피팅</span></p>
+    <p class="text-gray-900 dark:text-gray-100" style="margin: 0 0 0 1.5rem; font-size: 1.1rem;"><span style="font-size:0.75em;">서론</span></p>
+    <p class="text-gray-900 dark:text-gray-100" style="margin: 0 0 1rem 1.5rem; font-size: 1.1rem;"><span style="font-size:0.75em;">다항식 곡선 피팅</span></p>
     <p style="margin: 2rem 0; font-size: 1.3rem;"><span style="color:#DBE3EA; font-weight:bold;">확률론</span></p>
     <p style="margin: 2rem 0; font-size: 1.3rem;"><span style="color:#DBE3EA; font-weight:bold;">모델 선택 및 차원의 저주</span></p>
     <p style="margin: 2rem 0; font-size: 1.3rem;"><span style="color:#DBE3EA; font-weight:bold;">결정 이론</span></p>
@@ -212,13 +221,13 @@ heading: 목차
 <div>
     <p style="margin: 0.8rem 0; font-size: 1.3rem;"><span style="color:#DBE3EA; font-weight:bold;">서론</span></p>
     <p style="margin: 0 0; font-size: 1.3rem;"><span style="color:#4a6fa5; font-weight:bold;">확률론</span></p>
-      <p style="margin: 0 0 0 1.5rem; font-size: 1.1rem; color:#111;"><span style="font-size:0.75em; color:#111;">기본 법칙</span></p>
-      <p style="margin: 0 0 0 1.5rem; font-size: 1.1rem; color:#111;"><span style="font-size:0.75em; color:#111;">확률 밀도</span></p>
-      <p style="margin: 0 0 0 1.5rem; font-size: 1.1rem; color:#111;"><span style="font-size:0.75em; color:#111;">기댓값과 공분산</span></p>
-      <p style="margin: 0 0 0 1.5rem; font-size: 1.1rem; color:#111;"><span style="font-size:0.75em; color:#111;">베이지안 확률</span></p>
-      <p style="margin: 0 0 0 1.5rem; font-size: 1.1rem; color:#111;"><span style="font-size:0.75em; color:#111;">가우시안 분포</span></p>
-      <p style="margin: 0 0 0 1.5rem; font-size: 1.1rem; color:#111;"><span style="font-size:0.75em; color:#111;">곡선 피팅</span></p>
-      <p style="margin: 0 0 0 1.5rem; font-size: 1.1rem; color:#111;"><span style="font-size:0.75em; color:#111;">베이지안 곡선 피팅</span></p>
+      <p class="text-gray-900 dark:text-gray-100" style="margin: 0 0 0 1.5rem; font-size: 1.1rem;"><span style="font-size:0.75em;">기본 법칙</span></p>
+      <p class="text-gray-900 dark:text-gray-100" style="margin: 0 0 0 1.5rem; font-size: 1.1rem;"><span style="font-size:0.75em;">확률 밀도</span></p>
+      <p class="text-gray-900 dark:text-gray-100" style="margin: 0 0 0 1.5rem; font-size: 1.1rem;"><span style="font-size:0.75em;">기댓값과 공분산</span></p>
+      <p class="text-gray-900 dark:text-gray-100" style="margin: 0 0 0 1.5rem; font-size: 1.1rem;"><span style="font-size:0.75em;">베이지안 확률</span></p>
+      <p class="text-gray-900 dark:text-gray-100" style="margin: 0 0 0 1.5rem; font-size: 1.1rem;"><span style="font-size:0.75em;">가우시안 분포</span></p>
+      <p class="text-gray-900 dark:text-gray-100" style="margin: 0 0 0 1.5rem; font-size: 1.1rem;"><span style="font-size:0.75em;">곡선 피팅</span></p>
+      <p class="text-gray-900 dark:text-gray-100" style="margin: 0 0 0 1.5rem; font-size: 1.1rem;"><span style="font-size:0.75em;">베이지안 곡선 피팅</span></p>
     <p style="margin: 0.8rem 0; font-size: 1.3rem;"><span style="color:#DBE3EA; font-weight:bold;">모델 선택 및 차원의 저주</span></p>
     <p style="margin: 0.8rem 0; font-size: 1.3rem;"><span style="color:#DBE3EA; font-weight:bold;">결정 이론</span></p>
     <p style="margin: 0.8rem 0; font-size: 1.3rem;"><span style="color:#DBE3EA; font-weight:bold;">정보 이론</span></p>
@@ -712,14 +721,15 @@ $$
 layout: prism
 heading: 목차
 ---
+
 <div style="margin-top: 0rem; margin-left: 3rem">
 
 <div>
     <p style="margin: 0.8rem 0; font-size: 1.3rem;"><span style="color:#DBE3EA; font-weight:bold;">서론</span></p>
     <p style="margin: 0.8rem 0; font-size: 1.3rem;"><span style="color:#DBE3EA; font-weight:bold;">확률론</span></p>
     <p style="margin: 0 0; font-size: 1.3rem;"><span style="color:#4a6fa5; font-weight:bold;">모델 선택 및 차원의 저주</span></p>
-      <p style="margin: 0 0 0 1.5rem; font-size: 1.1rem; color:#111;"><span style="font-size:0.75em; color:#111;">모델 선택</span></p>
-      <p style="margin: 0 0 0 1.5rem; font-size: 1.1rem; color:#111;"><span style="font-size:0.75em; color:#111;">차원의 저주</span></p>
+      <p class="text-gray-900 dark:text-gray-100" style="margin: 0 0 0 1.5rem; font-size: 1.1rem;"><span style="font-size:0.75em;">모델 선택</span></p>
+      <p class="text-gray-900 dark:text-gray-100" style="margin: 0 0 0 1.5rem; font-size: 1.1rem;"><span style="font-size:0.75em;">차원의 저주</span></p>
     <p style="margin: 0.8rem 0; font-size: 1.3rem;"><span style="color:#DBE3EA; font-weight:bold;">결정 이론</span></p>
     <p style="margin: 0.8rem 0; font-size: 1.3rem;"><span style="color:#DBE3EA; font-weight:bold;">정보 이론</span></p>
   </div>
@@ -796,10 +806,10 @@ heading: 목차
     <p style="margin: 0.8rem 0; font-size: 1.3rem;"><span style="color:#DBE3EA; font-weight:bold;">확률론</span></p>
     <p style="margin: 0.8rem 0; font-size: 1.3rem;"><span style="color:#DBE3EA; font-weight:bold;">모델 선택 및 차원의 저주</span></p>
     <p style="margin: 0 0; font-size: 1.3rem;"><span style="color:#4a6fa5; font-weight:bold;">결정 이론</span></p>
-      <p style="margin: 0 0 0 1.5rem; font-size: 1.1rem; color:#111;"><span style="font-size:0.75em; color:#111;">결정 이론</span></p>
-      <p style="margin: 0 0 0 1.5rem; font-size: 1.1rem; color:#111;"><span style="font-size:0.75em; color:#111;">오분류율 최소화</span></p>
-      <p style="margin: 0 0 0 1.5rem; font-size: 1.1rem; color:#111;"><span style="font-size:0.75em; color:#111;">거부 옵션</span></p>
-      <p style="margin: 0 0 0 1.5rem; font-size: 1.1rem; color:#111;"><span style="font-size:0.75em; color:#111;">추론과 결정</span></p>
+      <p class="text-gray-900 dark:text-gray-100" style="margin: 0 0 0 1.5rem; font-size: 1.1rem;"><span style="font-size:0.75em;">결정 이론</span></p>
+      <p class="text-gray-900 dark:text-gray-100" style="margin: 0 0 0 1.5rem; font-size: 1.1rem;"><span style="font-size:0.75em;">오분류율 최소화</span></p>
+      <p class="text-gray-900 dark:text-gray-100" style="margin: 0 0 0 1.5rem; font-size: 1.1rem;"><span style="font-size:0.75em;">거부 옵션</span></p>
+      <p class="text-gray-900 dark:text-gray-100" style="margin: 0 0 0 1.5rem; font-size: 1.1rem;"><span style="font-size:0.75em;">추론과 결정</span></p>
     <p style="margin: 0.8rem 0; font-size: 1.3rem;"><span style="color:#DBE3EA; font-weight:bold;">정보 이론</span></p>
   </div>
 
@@ -986,7 +996,7 @@ heading: 목차
     <p style="margin: 0.8rem 0; font-size: 1.3rem;"><span style="color:#DBE3EA; font-weight:bold;">모델 선택 및 차원의 저주</span></p>
     <p style="margin: 0.8rem 0; font-size: 1.3rem;"><span style="color:#DBE3EA; font-weight:bold;">결정 이론</span></p>
     <p style="margin: 0 0; font-size: 1.3rem;"><span style="color:#4a6fa5; font-weight:bold;">정보 이론</span></p>
-      <p style="margin: 0 0 0 1.5rem; font-size: 1.1rem; color:#111;"><span style="font-size:0.75em; color:#111;">정보 이론</span></p>
+      <p class="text-gray-900 dark:text-gray-100" style="margin: 0 0 0 1.5rem; font-size: 1.1rem;"><span style="font-size:0.75em;">정보 이론</span></p>
   </div>
 
 </div>

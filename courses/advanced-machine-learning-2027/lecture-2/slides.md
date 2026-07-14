@@ -13,6 +13,15 @@ transition: slide-left
 mdc: true
 otherLangUrl: /slides/advanced-machine-learning-2027/lecture-2-ko/
 ---
+<style>
+.dark .slidev-page,
+.dark .slidev-layout,
+.dark .slide-container,
+.dark #slide-content,
+.dark .slidev-nav-go-container {
+  background: #000000 !important;
+}
+</style>
 
 <div class="absolute top-0 left-0 right-0 border-t border-gray-300"></div>
 
@@ -24,15 +33,15 @@ otherLangUrl: /slides/advanced-machine-learning-2027/lecture-2-ko/
   <h1 style="color:#5c60a8; font-size: 3.5rem; font-weight: bold; margin: 0rem;">Advanced Machine Learning</h1>
   <p style="color:#9aa0a6; font-size: 1.5rem; margin-top: 0.25rem;">Week 02: Course Introduction</p>
 
-  <p style="color:#1a1a2e; font-size: 1.5rem; margin-top: 5rem;">Wonjun Ko, Ph.D.</p>
+  <p class="text-gray-800 dark:text-gray-100" style="font-size: 1.5rem; margin-top: 5rem;">Wonjun Ko, Ph.D.</p>
 
-  <div style="color:#1a1a2e; margin-top: 1.5rem; line-height: 1.3;">
+  <div class="text-gray-800 dark:text-gray-100" style="margin-top: 1.5rem; line-height: 1.3;">
     <p style="margin: 0;">Assistant Professor</p>
     <p style="margin: 0;">School of AI Convergence</p>
     <p style="margin: 0;">Sungshin Women's University</p>
   </div>
 
-  <p style="color:#1a1a2e; font-size: 1.25rem; margin-top: 2.5rem;">Spring 2027</p>
+  <p class="text-gray-800 dark:text-gray-100" style="font-size: 1.25rem; margin-top: 2.5rem;">Spring 2027</p>
 </div>
 
 ---
@@ -43,7 +52,7 @@ heading: Course Schedule
 <div class="absolute left-10 right-10" style="top: 1rem; bottom: 5rem; display: grid; grid-template-columns: 1fr 1fr; column-gap: 5rem; align-items: center;">
   <div>
     <p style="margin: 1rem 0; font-size: 1.3rem;"><span style="color:#4a6fa5; font-weight:bold;">W01</span> <span style="color:#9aa0a6;">Course Introduction</span></p>
-    <p style="margin: 1rem 0; font-size: 1.3rem;"><span style="color:#4a6fa5; font-weight:bold;">W02</span> <span style="color:#111;">Preliminaries</span></p>
+    <p style="margin: 1rem 0; font-size: 1.3rem;"><span style="color:#4a6fa5; font-weight:bold;">W02</span> <span class="text-gray-900 dark:text-gray-100">Preliminaries</span></p>
     <p style="margin: 1rem 0; font-size: 1.3rem;"><span style="color:#4a6fa5; font-weight:bold;">W03</span> <span style="color:#9aa0a6;">Probabilistic Distributions</span></p>
     <p style="margin: 1rem 0; font-size: 1.3rem;"><span style="color:#4a6fa5; font-weight:bold;">W04</span> <span style="color:#9aa0a6;">Linear Regression Models</span></p>
     <p style="margin: 1rem 0; font-size: 1.3rem;"><span style="color:#4a6fa5; font-weight:bold;">W05</span> <span style="color:#9aa0a6;">Linear Classification Models</span></p>
@@ -70,8 +79,8 @@ heading: Table of Contents
 
 <div>
     <p style="margin: 0 0; font-size: 1.3rem;"><span style="color:#4a6fa5; font-weight:bold;">Introduction</span></p>
-    <p style="margin: 0 0 0 1.5rem; font-size: 1.1rem; color:#111;"><span style="font-size:0.75em; color:#111;">Introduction</span></p>
-    <p style="margin: 0 0 1rem 1.5rem; font-size: 1.1rem; color:#111;"><span style="font-size:0.75em; color:#111;">Polynomial Curve Fitting</span></p>
+      <p class="text-gray-900 dark:text-gray-100" style="margin: 0 0 0 1.5rem; font-size: 1.1rem;"><span style="font-size:0.75em;">Introduction</span></p>
+      <p class="text-gray-900 dark:text-gray-100" style="margin: 0 0 1rem 1.5rem; font-size: 1.1rem;"><span style="font-size:0.75em;">Polynomial Curve Fitting</span></p>
     <p style="margin: 2rem 0; font-size: 1.3rem;"><span style="color:#DBE3EA; font-weight:bold;">Probability Theory</span></p>
     <p style="margin: 2rem 0; font-size: 1.3rem;"><span style="color:#DBE3EA; font-weight:bold;">Model Selection & Curse of Dimensionality</span></p>
     <p style="margin: 2rem 0; font-size: 1.3rem;"><span style="color:#DBE3EA; font-weight:bold;">Decision Theory</span></p>
@@ -211,17 +220,17 @@ heading: Table of Contents
 
 <div>
     <p style="margin: 0.8rem 0; font-size: 1.3rem;"><span style="color:#DBE3EA; font-weight:bold;">Introduction</span></p>
-    <p style="margin: 0 0; font-size: 1.3rem;"><span style="color:#4a6fa5; font-weight:bold;">Probability Theory</span></p>
-      <p style="margin: 0 0 0 1.5rem; font-size: 1.1rem; color:#111;"><span style="font-size:0.75em; color:#111;">The Basic Laws</span></p>
-      <p style="margin: 0 0 0 1.5rem; font-size: 1.1rem; color:#111;"><span style="font-size:0.75em; color:#111;">Probability Density</span></p>
-      <p style="margin: 0 0 0 1.5rem; font-size: 1.1rem; color:#111;"><span style="font-size:0.75em; color:#111;">Expectation and Covariance</span></p>
-      <p style="margin: 0 0 0 1.5rem; font-size: 1.1rem; color:#111;"><span style="font-size:0.75em; color:#111;">Bayesian Probability</span></p>
-      <p style="margin: 0 0 0 1.5rem; font-size: 1.1rem; color:#111;"><span style="font-size:0.75em; color:#111;">Gaussian Distribution</span></p>
-      <p style="margin: 0 0 0 1.5rem; font-size: 1.1rem; color:#111;"><span style="font-size:0.75em; color:#111;">Curve Fitting</span></p>
-      <p style="margin: 0 0 0 1.5rem; font-size: 1.1rem; color:#111;"><span style="font-size:0.75em; color:#111;">Bayesian Curve Fitting</span></p>
-    <p style="margin: 0.8rem 0; font-size: 1.3rem;"><span style="color:#DBE3EA; font-weight:bold;">Model Selection & Curse of Dimensionality</span></p>
-    <p style="margin: 0.8rem 0; font-size: 1.3rem;"><span style="color:#DBE3EA; font-weight:bold;">Decision Theory</span></p>
-    <p style="margin: 0.8rem 0; font-size: 1.3rem;"><span style="color:#DBE3EA; font-weight:bold;">Information Theory</span></p>
+<p style="margin: 0 0; font-size: 1.3rem;"><span style="color:#4a6fa5; font-weight:bold;">Probability Theory</span></p>
+  <p class="text-gray-900 dark:text-gray-100" style="margin: 0 0 0 1.5rem; font-size: 1.1rem;"><span style="font-size:0.75em;">The Basic Laws</span></p>
+  <p class="text-gray-900 dark:text-gray-100" style="margin: 0 0 0 1.5rem; font-size: 1.1rem;"><span style="font-size:0.75em;">Probability Density</span></p>
+  <p class="text-gray-900 dark:text-gray-100" style="margin: 0 0 0 1.5rem; font-size: 1.1rem;"><span style="font-size:0.75em;">Expectation and Covariance</span></p>
+  <p class="text-gray-900 dark:text-gray-100" style="margin: 0 0 0 1.5rem; font-size: 1.1rem;"><span style="font-size:0.75em;">Bayesian Probability</span></p>
+  <p class="text-gray-900 dark:text-gray-100" style="margin: 0 0 0 1.5rem; font-size: 1.1rem;"><span style="font-size:0.75em;">Gaussian Distribution</span></p>
+  <p class="text-gray-900 dark:text-gray-100" style="margin: 0 0 0 1.5rem; font-size: 1.1rem;"><span style="font-size:0.75em;">Curve Fitting</span></p>
+  <p class="text-gray-900 dark:text-gray-100" style="margin: 0 0 0 1.5rem; font-size: 1.1rem;"><span style="font-size:0.75em;">Bayesian Curve Fitting</span></p>
+<p style="margin: 0.8rem 0; font-size: 1.3rem;"><span style="color:#DBE3EA; font-weight:bold;">Model Selection & Curse of Dimensionality</span></p>
+<p style="margin: 0.8rem 0; font-size: 1.3rem;"><span style="color:#DBE3EA; font-weight:bold;">Decision Theory</span></p>
+<p style="margin: 0.8rem 0; font-size: 1.3rem;"><span style="color:#DBE3EA; font-weight:bold;">Information Theory</span></p>
   </div>
 
 </div>
@@ -716,12 +725,12 @@ heading: Table of Contents
 
 <div>
     <p style="margin: 0.8rem 0; font-size: 1.3rem;"><span style="color:#DBE3EA; font-weight:bold;">Introduction</span></p>
-    <p style="margin: 0.8rem 0; font-size: 1.3rem;"><span style="color:#DBE3EA; font-weight:bold;">Probability Theory</span></p>
-    <p style="margin: 0 0; font-size: 1.3rem;"><span style="color:#4a6fa5; font-weight:bold;">Model Selection & Curse of Dimensionality</span></p>
-      <p style="margin: 0 0 0 1.5rem; font-size: 1.1rem; color:#111;"><span style="font-size:0.75em; color:#111;">Model Selection</span></p>
-      <p style="margin: 0 0 0 1.5rem; font-size: 1.1rem; color:#111;"><span style="font-size:0.75em; color:#111;">Curse of Dimensionality</span></p>
-    <p style="margin: 0.8rem 0; font-size: 1.3rem;"><span style="color:#DBE3EA; font-weight:bold;">Decision Theory</span></p>
-    <p style="margin: 0.8rem 0; font-size: 1.3rem;"><span style="color:#DBE3EA; font-weight:bold;">Information Theory</span></p>
+<p style="margin: 0.8rem 0; font-size: 1.3rem;"><span style="color:#DBE3EA; font-weight:bold;">Probability Theory</span></p>
+<p style="margin: 0 0; font-size: 1.3rem;"><span style="color:#4a6fa5; font-weight:bold;">Model Selection & Curse of Dimensionality</span></p>
+  <p class="text-gray-900 dark:text-gray-100" style="margin: 0 0 0 1.5rem; font-size: 1.1rem;"><span style="font-size:0.75em;">Model Selection</span></p>
+  <p class="text-gray-900 dark:text-gray-100" style="margin: 0 0 0 1.5rem; font-size: 1.1rem;"><span style="font-size:0.75em;">Curse of Dimensionality</span></p>
+<p style="margin: 0.8rem 0; font-size: 1.3rem;"><span style="color:#DBE3EA; font-weight:bold;">Decision Theory</span></p>
+<p style="margin: 0.8rem 0; font-size: 1.3rem;"><span style="color:#DBE3EA; font-weight:bold;">Information Theory</span></p>
   </div>
 
 </div>
@@ -793,15 +802,14 @@ heading: Table of Contents
 
 <div>
     <p style="margin: 0.8rem 0; font-size: 1.3rem;"><span style="color:#DBE3EA; font-weight:bold;">Introduction</span></p>
-    <p style="margin: 0.8rem 0; font-size: 1.3rem;"><span style="color:#DBE3EA; font-weight:bold;">Probability Theory</span></p>
-    <p style="margin: 0.8rem 0; font-size: 1.3rem;"><span style="color:#DBE3EA; font-weight:bold;">Model Selection & Curse of Dimensionality</span></p>
-    <p style="margin: 0 0; font-size: 1.3rem;"><span style="color:#4a6fa5; font-weight:bold;">Decision Theory</span></p>
-      <p style="margin: 0 0 0 1.5rem; font-size: 1.1rem; color:#111;"><span style="font-size:0.75em; color:#111;">Decision Theory</span></p>
-      <p style="margin: 0 0 0 1.5rem; font-size: 1.1rem; color:#111;"><span style="font-size:0.75em; color:#111;">Minimizing Misclassified Rate</span></p>
-      <p style="margin: 0 0 0 1.5rem; font-size: 1.1rem; color:#111;"><span style="font-size:0.75em; color:#111;">Reject Option</span></p>
-      <p style="margin: 0 0 0 1.5rem; font-size: 1.1rem; color:#111;"><span style="font-size:0.75em; color:#111;">Inference and Decision</span></p>
-    <p style="margin: 0.8rem 0; font-size: 1.3rem;"><span style="color:#DBE3EA; font-weight:bold;">Information Theory</span></p>
-  </div>
+<p style="margin: 0.8rem 0; font-size: 1.3rem;"><span style="color:#DBE3EA; font-weight:bold;">Probability Theory</span></p>
+<p style="margin: 0.8rem 0; font-size: 1.3rem;"><span style="color:#DBE3EA; font-weight:bold;">Model Selection & Curse of Dimensionality</span></p>
+<p style="margin: 0 0; font-size: 1.3rem;"><span style="color:#4a6fa5; font-weight:bold;">Decision Theory</span></p>
+  <p class="text-gray-900 dark:text-gray-100" style="margin: 0 0 0 1.5rem; font-size: 1.1rem;"><span style="font-size:0.75em;">Decision Theory</span></p>
+  <p class="text-gray-900 dark:text-gray-100" style="margin: 0 0 0 1.5rem; font-size: 1.1rem;"><span style="font-size:0.75em;">Minimizing Misclassified Rate</span></p>
+  <p class="text-gray-900 dark:text-gray-100" style="margin: 0 0 0 1.5rem; font-size: 1.1rem;"><span style="font-size:0.75em;">Reject Option</span></p>
+  <p class="text-gray-900 dark:text-gray-100" style="margin: 0 0 0 1.5rem; font-size: 1.1rem;"><span style="font-size:0.75em;">Inference and Decision</span></p>
+<p style="margin: 0.8rem 0; font-size: 1.3rem;"><span style="color:#DBE3EA; font-weight:bold;">Information Theory</span></p>  </div>
 
 </div>
 
@@ -982,12 +990,11 @@ heading: Table of Contents
 
 <div>
     <p style="margin: 0.8rem 0; font-size: 1.3rem;"><span style="color:#DBE3EA; font-weight:bold;">Introduction</span></p>
-    <p style="margin: 0.8rem 0; font-size: 1.3rem;"><span style="color:#DBE3EA; font-weight:bold;">Probability Theory</span></p>
-    <p style="margin: 0.8rem 0; font-size: 1.3rem;"><span style="color:#DBE3EA; font-weight:bold;">Model Selection & Curse of Dimensionality</span></p>
-    <p style="margin: 0.8rem 0; font-size: 1.3rem;"><span style="color:#DBE3EA; font-weight:bold;">Decision Theory</span></p>
-    <p style="margin: 0 0; font-size: 1.3rem;"><span style="color:#4a6fa5; font-weight:bold;">Information Theory</span></p>
-      <p style="margin: 0 0 0 1.5rem; font-size: 1.1rem; color:#111;"><span style="font-size:0.75em; color:#111;">Information Theory</span></p>
-  </div>
+<p style="margin: 0.8rem 0; font-size: 1.3rem;"><span style="color:#DBE3EA; font-weight:bold;">Probability Theory</span></p>
+<p style="margin: 0.8rem 0; font-size: 1.3rem;"><span style="color:#DBE3EA; font-weight:bold;">Model Selection & Curse of Dimensionality</span></p>
+<p style="margin: 0.8rem 0; font-size: 1.3rem;"><span style="color:#DBE3EA; font-weight:bold;">Decision Theory</span></p>
+<p style="margin: 0 0; font-size: 1.3rem;"><span style="color:#4a6fa5; font-weight:bold;">Information Theory</span></p>
+  <p class="text-gray-900 dark:text-gray-100" style="margin: 0 0 0 1.5rem; font-size: 1.1rem;"><span style="font-size:0.75em;">Information Theory</span></p>  </div>
 
 </div>
 
