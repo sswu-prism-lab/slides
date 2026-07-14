@@ -51,7 +51,11 @@ $$
 <img src="https://raw.githubusercontent.com/sswu-prism-lab/slides/main/images/aml/aml-note/Figure2.3b.png" />
 <img src="https://raw.githubusercontent.com/sswu-prism-lab/slides/main/images/aml/aml-note/Figure2.3c.png" />
 </div>
-<div class="cap">그림 2.3 · 사전 $a=b=2$에 관측 하나($x=1$)를 반영하면 사후는 $a=3,b=2$인 베타 분포가 된다.</div>
+<div class="cap">
+
+그림 2.3 · 사전 $a=b=2$에 관측 하나($x=1$)를 반영하면 사후는 $a=3,b=2$인 베타 분포가 된다.
+
+</div>
 </div>
 
 - 관측 수가 늘수록 사후 분포는 더 뾰족해지고($a\to\infty$ 또는 $b\to\infty$면 분산 $\to0$) 불확실성이 꾸준히 감소한다. 이는 베이지안 학습의 일반적 성질로, 데이터를 하나씩 반영하는 **순차적**<span class="gloss">sequential</span> 학습이 자연스럽다.
@@ -63,7 +67,11 @@ $$
 <img src="https://raw.githubusercontent.com/sswu-prism-lab/slides/main/images/aml/aml-note/Figure2.2c.png" style="width:40%;" />
 <img src="https://raw.githubusercontent.com/sswu-prism-lab/slides/main/images/aml/aml-note/Figure2.2d.png" style="width:40%;" />
 </div>
-<div class="cap">그림 2.2 · 다양한 초매개변수 $a,b$에 따른 베타 분포.</div>
+<div class="cap">
+
+그림 2.2 · 다양한 초매개변수 $a,b$에 따른 베타 분포.
+
+</div>
 </div>
 
 ::: tip 실습 · 베타–이항 켤레와 순차적 사후 갱신
@@ -116,7 +124,11 @@ $$
 
 <div class="fig">
 <img src="https://raw.githubusercontent.com/sswu-prism-lab/slides/main/images/aml/aml-note/Figure2.4.png" style="width:18rem;" />
-<div class="cap">그림 2.4 · 세 변수 $\mu_1,\mu_2,\mu_3$에 대한 디리클레 분포는 $\sum_k\mu_k=1$ 제약으로 인해 단체<span class="gloss">simplex</span> 위로 제한된다.</div>
+<div class="cap">
+
+그림 2.4 · 세 변수 $\mu_1,\mu_2,\mu_3$에 대한 디리클레 분포는 $\sum_k\mu_k=1$ 제약으로 인해 단체<span class="gloss">simplex</span> 위로 제한된다.
+
+</div>
 </div>
 
 ## 2.3 가우시안 분포
@@ -136,7 +148,11 @@ $$
 <img src="https://raw.githubusercontent.com/sswu-prism-lab/slides/main/images/aml/aml-note/Figure2.6b.png" />
 <img src="https://raw.githubusercontent.com/sswu-prism-lab/slides/main/images/aml/aml-note/Figure2.6c.png" />
 </div>
-<div class="cap">그림 2.6 · 균등분포 $N$개 값의 평균 히스토그램. $N$이 커질수록 가우시안 형태가 된다.</div>
+<div class="cap">
+
+그림 2.6 · 균등분포 $N$개 값의 평균 히스토그램. $N$이 커질수록 가우시안 형태가 된다.
+
+</div>
 </div>
 
 ::: tip 실습 · 중심 극한 정리
@@ -163,7 +179,11 @@ print("N이 커질수록 평균의 분포가 가우시안에 가까워진다(중
 
 <div class="fig">
 <img src="https://raw.githubusercontent.com/sswu-prism-lab/slides/main/images/aml/aml-note/Figure2.7.png" style="width:18rem;" />
-<div class="cap">그림 2.7 · 상수 밀도 타원의 축은 공분산의 고유벡터 $\mathbf{u}_i$, 축의 길이는 고윳값 $\lambda_i$로 정해진다.</div>
+<div class="cap">
+
+그림 2.7 · 상수 밀도 타원의 축은 공분산의 고유벡터 $\mathbf{u}_i$, 축의 길이는 고윳값 $\lambda_i$로 정해진다.
+
+</div>
 </div>
 
 - 새 좌표 $\mathbf{y}=\mathbf{U}(\mathbf{x}-\boldsymbol{\mu})$에서 야코비안 $|\mathbf{J}|=1$, $|\boldsymbol{\Sigma}|^{1/2}=\prod_j\lambda_j^{1/2}$이므로 $p(\mathbf{y})=\prod_j\frac{1}{(2\pi\lambda_j)^{1/2}}\exp\{-y_j^2/2\lambda_j\}$로 **$D$개의 독립 단변량 가우시안의 곱**이 된다. 즉 고유벡터 축을 따라 인수분해된다.
@@ -230,7 +250,11 @@ $$
 <img src="https://raw.githubusercontent.com/sswu-prism-lab/slides/main/images/aml/aml-note/Figure2.9a.png" />
 <img src="https://raw.githubusercontent.com/sswu-prism-lab/slides/main/images/aml/aml-note/Figure2.9b.png" />
 </div>
-<div class="cap">그림 2.9 · (좌) 결합 분포 $p(x_a,x_b)$. (우) 주변 분포 $p(x_a)$(청색)와 $x_b=0.7$의 조건부 분포(적색).</div>
+<div class="cap">
+
+그림 2.9 · (좌) 결합 분포 $p(x_a,x_b)$. (우) 주변 분포 $p(x_a)$(청색)와 $x_b=0.7$의 조건부 분포(적색).
+
+</div>
 </div>
 
 ### 2.3.3 가우시안 변수에 대한 베이지안 정리
@@ -268,7 +292,11 @@ $$
 
 <div class="fig">
 <img src="https://raw.githubusercontent.com/sswu-prism-lab/slides/main/images/aml/aml-note/Figure2.12.png" style="width:22rem;" />
-<div class="cap">그림 2.12 · 데이터 수가 늘수록 평균 $\mu$의 사후 분포가 최대 가능도 해로 이동·수축한다.</div>
+<div class="cap">
+
+그림 2.12 · 데이터 수가 늘수록 평균 $\mu$의 사후 분포가 최대 가능도 해로 이동·수축한다.
+
+</div>
 </div>
 
 ### 2.3.6 가우시안 분포의 혼합
@@ -278,7 +306,11 @@ $$
 <img src="https://raw.githubusercontent.com/sswu-prism-lab/slides/main/images/aml/aml-note/Figure2.21a.png" />
 <img src="https://raw.githubusercontent.com/sswu-prism-lab/slides/main/images/aml/aml-note/Figure2.21b.png" />
 </div>
-<div class="cap">그림 2.21 · '오래된 믿음' 데이터. (좌) 단일 가우시안은 두 무리를 잡지 못한다. (우) 두 가우시안의 결합은 잘 표현한다.</div>
+<div class="cap">
+
+그림 2.21 · '오래된 믿음' 데이터. (좌) 단일 가우시안은 두 무리를 잡지 못한다. (우) 두 가우시안의 결합은 잘 표현한다.
+
+</div>
 </div>
 
 - 충분히 많은 가우시안을 선형 중첩하면 거의 모든 연속 밀도를 근사할 수 있다. **가우시안 혼합 분포**<span class="gloss">mixture of Gaussians</span>는
@@ -295,7 +327,11 @@ $$
 <img src="https://raw.githubusercontent.com/sswu-prism-lab/slides/main/images/aml/aml-note/Figure2.23b.png" />
 <img src="https://raw.githubusercontent.com/sswu-prism-lab/slides/main/images/aml/aml-note/Figure2.23c.png" />
 </div>
-<div class="cap">그림 2.23 · 세 가우시안 혼합. (a) 성분별 밀도, (b) 주변 밀도 $p(\mathbf{x})$, (c) 밀도 표면.</div>
+<div class="cap">
+
+그림 2.23 · 세 가우시안 혼합. (a) 성분별 밀도, (b) 주변 밀도 $p(\mathbf{x})$, (c) 밀도 표면.
+
+</div>
 </div>
 
 ## 2.4 지수족

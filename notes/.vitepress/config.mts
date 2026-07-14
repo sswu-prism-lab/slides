@@ -39,6 +39,7 @@ export default defineConfig({
             { text: '4장 · 선형 분류 모델', link: '/advanced-machine-learning-2027/lecture-notes/chapter-04' },
             { text: '5장 · 커널 방법론', link: '/advanced-machine-learning-2027/lecture-notes/chapter-05' },
             { text: '6장 · 그래프 모델', link: '/advanced-machine-learning-2027/lecture-notes/chapter-06' },
+            { text: '7장 · 혼합 모델과 EM', link: '/advanced-machine-learning-2027/lecture-notes/chapter-07' },
           ],
         },
         {

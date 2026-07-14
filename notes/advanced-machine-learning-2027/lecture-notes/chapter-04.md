@@ -24,7 +24,11 @@ $$
 
 <div class="fig">
 <img src="https://raw.githubusercontent.com/sswu-prism-lab/slides/main/images/aml/aml-note/Figure4.1.png" style="width:20rem;" />
-<div class="cap">그림 4.1 · 이차원 선형 판별 함수의 기하학. 적색 결정 표면은 $\mathbf{w}$에 수직이며, 원점으로부터의 거리는 $w_0$이 결정한다.</div>
+<div class="cap">
+
+그림 4.1 · 이차원 선형 판별 함수의 기하학. 적색 결정 표면은 $\mathbf{w}$에 수직이며, 원점으로부터의 거리는 $w_0$이 결정한다.
+
+</div>
 </div>
 
 - $\mathbf{w}$는 결정 표면의 방향을, $w_0$은 위치를 결정한다. 가변수 $x_0=1$을 도입해 $\widetilde{\mathbf{w}}=(w_0,\mathbf{w})$, $\widetilde{\mathbf{x}}=(x_0,\mathbf{x})$로 두면 $y(\mathbf{x})=\widetilde{\mathbf{w}}^{\top}\widetilde{\mathbf{x}}$로 간단해지고, 결정 표면은 $D+1$차원 확장 공간에서 원점을 지나는 $D$차원 초평면이 된다.
@@ -38,7 +42,11 @@ $$
 <img src="https://raw.githubusercontent.com/sswu-prism-lab/slides/main/images/aml/aml-note/Figure4.2a.png" />
 <img src="https://raw.githubusercontent.com/sswu-prism-lab/slides/main/images/aml/aml-note/Figure4.2b.png" />
 </div>
-<div class="cap">그림 4.2 · 이진 분류기 집합으로 $K$클래스 판별을 구성할 때 생기는 불확실 영역(녹색). 왼쪽은 일대다, 오른쪽은 일대일 분류기.</div>
+<div class="cap">
+
+그림 4.2 · 이진 분류기 집합으로 $K$클래스 판별을 구성할 때 생기는 불확실 영역(녹색). 왼쪽은 일대다, 오른쪽은 일대일 분류기.
+
+</div>
 </div>
 
 - $K$개의 선형 함수로 이루어진 하나의 $K$클래스 판별 함수를 쓰면 이 문제를 피할 수 있다.
@@ -57,7 +65,11 @@ $$
 
 <div class="fig">
 <img src="https://raw.githubusercontent.com/sswu-prism-lab/slides/main/images/aml/aml-note/Figure4.3.png" style="width:20rem;" />
-<div class="cap">그림 4.3 · 다중 클래스 선형 판별의 결정 경계. 결정 영역은 단일하게 연결되어 있으며 볼록하다.</div>
+<div class="cap">
+
+그림 4.3 · 다중 클래스 선형 판별의 결정 경계. 결정 영역은 단일하게 연결되어 있으며 볼록하다.
+
+</div>
 </div>
 
 ### 4.1.3 분류를 위한 최소 제곱법
@@ -83,7 +95,11 @@ $$
 <img src="https://raw.githubusercontent.com/sswu-prism-lab/slides/main/images/aml/aml-note/Figure4.4b.png" />
 <img src="https://raw.githubusercontent.com/sswu-prism-lab/slides/main/images/aml/aml-note/Figure4.5a.png" />
 </div>
-<div class="cap">그림 4.4 · (왼쪽) 두 클래스에 대한 최소 제곱 결정 경계(보라색). (가운데) 이상값이 추가되면 결정 경계가 크게 흔들린다. (오른쪽) 세 클래스에서 녹색 클래스가 대부분 오분류된다.</div>
+<div class="cap">
+
+그림 4.4 · (왼쪽) 두 클래스에 대한 최소 제곱 결정 경계(보라색). (가운데) 이상값이 추가되면 결정 경계가 크게 흔들린다. (오른쪽) 세 클래스에서 녹색 클래스가 대부분 오분류된다.
+
+</div>
 </div>
 
 ### 4.1.4 피셔의 선형 판별
@@ -119,7 +135,11 @@ $$
 <img src="https://raw.githubusercontent.com/sswu-prism-lab/slides/main/images/aml/aml-note/Figure4.6a.png" />
 <img src="https://raw.githubusercontent.com/sswu-prism-lab/slides/main/images/aml/aml-note/Figure4.6b.png" />
 </div>
-<div class="cap">그림 4.6 · (왼쪽) 클래스 평균을 잇는 선에 투영하면 중복이 크다. (오른쪽) 피셔 판별 투영은 클래스 분리가 개선된다.</div>
+<div class="cap">
+
+그림 4.6 · (왼쪽) 클래스 평균을 잇는 선에 투영하면 중복이 크다. (오른쪽) 피셔 판별 투영은 클래스 분리가 개선된다.
+
+</div>
 </div>
 
 ::: tip 실습 · 피셔의 선형 판별
@@ -224,7 +244,11 @@ $$
 <img src="https://raw.githubusercontent.com/sswu-prism-lab/slides/main/images/aml/aml-note/Figure4.10a.png" />
 <img src="https://raw.githubusercontent.com/sswu-prism-lab/slides/main/images/aml/aml-note/Figure4.10b.png" />
 </div>
-<div class="cap">그림 4.10 · (왼쪽) 두 클래스의 조건부 밀도. (오른쪽) 사후 확률 $p(\mathcal{C}_1\mid\mathbf{x})$.</div>
+<div class="cap">
+
+그림 4.10 · (왼쪽) 두 클래스의 조건부 밀도. (오른쪽) 사후 확률 $p(\mathcal{C}_1\mid\mathbf{x})$.
+
+</div>
 </div>
 
 ### 4.2.2 최대 가능도 해
@@ -287,7 +311,11 @@ print("분류 정확도 =", f"{acc:.1%}")
 <img src="https://raw.githubusercontent.com/sswu-prism-lab/slides/main/images/aml/aml-note/Figure4.12a.png" />
 <img src="https://raw.githubusercontent.com/sswu-prism-lab/slides/main/images/aml/aml-note/Figure4.12b.png" />
 </div>
-<div class="cap">그림 4.12 · 비선형 기저 함수의 역할. (왼쪽) 원 입력 공간 $(x_1,x_2)$에서 겹쳐 있는 두 클래스. (오른쪽) 가우시안 기저 함수로 변환한 특징 공간 $(\phi_1,\phi_2)$에서는 선형 결정 경계로 분리된다.</div>
+<div class="cap">
+
+그림 4.12 · 비선형 기저 함수의 역할. (왼쪽) 원 입력 공간 $(x_1,x_2)$에서 겹쳐 있는 두 클래스. (오른쪽) 가우시안 기저 함수로 변환한 특징 공간 $(\phi_1,\phi_2)$에서는 선형 결정 경계로 분리된다.
+
+</div>
 </div>
 
 ### 4.3.1 고정된 기저 함수
@@ -385,7 +413,11 @@ print("수렴 w =", np.round(w,3).tolist(),
 <img src="https://raw.githubusercontent.com/sswu-prism-lab/slides/main/images/aml/aml-note/Figure4.14a.png" />
 <img src="https://raw.githubusercontent.com/sswu-prism-lab/slides/main/images/aml/aml-note/Figure4.14b.png" />
 </div>
-<div class="cap">그림 4.14 · 분포 $p(z)\propto\exp(-z^2/2)\,\sigma(20z+4)$의 라플라스 근사. (왼쪽) 황색은 정규화 분포 $p(z)$, 적색은 최빈값 중심 라플라스 근사. (오른쪽) 각 곡선의 음의 로그값.</div>
+<div class="cap">
+
+그림 4.14 · 분포 $p(z)\propto\exp(-z^2/2)\,\sigma(20z+4)$의 라플라스 근사. (왼쪽) 황색은 정규화 분포 $p(z)$, 적색은 최빈값 중심 라플라스 근사. (오른쪽) 각 곡선의 음의 로그값.
+
+</div>
 </div>
 
 - $M$차원 $\mathbf{z}$로 확장하면 임계점 $\nabla f(\mathbf{z}_0)=0$에서 전개해 다변량 가우시안 근사를 얻는다.

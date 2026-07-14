@@ -45,7 +45,11 @@ $$
 <img src="https://raw.githubusercontent.com/sswu-prism-lab/slides/main/images/aml/aml-note/Figure6.1e.png" />
 <img src="https://raw.githubusercontent.com/sswu-prism-lab/slides/main/images/aml/aml-note/Figure6.1f.png" />
 </div>
-<div class="cap">그림 6.1 · 기저 함수 집합으로부터 커널을 구성하는 도식. 각 열의 위쪽은 기저 함수, 아래쪽은 커널 $k(x,x')$. 다항식(왼쪽)·가우시안(가운데)·시그모이드(오른쪽) 기저 함수.</div>
+<div class="cap">
+
+그림 5.1 · 기저 함수 집합으로부터 커널을 구성하는 도식. 각 열의 위쪽은 기저 함수, 아래쪽은 커널 $k(x,x')$. 다항식(왼쪽)·가우시안(가운데)·시그모이드(오른쪽) 기저 함수.
+
+</div>
 </div>
 
 ::: tip 실습 · 커널 릿지 회귀 (듀얼 표현)
@@ -122,7 +126,11 @@ $$
 
 <div class="fig">
 <img src="https://raw.githubusercontent.com/sswu-prism-lab/slides/main/images/aml/aml-note/Figure6.6.png" style="width:20rem;" />
-<div class="cap">그림 6.6 · 가우시안 과정에서 추출한 표본. 청색은 함수에 대한 사전 분포, 적색 원은 $y_n$, 녹색 원은 노이즈를 더한 $t_n$.</div>
+<div class="cap">
+
+그림 5.2 · 가우시안 과정에서 추출한 표본. 청색은 함수에 대한 사전 분포, 적색 원은 $y_n$, 녹색 원은 노이즈를 더한 $t_n$.
+
+</div>
 </div>
 
 - 새 입력 $\mathbf{x}_{N+1}$에 대한 예측은 결합 분포 $p(\mathsf{t}_{N+1})=\mathcal{N}(\mathsf{t}_{N+1}\mid\mathbf{0},\mathbf{C}_{N+1})$의 공분산을 분할해 얻는 조건부 가우시안이다.
@@ -143,7 +151,11 @@ $$
 <img src="https://raw.githubusercontent.com/sswu-prism-lab/slides/main/images/aml/aml-note/Figure6.7.png" />
 <img src="https://raw.githubusercontent.com/sswu-prism-lab/slides/main/images/aml/aml-note/Figure6.8.png" />
 </div>
-<div class="cap">그림 6.7·6.8 · (왼쪽) 훈련·시험 포인트 하나씩에 대한 결합 분포 $p(t_1,t_2)$와 조건부 $p(t_2\mid t_1)$. (오른쪽) 사인 곡선 데이터에 대한 가우시안 과정 회귀. 적색 선은 예측 평균, 음영은 $\pm2\sigma$ 구간이며 데이터가 없는 오른쪽에서 불확실성이 커진다.</div>
+<div class="cap">
+
+그림 5.3 · (왼쪽) 훈련·시험 포인트 하나씩에 대한 결합 분포 $p(t_1,t_2)$와 조건부 $p(t_2\mid t_1)$. (오른쪽) 사인 곡선 데이터에 대한 가우시안 과정 회귀. 적색 선은 예측 평균, 음영은 $\pm2\sigma$ 구간이며 데이터가 없는 오른쪽에서 불확실성이 커진다.
+
+</div>
 </div>
 
 ::: tip 실습 · 가우시안 과정 회귀 (예측 평균·분산)
@@ -191,7 +203,11 @@ $$
 <img src="https://raw.githubusercontent.com/sswu-prism-lab/slides/main/images/aml/aml-note/Figure6.11a.png" />
 <img src="https://raw.githubusercontent.com/sswu-prism-lab/slides/main/images/aml/aml-note/Figure6.11b.png" />
 </div>
-<div class="cap">그림 6.11 · (왼쪽) $a(\mathbf{x})$에 대한 가우시안 과정 표본. (오른쪽) 로지스틱 시그모이드로 변환한 결과.</div>
+<div class="cap">
+
+그림 5.4 · (왼쪽) $a(\mathbf{x})$에 대한 가우시안 과정 표본. (오른쪽) 로지스틱 시그모이드로 변환한 결과.
+
+</div>
 </div>
 
 - 예측 분포 $p(t_{N+1}=1\mid\mathsf{t}_N)=\int\sigma(a_{N+1})\,p(a_{N+1}\mid\mathsf{t}_N)\,\mathrm{d}a_{N+1}$은 해석적으로 풀 수 없어, 변분 추론·기대 전파·라플라스 근사 중 하나로 근사한다. 분류에서는 모든 훈련값이 정확하다고 보므로 노이즈항 대신 수치 안정용 $\nu\delta_{nm}$을 더한 $C(\mathbf{x}_n,\mathbf{x}_m)=k(\mathbf{x}_n,\mathbf{x}_m)+\nu\delta_{nm}$을 쓴다.
@@ -223,7 +239,11 @@ $$
 <img src="https://raw.githubusercontent.com/sswu-prism-lab/slides/main/images/aml/aml-note/Figure6.12a.png" />
 <img src="https://raw.githubusercontent.com/sswu-prism-lab/slides/main/images/aml/aml-note/Figure6.12b.png" />
 </div>
-<div class="cap">그림 6.12 · 가우시안 과정 분류. (왼쪽) 데이터와 최적 결정 경계(녹색), 가우시안 과정 결정 경계(흑색). (오른쪽) 예측 사후 확률.</div>
+<div class="cap">
+
+그림 5.5 · 가우시안 과정 분류. (왼쪽) 데이터와 최적 결정 경계(녹색), 가우시안 과정 결정 경계(흑색). (오른쪽) 예측 사후 확률.
+
+</div>
 </div>
 
 ::: tip 실습 · 가우시안 과정 분류 (라플라스/뉴턴)
@@ -268,7 +288,11 @@ for xs in [-2.0, 0.0, 2.0]:
 <img src="https://raw.githubusercontent.com/sswu-prism-lab/slides/main/images/aml/aml-note/Figure7.1a.png" />
 <img src="https://raw.githubusercontent.com/sswu-prism-lab/slides/main/images/aml/aml-note/Figure7.1b.png" />
 </div>
-<div class="cap">그림 7.1 · 마진은 결정 경계와 가장 가까운 데이터 포인트 사이의 거리다. 마진을 최대화하면 오른쪽 경계를 얻으며, 경계를 결정하는 부분 집합이 서포트 벡터(원 표시)다.</div>
+<div class="cap">
+
+그림 5.6 · 마진은 결정 경계와 가장 가까운 데이터 포인트 사이의 거리다. 마진을 최대화하면 오른쪽 경계를 얻으며, 경계를 결정하는 부분 집합이 서포트 벡터(원 표시)다.
+
+</div>
 </div>
 
 - 가장 가까운 점에 대해 $t_n(\mathbf{w}^{\top}\boldsymbol{\phi}(\mathbf{x}_n)+b)=1$로 정규화(정준 표현)하면 모든 점이 $t_n(\mathbf{w}^{\top}\boldsymbol{\phi}(\mathbf{x}_n)+b)\geqslant1$을 만족하고, 마진 최대화는 $\frac{1}{2}\|\mathbf{w}\|^2$ 최소화가 된다.
@@ -296,7 +320,11 @@ $$
 
 <div class="fig">
 <img src="https://raw.githubusercontent.com/sswu-prism-lab/slides/main/images/aml/aml-note/Figure7.3.png" style="width:20rem;" />
-<div class="cap">그림 7.3 · 느슨한 변수를 적용한 SVM. 원으로 강조된 점이 서포트 벡터다.</div>
+<div class="cap">
+
+그림 5.7 · 느슨한 변수를 적용한 SVM. 원으로 강조된 점이 서포트 벡터다.
+
+</div>
 </div>
 
 - 목표 함수는 $C\sum_n\xi_n+\frac{1}{2}\|\mathbf{w}\|^2$이며($C>0$은 벌점과 마진의 트레이드오프), 듀얼은 강한 마진과 동일하되 제약이 $0\leqslant a_n\leqslant C$로 바뀐다.
@@ -311,7 +339,11 @@ $$
 
 <div class="fig">
 <img src="https://raw.githubusercontent.com/sswu-prism-lab/slides/main/images/aml/aml-note/Figure7.5.png" style="width:22rem;" />
-<div class="cap">그림 7.5 · 힌지 오류(청색), $1/\ln2$로 재척도한 로지스틱 오류(적색), 제곱 오류(녹색), 오분류 오류(흑색).</div>
+<div class="cap">
+
+그림 5.8 · 힌지 오류(청색), $1/\ln2$로 재척도한 로지스틱 오류(적색), 제곱 오류(녹색), 오분류 오류(흑색).
+
+</div>
 </div>
 
 ::: tip 실습 · 힌지 · 로지스틱 · 0–1 오류 비교
@@ -349,7 +381,11 @@ $$
 
 <div class="fig">
 <img src="https://raw.githubusercontent.com/sswu-prism-lab/slides/main/images/aml/aml-note/Figure7.7.png" style="width:20rem;" />
-<div class="cap">그림 7.7 · 서포트 벡터 회귀. $\epsilon$-튜브 바깥의 점만 느슨한 변수로 벌점을 받는다.</div>
+<div class="cap">
+
+그림 5.9 · 서포트 벡터 회귀. $\epsilon$-튜브 바깥의 점만 느슨한 변수로 벌점을 받는다.
+
+</div>
 </div>
 
 ## 연습문제

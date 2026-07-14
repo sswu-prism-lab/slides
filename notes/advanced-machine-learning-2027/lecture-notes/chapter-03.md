@@ -23,7 +23,11 @@ $$
 <img src="https://raw.githubusercontent.com/sswu-prism-lab/slides/main/images/aml/aml-note/Figure3.1b.png" />
 <img src="https://raw.githubusercontent.com/sswu-prism-lab/slides/main/images/aml/aml-note/Figure3.1c.png" />
 </div>
-<div class="cap">그림 3.1 · 다항 · 가우시안 · 시그모이드 기저 함수.</div>
+<div class="cap">
+
+그림 3.1 · 다항 · 가우시안 · 시그모이드 기저 함수.
+
+</div>
 </div>
 
 ### 3.1.1 최대 가능도와 최소 제곱
@@ -74,7 +78,11 @@ for xi, yi in zip(xt, design(xt)@w):
 
 <div class="fig">
 <img src="https://raw.githubusercontent.com/sswu-prism-lab/slides/main/images/aml/aml-note/Figure3.2.png" style="width:20rem;" />
-<div class="cap">그림 3.2 · 최소 제곱 회귀는 표적값 벡터 $\boldsymbol{\mathsf{t}}$를 부분 공간 $\mathcal{S}$에 투영해 얻는다.</div>
+<div class="cap">
+
+그림 3.2 · 최소 제곱 회귀는 표적값 벡터 $\boldsymbol{\mathsf{t}}$를 부분 공간 $\mathcal{S}$에 투영해 얻는다.
+
+</div>
 </div>
 
 ### 3.1.3 순차적 학습
@@ -93,7 +101,11 @@ $$
 
 <div class="fig">
 <img src="https://raw.githubusercontent.com/sswu-prism-lab/slides/main/images/aml/aml-note/Figure3.3.png" style="width:24rem;" />
-<div class="cap">그림 3.3 · 다양한 $q$에 따른 정규화항 $\sum_j|w_j|^q$의 윤곽선.</div>
+<div class="cap">
+
+그림 3.3 · 다양한 $q$에 따른 정규화항 $\sum_j|w_j|^q$의 윤곽선.
+
+</div>
 </div>
 
 ## 3.2 편향–분산 분해
@@ -108,7 +120,11 @@ $$
 
 <div class="fig">
 <img src="https://raw.githubusercontent.com/sswu-prism-lab/slides/main/images/aml/aml-note/Figure3.6.png" style="width:20rem;" />
-<div class="cap">그림 3.6 · (편향)²·분산·합. 둘의 균형점에서 시험 오차가 최소가 된다.</div>
+<div class="cap">
+
+그림 3.6 · (편향)²·분산·합. 둘의 균형점에서 시험 오차가 최소가 된다.
+
+</div>
 </div>
 
 ::: tip 실습 · 편향–분산 트레이드오프
@@ -161,7 +177,11 @@ $$
 
 <div class="fig">
 <img src="https://raw.githubusercontent.com/sswu-prism-lab/slides/main/images/aml/aml-note/Figure3.7.png" style="width:26rem;" />
-<div class="cap">그림 3.7 · 데이터가 늘수록 $\mathbf{w}$의 사후 분포가 좁아지고, 표본 함수 $y(x,\mathbf{w})$들이 데이터에 수렴한다.</div>
+<div class="cap">
+
+그림 3.7 · 데이터가 늘수록 $\mathbf{w}$의 사후 분포가 좁아지고, 표본 함수 $y(x,\mathbf{w})$들이 데이터에 수렴한다.
+
+</div>
 </div>
 
 ### 3.3.2 예측 분포

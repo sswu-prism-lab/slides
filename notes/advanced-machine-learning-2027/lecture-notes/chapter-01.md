@@ -28,7 +28,11 @@ $$
 
 <div class="fig">
 <img src="https://raw.githubusercontent.com/sswu-prism-lab/slides/main/images/aml/aml-note/Figure1.3.png" style="width:22rem;" />
-<div class="cap">그림 1.3 · 오차 함수는 각 데이터 포인트의 함숫값(적색 선)과 실제 표적값(청색 점) 간 오차(녹색 선)의 제곱의 합이다.</div>
+<div class="cap">
+
+그림 1.3 · 오차 함수는 각 데이터 포인트의 함숫값(적색 선)과 실제 표적값(청색 점) 간 오차(녹색 선)의 제곱의 합이다.
+
+</div>
 </div>
 
 - $E(\mathbf{w})$는 계수에 대한 이차 형태이므로, 미분하여 $0$으로 두면 유일한 최소해 $\mathbf{w}^\star$를 얻는다.
@@ -41,7 +45,11 @@ $$
 <img src="https://raw.githubusercontent.com/sswu-prism-lab/slides/main/images/aml/aml-note/Figure1.4c.png" />
 <img src="https://raw.githubusercontent.com/sswu-prism-lab/slides/main/images/aml/aml-note/Figure1.4d.png" />
 </div>
-<div class="cap">그림 1.4 · 청색 점은 삼각 함수(녹색 선)에 노이즈<span class="gloss">noise</span>가 더해진 값이며, 다양한 차수에 따른 피팅 곡선(적색 선)이 그려져 있다.</div>
+<div class="cap">
+
+그림 1.4 · 청색 점은 삼각 함수(녹색 선)에 노이즈<span class="gloss">noise</span>가 더해진 값이며, 다양한 차수에 따른 피팅 곡선(적색 선)이 그려져 있다.
+
+</div>
 </div>
 
 - 상수($M=0$)·일차($M=1$)는 피팅이 잘 안 되고, 삼차($M=3$)는 적절히 표현한다.
@@ -60,7 +68,11 @@ $$
 <img src="https://raw.githubusercontent.com/sswu-prism-lab/slides/main/images/aml/aml-note/Figure1.7a.png" />
 <img src="https://raw.githubusercontent.com/sswu-prism-lab/slides/main/images/aml/aml-note/Figure1.7b.png" />
 </div>
-<div class="cap">그림 1.7 · $M=9$ 다항식에 정규화된 오차 함수를 사용한 결과.</div>
+<div class="cap">
+
+그림 1.7 · $M=9$ 다항식에 정규화된 오차 함수를 사용한 결과.
+
+</div>
 </div>
 
 ::: tip 실습 · 다항식 곡선 피팅과 과적합
@@ -187,7 +199,11 @@ $$
 
 <div class="fig">
 <img src="https://raw.githubusercontent.com/sswu-prism-lab/slides/main/images/aml/aml-note/Figure1.16.png" style="width:24rem;" />
-<div class="cap">그림 1.16 · $x$가 주어졌을 때 $t$의 가우시안 조건부 분포(식 1.22). 평균은 $y(x,\mathbf{w})$, 정밀도는 $\beta$로 주어진다.</div>
+<div class="cap">
+
+그림 1.16 · $x$가 주어졌을 때 $t$의 가우시안 조건부 분포(식 1.22). 평균은 $y(x,\mathbf{w})$, 정밀도는 $\beta$로 주어진다.
+
+</div>
 </div>
 
 - 최대 가능도로 $\mathbf{w}$와 $\beta$를 구한다. 가능도 $p(\boldsymbol{\mathsf{t}}\mid\boldsymbol{\mathsf{x}},\mathbf{w},\beta)=\prod_{n=1}^N\mathcal{N}(t_n\mid y(x_n,\mathbf{w}),\beta^{-1})$에 로그를 취하면
@@ -237,7 +253,11 @@ $$
 
 <div class="fig">
 <img src="https://raw.githubusercontent.com/sswu-prism-lab/slides/main/images/aml/aml-note/Figure1.18.png" style="width:20rem;" />
-<div class="cap">그림 1.18 · $S$-접힘 교차 검증법. $S$번 실행의 성능 점수를 평균내어 최종 점수를 도출한다.</div>
+<div class="cap">
+
+그림 1.18 · $S$-접힘 교차 검증법. $S$번 실행의 성능 점수를 평균내어 최종 점수를 도출한다.
+
+</div>
 </div>
 
 ## 1.4 차원의 저주
@@ -275,7 +295,11 @@ $$
 
 <div class="fig">
 <img src="https://raw.githubusercontent.com/sswu-prism-lab/slides/main/images/aml/aml-note/Figure1.24.png" style="width:26rem;" />
-<div class="cap">그림 1.24 · 결정 경계에 따른 두 클래스의 결합 확률. 최적 경계 $x_0$에서 오분류 구역(적색)이 사라진다.</div>
+<div class="cap">
+
+그림 1.24 · 결정 경계에 따른 두 클래스의 결합 확률. 최적 경계 $x_0$에서 오분류 구역(적색)이 사라진다.
+
+</div>
 </div>
 
 ### 1.5.2 기대 손실의 최소화
