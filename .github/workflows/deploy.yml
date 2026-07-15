@@ -89,8 +89,10 @@ jobs:
             label=$(display_name "$dir" "$slug")
             course_entries+=("${slug}::${label}")
           done
-          # 노트 사이트(VitePress, /notes/)를 최상위 목록에 추가합니다.
-          course_entries+=("notes::📝 Advanced Machine Learning - Notes (Last Update: July 2026)")
+          # 노트 사이트(VitePress, /notes/)의 각 과목을 최상위 목록에 추가합니다.
+          course_entries+=("notes/advanced-machine-learning-2027::📝 Advanced Machine Learning - Notes (Last Update: July 2026)")
+          course_entries+=("notes/mathematics-for-artificial-intelligence-2027::📝 Mathematics for Artificial Intelligence - Notes (Last Update: July 2026)")
+          course_entries+=("notes/data-structure-2027::📝 Data Structures - Notes (Last Update: July 2026)")
           write_index_page "dist/index.html" "Prof. Ko's Lectures" "${course_entries[@]}"
 
           # ---- 사이트 최상위 404.html (GitHub Pages는 이 파일 하나만 인식합니다) ----
@@ -174,9 +176,6 @@ jobs:
       - uses: actions/upload-pages-artifact@v3
         with:
           path: dist
-
-      - name: Generate downloadable note PDFs (Playwright)
-        run: node scripts/notes-pdf.mjs
 
   deploy:
     needs: build

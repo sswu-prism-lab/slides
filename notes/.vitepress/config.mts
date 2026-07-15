@@ -20,7 +20,7 @@ export default defineConfig({
       { text: 'Home', link: '/' },
       { text: 'Advanced Machine Learning', link: '/advanced-machine-learning-2027/' },
       { text: 'Mathematics for AI', link: '/mathematics-for-artificial-intelligence-2027/' },
-      { text: 'Data Structure', link: '/data-structure-2027/' },
+      { text: 'Data Structures', link: '/data-structure-2027/' },
     ],
     sidebar: {
       '/advanced-machine-learning-2027/': [

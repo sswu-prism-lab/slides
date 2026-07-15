@@ -12,6 +12,6 @@ hero:
       text: Mathematics for AI - Notes
       link: /mathematics-for-artificial-intelligence-2027/
     - theme: alt
-      text: Data Structure - Notes
+      text: Data Structures - Notes
       link: /data-structure-2027/
 ---

@@ -45,6 +45,7 @@
     "dev:mai-lec11-ko": "slidev courses/mathematics-for-artificial-intelligence-2027/lecture-11-ko/slides.md --open",
     "dev:mai-lec12-ko": "slidev courses/mathematics-for-artificial-intelligence-2027/lecture-12-ko/slides.md --open",
     "dev:mai-lec13-ko": "slidev courses/mathematics-for-artificial-intelligence-2027/lecture-13-ko/slides.md --open",
+    "dev:ds-lec2": "slidev courses/data-structure-2027/lecture-2/slides.md --open",
     "notes:dev": "vitepress dev notes",
     "notes:build": "vitepress build notes",
     "build": "slidev build",
