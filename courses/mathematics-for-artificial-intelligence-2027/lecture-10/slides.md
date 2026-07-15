@@ -89,7 +89,7 @@ heading: Recap of Week 9
 
 - Scalars, vectors, and matrices can all be generalized as tensors, corresponding to rank-0, rank-1, and rank-2 tensors, respectively.
 
-<div class="grid grid-cols-2 gap-4" style="margin-top: 0.6rem;">
+<div class="grid grid-cols-2 gap-4" style="margin-top: 0em;">
 <div>
 
 <img src="https://raw.githubusercontent.com/sswu-prism-lab/slides/main/images/mai/mai-2027/W10_tensor.svg" class="tikz-fig" style="width: 100%;" />
@@ -147,7 +147,7 @@ heading: The Geometric Meaning of Matrices
 
 <style>
 .slidev-layout ul > li {
-  margin-top: 0.9em;
+  margin-top: 0em;
 }
 </style>
 
@@ -229,12 +229,6 @@ layout: prism
 heading: Affine Transformations
 ---
 
-<style>
-.slidev-layout ul > li {
-  margin-top: 1em;
-}
-</style>
-
 - Using a matrix, we can define an [affine transformation]{.hl}, a mapping under the condition that a line in one space still remains a line in the mapped space.
 
 - An affine transformation maps a vector $\mathbf{x}$ to a new vector $\mathbf{y}$ using a matrix transform $\mathbf{A}$ and a translation $\mathbf{b}$.
@@ -242,8 +236,6 @@ heading: Affine Transformations
 $$
 \mathbf{y} = \mathbf{W}\mathbf{x} + \mathbf{b}
 $$
-
-  - [DIY]{.hl} For $\mathbf{W} = \begin{bmatrix} w_{0,0} & w_{0,1} \\ w_{1,0} & w_{1,1} \end{bmatrix}$ and $\mathbf{b} = \begin{bmatrix} b_0 \\ b_1 \end{bmatrix}$, express the affine transformation of $\mathbf{x} = \begin{bmatrix} x_0 \\ x_1 \end{bmatrix}$ into $\mathbf{y} = \begin{bmatrix} y_0 \\ y_1 \end{bmatrix}$ as a single matrix.
 
 - Each layer of a neural network is nothing more than an affine transformation.
   - However, because a nonlinear activation function generally exists between the layers, a neural network learns how to map inputs to outputs that reflect the appropriate relationships.
@@ -253,6 +245,8 @@ $$
 layout: prism
 heading: "DIY: Affine Transformation as a Matrix"
 ---
+
+- [DIY]{.hl} For $\mathbf{W} = \begin{bmatrix} w_{0,0} & w_{0,1} \\ w_{1,0} & w_{1,1} \end{bmatrix}$ and $\mathbf{b} = \begin{bmatrix} b_0 \\ b_1 \end{bmatrix}$, express the affine transformation of $\mathbf{x} = \begin{bmatrix} x_0 \\ x_1 \end{bmatrix}$ into $\mathbf{y} = \begin{bmatrix} y_0 \\ y_1 \end{bmatrix}$ as a single matrix.
 
 <div style="height: 0.5rem;"></div>
 
@@ -331,12 +325,6 @@ print("det(A)^3 :", round(np.linalg.det(A) ** n, 4))
 layout: prism
 heading: Special Square Matrices (1/2)
 ---
-
-<style>
-.slidev-layout ul > li {
-  margin-top: 0.9em;
-}
-</style>
 
 - Among square matrices, the [zero matrix]{.hl} and the [ones matrix]{.hl} are the square matrices whose entries are all $0$ and all $1$, respectively.
   - For size $n$, they are conventionally written $\mathbf{0}_n$ and $\mathbf{1}_n$.

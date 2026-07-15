@@ -81,14 +81,8 @@ layout: prism
 heading: Linear Algebra
 ---
 
-<div class="grid grid-cols-2 gap-4" style="margin-top: 0.6rem;">
+<div class="grid grid-cols-2 gap-4" style="margin-top: 0rem; grid-template-columns: 1.8fr 1fr;">
 <div>
-
-<style>
-.slidev-layout ul > li {
-  margin-top: 1.6em;
-}
-</style>
 
 - Linear algebra in the narrow sense concerns first-order (linear) equations, but the broader [linear algebra]{.hl} we aim to cover in this course encompasses multi-dimensional objects such as vectors and matrices, together with operations on such objects.
 
@@ -123,12 +117,6 @@ heading: Table of Contents
 layout: prism
 heading: Scalars and Vectors (1/2)
 ---
-
-<style>
-.slidev-layout ul > li {
-  margin-top: 1em;
-}
-</style>
 
 - A [scalar]{.hl} is the most basic numerical value we use, having only a single component.
   - Values such as $7$, $-3$, and $\pi$ are scalars.
@@ -173,12 +161,6 @@ layout: prism
 heading: Scalars and Vectors (2/2)
 ---
 
-<style>
-.slidev-layout ul > li {
-  margin-top: 1.2em;
-}
-</style>
-
 - From a geometric viewpoint, each component of a vector can be interpreted as a coordinate component in coordinate space, i.e., the distance traveled along each coordinate axis.
 
 - In machine learning, the components of a vector are used to represent [features]{.hl}.
@@ -193,12 +175,6 @@ heading: Scalars and Vectors (2/2)
 layout: prism
 heading: Matrices and Tensors
 ---
-
-<style>
-.slidev-layout ul > li {
-  margin-top: 1em;
-}
-</style>
 
 - A [matrix]{.hl} is a two-dimensional array of numbers.
   - A column vector can be viewed as a matrix with a single column, and a row vector as a matrix with a single row.
@@ -313,12 +289,6 @@ layout: prism
 heading: Inner Product
 ---
 
-<style>
-.slidev-layout ul > li {
-  margin-top: 1.1em;
-}
-</style>
-
 - The [inner product (dot product)]{.hl} of two arbitrary vectors $\mathbf{x}$ and $\mathbf{y}$ with $n$ components is defined as follows, where $\theta$ is the angle between the two vectors.
 
 $$
@@ -368,7 +338,7 @@ layout: prism
 heading: Projection
 ---
 
-<div class="grid grid-cols-2 gap-4" style="margin-top: 0.5rem;">
+<div class="grid grid-cols-2 gap-4" style="margin-top: 0.5rem; grid-template-columns: 1.5fr 1fr;">
 <div>
 
 <style>
@@ -532,12 +502,6 @@ print(X @ Y)
 layout: prism
 heading: Matrix Multiplication
 ---
-
-<style>
-.slidev-layout ul > li {
-  margin-top: 1.1em;
-}
-</style>
 
 - To compute the matrix product $\mathbf{XY}$ of matrices $\mathbf{X}$ and $\mathbf{Y}$, the number of columns of the left matrix must match the number of rows of the right matrix.
 

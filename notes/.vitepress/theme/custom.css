@@ -112,3 +112,70 @@
 .fig-row img { max-width: 46%; border-radius: 6px; background: #fff; }
 /* Any bare image inside note prose is centered too */
 .vp-doc p > img { display: block; margin: 0.6rem auto; }
+
+/* =========================================================================
+   Print / "Save as PDF"  (triggered by the floating PDF button → window.print)
+   Goal: a clean, single-column PDF of the note — no site chrome, light theme,
+   math/figures/boxes kept intact across page breaks.
+   ========================================================================= */
+@media print {
+  /* Force a light, exact-color rendering even if the site is in dark mode. */
+  html { color-scheme: light; }
+  :root,
+  html.dark {
+    --vp-c-bg: #ffffff;
+    --vp-c-bg-alt: #ffffff;
+    --vp-c-bg-soft: #f6f6f7;
+    --vp-c-bg-elv: #ffffff;
+    --vp-c-text-1: #1a1a1a;
+    --vp-c-text-2: #444444;
+  }
+  html.dark,
+  html.dark body { background: #ffffff !important; color: #1a1a1a !important; }
+  body {
+    background: #ffffff !important;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+
+  /* Hide all site chrome: nav, sidebars, right-hand TOC, prev/next, footer,
+     edit links, search, the floating PDF button, and the "Run" buttons. */
+  .VPNav, .VPNavBar, .VPLocalNav, .VPSidebar, .VPBackdrop,
+  .VPDocAside, .aside, .VPDocFooter, .VPFooter,
+  .VPDoc .edit-info, .VPDoc .prev-next, .VPTeamMembers,
+  .DocSearch, .VPSocialLinks, .pdf-fab, .py-runner-btn {
+    display: none !important;
+  }
+
+  /* Let the article use the full page width. */
+  .VPContent, .VPPage, .VPDoc,
+  .VPDoc .container, .VPDoc .content, .VPDoc .content-container, .vp-doc {
+    max-width: 100% !important;
+    width: 100% !important;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+  .VPDoc { padding-top: 0 !important; }
+
+  @page { margin: 16mm 14mm; }
+
+  /* Keep headings with their content and avoid splitting atomic blocks. */
+  .vp-doc h1, .vp-doc h2, .vp-doc h3, .vp-doc h4 { break-after: avoid; }
+  .fig, .fig-row, .custom-block, blockquote, table, .py-runner,
+  .vp-doc mjx-container[display='true'] {
+    break-inside: avoid;
+  }
+  /* Long code blocks: wrap instead of clipping at the page edge. */
+  .vp-doc pre { white-space: pre-wrap !important; word-break: break-word; }
+  .vp-doc mjx-container[display='true'] { overflow: visible !important; }
+
+  /* Links: readable in print, no underline noise. */
+  .vp-doc a { color: inherit; text-decoration: none; }
+
+  /* PyRunner: print the code and any produced output as static blocks. */
+  .py-runner-output {
+    background: #f2f9f7 !important;
+    color: #1a1a2e !important;
+    border: 1px solid #4ba08f;
+  }
+}
