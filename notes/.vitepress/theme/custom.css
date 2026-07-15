@@ -143,7 +143,8 @@
   .VPNav, .VPNavBar, .VPLocalNav, .VPSidebar, .VPBackdrop,
   .VPDocAside, .aside, .VPDocFooter, .VPFooter,
   .VPDoc .edit-info, .VPDoc .prev-next, .VPTeamMembers,
-  .DocSearch, .VPSocialLinks, .pdf-fab, .py-runner-btn {
+  .DocSearch, .VPSocialLinks, .pdf-fab, .py-runner-btn,
+  .cpp-runner-bar {
     display: none !important;
   }
 
@@ -161,7 +162,7 @@
 
   /* Keep headings with their content and avoid splitting atomic blocks. */
   .vp-doc h1, .vp-doc h2, .vp-doc h3, .vp-doc h4 { break-after: avoid; }
-  .fig, .fig-row, .custom-block, blockquote, table, .py-runner,
+  .fig, .fig-row, .custom-block, blockquote, table, .py-runner, .cpp-runner,
   .vp-doc mjx-container[display='true'] {
     break-inside: avoid;
   }
@@ -178,4 +179,11 @@
     color: #1a1a2e !important;
     border: 1px solid #4ba08f;
   }
+  /* CppRunner: print the code and remote-compiled output as static blocks. */
+  .cpp-runner-output {
+    background: #eef3f8 !important;
+    color: #14243a !important;
+    border: 1px solid #4a7294;
+  }
+  .cpp-runner-edit { border: 1px solid #4a7294 !important; }
 }

@@ -3,7 +3,7 @@ import glob
 import os
 
 # 대상 폴더 (역슬래시 대신 슬래시 사용)
-target_dir = "C:/Users/dwigh/slides/images/aml/aml-note/"
+target_dir = "C:/Users/dwigh/slides/images/ds/ds-2027/"
 
 # dpi를 높이면 더 선명해집니다 (200~300 추천)
 DPI = 300
