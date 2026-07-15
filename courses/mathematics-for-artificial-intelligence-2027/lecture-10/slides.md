@@ -11,6 +11,7 @@ info: |
 class: text-center
 transition: slide-left
 mdc: true
+otherLangUrl: /slides/mathematics-for-artificial-intelligence-2027/lecture-10-ko/
 ---
 <style>
 .dark .slidev-page,

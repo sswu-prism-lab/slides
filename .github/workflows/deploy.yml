@@ -175,6 +175,9 @@ jobs:
         with:
           path: dist
 
+      - name: Generate downloadable note PDFs (Playwright)
+        run: node scripts/notes-pdf.mjs
+
   deploy:
     needs: build
     runs-on: ubuntu-latest
