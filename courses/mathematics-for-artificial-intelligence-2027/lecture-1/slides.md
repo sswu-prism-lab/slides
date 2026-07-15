@@ -1,0 +1,237 @@
+---
+theme: seriph
+themeConfig:
+  primary: '#5c60a8'
+background: '#ffffff' # Sets a custom hex background color
+title: AML - Lecture 1
+download: true
+info: |
+  ## Advanced Machine Learning Lecture Slides
+  Pattern Recognition and Intelligent System Modeling Lab, Sungshin Women's University
+class: text-center
+transition: slide-left
+mdc: true
+---
+
+<style>
+.dark .slidev-page,
+.dark .slidev-layout,
+.dark .slide-container,
+.dark #slide-content,
+.dark .slidev-nav-go-container {
+  background: #000000 !important;
+}
+</style>
+
+<div class="absolute top-0 left-0 right-0 border-t border-gray-300"></div>
+
+<div class="absolute top-4 left-6 flex items-center gap-3">
+  <img src="https://raw.githubusercontent.com/sswu-prism-lab/slides/main/images/general/sswu_logo.png" class="dark:hidden" style="height: 4rem;" />
+  <img src="https://raw.githubusercontent.com/sswu-prism-lab/slides/main/images/general/sswu_logo_dark.png" class="hidden dark:block" style="height: 4rem;" />
+</div>
+
+<div class="h-full flex flex-col items-center justify-center text-center px-10" style="padding-top: 4rem;">
+  <h1 style="color:#5c60a8; font-size: 3.5rem; font-weight: bold; margin: 0rem;">Advanced Machine Learning</h1>
+  <p style="color:#9aa0a6; font-size: 1.5rem; margin-top: 0.25rem;">Week 01: Course Introduction</p>
+
+  <p class="text-gray-800 dark:text-gray-100" style="font-size: 1.5rem; margin-top: 5rem;">Wonjun Ko, Ph.D.</p>
+
+  <div class="text-gray-800 dark:text-gray-100" style="margin-top: 1.5rem; line-height: 1.3;">
+    <p style="margin: 0;">Assistant Professor</p>
+    <p style="margin: 0;">School of AI Convergence</p>
+    <p style="margin: 0;">Sungshin Women's University</p>
+  </div>
+
+  <p class="text-gray-800 dark:text-gray-100" style="font-size: 1.25rem; margin-top: 2.5rem;">Spring 2027</p>
+</div>
+
+---
+layout: prism
+heading: Course Schedule
+---
+
+<div class="absolute left-10 right-10" style="top: 1rem; bottom: 5rem; display: grid; grid-template-columns: 1fr 1fr; column-gap: 5rem; align-items: center;">
+  <div>
+    <p style="margin: 1rem 0; font-size: 1.3rem;"><span style="color:#4a6fa5; font-weight:bold;">W01</span> <span class="text-gray-900 dark:text-gray-100">Course Overview</span></p>
+    <p style="margin: 1rem 0; font-size: 1.3rem;"><span style="color:#4a6fa5; font-weight:bold;">W02</span> <span style="color:#9aa0a6;">Numbers, Operations, and Systems</span></p>
+    <p style="margin: 1rem 0; font-size: 1.3rem;"><span style="color:#4a6fa5; font-weight:bold;">W03</span> <span style="color:#9aa0a6;">Analysis of Functions</span></p>
+    <p style="margin: 1rem 0; font-size: 1.3rem;"><span style="color:#4a6fa5; font-weight:bold;">W04</span> <span style="color:#9aa0a6;">Probability, Part 1</span></p>
+    <p style="margin: 1rem 0; font-size: 1.3rem;"><span style="color:#4a6fa5; font-weight:bold;">W05</span> <span style="color:#9aa0a6;">Probability, Part 2</span></p>
+    <p style="margin: 1rem 0; font-size: 1.3rem;"><span style="color:#4a6fa5; font-weight:bold;">W06</span> <span style="color:#9aa0a6;">Statistics</span></p>
+    <p style="margin: 1rem 0; font-size: 1.3rem;"><span style="color:#4a6fa5; font-weight:bold;">W07</span> <span style="color:#9aa0a6;">Midterm Review</span></p>
+    <p style="margin: 1rem 0; font-size: 1.3rem;"><span style="color:#4a6fa5; font-weight:bold;">W08</span> <span style="color:#9aa0a6;">Midterm Exam</span></p>
+  </div>
+  <div>
+    <p style="margin: 1rem 0; font-size: 1.3rem;"><span style="color:#4a6fa5; font-weight:bold;">W09</span> <span style="color:#9aa0a6;">Linear Algebra, Part 1</span></p>
+    <p style="margin: 1rem 0; font-size: 1.3rem;"><span style="color:#4a6fa5; font-weight:bold;">W10</span> <span style="color:#9aa0a6;">Linear Algebra, Part 2</span></p>
+    <p style="margin: 1rem 0; font-size: 1.3rem;"><span style="color:#4a6fa5; font-weight:bold;">W11</span> <span style="color:#9aa0a6;">Differentiation</span></p>
+    <p style="margin: 1rem 0; font-size: 1.3rem;"><span style="color:#4a6fa5; font-weight:bold;">W12</span> <span style="color:#9aa0a6;">Matrix Calculus</span></p>
+    <p style="margin: 1rem 0; font-size: 1.3rem;"><span style="color:#4a6fa5; font-weight:bold;">W13</span> <span style="color:#9aa0a6;">Data Flow in Neural Networks</span></p>
+    <p style="margin: 1rem 0; font-size: 1.3rem;"><span style="color:#4a6fa5; font-weight:bold;">W14</span> <span style="color:#9aa0a6;">Final Review</span></p>
+    <p style="margin: 1rem 0; font-size: 1.3rem;"><span style="color:#4a6fa5; font-weight:bold;">W15</span> <span style="color:#9aa0a6;">Final Exam</span></p>
+  </div>
+</div>
+
+---
+layout: prism
+heading: Who am I?
+---
+
+<div class="absolute top-0 right-5">
+  <img src="https://raw.githubusercontent.com/sswu-prism-lab/slides/main/images/general/fig_01_01.JPG" style="height: 11rem; border-radius: 4px;" />
+</div>
+
+- Education
+  - Ph.D. in Brain and Cognitive Engineering (Sep. 2017 ~ Aug. 2022)
+    - Ph.D. Dissertation Title: Deep Representation Learning in Biomedicine
+  - B.Sc. in Physics (Mar. 2013 ~ Feb. 2017)
+
+- Work Experience
+  - Data Scientist (Aug. 2022 ~ Aug. 2023)
+    - Senior researcher, R&D/M&T Data Analytics, Data Intelligence, SK hynix Inc.
+  - Assistant Professor (Sep. 2023 ~ Current)
+    - School of AI Convergence, Sungshin Women's University
+    - 수정관 A-704; [e-mail](mailto:wjko@sungshin.ac.kr){style="color:#c2410c;"} | [Website](https://sswu-prism-lab.github.io/){style="background: linear-gradient(90deg, rgb(188,90,93), rgb(242,221,134), rgb(111,142,114), rgb(75,85,210), rgb(119,94,145)); -webkit-background-clip: text; background-clip: text; color: transparent; -webkit-text-fill-color: transparent; text-decoration: underline;"}
+  
+- Research Interests
+  - Topological deep learning; Bayesian deep learning
+  - 28 papers (16 papers as the main author) in biomedicine-related fields
+    - [Google Scholar](https://scholar.google.com/citations?user=mzssJTUAAAAJ&hl=ko&oi=ao){style="color:#4285F4;"} | [ORCiD](https://orcid.org/0000-0001-7496-9007){style="color:#A6CE39;"}
+  - New Basic Research Project (Outstanding Young Scientist) Program, National Research Foundation, Ministry of Science and ICT, Korea Government (about $400,000 over three years)
+
+---
+layout: prism
+heading: What I Studied - Brain Signal Representation
+---
+
+<div class="absolute top-0 left-5">
+  <img src="https://raw.githubusercontent.com/sswu-prism-lab/slides/main/images/general/fig0.png" style="height: 23rem; border-radius: 4px;" />
+</div>
+
+<div class="absolute top-0 right-5">
+  <img src="https://raw.githubusercontent.com/sswu-prism-lab/slides/main/images/general/fig1.png" style="height: 10rem; border-radius: 4px;" />
+</div>
+
+<div class="absolute bottom-0 right-5">
+  <img src="https://raw.githubusercontent.com/sswu-prism-lab/slides/main/images/general/fig2.png" style="height: 8rem; border-radius: 4px;" />
+</div>
+
+---
+layout: prism
+heading: What I Studied - Neuroimaging Analysis
+---
+
+<div class="absolute top-0 left-0">
+  <img src="https://raw.githubusercontent.com/sswu-prism-lab/slides/main/images/general/fig3.png" style="height: 10rem; border-radius: 4px;" />
+</div>
+
+<div class="absolute top-0 right-0">
+  <img src="https://raw.githubusercontent.com/sswu-prism-lab/slides/main/images/general/fig5.png" style="height: 10rem; border-radius: 4px;" />
+</div>
+
+<div class="absolute bottom-0 left-15">
+  <img src="https://raw.githubusercontent.com/sswu-prism-lab/slides/main/images/general/fig9.png" style="height: 11.5rem; border-radius: 4px;" />
+</div>
+
+<div class="absolute bottom-0 right-15">
+  <img src="https://raw.githubusercontent.com/sswu-prism-lab/slides/main/images/general/fig4.png" style="height: 11.5rem; border-radius: 4px;" />
+</div>
+
+---
+layout: prism
+heading: What I Studied - Biomedical Data Mining
+---
+
+<div class="absolute top-0 left-10">
+  <img src="https://raw.githubusercontent.com/sswu-prism-lab/slides/main/images/general/fig6.png" style="height: 10rem; border-radius: 4px;" />
+</div>
+
+<div class="absolute top-0 right-10">
+  <img src="https://raw.githubusercontent.com/sswu-prism-lab/slides/main/images/general/fig7.png" style="height: 10rem; border-radius: 4px;" />
+</div>
+
+<div class="absolute bottom-0 left-0">
+  <img src="https://raw.githubusercontent.com/sswu-prism-lab/slides/main/images/general/fig8.png" style="height: 12rem; border-radius: 4px;" />
+</div>
+
+<div class="absolute bottom-0 left-53">
+  <img src="https://raw.githubusercontent.com/sswu-prism-lab/slides/main/images/general/fig10.png" style="height: 12rem; border-radius: 4px;" />
+</div>
+
+<div class="absolute bottom-0 right-0">
+  <img src="https://raw.githubusercontent.com/sswu-prism-lab/slides/main/images/general/fig12.png" style="height: 12rem; border-radius: 4px;" />
+</div>
+
+---
+layout: prism
+heading: The Course in a Nutshell
+---
+
+<div style="margin-top: 1rem;">
+
+- Title: Advanced Machine Learning
+
+<div style="height: 2rem;"></div>
+
+- After finishing this course, students will establish a solid, advanced-level foundation in machine learning algorithms.
+
+<div style="height: 2rem;"></div>
+
+<img src="https://raw.githubusercontent.com/sswu-prism-lab/slides/main/images/mai/mai-2027/textbook.jpg" style="float: right; width: 10rem; margin: 0 2rem 0 1.5rem;" />
+
+- Grading will be mainly based on:
+  - Two exams (35% for the midterm and 45% for the final exam)
+  - Four homeworks (5% for each)
+  - Attendance (0%, Note that four or more times absence will automatically result in the F grade)
+  - Text: Kneusel, Ronald T. _Math for Deep Learning: What You Need to Know to Understand Neural Networks_, No Starch Press, 2022.
+    - 번역서: 로널드 크노이젤, _딥러닝을 위한 수학: 신경망 수학 기초부터 역전파와 경사하강법까지_, 제이펍, 2022.
+  - Lecture notes that can be brought to the exam will be provided.
+
+<div style="clear: both;"></div>
+
+</div>
+
+---
+layout: prism
+heading: Course Schedule Again (TBA)
+---
+
+<div class="absolute left-10 right-10" style="top: 0; bottom: 0rem; display: grid; grid-template-columns: 1fr 1fr; column-gap: 5rem; align-items: center;">
+  <div>
+    <p style="margin: .5rem 0; font-size: 1.3rem;"><span style="color:#4a6fa5; font-weight:bold;">W01</span> <span class="text-gray-900 dark:text-gray-100">TBA</span></p>
+    <p style="margin: .5rem 0; font-size: 1.3rem;"><span style="color:#4a6fa5; font-weight:bold;">W02</span> <span class="text-gray-900 dark:text-gray-100">TBA</span></p>
+    <p style="margin: .5rem 0; font-size: 1.3rem;"><span style="color:#4a6fa5; font-weight:bold;">W03</span> <span class="text-gray-900 dark:text-gray-100">TBA</span></p>
+    <p style="margin: .5rem 0 0 0; font-size: 1.3rem;"><span style="color:#4a6fa5; font-weight:bold;">W04</span> <span class="text-gray-900 dark:text-gray-100">TBA</span></p>
+    <p style="margin: 0 0 1rem 1.5rem; font-size: 1.1rem; color:#111;"><span style="font-size:0.75em; color:#4a6fa5;">▶</span> <span class="text-gray-900 dark:text-gray-100"><i>Homework 1</i></span></p>
+    <p style="margin: .5rem 0; font-size: 1.3rem;"><span style="color:#4a6fa5; font-weight:bold;">W05</span> <span class="text-gray-900 dark:text-gray-100">TBA</span></p>
+    <p style="margin: .5rem 0; font-size: 1.3rem;"><span style="color:#4a6fa5; font-weight:bold;">W06</span> <span class="text-gray-900 dark:text-gray-100">TBA</span></p>
+    <p style="margin: .5rem 0 0 0; font-size: 1.3rem;"><span style="color:#4a6fa5; font-weight:bold;">W07</span> <span class="text-gray-900 dark:text-gray-100">TBA</span></p>
+    <p style="margin: 0 0 1rem 1.5rem; font-size: 1.1rem; color:#111;"><span style="font-size:0.75em; color:#4a6fa5;">▶</span> <span class="text-gray-900 dark:text-gray-100"><i>Homework 1</i></span></p>
+    <p style="margin: .5rem 0 0 0; font-size: 1.3rem;"><span style="color:#4a6fa5; font-weight:bold;">W08</span> <span class="text-gray-900 dark:text-gray-100">TBA</span></p>
+    <p style="margin: 0 0 1rem 1.5rem; font-size: 1.1rem; color:#111;"><span style="font-size:0.75em; color:#4a6fa5;">▶</span> <span class="text-gray-900 dark:text-gray-100"><i>Homework 1</i></span></p>
+  </div>
+  <div>
+    <p style="margin: 1rem 0; font-size: 1.3rem;"><span style="color:#4a6fa5; font-weight:bold;">W09</span> <span class="text-gray-900 dark:text-gray-100">TBA</span></p>
+    <p style="margin: 1rem 0 0 0; font-size: 1.3rem;"><span style="color:#4a6fa5; font-weight:bold;">W10</span> <span class="text-gray-900 dark:text-gray-100">TBA</span></p>
+    <p style="margin: 0 0 1rem 1.5rem; font-size: 1.1rem; color:#111;"><span style="font-size:0.75em; color:#4a6fa5;">▶</span> <span class="text-gray-900 dark:text-gray-100"><i>Homework 1</i></span></p>
+    <p style="margin: 1rem 0; font-size: 1.3rem;"><span style="color:#4a6fa5; font-weight:bold;">W11</span> <span class="text-gray-900 dark:text-gray-100">TBA</span></p>
+<p style="margin: 1rem 0 0 0; font-size: 1.3rem;"><span style="color:#4a6fa5; font-weight:bold;">W12</span> <span class="text-gray-900 dark:text-gray-100">TBA</span></p>
+    <p style="margin: 0 0 1rem 1.5rem; font-size: 1.1rem; color:#111;"><span style="font-size:0.75em; color:#4a6fa5;">▶</span> <span class="text-gray-900 dark:text-gray-100"><i>Homework 1</i></span></p>
+    <p style="margin: 1rem 0; font-size: 1.3rem;"><span style="color:#4a6fa5; font-weight:bold;">W13</span> <span class="text-gray-900 dark:text-gray-100">TBA</span></p>
+    <p style="margin: 1rem 0; font-size: 1.3rem;"><span style="color:#4a6fa5; font-weight:bold;">W14</span> <span class="text-gray-900 dark:text-gray-100">TBA</span></p>
+<p style="margin: 1rem 0 0 0; font-size: 1.3rem;"><span style="color:#4a6fa5; font-weight:bold;">W15</span> <span class="text-gray-900 dark:text-gray-100">TBA</span></p>
+    <p style="margin: 0 0 1rem 1.5rem; font-size: 1.1rem; color:#111;"><span style="font-size:0.75em; color:#4a6fa5;">▶</span> <span class="text-gray-900 dark:text-gray-100"><i>Homework 1</i></span></p>
+  </div>
+</div>
+
+---
+layout: center
+class: text-center
+---
+
+# ***Thank you!***
+<br></br>
+
+_Contact:_ [wjko@sungshin.ac.kr](mailto:wjko@sungshin.ac.kr){style="color:#c2410c; font-family: 'JetBrains Mono', Consolas, monospace;"}
+
+_Website:_ [https://sswu-prism-lab.github.io/](https://sswu-prism-lab.github.io/){style="background: linear-gradient(90deg, rgb(188,90,93), rgb(242,221,134), rgb(111,142,114), rgb(75,85,210), rgb(119,94,145)); -webkit-background-clip: text; background-clip: text; color: transparent; -webkit-text-fill-color: transparent; text-decoration: underline; font-family: 'JetBrains Mono', Consolas, monospace;"}
