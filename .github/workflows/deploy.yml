@@ -99,10 +99,11 @@ jobs:
           {
             echo "<!DOCTYPE html><html><head><meta charset=\"utf-8\">"
             echo "<script>"
-            echo "  var path = location.pathname + location.search + location.hash;"
+            echo "  var clean = location.pathname.replace(/\\/{2,}/g, '/');"
+            echo "  var path = clean + location.search + location.hash;"
             echo "  sessionStorage.setItem('slidev-redirect-path', path);"
             echo "  var re = new RegExp('^(/${REPO_NAME}/[^/]+/[^/]+/)');"
-            echo "  var m = location.pathname.match(re);"
+            echo "  var m = clean.match(re);"
             echo "  var target = m ? m[1] : '/${REPO_NAME}/';"
             echo "  location.replace(target);"
             echo "</script>"

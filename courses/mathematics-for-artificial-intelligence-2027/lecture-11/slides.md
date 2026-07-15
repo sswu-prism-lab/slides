@@ -176,7 +176,7 @@ heading: Slope (2/3)
 ---
 
 <div class="flex justify-center" style="margin-top: 1.5rem;">
-<div style="width: 72%;">
+<div style="width: 60%;">
 
 <img src="https://raw.githubusercontent.com/sswu-prism-lab/slides/main/images/mai/mai-2027/W11_tangent.svg" class="tikz-fig" style="width: 100%;" />
 
@@ -255,7 +255,7 @@ layout: prism
 heading: "DIY: Numerical Derivative"
 ---
 
-<div style="height: 2rem;"></div>
+<div style="height: 0rem;"></div>
 
 <PyRunner>
 
@@ -592,12 +592,6 @@ layout: prism
 heading: Definition of the Partial Derivative
 ---
 
-<style>
-.slidev-layout ul > li {
-  margin-top: 1.1em;
-}
-</style>
-
 - For functions of two or more variables, e.g., $f(x, y)$ or $f(x_0, x_1, x_2, \cdots, x_n)$, we use [partial differentiation]{.hl} (the partial derivative).
 
 - A partial derivative is the derivative with respect to one particular variable: we fix the other variables as constants and differentiate with respect to only that variable.
@@ -644,7 +638,7 @@ heading: Mixed Partial Derivatives
 
 <style>
 .slidev-layout ul > li {
-  margin-top: 1.8em;
+  margin-top: 3.8em;
 }
 </style>
 
@@ -741,12 +735,6 @@ print("match:", np.isclose(direct, chain))
 layout: prism
 heading: Computing the Gradient
 ---
-
-<style>
-.slidev-layout ul > li {
-  margin-top: 1.1em;
-}
-</style>
 
 - If we interpret a multivariable function $f(x, y, z)$ as positions on coordinate axes, then $f$ returns a single scalar value at an arbitrary point $(x, y, z)$ in 3D space.
   - Setting $\mathbf{x} = (x, y, z)$, the function $f(\mathbf{x})$ maps one vector to one scalar.

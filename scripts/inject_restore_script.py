@@ -17,9 +17,17 @@ import sys
 
 SNIPPET = """<script>
 (function () {
+  // (0) 오래된/캐시된 링크에 실수로 들어간 이중 슬래시(예: /slides/course//lecture-2/)를
+  //     하나로 접어, Slidev 라우터의 base(단일 슬래시)와 경로가 일치하도록 자가 교정합니다.
+  var p = location.pathname;
+  if (/\\/{2,}/.test(p)) {
+    history.replaceState(null, '', p.replace(/\\/{2,}/g, '/') + location.search + location.hash);
+  }
+  // (1) 사이트 최상위 404.html이 저장해 둔 "진짜 요청 경로"를 복원합니다.
   var redirect = sessionStorage.getItem('slidev-redirect-path');
   if (redirect) {
     sessionStorage.removeItem('slidev-redirect-path');
+    redirect = redirect.replace(/\\/{2,}/g, '/'); // 저장된 경로의 중복 슬래시도 정리
     var current = location.pathname + location.search + location.hash;
     if (redirect !== current) {
       history.replaceState(null, '', redirect);

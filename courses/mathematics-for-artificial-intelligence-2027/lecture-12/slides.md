@@ -138,17 +138,11 @@ heading: Notation and Layouts
 
 ---
 layout: prism
-heading: "Scalar &rarr; Vector Functions (1/3)"
+heading: "Scalar to Vector Functions (1/3)"
 ---
 
 <div class="grid grid-cols-2 gap-4" style="margin-top: 0.5rem;">
 <div>
-
-<style>
-.slidev-layout ul > li {
-  margin-top: 1em;
-}
-</style>
 
 - Assume a function $\mathbf{f}(x): \mathbb{R} \mapsto \mathbb{R}^m$ that takes a scalar and returns a vector.
   - Here $m$ is the dimension of the output vector.
@@ -162,14 +156,14 @@ $$
 </div>
 <div>
 
-<img src="https://raw.githubusercontent.com/sswu-prism-lab/slides/main/images/mai/mai-2027/W12_helix.svg" class="tikz-fig" style="width: 100%;" />
+<img src="https://raw.githubusercontent.com/sswu-prism-lab/slides/main/images/mai/mai-2027/W12_helix.svg" class="tikz-fig" style="width: 90%;" />
 
 </div>
 </div>
 
 ---
 layout: prism
-heading: "Scalar &rarr; Vector Functions (2/3)"
+heading: "Scalar to Vector Functions (2/3)"
 ---
 
 <style>
@@ -192,7 +186,7 @@ $$
 
 ---
 layout: prism
-heading: "Scalar &rarr; Vector Functions (3/3)"
+heading: "Scalar to Vector Functions (3/3)"
 ---
 
 <style>
@@ -247,7 +241,7 @@ print("poly tangent (exact) :", [4*x0 - 3, 3*x0**2])
 
 ---
 layout: prism
-heading: "Vector &rarr; Scalar Functions"
+heading: "Vector to Scalar Functions"
 ---
 
 <style>
@@ -303,7 +297,7 @@ print("analytic gradient  :", [2*x[0] + 3*x[1], 3*x[0] + 4*x[1]])
 
 ---
 layout: prism
-heading: "Vector &rarr; Vector Functions"
+heading: "Vector to Vector Functions"
 ---
 
 <style>
@@ -334,8 +328,6 @@ layout: prism
 heading: "DIY: Jacobian via Finite Differences"
 ---
 
-<div style="height: 0.4rem;"></div>
-
 <PyRunner>
 
 ```python
@@ -364,7 +356,7 @@ print("analytic  Jacobian at (2, 2):\n",
 
 ---
 layout: prism
-heading: "Scalar &rarr; Matrix Functions"
+heading: "Scalar to Matrix Functions"
 ---
 
 <style>
@@ -396,7 +388,7 @@ $$
 
 ---
 layout: prism
-heading: "Matrix &rarr; Scalar Functions"
+heading: "Matrix to Scalar Functions"
 ---
 
 <style>
@@ -437,7 +429,7 @@ heading: Table of Contents
 
 ---
 layout: prism
-heading: "Vector &rarr; Scalar Identities (1/2)"
+heading: "Vector to Scalar Identities (1/2)"
 ---
 
 <style>
@@ -457,12 +449,12 @@ $$
 \end{gather*}
 $$
 
-- [DIY]{.hl} Given $\mathbf{x} = [x_0, x_1, x_2]^\top$, $g(\mathbf{x}) = x_0 + x_1 x_2$, and $f(g) = g^2$, find the derivative of $f$ with respect to $\mathbf{x}$.
-
 ---
 layout: prism
 heading: "DIY: Chain Rule for a Scalar Field"
 ---
+
+- [DIY]{.hl} Given $\mathbf{x} = [x_0, x_1, x_2]^\top$, $g(\mathbf{x}) = x_0 + x_1 x_2$, and $f(g) = g^2$, find the derivative of $f$ with respect to $\mathbf{x}$.
 
 <div style="height: 0.4rem;"></div>
 
@@ -491,7 +483,7 @@ print("chain-rule df/dx:", np.round(2*g(x) * np.array([1.0, x[2], x[1]]), 4))
 
 ---
 layout: prism
-heading: "Vector &rarr; Scalar Identities (2/2)"
+heading: "Vector to Scalar Identities (2/2)"
 ---
 
 <style>
@@ -517,7 +509,7 @@ $$
 
 ---
 layout: prism
-heading: "Scalar &rarr; Vector Identities"
+heading: "Scalar to Vector Identities"
 ---
 
 <style>
@@ -546,12 +538,12 @@ $$
 
 ---
 layout: prism
-heading: "Vector &rarr; Vector Identities"
+heading: "Vector to Vector Identities"
 ---
 
 <style>
 .slidev-layout ul > li {
-  margin-top: 1.6em;
+  margin-top: 3.6em;
 }
 </style>
 
@@ -568,12 +560,12 @@ $$
 
 ---
 layout: prism
-heading: "Matrix &rarr; Scalar Identities"
+heading: "Matrix to Scalar Identities"
 ---
 
 <style>
 .slidev-layout ul > li {
-  margin-top: 1.6em;
+  margin-top: 3.6em;
 }
 </style>
 
@@ -587,12 +579,12 @@ $$
 \end{gather*}
 $$
 
-- [DIY]{.hl} Given $\mathbf{X} = \begin{bmatrix} x_0 & x_1\\ x_2 & x_3 \end{bmatrix}$, $f(g) = \frac{1}{2}g^2$, and $g(\mathbf{X}) = x_0 x_3 + x_1 x_2$, find $\partial f/\partial \mathbf{X}$.
-
 ---
 layout: prism
 heading: "DIY: Gradient Matrix"
 ---
+
+- [DIY]{.hl} Given $\mathbf{X} = \begin{bmatrix} x_0 & x_1\\ x_2 & x_3 \end{bmatrix}$, $f(g) = \frac{1}{2}g^2$, and $g(\mathbf{X}) = x_0 x_3 + x_1 x_2$, find $\partial f/\partial \mathbf{X}$.
 
 <div style="height: 0.4rem;"></div>
 
@@ -672,12 +664,12 @@ $$
 
 ---
 layout: prism
-heading: "The Jacobian &mdash; Systems of ODEs (1/3)"
+heading: "The Jacobian - Systems of ODEs (1/3)"
 ---
 
 <style>
 .slidev-layout ul > li {
-  margin-top: 1em;
+  margin-top: 2em;
 }
 </style>
 
@@ -697,7 +689,7 @@ $$
 
 ---
 layout: prism
-heading: "The Jacobian &mdash; Systems of ODEs (2/3)"
+heading: "The Jacobian - Systems of ODEs (2/3)"
 ---
 
 <style>
@@ -734,7 +726,7 @@ $$
 
 ---
 layout: prism
-heading: "The Jacobian &mdash; Systems of ODEs (3/3)"
+heading: "The Jacobian - Systems of ODEs (3/3)"
 ---
 
 <style>
@@ -786,7 +778,7 @@ for name, c in crits.items():
 
 ---
 layout: prism
-heading: "The Jacobian &mdash; Newton's Method (1/2)"
+heading: "The Jacobian - Newton's Method (1/2)"
 ---
 
 <style>
@@ -810,7 +802,7 @@ $$
 
 ---
 layout: prism
-heading: "The Jacobian &mdash; Newton's Method (2/2)"
+heading: "The Jacobian - Newton's Method (2/2)"
 ---
 
 <style>
@@ -908,8 +900,6 @@ layout: prism
 heading: "DIY: Numerical Hessian"
 ---
 
-<div style="height: 0.4rem;"></div>
-
 <PyRunner>
 
 ```python
@@ -937,7 +927,7 @@ print("analytic Hessian :\n", np.array([[4, 0, 1], [0, -2, 3], [1, 3, 0]], float
 
 ---
 layout: prism
-heading: "The Hessian &mdash; Optimization (1/2)"
+heading: "The Hessian - Optimization (1/2)"
 ---
 
 <style>
@@ -961,7 +951,7 @@ $$
 
 ---
 layout: prism
-heading: "The Hessian &mdash; Optimization (2/2)"
+heading: "The Hessian - Optimization (2/2)"
 ---
 
 <style>
@@ -1037,12 +1027,6 @@ heading: Table of Contents
 layout: prism
 heading: "Element-wise Operations (1/2)"
 ---
-
-<style>
-.slidev-layout ul > li {
-  margin-top: 1.2em;
-}
-</style>
 
 - Consider the addition of two vectors.
 
@@ -1157,12 +1141,12 @@ $$
 y = \operatorname{ReLU}(\mathbf{w} \cdot \mathbf{x} + b)
 $$
 
-  - [DIY]{.hl} Find $\partial y/\partial \mathbf{w}$ and $\partial y/\partial b$.
-
 ---
 layout: prism
 heading: "DIY: ReLU Layer Gradient"
 ---
+
+- [DIY]{.hl} Find $\partial y/\partial \mathbf{w}$ and $\partial y/\partial b$.
 
 <div style="height: 0.4rem;"></div>
 

@@ -411,12 +411,6 @@ layout: prism
 heading: Determinants (1/2)
 ---
 
-<style>
-.slidev-layout ul > li {
-  margin-top: 0.7em;
-}
-</style>
-
 - The [determinant]{.hl} of a square matrix is a function that maps the square matrix to a single scalar.
 
 - For any square matrix $\mathbf{A}$, the determinant $\operatorname{det}(\mathbf{A}) \in \mathbb{R}$ has the following properties.
@@ -436,12 +430,6 @@ heading: Determinants (1/2)
 layout: prism
 heading: Determinants (2/2)
 ---
-
-<style>
-.slidev-layout ul > li {
-  margin-top: 0.8em;
-}
-</style>
 
 - To define the recurrence, we use the following definitions.
   - For any matrix $\mathbf{A}$, its [minor matrix]{.hl} $\mathbf{A}_{ij}$ is defined as the matrix obtained by removing the $i$-th row and $j$-th column from $\mathbf{A}$.
@@ -463,12 +451,12 @@ $$
 \operatorname{det}(\mathbf{A}) = \sum_{j=0}^{n-1} a_{0,j} C_{0j}
 $$
 
-  - [DIY]{.hl} Find the determinant of $\mathbf{A} = \begin{bmatrix} a & b \\ c & d \end{bmatrix}$.
-
 ---
 layout: prism
 heading: "DIY: Determinant by Cofactor Expansion"
 ---
+
+- [DIY]{.hl} Find the determinant of $\mathbf{A} = \begin{bmatrix} a & b \\ c & d \end{bmatrix}$.
 
 <div style="height: 0.5rem;"></div>
 
@@ -523,12 +511,12 @@ $$
 \operatorname{det}(\mathbf{A}^{-1}) = \frac{1}{\operatorname{det}(\mathbf{A})}
 $$
 
-  - [DIY]{.hl} Construct a matrix that has no inverse.
-
 ---
 layout: prism
 heading: "DIY: Inverse and Singular Matrices"
 ---
+
+- [DIY]{.hl} Construct a matrix that has no inverse.
 
 <div style="height: 0.5rem;"></div>
 
@@ -678,7 +666,7 @@ heading: Unitary Matrices
 
 <style>
 .slidev-layout ul > li {
-  margin-top: 1.6em;
+  margin-top: 3.6em;
 }
 </style>
 
@@ -750,12 +738,13 @@ $$
 
 - This equation $\operatorname{det}(\mathbf{A} - \lambda\mathbf{I}) = 0$ is called the [characteristic equation]{.hl}.
   - The characteristic polynomial of an $n \times n$ matrix is a polynomial of degree $n$.
-  - [DIY]{.hl} Compute the eigenvalues of $\begin{bmatrix} 0 & 1 \\ -2 & -3 \end{bmatrix}$.
 
 ---
 layout: prism
 heading: "DIY: Eigenvalues"
 ---
+
+- [DIY]{.hl} Compute the eigenvalues of $\begin{bmatrix} 0 & 1 \\ -2 & -3 \end{bmatrix}$.
 
 <div style="height: 0.5rem;"></div>
 
@@ -913,12 +902,6 @@ print("matches np.cov    :", np.allclose(Sigma, np.cov(X, rowvar=False)))
 layout: prism
 heading: Mahalanobis Distance
 ---
-
-<style>
-.slidev-layout ul > li {
-  margin-top: 1em;
-}
-</style>
 
 - Using covariance, we can define the [Mahalanobis distance]{.hl} $D_M$.
 

@@ -254,12 +254,6 @@ layout: prism
 heading: Data Flow in Convolutional Neural Networks (2/3)
 ---
 
-<style>
-.slidev-layout ul > li {
-  margin-top: 1em;
-}
-</style>
-
 - The convolution operation proceeds by sliding one function over another; the convolution $\star$ of functions $f$ and $g$ is defined as
 
 $$
@@ -396,14 +390,8 @@ layout: prism
 heading: Backpropagation Computation (1/3)
 ---
 
-<div class="grid grid-cols-2 gap-4" style="margin-top: 0.6rem;">
+<div class="grid grid-cols-2 gap-4" style="margin-top: 0rem;">
 <div>
-
-<style>
-.slidev-layout ul > li {
-  margin-top: 1em;
-}
-</style>
 
 - Consider a simple network that takes two values and outputs a single value.
   - It has a hidden layer with two nodes and an output layer with one node.
@@ -423,7 +411,7 @@ $$
 </div>
 <div>
 
-<img src="https://raw.githubusercontent.com/sswu-prism-lab/slides/main/images/mai/mai-2027/W13_nn.svg" class="tikz-fig" style="width: 100%;" />
+<img src="https://raw.githubusercontent.com/sswu-prism-lab/slides/main/images/mai/mai-2027/W13_nn.svg" class="tikz-fig" style="width: 95%;" />
 
 </div>
 </div>
@@ -458,12 +446,6 @@ print("match     :", bool(np.allclose(dsigmoid(xs), fd)))
 layout: prism
 heading: Backpropagation Computation (2/3)
 ---
-
-<style>
-.slidev-layout ul > li {
-  margin-top: 0.9em;
-}
-</style>
 
 - The forward pass of this network is described as follows.
 
@@ -613,8 +595,6 @@ $$
 layout: prism
 heading: "DIY: Gradient Descent Steps"
 ---
-
-<div style="height: 0.4rem;"></div>
 
 <PyRunner>
 

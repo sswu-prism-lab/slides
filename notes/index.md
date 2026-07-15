@@ -8,4 +8,7 @@ hero:
     - theme: brand
       text: Advanced Machine Learning - Notes
       link: /advanced-machine-learning-2027/
+    - theme: alt
+      text: Mathematics for AI - Notes
+      link: /mathematics-for-artificial-intelligence-2027/
 ---
