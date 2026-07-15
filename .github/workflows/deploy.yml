@@ -135,7 +135,7 @@ jobs:
               mkdir -p "dist/${course}"
 
               lecture_entries=()
-              for lec in "${dir}"*/; do
+              for lec in $(printf '%s\n' "${dir}"*/ | sort -V); do
                 [ -f "${lec}slides.md" ] || continue
                 lslug=$(basename "$lec")
                 # "-ko"로 끝나는 폴더(한국어판)는 목록에서 숨김 (빌드는 계속 되고,
@@ -146,7 +146,7 @@ jobs:
               done
               write_index_page "dist/${course}/index.html" "$course_label" "${lecture_entries[@]}"
 
-              for lec in "${dir}"*/; do
+              for lec in $(printf '%s\n' "${dir}"*/ | sort -V); do
                 [ -f "${lec}slides.md" ] || continue
                 lname=$(basename "$lec")
                 echo "  Building lecture: $lname"
