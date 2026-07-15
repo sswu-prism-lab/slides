@@ -25,6 +25,7 @@
     "dev:aml-lec12-ko": "slidev courses/advanced-machine-learning-2027/lecture-12-ko/slides.md --open",
     "dev:aml-lec13": "slidev courses/advanced-machine-learning-2027/lecture-13/slides.md --open",
     "dev:aml-lec13-ko": "slidev courses/advanced-machine-learning-2027/lecture-13-ko/slides.md --open",
+    "dev:mai-lec2": "slidev courses/mathematics-for-artificial-intelligence-2027/lecture-2/slides.md --open",
     "notes:dev": "vitepress dev notes",
     "notes:build": "vitepress build notes",
     "build": "slidev build",
