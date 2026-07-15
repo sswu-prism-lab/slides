@@ -128,6 +128,13 @@ heading: Data Flow in the Perceptron (1/2)
 - Models such as the perceptron or the feedforward neural network store the weights between layers as matrices.
   - If layer $i$ has $n$ input nodes and layer $i-1$ has $m$ output nodes, the weight matrix $\mathbf{W}_i$ between the two layers is represented as an $n \times m$ matrix.
 
+---
+layout: prism
+heading: "DIY: Weight Matrix and Layer Output"
+---
+
+<div style="height: 0.4rem;"></div>
+
 <PyRunner>
 
 ```python
@@ -170,6 +177,13 @@ $$
 - For the nonlinear activation, the ReLU function is generally used between layers, whereas sigmoid-type functions are generally used in the final decision layer.
   - Sigmoid-type functions map the final output to a value between $0$ and $1$.
 
+---
+layout: prism
+heading: "DIY: Activation Functions"
+---
+
+<div style="height: 0.4rem;"></div>
+
 <PyRunner>
 
 ```python
@@ -209,6 +223,13 @@ heading: Data Flow in Convolutional Neural Networks (1/3)
 
 - An image tensor is generally represented in the form $\mathbb{R}^{H \times W \times C}$, where $H$, $W$, and $C$ denote the height, width, and number of channels of the image, respectively.
   - That is, a typical grayscale image has $C = 1$ and a color image has $C = 3$.
+
+---
+layout: prism
+heading: "DIY: Image Tensor Shapes"
+---
+
+<div style="height: 0.4rem;"></div>
 
 <PyRunner>
 
@@ -303,6 +324,13 @@ heading: Data Flow in Convolutional Neural Networks (3/3)
   - A stride can also be defined for the pooling operation.
 
 - At the end of a CNN, the tensor is [flattened]{.hl} into a vector, which is finally fed into a perceptron to make the decision.
+
+---
+layout: prism
+heading: "DIY: Max and Average Pooling"
+---
+
+<div style="height: 0.4rem;"></div>
 
 <PyRunner>
 
@@ -400,6 +428,13 @@ $$
 </div>
 </div>
 
+---
+layout: prism
+heading: "DIY: Sigmoid and Its Derivative"
+---
+
+<div style="height: 0.4rem;"></div>
+
 <PyRunner>
 
 ```python
@@ -454,6 +489,13 @@ $$
 
 - To carry out backpropagation, we must compute the gradient $\nabla L(\boldsymbol{\theta}; \mathbf{x}, y)$ of this loss function.
 
+---
+layout: prism
+heading: "DIY: Forward Pass"
+---
+
+<div style="height: 0.4rem;"></div>
+
 <PyRunner>
 
 ```python
@@ -497,6 +539,13 @@ $$
 
 - Based on this, we can compute $\dfrac{\partial L}{\partial w_i},\ i = 0, 1, \ldots, 5$ and $\dfrac{\partial L}{\partial b_j},\ j = 0, 1, 2$.
   - [DIY]{.hl} Carry out the partial differentiation yourself.
+
+---
+layout: prism
+heading: "DIY: Backpropagation"
+---
+
+<div style="height: 0.4rem;"></div>
 
 <PyRunner>
 

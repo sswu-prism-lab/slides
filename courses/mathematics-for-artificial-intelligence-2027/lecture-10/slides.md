@@ -171,6 +171,13 @@ $$
 = \begin{bmatrix} 74 \\ 182 \\ 209 \end{bmatrix}
 $$
 
+---
+layout: prism
+heading: "DIY: Matrix as a Linear Map"
+---
+
+<div style="height: 0.5rem;"></div>
+
 <PyRunner>
 
 ```python
@@ -242,6 +249,13 @@ $$
   - However, because a nonlinear activation function generally exists between the layers, a neural network learns how to map inputs to outputs that reflect the appropriate relationships.
   - Without a nonlinear activation function, no matter how many layers a network has, it would be no different from a single-layer network.
 
+---
+layout: prism
+heading: "DIY: Affine Transformation as a Matrix"
+---
+
+<div style="height: 0.5rem;"></div>
+
 <PyRunner>
 
 ```python
@@ -289,6 +303,13 @@ $$
 
   - Only for square matrices can exponent rules be defined in the same way as for scalars.
 
+---
+layout: prism
+heading: "DIY: Trace and Matrix Powers"
+---
+
+<div style="height: 0.5rem;"></div>
+
 <PyRunner>
 
 ```python
@@ -335,6 +356,13 @@ $$
 
 - A matrix with nonzero entries only on the main diagonal is called a [diagonal matrix]{.hl}.
 
+---
+layout: prism
+heading: "DIY: Identity and Diagonal Matrices"
+---
+
+<div style="height: 0.5rem;"></div>
+
 <PyRunner>
 
 ```python
@@ -366,6 +394,13 @@ heading: Special Square Matrices (2/2)
   - [DIY]{.hl} Find the upper and lower triangular matrices of $\begin{bmatrix} 1 & 2 & 3 \\ 4 & 5 & 6 \\ 7 & 8 & 9 \end{bmatrix}$.
 
 - Triangular matrices are used in a variety of linear algebra operations.
+
+---
+layout: prism
+heading: "DIY: Triangular Matrices"
+---
+
+<div style="height: 0.5rem;"></div>
 
 <PyRunner>
 
@@ -442,6 +477,13 @@ $$
 
   - [DIY]{.hl} Find the determinant of $\mathbf{A} = \begin{bmatrix} a & b \\ c & d \end{bmatrix}$.
 
+---
+layout: prism
+heading: "DIY: Determinant by Cofactor Expansion"
+---
+
+<div style="height: 0.5rem;"></div>
+
 <PyRunner>
 
 ```python
@@ -494,6 +536,13 @@ $$
 $$
 
   - [DIY]{.hl} Construct a matrix that has no inverse.
+
+---
+layout: prism
+heading: "DIY: Inverse and Singular Matrices"
+---
+
+<div style="height: 0.5rem;"></div>
 
 <PyRunner>
 
@@ -575,6 +624,13 @@ $$
 $$
 
   - For an orthogonal matrix $\mathbf{A}$, $\mathbf{A}^{-1} = \mathbf{A}^\top$ holds, and therefore $\operatorname{det}(\mathbf{A}) = \pm 1$.
+
+---
+layout: prism
+heading: "DIY: Orthogonal Matrices"
+---
+
+<div style="height: 0.5rem;"></div>
 
 <PyRunner>
 
@@ -708,6 +764,13 @@ $$
   - The characteristic polynomial of an $n \times n$ matrix is a polynomial of degree $n$.
   - [DIY]{.hl} Compute the eigenvalues of $\begin{bmatrix} 0 & 1 \\ -2 & -3 \end{bmatrix}$.
 
+---
+layout: prism
+heading: "DIY: Eigenvalues"
+---
+
+<div style="height: 0.5rem;"></div>
+
 <PyRunner>
 
 ```python
@@ -834,6 +897,13 @@ $$
 
 - The covariance matrix reflects how spread out the values are.
 
+---
+layout: prism
+heading: "DIY: Covariance Matrix"
+---
+
+<div style="height: 0.5rem;"></div>
+
 <PyRunner>
 
 ```python
@@ -899,6 +969,13 @@ $$
   - Using the binary (base-$2$) logarithm gives units of bits, while using the natural logarithm ($\ln$) gives units of nats.
   - The KL divergence is not symmetric, but that does not mean it cannot be used as a distance function.
 
+---
+layout: prism
+heading: "DIY: Kullback-Leibler Divergence"
+---
+
+<div style="height: 0.5rem;"></div>
+
 <PyRunner>
 
 ```python
@@ -958,6 +1035,13 @@ heading: Principal Component Analysis (2/2)
 7. Apply the transformation matrix to the original dataset to obtain a new dataset.
 
 </div>
+
+---
+layout: prism
+heading: "DIY: PCA"
+---
+
+<div style="height: 0.5rem;"></div>
 
 <PyRunner>
 

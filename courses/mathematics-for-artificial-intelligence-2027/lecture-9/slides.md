@@ -147,6 +147,13 @@ $$
 
 - The operation of swapping rows and columns ($\top$) is called the [transpose]{.hl}.
 
+---
+layout: prism
+heading: "DIY: Vectors and Transpose"
+---
+
+<div style="height: 1rem;"></div>
+
 <PyRunner>
 
 ```python
@@ -211,6 +218,13 @@ $$
 - A scalar has no dimension, a vector has one dimension, and a matrix has two dimensions. A mathematical object with three or more dimensions is called a [tensor]{.hl}.
   - We use the [rank]{.hl} to express the dimension of a tensor: a scalar is a rank-0 tensor, a vector a rank-1 tensor, and a matrix a rank-2 tensor.
 
+---
+layout: prism
+heading: "DIY: Tensor Ranks and Shapes"
+---
+
+<div style="height: 1rem;"></div>
+
 <PyRunner>
 
 ```python
@@ -270,6 +284,13 @@ $$
 \hat{\mathbf{x}} = \frac{\mathbf{x}}{\|\mathbf{x}\|}
 $$
 
+---
+layout: prism
+heading: "DIY: Magnitude and Unit Vectors"
+---
+
+<div style="height: 1rem;"></div>
+
 <PyRunner>
 
 ```python
@@ -314,6 +335,13 @@ $$
   - $\mathbf{x}\cdot(\mathbf{y}+\mathbf{z}) = \mathbf{x}\cdot\mathbf{y} + \mathbf{x}\cdot\mathbf{z}$
 
 - The inner product of two vectors whose angle is $\pi/2$ is $0$; in this case the two vectors are said to be [orthogonal]{.hl}.
+
+---
+layout: prism
+heading: "DIY: Inner Product and Orthogonality"
+---
+
+<div style="height: 1rem;"></div>
 
 <PyRunner>
 
@@ -367,6 +395,13 @@ $$
 </div>
 </div>
 
+---
+layout: prism
+heading: "DIY: Vector Projection"
+---
+
+<div style="height: 1rem;"></div>
+
 <PyRunner>
 
 ```python
@@ -409,6 +444,13 @@ x_{m-1} y_0 & x_{m-1} y_1 & x_{m-1} y_2 & \cdots & x_{m-1} y_{n-1}
 $$
 
 - From a similar viewpoint, we can define the [Cartesian product]{.hl} of two sets: $A\times B = \{(a, b) \mid \forall a\in A,\ \forall b\in B\}$.
+
+---
+layout: prism
+heading: "DIY: Outer and Cartesian Products"
+---
+
+<div style="height: 1rem;"></div>
 
 <PyRunner>
 
@@ -463,6 +505,13 @@ $$
 
 - More rigorously, if the result of the Hadamard product is a matrix $\mathbf{Z}$, it can be defined as $z_{ij} = x_{ij}\,y_{ij}$.
 
+---
+layout: prism
+heading: "DIY: Hadamard Product"
+---
+
+<div style="height: 1rem;"></div>
+
 <PyRunner>
 
 ```python
@@ -502,6 +551,13 @@ $$
   - $(\mathbf{XY})\mathbf{Z} = \mathbf{X}(\mathbf{YZ})$
   - $\mathbf{X}(\mathbf{Y}+\mathbf{Z}) = \mathbf{XY} + \mathbf{XZ}$
   - $\mathbf{XY} \neq \mathbf{YX}$
+
+---
+layout: prism
+heading: "DIY: Matrix as a Linear Map"
+---
+
+<div style="height: 1rem;"></div>
 
 <PyRunner>
 
@@ -544,6 +600,13 @@ x_{1,0}\mathbf{Y} & x_{1,1}\mathbf{Y} & \cdots & x_{1,n-1}\mathbf{Y} \\
 x_{m-1,0}\mathbf{Y} & x_{m-1,1}\mathbf{Y} & \cdots & x_{m-1,n-1}\mathbf{Y}
 \end{bmatrix}
 $$
+
+---
+layout: prism
+heading: "DIY: Kronecker Product"
+---
+
+<div style="height: 1rem;"></div>
 
 <PyRunner>
 

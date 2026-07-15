@@ -148,6 +148,13 @@ $$
 - The slope tells us how much $y$ changes as $x$ changes.
   - In the slope-intercept form, the slope is the [proportionality constant]{.hl} between $x$ and $y$, and the intercept $b$ is a [constant offset]{.hl}.
 
+---
+layout: prism
+heading: "DIY: Slope of a Line"
+---
+
+<div style="height: 2rem;"></div>
+
 <PyRunner>
 
 ```python
@@ -243,6 +250,13 @@ $$
 
 - The [$n$th derivative]{.hl} can likewise be defined.
 
+---
+layout: prism
+heading: "DIY: Numerical Derivative"
+---
+
+<div style="height: 2rem;"></div>
+
 <PyRunner>
 
 ```python
@@ -292,6 +306,13 @@ $$
 $$
 \frac{d}{dx}(f(x) \pm g(x)) = \frac{d}{dx} f(x) \pm \frac{d}{dx} g(x)
 $$
+
+---
+layout: prism
+heading: "DIY: The Power Rule"
+---
+
+<div style="height: 2rem;"></div>
 
 <PyRunner>
 
@@ -345,6 +366,13 @@ $$
 \frac{d}{dx} f(g(x)) = \frac{d}{dx} f \circ g(x) = f'(g(x)) g'(x)
 $$
 
+---
+layout: prism
+heading: "DIY: Product, Quotient, and Chain Rules"
+---
+
+<div style="height: 2rem;"></div>
+
 <PyRunner>
 
 ```python
@@ -387,6 +415,13 @@ $$
 \frac{d}{dx}\tan x = \sec^2 x
 \end{gather*}
 $$
+
+---
+layout: prism
+heading: "DIY: Trigonometric Derivatives"
+---
+
+<div style="height: 2rem;"></div>
 
 <PyRunner>
 
@@ -462,6 +497,13 @@ $$
 \frac{d}{dx} \log_b g(x) = \frac{g'(x)}{g(x) \ln b}
 $$
 
+---
+layout: prism
+heading: "DIY: Exponential and Logarithmic Derivatives"
+---
+
+<div style="height: 2rem;"></div>
+
 <PyRunner>
 
 ```python
@@ -501,6 +543,13 @@ heading: Minima and Maxima of a Function
 - However, even if the derivative is $0$ at a stationary point, if it is not smaller (or larger) than all nearby points, it is not a minimum (or maximum).
 
 - A stationary point that is not an extremum is called an [inflection point]{.hl}, or, for functions of several variables, a [saddle point]{.hl}.
+
+---
+layout: prism
+heading: "DIY: Stationary Points"
+---
+
+<div style="height: 2rem;"></div>
 
 <PyRunner>
 
@@ -563,6 +612,13 @@ $$
 \end{gather*}
 $$
 
+---
+layout: prism
+heading: "DIY: Partial Derivatives"
+---
+
+<div style="height: 2rem;"></div>
+
 <PyRunner>
 
 ```python
@@ -599,6 +655,13 @@ heading: Mixed Partial Derivatives
 $$
 \frac{\partial}{\partial x}\frac{\partial}{\partial y} f(x, y, z) = \frac{\partial^2}{\partial x\, \partial y} f(x, y, z) = 3z
 $$
+
+---
+layout: prism
+heading: "DIY: Mixed Partial Derivatives"
+---
+
+<div style="height: 2rem;"></div>
 
 <PyRunner>
 
@@ -640,6 +703,13 @@ $$
 \frac{\partial f}{\partial s} = \left(\frac{\partial f}{\partial x}\right)\left(\frac{\partial x}{\partial s}\right) + \left(\frac{\partial f}{\partial y}\right)\left(\frac{\partial y}{\partial s}\right)
 \end{gather*}
 $$
+
+---
+layout: prism
+heading: "DIY: The Multivariable Chain Rule"
+---
+
+<div style="height: 2rem;"></div>
 
 <PyRunner>
 
@@ -694,6 +764,13 @@ $$
 \frac{\partial f}{\partial x_n}
 \end{bmatrix}
 $$
+
+---
+layout: prism
+heading: "DIY: The Gradient"
+---
+
+<div style="height: 2rem;"></div>
 
 <PyRunner>
 
