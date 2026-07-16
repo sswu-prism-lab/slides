@@ -6,7 +6,7 @@ background: '#ffffff' # Sets a custom hex background color
 title: AML - Lecture 1
 download: true
 info: |
-  ## Math for AI Lecture Slides
+  ## Data Structures Lecture Slides
   Pattern Recognition and Intelligent System Modeling Lab, Sungshin Women's University
 class: text-center
 transition: slide-left
@@ -31,8 +31,8 @@ mdc: true
 </div>
 
 <div class="h-full flex flex-col items-center justify-center text-center px-10" style="padding-top: 4rem;">
-  <h1 style="color:#5c60a8; font-size: 3.5rem; font-weight: bold; margin: 0rem;">Mathematics for Artificial Intelligence</h1>
-  <p style="color:#9aa0a6; font-size: 1.5rem; margin-top: 0.25rem;">Week 01: Course Overview</p>
+  <h1 style="color:#5c60a8; font-size: 3.5rem; font-weight: bold; margin: 0rem;">Data Structures</h1>
+  <p style="color:#9aa0a6; font-size: 1.5rem; margin-top: 0.25rem;">Week 01: Course Introduction</p>
 
   <p class="text-gray-800 dark:text-gray-100" style="font-size: 1.5rem; margin-top: 5rem;">Wonjun Ko, Ph.D.</p>
 
@@ -50,23 +50,23 @@ layout: prism
 heading: Course Schedule
 ---
 
-<div class="absolute left-10 right-10" style="top: 1rem; bottom: 5rem; display: grid; grid-template-columns: 1fr 1fr; column-gap: 5rem; align-items: center;">
+<div class="absolute left-10 right-10" style="top: 0rem; bottom: 0rem; display: grid; grid-template-columns: 1.2fr 1fr; column-gap: 5rem; align-items: center;">
   <div>
-    <p style="margin: 1rem 0; font-size: 1.3rem;"><span style="color:#4a6fa5; font-weight:bold;">W01</span> <span class="text-gray-900 dark:text-gray-100">Course Overview</span></p>
-    <p style="margin: 1rem 0; font-size: 1.3rem;"><span style="color:#4a6fa5; font-weight:bold;">W02</span> <span style="color:#9aa0a6;">Numbers, Operations, and Systems</span></p>
-    <p style="margin: 1rem 0; font-size: 1.3rem;"><span style="color:#4a6fa5; font-weight:bold;">W03</span> <span style="color:#9aa0a6;">Analysis of Functions</span></p>
-    <p style="margin: 1rem 0; font-size: 1.3rem;"><span style="color:#4a6fa5; font-weight:bold;">W04</span> <span style="color:#9aa0a6;">Probability, Part 1</span></p>
-    <p style="margin: 1rem 0; font-size: 1.3rem;"><span style="color:#4a6fa5; font-weight:bold;">W05</span> <span style="color:#9aa0a6;">Probability, Part 2</span></p>
-    <p style="margin: 1rem 0; font-size: 1.3rem;"><span style="color:#4a6fa5; font-weight:bold;">W06</span> <span style="color:#9aa0a6;">Statistics</span></p>
+    <p style="margin: 1rem 0; font-size: 1.3rem;"><span style="color:#4a6fa5; font-weight:bold;">W01</span> <span class="text-gray-900 dark:text-gray-100">Course Introduction</span></p>    
+    <p style="margin: 1rem 0; font-size: 1.3rem;"><span style="color:#4a6fa5; font-weight:bold;">W02</span> <span style="color:#9aa0a6;">Basic Mathematics and C++ Details</span></p>
+    <p style="margin: 1rem 0; font-size: 1.3rem;"><span style="color:#4a6fa5; font-weight:bold;">W03</span> <span style="color:#9aa0a6;">Algorithm Analysis</span></p>
+    <p style="margin: 1rem 0; font-size: 1.3rem;"><span style="color:#4a6fa5; font-weight:bold;">W04</span> <span style="color:#9aa0a6;">Lists, Stacks, and Queues</span></p>
+    <p style="margin: 1rem 0; font-size: 1.3rem;"><span style="color:#4a6fa5; font-weight:bold;">W05</span> <span style="color:#9aa0a6;">Circular Queues and Priority Queues</span></p>
+    <p style="margin: 1rem 0; font-size: 1.3rem;"><span style="color:#4a6fa5; font-weight:bold;">W06</span> <span style="color:#9aa0a6;">Trees and Tries</span></p>
     <p style="margin: 1rem 0; font-size: 1.3rem;"><span style="color:#4a6fa5; font-weight:bold;">W07</span> <span style="color:#9aa0a6;">Midterm Review</span></p>
     <p style="margin: 1rem 0; font-size: 1.3rem;"><span style="color:#4a6fa5; font-weight:bold;">W08</span> <span style="color:#9aa0a6;">Midterm Exam</span></p>
   </div>
   <div>
-    <p style="margin: 1rem 0; font-size: 1.3rem;"><span style="color:#4a6fa5; font-weight:bold;">W09</span> <span style="color:#9aa0a6;">Linear Algebra, Part 1</span></p>
-    <p style="margin: 1rem 0; font-size: 1.3rem;"><span style="color:#4a6fa5; font-weight:bold;">W10</span> <span style="color:#9aa0a6;">Linear Algebra, Part 2</span></p>
-    <p style="margin: 1rem 0; font-size: 1.3rem;"><span style="color:#4a6fa5; font-weight:bold;">W11</span> <span style="color:#9aa0a6;">Differentiation</span></p>
-    <p style="margin: 1rem 0; font-size: 1.3rem;"><span style="color:#4a6fa5; font-weight:bold;">W12</span> <span style="color:#9aa0a6;">Matrix Calculus</span></p>
-    <p style="margin: 1rem 0; font-size: 1.3rem;"><span style="color:#4a6fa5; font-weight:bold;">W13</span> <span style="color:#9aa0a6;">Data Flow in Neural Networks</span></p>
+    <p style="margin: 1rem 0; font-size: 1.3rem;"><span style="color:#4a6fa5; font-weight:bold;">W09</span> <span style="color:#9aa0a6;">Heaps</span></p>
+    <p style="margin: 1rem 0; font-size: 1.3rem;"><span style="color:#4a6fa5; font-weight:bold;">W10</span> <span style="color:#9aa0a6;">Graphs and Weighted Graphs</span></p>
+    <p style="margin: 1rem 0; font-size: 1.3rem;"><span style="color:#4a6fa5; font-weight:bold;">W11</span> <span style="color:#9aa0a6;">Sets and Maps</span></p>
+    <p style="margin: 1rem 0; font-size: 1.3rem;"><span style="color:#4a6fa5; font-weight:bold;">W12</span> <span style="color:#9aa0a6;">Hash Tables</span></p>
+    <p style="margin: 1rem 0; font-size: 1.3rem;"><span style="color:#4a6fa5; font-weight:bold;">W13</span> <span style="color:#9aa0a6;">Algorithm Design Techniques</span></p>
     <p style="margin: 1rem 0; font-size: 1.3rem;"><span style="color:#4a6fa5; font-weight:bold;">W14</span> <span style="color:#9aa0a6;">Final Review</span></p>
     <p style="margin: 1rem 0; font-size: 1.3rem;"><span style="color:#4a6fa5; font-weight:bold;">W15</span> <span style="color:#9aa0a6;">Final Exam</span></p>
   </div>
@@ -167,24 +167,24 @@ layout: prism
 heading: The Course in a Nutshell
 ---
 
-<div style="margin-top: 0.5rem;">
+<div style="margin-top: 1rem;">
 
-- Title: Mathematics for Artificial Intelligence
+- Title: Data Structures
 
-<div style="height: 1rem;"></div>
+<div style="height: 2rem;"></div>
 
-- After finishing this course, students will understand some basics of mathematical theories widely-adopted to build linear machine learning methods as well as deep and hierarchical methods.
+- After finishing this course, students will understand basic data structures and be able to implement them.
 
-<div style="height: 1rem;"></div>
+<div style="height: 2rem;"></div>
 
-<img src="https://raw.githubusercontent.com/sswu-prism-lab/slides/main/images/mai/mai-2027/textbook.jpg" style="float: right; width: 10rem; margin: 0 2rem 0 1.5rem;" />
+<img src="https://raw.githubusercontent.com/sswu-prism-lab/slides/main/images/ds/ds-2027/textbook.jpg" style="float: right; width: 10rem; margin: 0 2rem 0 1.5rem;" />
 
 - Grading will be mainly based on:
   - Two exams (35% for the midterm and 45% for the final exam)
   - Four homeworks (5% for each)
   - Attendance (0%, Note that four or more times absence will automatically result in the F grade)
-  - Text: Kneusel, Ronald T. _Math for Deep Learning: What You Need to Know to Understand Neural Networks_, No Starch Press, 2022.
-    - 번역서: 로널드 크노이젤, _딥러닝을 위한 수학: 신경망 수학 기초부터 역전파와 경사하강법까지_, 제이펍, 2022.
+  - Text: Allen, Weiss Mark, _Data Structures and Algorithm Analysis in C++_, Pearson Education, 2007.
+    - 번역서: 마크 알렌 바이스, _C++를 이용한 데이터구조 및 알고리즘 분석_, 도서출판 홍릉, 2010.
   - Lecture notes that can be brought to the exam will be provided.
 
 <div style="clear: both;"></div>

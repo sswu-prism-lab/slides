@@ -45,6 +45,7 @@
     "dev:mai-lec11-ko": "slidev courses/mathematics-for-artificial-intelligence-2027/lecture-11-ko/slides.md --open",
     "dev:mai-lec12-ko": "slidev courses/mathematics-for-artificial-intelligence-2027/lecture-12-ko/slides.md --open",
     "dev:mai-lec13-ko": "slidev courses/mathematics-for-artificial-intelligence-2027/lecture-13-ko/slides.md --open",
+    "dev:ds-lec1": "slidev courses/data-structure-2027/lecture-1/slides.md --open",
     "dev:ds-lec2": "slidev courses/data-structure-2027/lecture-2/slides.md --open",
     "dev:ds-lec2-ko": "slidev courses/data-structure-2027/lecture-2-ko/slides.md --open",
     "dev:ds-lec3": "slidev courses/data-structure-2027/lecture-3/slides.md --open",
