@@ -11,6 +11,7 @@ info: |
 class: text-center
 transition: slide-left
 mdc: true
+otherLangUrl: /slides/data-structure-2027/lecture-5-ko/
 ---
 <style>
 .dark .slidev-page,

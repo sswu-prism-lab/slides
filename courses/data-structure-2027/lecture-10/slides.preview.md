@@ -11,6 +11,7 @@ info: |
 class: text-center
 transition: slide-left
 mdc: true
+otherLangUrl: /slides/data-structure-2027/lecture-10-ko/
 ---
 <style>
 .dark .slidev-page,
@@ -577,6 +578,11 @@ layout: prism
 heading: "Dijkstra's Algorithm: Initialization"
 ---
 
+<style>
+.slidev-layout table th, .slidev-layout table td { padding: 1px 12px; line-height: 1.12; }
+.slidev-layout table { font-size: 0.9em; }
+</style>
+
 <div class="grid grid-cols-2 gap-4" style="margin-top: 1rem;">
 <div>
 
@@ -617,6 +623,11 @@ heading: "Dijkstra's Algorithm: Initialization"
 layout: prism
 heading: "Dijkstra's Algorithm: Stages 1-3"
 ---
+
+<style>
+.slidev-layout table th, .slidev-layout table td { padding: 1px 12px; line-height: 1.12; }
+.slidev-layout table { font-size: 0.9em; }
+</style>
 
 <div class="grid grid-cols-3 gap-3" style="margin-top: 1rem;">
 <div>
@@ -670,6 +681,11 @@ After $v_2$ is *known*:
 layout: prism
 heading: "Dijkstra's Algorithm: Stages 4-6"
 ---
+
+<style>
+.slidev-layout table th, .slidev-layout table td { padding: 1px 12px; line-height: 1.12; }
+.slidev-layout table { font-size: 0.9em; }
+</style>
 
 <div class="grid grid-cols-3 gap-3" style="margin-top: 0.6rem;">
 <div>
@@ -887,6 +903,11 @@ heading: "Prim's Algorithm: Growing the Tree"
 layout: prism
 heading: "Kruskal's Algorithm: Idea"
 ---
+
+<style>
+.slidev-layout table th, .slidev-layout table td { padding: 1px 12px; line-height: 1.12; }
+.slidev-layout table { font-size: 0.9em; }
+</style>
 
 <div class="grid grid-cols-2 gap-4" style="margin-top: 1.5rem;">
 <div>

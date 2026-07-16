@@ -11,6 +11,7 @@ info: |
 class: text-center
 transition: slide-left
 mdc: true
+otherLangUrl: /slides/data-structure-2027/lecture-13-ko/
 ---
 <style>
 .dark .slidev-page,
@@ -392,6 +393,11 @@ layout: prism
 heading: "Huffman Codes"
 ---
 
+<style>
+.slidev-layout table th, .slidev-layout table td { padding: 1px 12px; line-height: 1.12; }
+.slidev-layout table { font-size: 0.9em; }
+</style>
+
 <div class="grid grid-cols-2 gap-4" style="margin-top: 1rem;">
 <div>
 
@@ -465,6 +471,11 @@ heading: "Huffman Codes — Prefix Codes"
 layout: prism
 heading: "Huffman Codes — The Optimal Code"
 ---
+
+<style>
+.slidev-layout table th, .slidev-layout table td { padding: 1px 12px; line-height: 1.12; }
+.slidev-layout table { font-size: 0.9em; }
+</style>
 
 <div class="grid grid-cols-2 gap-4" style="margin-top: 1.5rem;">
 <div>

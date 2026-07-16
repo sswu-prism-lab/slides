@@ -201,7 +201,7 @@ function toggleLang() {
 .theorem-box {
   border: 1px solid #4ba08f;
   border-radius: 8px;
-  margin: 1.5rem auto;
+  margin: 0.5rem auto;
   width: 90%;
   overflow: hidden;
 }
@@ -219,7 +219,7 @@ function toggleLang() {
   text-align: justify;
 }
 .theorem-box-body p {
-  margin: 0.5em 0;
+  margin: 0em 0;
 }
 
 /* ---- 다크모드 전용 오버라이드 ---- */

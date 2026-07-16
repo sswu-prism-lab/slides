@@ -11,6 +11,7 @@ info: |
 class: text-center
 transition: slide-left
 mdc: true
+otherLangUrl: /slides/data-structure-2027/lecture-2-ko/
 ---
 <style>
 .dark .slidev-page,
@@ -54,7 +55,7 @@ layout: prism
 heading: Course Schedule
 ---
 
-<div class="absolute left-10 right-10" style="top: 1rem; bottom: 5rem; display: grid; grid-template-columns: 1fr 1fr; column-gap: 5rem; align-items: center;">
+<div class="absolute left-10 right-10" style="top: 0rem; bottom: 0rem; display: grid; grid-template-columns: 1.2fr 1fr; column-gap: 5rem; align-items: center;">
   <div>
     <p style="margin: 1rem 0; font-size: 1.3rem;"><span style="color:#4a6fa5; font-weight:bold;">W01</span> <span style="color:#9aa0a6;">Course Introduction</span></p>
     <p style="margin: 1rem 0; font-size: 1.3rem;"><span style="color:#4a6fa5; font-weight:bold;">W02</span> <span class="text-gray-900 dark:text-gray-100">Basic Mathematics and C++ Details</span></p>
@@ -200,7 +201,7 @@ heading: Deriving the Geometric Sum
 
 <style>
 .slidev-layout ul > li {
-  margin-top: 1.4em;
+  margin-top: 2.4em;
 }
 </style>
 
@@ -225,7 +226,7 @@ heading: Arithmetic and Power Series
 
 <style>
 .slidev-layout ul > li {
-  margin-top: 1.8em;
+  margin-top: 2.8em;
 }
 </style>
 
@@ -259,7 +260,11 @@ $$
 H_N = \sum_{i=1}^{N} \frac{1}{i} \approx \log_e N,
 $$
 
-where the $H_N$ are the [harmonic numbers]{.hl} and the sum is a [harmonic sum]{.hl}.
+<div class="sub-item">
+
+The $H_N$ are the [harmonic numbers]{.hl} and the sum is a [harmonic sum]{.hl}.
+
+</div>
 
 - The error in the approximation tends to [Euler's constant]{.hl} $\gamma \approx 0.57721566$.
 
@@ -379,7 +384,7 @@ heading: A Brief Introduction to Recursion
 
 <style>
 .slidev-layout ul > li {
-  margin-top: 1.2em;
+  margin-top: 2.2em;
 }
 </style>
 
@@ -389,7 +394,10 @@ heading: A Brief Introduction to Recursion
 - A function defined in terms of itself is [recursive]{.hl}. C++ (like many modern languages) allows recursive functions.
 
 </div>
+
 <div>
+
+<div style="height: 5rem;"></div>
 
 ```cpp
 int f(int x) {
@@ -408,7 +416,7 @@ layout: prism
 heading: Recursion — Common Pitfalls
 ---
 
-<div class="grid grid-cols-2 gap-4" style="margin-top: 0.5rem;">
+<div class="grid grid-cols-2 gap-4" style="margin-top: 1.5rem;">
 <div>
 
 <style>
@@ -420,10 +428,12 @@ heading: Recursion — Common Pitfalls
 - The computer automatically does the bookkeeping for pending recursive calls and their variables.
   - Calls continue until a base case is reached — evaluating `f(-1)` calls `f(-2)`, `f(-3)`, … and never terminates.
 
-- A subtler error: the code below gives no clue what `bad(1)` actually is.
+- A subtler error: the code gives no clue what `bad(1)` actually is.
 
 </div>
 <div>
+
+<div style="height: 5rem;"></div>
 
 ```cpp
 int bad(int n) {
@@ -442,7 +452,7 @@ layout: prism
 heading: Recursion — Printing a Number
 ---
 
-<div class="grid grid-cols-2 gap-4" style="margin-top: 0.5rem;">
+<div class="grid grid-cols-2 gap-4" style="margin-top: 2.5rem;">
 <div>
 
 <style>
@@ -459,6 +469,8 @@ heading: Recursion — Printing a Number
 
 </div>
 <div>
+
+<div style="height: 5rem;"></div>
 
 ```cpp
 void printOut(int n) { // print nonnegative n
@@ -525,8 +537,6 @@ heading: The Four Rules of Recursion
 layout: prism
 heading: "DIY: Tracing Recursion"
 ---
-
-<div style="height: 0.3rem;"></div>
 
 <CppRunner>
 
@@ -645,7 +655,7 @@ layout: prism
 heading: Extra Constructor Syntax and Accessors
 ---
 
-<div style="height: 0.4rem;"></div>
+<div style="height: 3rem;"></div>
 
 ```cpp
 class IntCell {
@@ -671,7 +681,7 @@ heading: "Constructors: Defaults, Lists, explicit"
 
 <style>
 .slidev-layout ul > li {
-  margin-top: 1.2em;
+  margin-top: 2.2em;
 }
 </style>
 
@@ -690,13 +700,15 @@ heading: "vector and string"
 
 <style>
 .slidev-layout ul > li {
-  margin-top: 1.1em;
+  margin-top: 2.1em;
 }
 </style>
 
 - The C++ standard library defines two useful classes: [`vector`]{.hl} and [`string`]{.hl}.
 
 - `vector` is intended to replace the troublesome built-in C++ array.
+
+<div style="height: 2rem;"></div>
 
 ```cpp
 // int squares[] = {1, 4, 9, 16, 25, 36, 49, 64, 81};
@@ -813,7 +825,7 @@ layout: prism
 heading: Pointers
 ---
 
-<div class="grid grid-cols-2 gap-4" style="margin-top: 0.5rem;">
+<div class="grid grid-cols-2 gap-4" style="margin-top: 2.5rem;">
 <div>
 
 <style>
@@ -853,7 +865,7 @@ layout: prism
 heading: Lvalues, Rvalues, and References
 ---
 
-<div class="grid grid-cols-2 gap-4" style="margin-top: 0.5rem;">
+<div class="grid grid-cols-2 gap-4" style="margin-top: 2.5rem;">
 <div>
 
 <style>
@@ -889,7 +901,7 @@ layout: prism
 heading: Lvalue References
 ---
 
-<div class="grid grid-cols-2 gap-4" style="margin-top: 0.5rem;">
+<div class="grid grid-cols-2 gap-4" style="margin-top: 2.5rem;">
 <div>
 
 <style>
@@ -924,7 +936,7 @@ layout: prism
 heading: Rvalue References
 ---
 
-<div class="grid grid-cols-2 gap-4" style="margin-top: 0.5rem;">
+<div class="grid grid-cols-2 gap-4" style="margin-top: 2.5rem;">
 <div>
 
 <style>
@@ -941,6 +953,8 @@ heading: Rvalue References
 
 </div>
 <div>
+
+<div style="height: 4rem;"></div>
 
 ```cpp
 string str = "hell";
@@ -960,7 +974,7 @@ heading: The Big-Five
 
 <style>
 .slidev-layout ul > li {
-  margin-top: 1.2em;
+  margin-top: 2.2em;
 }
 </style>
 
@@ -976,7 +990,7 @@ layout: prism
 heading: The Big-Five — Assignment
 ---
 
-<div class="grid grid-cols-2 gap-4" style="margin-top: 0.5rem;">
+<div class="grid grid-cols-2 gap-4" style="margin-top: 2.5rem;">
 <div>
 
 <style>
@@ -993,6 +1007,8 @@ heading: The Big-Five — Assignment
 
 </div>
 <div>
+
+<div style="height: 4rem;"></div>
 
 ```cpp
 // signatures for IntCell
@@ -1013,7 +1029,7 @@ layout: prism
 heading: Function Templates
 ---
 
-<div class="grid grid-cols-2 gap-4" style="margin-top: 0.5rem;">
+<div class="grid grid-cols-2 gap-4" style="margin-top: 2.5rem;">
 <div>
 
 <style>
@@ -1029,6 +1045,8 @@ heading: Function Templates
 
 </div>
 <div>
+
+<div style="height: 3rem;"></div>
 
 ```cpp
 template <typename Comparable>
@@ -1050,7 +1068,7 @@ layout: prism
 heading: Function Templates — Instantiation
 ---
 
-<div class="grid grid-cols-2 gap-4" style="margin-top: 0.5rem;">
+<div class="grid grid-cols-2 gap-4" style="margin-top: 2.5rem;">
 <div>
 
 <style>
@@ -1131,7 +1149,7 @@ layout: prism
 heading: Class Templates — Usage
 ---
 
-<div class="grid grid-cols-2 gap-4" style="margin-top: 0.5rem;">
+<div class="grid grid-cols-2 gap-4" style="margin-top: 2.5rem;">
 <div>
 
 <style>
@@ -1168,7 +1186,7 @@ layout: prism
 heading: "DIY: Function and Class Templates"
 ---
 
-<div style="height: 0.3rem;"></div>
+<div style="height: 0rem;"></div>
 
 <CppRunner>
 
