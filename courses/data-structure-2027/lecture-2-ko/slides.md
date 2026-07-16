@@ -37,7 +37,7 @@ otherLangUrl: /slides/data-structure-2027/lecture-2/
 
 <div class="h-full flex flex-col items-center justify-center text-center px-10" style="padding-top: 4rem;">
   <h1 style="color:#5c60a8; font-size: 3.5rem; font-weight: bold; margin: 0rem;">자료구조</h1>
-  <p style="color:#9aa0a6; font-size: 1.5rem; margin-top: 0.25rem;">2주차: 기초 수학 및 C++ 내용</p>
+  <p style="color:#9aa0a6; font-size: 1.5rem; margin-top: 0.25rem;">2주차: 기초 수학과 C++ 문법</p>
 
   <p class="text-gray-800 dark:text-gray-100" style="font-size: 1.5rem; margin-top: 5rem;">고원준 (Wonjun Ko), Ph.D.</p>
 
@@ -58,7 +58,7 @@ heading: 과목 커리큘럼
 <div class="absolute left-10 right-10" style="top: 0rem; bottom: 0rem; display: grid; grid-template-columns: 1.2fr 1fr; column-gap: 5rem; align-items: center;">
   <div>
     <p style="margin: 1rem 0; font-size: 1.3rem;"><span style="color:#4a6fa5; font-weight:bold;">W01</span> <span style="color:#9aa0a6;">과목 소개</span></p>
-    <p style="margin: 1rem 0; font-size: 1.3rem;"><span style="color:#4a6fa5; font-weight:bold;">W02</span> <span class="text-gray-900 dark:text-gray-100">기초 수학 및 C++ 내용</span></p>
+    <p style="margin: 1rem 0; font-size: 1.3rem;"><span style="color:#4a6fa5; font-weight:bold;">W02</span> <span class="text-gray-900 dark:text-gray-100">기초 수학과 C++ 문법</span></p>
     <p style="margin: 1rem 0; font-size: 1.3rem;"><span style="color:#4a6fa5; font-weight:bold;">W03</span> <span style="color:#9aa0a6;">알고리즘 분석</span></p>
     <p style="margin: 1rem 0; font-size: 1.3rem;"><span style="color:#4a6fa5; font-weight:bold;">W04</span> <span style="color:#9aa0a6;">리스트, 스택, 큐</span></p>
     <p style="margin: 1rem 0; font-size: 1.3rem;"><span style="color:#4a6fa5; font-weight:bold;">W05</span> <span style="color:#9aa0a6;">원형 큐와 우선순위 큐</span></p>
@@ -79,7 +79,7 @@ heading: 과목 커리큘럼
 
 ---
 layout: prism
-heading: 기초 수학 및 C++ 내용
+heading: 기초 수학과 C++ 문법
 ---
 
 <style>
@@ -88,13 +88,13 @@ heading: 기초 수학 및 C++ 내용
 }
 </style>
 
-- 이번 강의에서는 이 과목 전반에서 사용되는 이산수학과 프로그래밍 개념을 간단히 복습합니다:
+- 이번 강의에서는 본 과목 전반에 걸쳐 사용되는 이산수학과 프로그래밍 개념을 간단히 리뷰합니다:
 
-  - 이후 수업에 필요한 기본적인 수학 배경을 정리합니다.
+  - 이후 과정에 필요한 기본적인 수학적 배경을 요약합니다.
 
-  - [재귀]{.hl}를 간단히 복습합니다.
+  - [재귀]{.hl}를 간단히 리뷰합니다.
 
-  - 이 과목 전반에서 사용되는 [C++]{.hl}의 중요한 기능들을 정리합니다.
+  - 본 과목 전반에서 사용되는 [C++]{.hl}의 중요한 기능 몇 가지를 요약합니다.
 
 ---
 layout: prism
@@ -103,14 +103,14 @@ heading: 목차
 <div style="margin-top: 1.5rem; margin-left: 3rem">
 
 <div>
-    <p style="margin: 0 0; font-size: 1.3rem;"><span style="color:#4a6fa5; font-weight:bold;">수학 복습</span></p>
+    <p style="margin: 0 0; font-size: 1.3rem;"><span style="color:#4a6fa5; font-weight:bold;">수학 리뷰</span></p>
       <p class="text-gray-900 dark:text-gray-100" style="margin: 0 0 0 1.5rem; font-size: 1.1rem;"><span style="font-size:0.75em;">지수와 로그</span></p>
       <p class="text-gray-900 dark:text-gray-100" style="margin: 0 0 0 1.5rem; font-size: 1.1rem;"><span style="font-size:0.75em;">급수</span></p>
       <p class="text-gray-900 dark:text-gray-100" style="margin: 0 0 0 1.5rem; font-size: 1.1rem;"><span style="font-size:0.75em;">모듈러 연산</span></p>
       <p class="text-gray-900 dark:text-gray-100" style="margin: 0 0 0 1.5rem; font-size: 1.1rem;"><span style="font-size:0.75em;">증명</span></p>
       <p class="text-gray-900 dark:text-gray-100" style="margin: 0 0 1rem 1.5rem; font-size: 1.1rem;"><span style="font-size:0.75em;">재귀</span></p>
     <p style="margin: 2rem 0; font-size: 1.3rem;"><span style="color:#DBE3EA; font-weight:bold;">C++ 클래스</span></p>
-    <p style="margin: 2rem 0; font-size: 1.3rem;"><span style="color:#DBE3EA; font-weight:bold;">C++ 세부 내용</span></p>
+    <p style="margin: 2rem 0; font-size: 1.3rem;"><span style="color:#DBE3EA; font-weight:bold;">C++ 세부 사항</span></p>
   </div>
 
 </div>
@@ -126,7 +126,7 @@ heading: 지수
 }
 </style>
 
-- 아래는 [지수]{.hl}와 관련된 기본 수식들로, *기억*하거나 *전개*할 수 있어야 합니다.
+- 아래는 반드시 *기억*하거나 *전개*할 수 있어야 하는 [지수]{.hl}에 관한 기본적인 수식들입니다.
 
 $$
 \begin{gather*}
@@ -135,7 +135,7 @@ X^N + X^N = 2X^N \neq X^{2N} \qquad 2^N + 2^N = 2^{N+1}
 \end{gather*}
 $$
 
-- 특히 마지막 두 식은 틀리기 쉬우니 유의하기 바랍니다.
+- 특히 마지막 두 식은 틀리기 쉬우니 유의해 두세요.
 
 ---
 layout: prism
@@ -148,18 +148,18 @@ heading: 로그
 }
 </style>
 
-- 컴퓨터 과학에서는 별도로 명시하지 않는 한 모든 로그의 밑을 [2]{.hl}로 둡니다.
+- 컴퓨터 과학에서는 따로 특정되지 않는 한 모든 로그의 밑은 [2]{.hl}입니다.
 
 <div class="theorem-box">
 <div class="theorem-box-title">로그의 정의</div>
 <div class="theorem-box-body">
 
-$X^A = B$ _일 필요충분조건은_ $\log_X B = A$.
+$X^A = B$ _일 필요충분조건은_ $\log_X B = A$입니다.
 
 </div>
 </div>
 
-- 이 정의로부터 다음과 같은 유용한 등식들이 유도됩니다:
+- 이 정의로부터 몇 가지 편리한 등식을 얻을 수 있습니다:
 
 <div class="sub-item-enum">
 
@@ -180,19 +180,19 @@ heading: 기하급수
 }
 </style>
 
-- 가장 기억하기 쉬운 수식은 다음과 같습니다.
+- 가장 기억하기 쉬운 수식은 다음과 같습니다
 
 $$
-\sum_{i=0}^{N} 2^i = 2^{N+1} - 1 \qquad\text{그리고 그 동반식}\qquad \sum_{i=0}^{N} A^i = \frac{A^{N+1} - 1}{A - 1}.
+\sum_{i=0}^{N} 2^i = 2^{N+1} - 1 \qquad\text{그리고 이와 짝을 이루는}\qquad \sum_{i=0}^{N} A^i = \frac{A^{N+1} - 1}{A - 1}.
 $$
 
-- 뒤의 식에서 $0 < A < 1$ 이면,
+- 후자의 경우, $0 < A < 1$이면
 
 $$
 \sum_{i=0}^{N} A^i \leq \frac{1}{1 - A},
 $$
 
-이고 $N \to \infty$ 일 때 합은 $1/(1-A)$ 로 수렴합니다. 이것이 [기하급수]{.hl} 공식입니다.
+이고 $N \to \infty$일 때 합은 $1/(1-A)$에 점근합니다. 이것이 [기하급수]{.hl} 공식입니다.
 
 ---
 layout: prism
@@ -205,19 +205,19 @@ heading: 기하급수의 유도
 }
 </style>
 
-- $0 < A < 1$ 에 대한 $\sum_{i=0}^{\infty} A^i$ 는 다음과 같이 유도할 수 있습니다($S$ 를 그 합이라 합시다):
+- $0 < A < 1$일 때 $\sum_{i=0}^{\infty} A^i$를 다음과 같이 유도할 수 있습니다(합을 $S$라 하면):
 
 $$
 S = 1 + A + A^2 + A^3 + \cdots \qquad AS = A + A^2 + A^3 + A^4 + \cdots
 $$
 
-- 두 식을 빼면(*수렴하는* 급수에서만 유효) 오른쪽 항은 거의 모두 소거됩니다:
+- 두 식을 서로 빼면(*수렴하는* 급수에서만 유효) 우변의 거의 모든 항이 소거됩니다:
 
 $$
 S - AS = 1 \;\Rightarrow\; S = \frac{1}{1 - A}.
 $$
 
-- 같은 방법으로 $\sum_{i=0}^{\infty} (1/2)^i = 2$ 를 얻는데, 이는 자주 등장하는 합입니다.
+- 같은 방식으로 자주 등장하는 합 $\sum_{i=0}^{\infty} (1/2)^i = 2$도 얻을 수 있습니다.
 
 ---
 layout: prism
@@ -230,7 +230,7 @@ heading: 등차급수와 거듭제곱 급수
 }
 </style>
 
-- 또 하나의 흔한 급수는 [등차급수]{.hl}입니다:
+- 또 다른 일반적인 급수는 [등차급수]{.hl}입니다:
 
 $$
 \sum_{i=1}^{N} i = \frac{N(N+1)}{2} \approx \frac{N^2}{2}.
@@ -262,13 +262,13 @@ $$
 
 <div class="sub-item">
 
-이때 $H_N$ 을 [조화수]{.hl}, 그 합을 [조화합]{.hl}이라고 합니다.
+여기서 $H_N$을 [조화수]{.hl}, 이 합을 [조화합]{.hl}이라고 합니다.
 
 </div>
 
-- 이 근사의 오차는 [오일러 상수]{.hl} $\gamma \approx 0.57721566$ 에 수렴하는 경향이 있습니다.
+- 이 근사의 오차는 [오일러 상수]{.hl} $\gamma \approx 0.57721566$에 수렴합니다.
 
-- 두 가지 일반적인 대수적 처리 방법을 더 소개합니다:
+- 다음은 좀 더 일반적인 두 가지 대수적 처리입니다:
 
 $$
 \sum_{i=1}^{N} f(N) = N f(N) \qquad \sum_{i=n_0}^{N} f(i) = \sum_{i=1}^{N} f(i) - \sum_{i=1}^{n_0 - 1} f(i).
@@ -285,18 +285,18 @@ heading: 모듈러 연산
 }
 </style>
 
-- $N$ 이 $A - B$ 를 나누어떨어뜨리면, $A$ 는 모듈로 $N$ 에 대해 $B$ 와 [합동]{.hl}이라 하고 $A \equiv B \ (\operatorname{mod}\ N)$ 로 씁니다.
-  - 즉 $A$ 와 $B$ 를 $N$ 으로 나눈 *나머지*가 같다는 뜻으로, 예를 들어 $81 \equiv 61 \equiv 1\ (\operatorname{mod}\ 10)$ 입니다.
+- $N$이 $A - B$를 나누어떨어뜨리면, $A$는 모듈로 $N$에 대해 $B$와 [합동]{.hl}이라 하고 $A \equiv B \ (\operatorname{mod}\ N)$로 씁니다.
+  - 이는 $A$와 $B$를 $N$으로 나눈 *나머지*가 같다는 뜻으로, 예를 들어 $81 \equiv 61 \equiv 1\ (\operatorname{mod}\ 10)$입니다.
 
-- 등식에서와 마찬가지로, $A \equiv B\ (\operatorname{mod}\ N)$ 이면 $A + C \equiv B + C$ 이고 $AD \equiv BD \ (\operatorname{mod}\ N)$ 입니다.
+- 등식과 마찬가지로, $A \equiv B\ (\operatorname{mod}\ N)$이면 $A + C \equiv B + C$이고 $AD \equiv BD \ (\operatorname{mod}\ N)$입니다.
 
-- $N$ 이 [소수]{.hl}이면 세 가지 중요한 정리가 성립합니다:
+- $N$이 [소수]{.hl}일 때 세 가지 중요한 정리가 성립합니다:
 
 <div class="sub-item-enum">
 
-1. $ab \equiv 0\ (\operatorname{mod}\ N)$ *일 필요충분조건은* $a \equiv 0$ 또는 $b \equiv 0\ (\operatorname{mod}\ N)$.
-2. $ax \equiv 1\ (\operatorname{mod}\ N)$ 은 모든 $0 < a < N$ 에 대해 유일한 해를 가지며, 그 해가 [곱셈에 대한 역원]{.hl}입니다.
-3. $x^2 \equiv a\ (\operatorname{mod}\ N)$ 은 모든 $0 < a < N$ 에 대해 두 개의 해를 갖거나, 해가 없습니다.
+1. $ab \equiv 0\ (\operatorname{mod}\ N)$ *일 필요충분조건은* $a \equiv 0$ 또는 $b \equiv 0\ (\operatorname{mod}\ N)$입니다.
+2. $ax \equiv 1\ (\operatorname{mod}\ N)$은 모든 $0 < a < N$에 대해 유일한 해를 가지며, 그 해가 [곱셈에 대한 역원]{.hl}입니다.
+3. $x^2 \equiv a\ (\operatorname{mod}\ N)$은 모든 $0 < a < N$에 대해 두 개의 해를 갖거나, 아니면 해가 없습니다.
 
 </div>
 
@@ -313,13 +313,13 @@ heading: 반례에 의한 증명
 
 - 자료구조 분석에서 명제를 증명하는 가장 흔한 두 가지 방법은 [귀납법]{.hl}과 [귀류법]{.hl}입니다.
 
-- 어떤 정리가 *거짓*임을 증명하는 가장 좋은 방법은 [반례를 제시하는 것]{.hl}입니다.
+- 어떤 정리가 *거짓*임을 보이는 가장 좋은 방법은 [반례를 제시하는 것]{.hl}입니다.
 
 <div class="theorem-box">
-<div class="theorem-box-title">정리. 명제 $F_k \leq k^2$ 는 거짓이다.</div>
+<div class="theorem-box-title">정리. 명제 $F_k \leq k^2$은 거짓입니다.</div>
 <div class="theorem-box-body">
 
-가장 간단한 증명은 $F_{13} = 233 > 13^2 = 169$ 을 계산하는 것입니다.
+이를 증명하는 가장 쉬운 방법은 $F_{13} = 233 > 13^2 = 169$을 계산하는 것입니다.
 
 </div>
 </div>
@@ -336,14 +336,14 @@ heading: 귀납법
 </style>
 
 - [귀납법에 의한 증명]{.hl}은 두 개의 표준적인 부분으로 이루어집니다:
-  - *기초 경우* — 정리가 어떤 작은 값(들)에 대해 성립함을 확인하며, 보통 자명합니다.
-  - *귀납적 가설* — 어떤 한계 $k$ 까지 정리가 성립한다고 가정한 뒤, $k+1$ 에 대해서도 성립함을 보입니다.
+  - *기초 경우* — 정리가 몇몇 작은 값에 대해 성립함을 확립하는 것으로, 보통 자명합니다.
+  - *귀납적 가설* — 어떤 한계 $k$까지 정리가 성립한다고 가정한 뒤, $k+1$에 대해서도 성립함을 보이는 것입니다.
 
 <div class="theorem-box">
-<div class="theorem-box-title">정리. 피보나치 수는 $F_i < (5/3)^i$ 를 만족한다.</div>
+<div class="theorem-box-title">정리. 피보나치 수는 $F_i < (5/3)^i$를 만족합니다.</div>
 <div class="theorem-box-body">
 
-$F_1 = 1 < 5/3$ 이고 $F_2 = 1 < 25/9$ 입니다. 그러면
+$F_1 = 1 < 5/3$이고 $F_2 = 1 < 25/9$입니다. 그러면
 
 $$
 F_{k+1} = F_k + F_{k-1} < (5/3)^k + (5/3)^{k-1} < (24/25)(5/3)^{k+1} < (5/3)^{k+1}.
@@ -363,20 +363,20 @@ heading: 귀류법
 }
 </style>
 
-- [귀류법에 의한 증명]{.hl}은 정리가 거짓이라고 가정하고, 이 가정이 이미 알려진 어떤 성질이 거짓임을 함의함을 보임으로써 그 가정이 틀렸음을 이끌어냅니다.
+- [귀류법에 의한 증명]{.hl}은 정리가 거짓이라고 가정하고, 이 가정이 이미 알려진 어떤 성질을 거짓으로 만든다는 것을 보임으로써 그 가정이 틀렸음을 밝히는 방법입니다.
 
 <div class="theorem-box">
-<div class="theorem-box-title">정리. 소수는 무한히 많다.</div>
+<div class="theorem-box-title">정리. 소수는 무한히 많습니다.</div>
 <div class="theorem-box-body">
 
-정리가 거짓이라고 가정하면 가장 큰 소수 $P_k$ 가 존재합니다. $P_1, P_2, \ldots, P_k$ 를 차례로 나열한 모든 소수라 하고, $N = P_1 P_2 \cdots P_k + 1$ 을 생각합시다. 그러면 $N > P_k$ 이므로 가정에 의해 $N$ 은 소수가 아닙니다. 그러나 $P_1, \ldots, P_k$ 중 어느 것도 $N$ 을 정확히 나누지 못합니다(항상 나머지 $1$ 이 남습니다) — 모든 수는 소수이거나 소수들의 곱이므로 이는 모순입니다. 따라서 정리는 참입니다.
+정리가 거짓이라고 가정하면, 가장 큰 소수 $P_k$가 존재합니다. $P_1, P_2, \ldots, P_k$를 순서대로 나열한 모든 소수라 하고, $N = P_1 P_2 \cdots P_k + 1$을 생각합니다. 그러면 $N > P_k$이므로 가정에 따라 $N$은 소수가 아닙니다. 그러나 $P_1, \ldots, P_k$ 중 어느 것도 $N$을 정확히 나누지 못합니다(항상 나머지 $1$이 남습니다) — 이는 모든 수가 소수이거나 소수들의 곱이라는 사실에 모순입니다. 따라서 정리는 참입니다.
 
 </div>
 </div>
 
 ---
 layout: prism
-heading: 재귀에 대한 간략한 소개
+heading: 재귀에 대한 간단한 소개
 ---
 
 <div class="grid grid-cols-2 gap-4" style="margin-top: 0.6rem;">
@@ -388,10 +388,10 @@ heading: 재귀에 대한 간략한 소개
 }
 </style>
 
-- 우리에게 익숙한 함수는 대부분 간단한 공식을 갖지만, 어떤 함수는 덜 관습적인 방식으로 정의됩니다.
-  - 음이 아닌 정수 위에서 $f(0) = 0$, $f(x) = 2 f(x-1) + x^2$ 로 $f$ 를 정의합니다.
+- 대부분의 익숙한 함수는 간단한 수식을 갖지만, 어떤 함수는 덜 통상적인 방식으로 정의됩니다.
+  - 음이 아닌 정수에서 $f(0) = 0$과 $f(x) = 2 f(x-1) + x^2$으로 $f$를 정의합니다.
 
-- 자기 자신을 이용해 정의된 함수를 [재귀적]{.hl}이라 합니다. C++ 는 (많은 현대 언어처럼) 재귀 함수를 허용합니다.
+- 자기 자신을 이용해 정의된 함수를 [재귀적]{.hl}이라 합니다. C++는 (많은 현대 언어처럼) 재귀 함수를 허용합니다.
 
 </div>
 
@@ -413,7 +413,7 @@ int f(int x) {
 
 ---
 layout: prism
-heading: 재귀 — 흔한 실수
+heading: 재귀 — 흔한 함정
 ---
 
 <div class="grid grid-cols-2 gap-4" style="margin-top: 1.5rem;">
@@ -425,10 +425,10 @@ heading: 재귀 — 흔한 실수
 }
 </style>
 
-- 컴퓨터는 대기 중인 재귀 호출과 그 변수들에 대한 정보를 자동으로 관리해 줍니다.
-  - 기초 경우에 도달할 때까지 호출이 계속됩니다 — `f(-1)` 을 계산하면 `f(-2)`, `f(-3)`, … 을 호출하며 결코 끝나지 않습니다.
+- 컴퓨터는 대기 중인 재귀 호출과 그 변수들에 대한 관리를 자동으로 처리합니다.
+  - 호출은 기초 경우에 도달할 때까지 계속됩니다 — `f(-1)`을 평가하면 `f(-2)`, `f(-3)`, … 을 호출하며 결코 끝나지 않습니다.
 
-- 더 미묘한 오류도 있습니다: 이 코드는 `bad(1)` 이 실제로 무엇인지 전혀 알려 주지 않습니다.
+- 좀 더 미묘한 오류: 이 코드는 `bad(1)`이 실제로 무엇인지 전혀 알려주지 않습니다.
 
 </div>
 <div>
@@ -437,9 +437,9 @@ heading: 재귀 — 흔한 실수
 
 ```cpp
 int bad(int n) {
-    if (n == 0)   // 기초 경우처럼 보인다
+    if (n == 0)   // 기초 경우처럼 보임
         return 0;
-    else          // bad(1)을 추정할 수 없다
+    else          // bad(1)을 추정할 수 없음
         return bad(n / 3 + 1) + n - 1;
 }
 ```
@@ -461,11 +461,11 @@ heading: 재귀 — 숫자 출력
 }
 </style>
 
-- 여기서 재귀의 처음 두 가지 기본 규칙이 나옵니다:
-  - 재귀 없이 풀 수 있는 *기초 경우*를 항상 두어야 합니다.
+- 이로부터 재귀의 처음 두 가지 기본 규칙을 얻습니다:
+  - 항상 재귀 없이 풀 수 있는 *기초 경우*를 두어야 합니다.
   - 모든 재귀 호출은 기초 경우를 향해 *진전*해야 합니다.
 
-- `printDigit` 으로 한 자리 숫자만 출력할 수 있다고 합시다. 재귀는 깔끔한 해법을 제공합니다.
+- `printDigit`로 한 자리 숫자만 출력할 수 있다고 가정합시다. 재귀는 깔끔한 해법을 제공합니다.
 
 </div>
 <div>
@@ -473,7 +473,7 @@ heading: 재귀 — 숫자 출력
 <div style="height: 5rem;"></div>
 
 ```cpp
-void printOut(int n) { // 음이 아닌 n을 출력
+void printOut(int n) { // print nonnegative n
     if (n >= 10)
         printOut(n / 10);
     printDigit(n % 10);
@@ -494,18 +494,18 @@ heading: 재귀와 귀납
 }
 </style>
 
-- 이 숫자 출력 프로그램이 올바름을 귀납법으로 증명할 수 있습니다.
+- 앞의 숫자 출력 프로그램이 옳음을 귀납법으로 증명할 수 있습니다.
 
 <div class="theorem-box">
-<div class="theorem-box-title">정리. 재귀적 숫자 출력 알고리즘은 $n \geq 0$ 에 대해 올바르다.</div>
+<div class="theorem-box-title">정리. 재귀적 숫자 출력 알고리즘은 $n \geq 0$에 대해 옳습니다.</div>
 <div class="theorem-box-body">
 
-$n$ 이 한 자리이면 프로그램은 단지 `printDigit` 을 호출할 뿐이므로 자명하게 올바릅니다. 이제 `printOut` 이 $k$ 자리 이하의 모든 수에 대해 올바르게 동작한다고 가정합시다. $(k+1)$ 자리 수는 앞의 $k$ 자리와 그 뒤의 마지막 자리로 이루어집니다. 앞의 $k$ 자리는 정확히 $\lfloor n/10 \rfloor$ 로, 귀납적 가설에 의해 올바르게 출력되고, 마지막 자리는 $n \bmod 10$ 입니다. 따라서 모든 수가 올바르게 출력됩니다.
+$n$이 한 자리 숫자이면 프로그램은 단지 `printDigit`을 호출하므로 자명하게 옳습니다. `printOut`이 $k$자리 이하의 모든 수에 대해 동작한다고 가정합시다. $(k+1)$자리 수는 첫 $k$자리 뒤에 마지막 자리를 붙인 것입니다. 첫 $k$자리는 정확히 $\lfloor n/10 \rfloor$이며 귀납적 가설에 의해 올바르게 출력되고, 마지막 자리는 $n \bmod 10$입니다. 따라서 모든 수가 올바르게 출력됩니다.
 
 </div>
 </div>
 
-- 재귀 프로그램을 설계할 때, 기초 경우로 가는 경로 위의 더 작은 모든 사례는 올바르다고 *가정*할 수 있습니다.
+- 재귀 프로그램을 설계할 때, 기초 경우로 가는 경로 위의 더 작은 모든 사례는 옳다고 *가정*할 수 있습니다.
 
 ---
 layout: prism
@@ -518,24 +518,24 @@ heading: 재귀의 네 가지 규칙
 }
 </style>
 
-- 재귀 프로그램은 더 작은 문제들의 해를 조합하기만 하면 됩니다 — 이것이 *세 번째* 규칙, 즉 모든 재귀 호출이 동작한다고 가정하는 것입니다.
+- 재귀 프로그램은 더 작은 문제들의 해를 조합하기만 하면 됩니다 — 이것이 *세 번째* 규칙입니다: 모든 재귀 호출이 동작한다고 가정합니다.
 
-- 재귀의 주된 비용은 숨겨진 관리 작업이므로, 단순한 `for` 루프의 대체물로 사용해서는 안 됩니다.
+- 재귀의 주된 비용은 보이지 않는 관리 작업이니, 단순한 `for` 루프의 대체물로 사용하지 마십시오.
 
-- 재귀의 네 가지 기본 규칙은 다음과 같습니다:
+- 재귀의 네 가지 기본 규칙:
 
 <div class="sub-item-enum">
 
-1. *기초 경우.* 재귀 없이 풀 수 있는 기초 경우를 항상 두어야 합니다.
-2. *진전하기.* 재귀 호출은 기초 경우를 향해 진전해야 합니다.
+1. *기초 경우.* 항상 재귀 없이 풀 수 있는 기초 경우를 둡니다.
+2. *진전.* 재귀 호출은 기초 경우를 향해 진전해야 합니다.
 3. *설계 규칙.* 모든 재귀 호출이 동작한다고 가정합니다.
-4. *복리 규칙.* 같은 사례를 여러 재귀 호출에서 반복해서 풀며 작업을 중복하지 마십시오.
+4. *복리 규칙.* 같은 사례를 별개의 재귀 호출에서 풀어 작업을 중복하지 마십시오.
 
 </div>
 
 ---
 layout: prism
-heading: "DIY: 재귀 추적"
+heading: "DIY: 재귀 추적하기"
 ---
 
 <CppRunner>
@@ -576,12 +576,12 @@ heading: 목차
 <div style="margin-top: 1.5rem; margin-left: 3rem">
 
 <div>
-    <p style="margin: 0.8rem 0; font-size: 1.3rem;"><span style="color:#DBE3EA; font-weight:bold;">수학 복습</span></p>
+    <p style="margin: 0.8rem 0; font-size: 1.3rem;"><span style="color:#DBE3EA; font-weight:bold;">수학 리뷰</span></p>
     <p style="margin: 0 0; font-size: 1.3rem;"><span style="color:#4a6fa5; font-weight:bold;">C++ 클래스</span></p>
       <p class="text-gray-900 dark:text-gray-100" style="margin: 0 0 0 1.5rem; font-size: 1.1rem;"><span style="font-size:0.75em;">기본 <code>class</code> 문법</span></p>
       <p class="text-gray-900 dark:text-gray-100" style="margin: 0 0 0 1.5rem; font-size: 1.1rem;"><span style="font-size:0.75em;">추가 생성자 문법과 접근자</span></p>
       <p class="text-gray-900 dark:text-gray-100" style="margin: 0 0 1rem 1.5rem; font-size: 1.1rem;"><span style="font-size:0.75em;"><code>vector</code>와 <code>string</code></span></p>
-    <p style="margin: 0.8rem 0; font-size: 1.3rem;"><span style="color:#DBE3EA; font-weight:bold;">C++ 세부 내용</span></p>
+    <p style="margin: 0.8rem 0; font-size: 1.3rem;"><span style="color:#DBE3EA; font-weight:bold;">C++ 세부 사항</span></p>
   </div>
 
 </div>
@@ -597,13 +597,13 @@ heading: "기본 class 문법"
 }
 </style>
 
-- 우리의 모든 자료구조는 데이터를 저장하고 그 모음을 다루는 함수를 제공하는 [객체]{.hl}가 됩니다. C++ 에서는 이를 [클래스]{.hl}로 구현합니다.
+- 우리의 모든 자료구조는 데이터를 저장하고 그 집합을 조작하는 함수를 제공하는 [객체]{.hl}가 됩니다. C++에서는 이를 [클래스]{.hl}로 구현합니다.
 
-- 클래스는 데이터이거나 함수인 [멤버]{.hl}들로 구성됩니다.
-  - 함수는 [멤버 함수]{.hl}(흔히 [메소드]{.hl}라 부릅니다)입니다.
-  - 클래스의 각 인스턴스는 [객체]{.hl}로, (`static` 으로 선언되지 않은 한) 클래스에 명시된 데이터 요소들을 담습니다.
+- 클래스는 데이터 또는 함수인 [멤버]{.hl}들로 이루어집니다.
+  - 함수는 [멤버 함수]{.hl}(흔히 [메소드]{.hl}라고 함)입니다.
+  - 각 클래스의 인스턴스는 [객체]{.hl}이며, `static`으로 선언되지 않는 한 클래스에 지정된 데이터 요소들을 담습니다.
 
-- `IntCell` 클래스를 구현해 보겠습니다: 이 클래스는 하나의 데이터 멤버 `storedValue` 를 가지며, `read`, `write` 와 두 개의 생성자, 이렇게 네 개의 메소드를 갖습니다.
+- `IntCell` 클래스를 구현할 것입니다: 하나의 데이터 멤버 `storedValue`를 가지며, `read`, `write`와 두 개의 생성자로 이루어진 네 개의 메소드를 갖습니다.
 
 ---
 layout: prism
@@ -642,17 +642,17 @@ heading: "기본 class 문법 — 접근성"
 }
 </style>
 
-- `public` 과 `private` 레이블은 클래스 멤버의 접근성을 결정합니다.
+- `public`과 `private` 라벨은 클래스 멤버의 접근성을 결정합니다.
   - `public` 멤버는 어떤 클래스의 어떤 메소드에서도 접근할 수 있습니다.
-  - `private` 멤버는 자신이 속한 클래스의 메소드에서만 접근할 수 있습니다.
+  - `private` 멤버는 자기 클래스의 메소드에서만 접근할 수 있습니다.
 
-- 일반적으로 데이터 멤버는 `private`, 범용으로 쓰이는 메소드는 `public` 으로 두어 내부 세부 사항에 대한 접근을 제한합니다 — 이것이 [정보 은닉]{.hl}입니다.
+- 일반적으로 데이터 멤버는 `private`, 범용 메소드는 `public`으로 두어 내부 세부 사항으로의 접근을 제한하는데, 이것이 [정보 은닉]{.hl}입니다.
 
 - 두 [생성자]{.hl}는 클래스의 인스턴스가 어떻게 *생성*되는지를 기술합니다.
 
 ---
 layout: prism
-heading: 추가 생성자 문법 및 접근자
+heading: 추가 생성자 문법과 접근자
 ---
 
 <div style="height: 3rem;"></div>
@@ -676,7 +676,7 @@ private:
 
 ---
 layout: prism
-heading: "생성자: 기본값, 초기화 리스트, explicit"
+heading: "생성자: 기본값, 리스트, explicit"
 ---
 
 <style>
@@ -685,17 +685,17 @@ heading: "생성자: 기본값, 초기화 리스트, explicit"
 }
 </style>
 
-- [기본값 매개변수]{.hl} `0` 은 인수가 주어지지 않았을 때 `0` 이 사용됨을 의미합니다 — 사실상 하나로 두 개의 생성자를 만드는 셈입니다.
+- [기본 변수]{.hl} `0`은 인수가 주어지지 않을 때 `0`이 사용됨을 의미합니다 — 사실상 하나로 두 개의 생성자를 만든 셈입니다.
 
-- [초기화 리스트]{.hl} `: storedValue{initialValue}` 는 데이터 멤버를 직접 초기화합니다.
+- [초기화 리스트]{.hl} `: storedValue{initialValue}`는 데이터 멤버를 직접 초기화합니다.
 
-- 이 생성자는 [explicit]{.hl}입니다: 한 개의 매개변수를 받는 생성자는 모두 `explicit` 로 지정해 보이지 않는 형 변환을 방지합니다.
+- 이 생성자는 [explicit]{.hl}입니다: 보이지 않는 형변환을 막기 위해 모든 단일 인수 생성자를 `explicit`로 지정합니다.
 
-- 객체의 상태를 살피기만 하고 변경하지 않는 메소드는 [접근자]{.hl}, 변경하는 메소드는 [설정자]{.hl}입니다. 여기서 `read` 는 접근자이므로 [상수 멤버 함수]{.hl}(`const`)입니다.
+- 객체의 상태를 살피기만 하고 바꾸지 않는 메소드는 [접근자]{.hl}, 바꾸는 메소드는 [설정자]{.hl}입니다. 여기서 `read`는 접근자이므로 [상수 멤버 함수]{.hl}(`const`)입니다.
 
 ---
 layout: prism
-heading: "vector 및 string"
+heading: "vector와 string"
 ---
 
 <style>
@@ -706,7 +706,7 @@ heading: "vector 및 string"
 
 - C++ 표준 라이브러리는 유용한 두 클래스 [`vector`]{.hl}와 [`string`]{.hl}을 정의합니다.
 
-- `vector` 는 다루기 까다로운 C++ 내장 배열을 대체하기 위한 것입니다.
+- `vector`는 다루기 까다로운 C++ 내장 배열을 대체하기 위한 것입니다.
 
 <div style="height: 2rem;"></div>
 
@@ -715,17 +715,17 @@ heading: "vector 및 string"
 vector<int> squares = {1, 4, 9, 16, 25, 36, 49, 64, 81};
 ```
 
-- `string` 은 모든 관계 및 상등 연산자(`str1 == str2` 는 값이 일치할 때 `true`)를 지원하며, 문자열 길이를 반환하는 `length` 메소드를 제공합니다.
+- `string`은 모든 관계 연산자와 상등 연산자(`str1 == str2`는 값이 같을 때 `true`)를 지원하며, 문자열 길이를 반환하는 `length` 메소드를 제공합니다.
 
 ---
 layout: prism
-heading: "vector 및 string — 순회"
+heading: "vector와 string — 반복"
 ---
 
 <div class="grid grid-cols-3 gap-3" style="margin-top: 0.6rem;">
 <div>
 
-`[]` 로 인덱싱:
+`[]`로 인덱싱:
 
 ```cpp
 int sum = 0;
@@ -738,7 +738,7 @@ for (int i = 0;
 </div>
 <div>
 
-범위 기반 `for`:
+범위 `for`:
 
 ```cpp
 int sum = 0;
@@ -762,7 +762,7 @@ for (auto x : squares)
 
 <div style="margin-top: 1rem;"></div>
 
-- [범위 기반 `for`]{.hl} 문법은 원소를 직접 순회하며, [`auto`]{.hl}는 컴파일러가 적절한 타입을 자동으로 추론하게 합니다.
+- [범위 `for`]{.hl} 문법은 원소를 직접 순회하며, [`auto`]{.hl}는 컴파일러가 적절한 자료형을 자동으로 추론하게 합니다.
 
 ---
 layout: prism
@@ -809,11 +809,11 @@ heading: 목차
 <div style="margin-top: 1.5rem; margin-left: 3rem">
 
 <div>
-    <p style="margin: 0.8rem 0; font-size: 1.3rem;"><span style="color:#DBE3EA; font-weight:bold;">수학 복습</span></p>
+    <p style="margin: 0.8rem 0; font-size: 1.3rem;"><span style="color:#DBE3EA; font-weight:bold;">수학 리뷰</span></p>
     <p style="margin: 0.8rem 0; font-size: 1.3rem;"><span style="color:#DBE3EA; font-weight:bold;">C++ 클래스</span></p>
-    <p style="margin: 0 0; font-size: 1.3rem;"><span style="color:#4a6fa5; font-weight:bold;">C++ 세부 내용</span></p>
+    <p style="margin: 0 0; font-size: 1.3rem;"><span style="color:#4a6fa5; font-weight:bold;">C++ 세부 사항</span></p>
       <p class="text-gray-900 dark:text-gray-100" style="margin: 0 0 0 1.5rem; font-size: 1.1rem;"><span style="font-size:0.75em;">포인터</span></p>
-      <p class="text-gray-900 dark:text-gray-100" style="margin: 0 0 0 1.5rem; font-size: 1.1rem;"><span style="font-size:0.75em;">Lvalue, Rvalue, 그리고 참조</span></p>
+      <p class="text-gray-900 dark:text-gray-100" style="margin: 0 0 0 1.5rem; font-size: 1.1rem;"><span style="font-size:0.75em;">Lvalue, Rvalue, 참조</span></p>
       <p class="text-gray-900 dark:text-gray-100" style="margin: 0 0 0 1.5rem; font-size: 1.1rem;"><span style="font-size:0.75em;">The Big-Five</span></p>
       <p class="text-gray-900 dark:text-gray-100" style="margin: 0 0 1rem 1.5rem; font-size: 1.1rem;"><span style="font-size:0.75em;">템플릿</span></p>
   </div>
@@ -834,11 +834,11 @@ heading: 포인터
 }
 </style>
 
-- [포인터 변수]{.hl}는 다른 객체가 위치한 *주소*를 저장합니다 — 많은 자료구조를 떠받치는 근본적인 메커니즘입니다.
+- [포인터 변수]{.hl}는 다른 객체가 존재하는 *주소*를 저장합니다 — 많은 자료구조의 근본 메커니즘입니다.
 
-- 아래 코드는 `IntCell` 을 동적으로 할당합니다.
+- 이 코드는 `IntCell`을 동적으로 할당합니다.
 
-- [주소 연산자]{.hl} `&` 는 객체가 위치한 메모리 주소를 반환합니다.
+- [address-of 연산자]{.hl} `&`는 객체가 존재하는 메모리 위치를 반환합니다.
 
 </div>
 <div>
@@ -862,7 +862,7 @@ int main() {
 
 ---
 layout: prism
-heading: Lvalue, Rvalue, 그리고 참조
+heading: Lvalue, Rvalue, 참조
 ---
 
 <div class="grid grid-cols-2 gap-4" style="margin-top: 2.5rem;">
@@ -874,9 +874,9 @@ heading: Lvalue, Rvalue, 그리고 참조
 }
 </style>
 
-- [lvalue]{.hl}는 임시가 아닌 객체를 식별합니다.
+- [lvalue]{.hl}는 임시가 아닌 객체를 가리킵니다.
 
-- [rvalue]{.hl}는 임시 객체, 또는 어떤 객체와도 연관되지 않은 값(리터럴 등)을 식별합니다.
+- [rvalue]{.hl}는 임시 객체, 또는 어떤 객체와도 연관되지 않은 값(리터럴 등)을 가리킵니다.
 
 </div>
 <div>
@@ -893,8 +893,8 @@ vector<string>* ptr = &arr;
 </div>
 </div>
 
-- `arr`, `str`, `arr[x]`, `&x`, `y`, `z`, `ptr`, `*ptr`, `(*ptr)[x]` 는 모두 [lvalue]{.hl}입니다.
-- `2`, `"foo"`, `x + y`, `str.substr(0, 1)` 은 모두 [rvalue]{.hl}입니다.
+- `arr`, `str`, `arr[x]`, `&x`, `y`, `z`, `ptr`, `*ptr`, `(*ptr)[x]`는 모두 [lvalue]{.hl}입니다.
+- `2`, `"foo"`, `x + y`, `str.substr(0, 1)`은 모두 [rvalue]{.hl}입니다.
 
 ---
 layout: prism
@@ -910,9 +910,9 @@ heading: Lvalue 참조
 }
 </style>
 
-- [lvalue 참조]{.hl}는 타입 뒤에 `&` 를 붙여 선언하며, 그것이 참조하는 객체의 동의어 — 또 다른 이름 — 이 됩니다.
+- [lvalue 참조]{.hl}는 자료형 뒤에 `&`를 붙여 선언하며, 참조하는 객체의 동의어 — 또 다른 이름 — 가 됩니다.
 
-- lvalue 참조는 임시(rvalue)에 바인딩될 수 없으므로 마지막 세 줄은 컴파일 오류입니다.
+- lvalue 참조는 임시(rvalue)에 바인딩할 수 없으므로 마지막 세 줄은 컴파일 오류입니다.
 
 </div>
 <div>
@@ -945,9 +945,9 @@ heading: Rvalue 참조
 }
 </style>
 
-- [rvalue 참조]{.hl}는 타입 뒤에 `&&` 를 붙여 선언합니다.
+- [rvalue 참조]{.hl}는 자료형 뒤에 `&&`를 붙여 선언합니다.
 
-- lvalue 참조와 같은 특성을 갖지만, lvalue 참조와 달리 rvalue(임시)에도 바인딩될 수 있습니다.
+- lvalue 참조와 같은 특성을 갖지만, lvalue 참조와 달리 rvalue(임시)에도 바인딩할 수 있습니다.
 
 - 따라서 이제 세 선언 모두 합법입니다.
 
@@ -978,12 +978,12 @@ heading: The Big-Five
 }
 </style>
 
-- C++ 클래스에는 기본으로 이미 작성되어 있는 *다섯* 개의 특수 함수가 있습니다: [소멸자]{.hl}, [복사 생성자]{.hl}, [이동 생성자]{.hl}, [복사 할당 연산자]{.hl}, [이동 할당 연산자]{.hl}.
+- C++ 클래스에는 기본적으로 이미 작성된 *다섯* 개의 특수 함수가 딸려 옵니다: [소멸자]{.hl}, [복사 생성자]{.hl}, [이동 생성자]{.hl}, [복사 할당 연산자]{.hl}, [이동 할당 연산자]{.hl}.
 
-- [소멸자]{.hl}는 객체가 범위를 벗어나거나 `delete` 될 때마다 호출됩니다.
+- [소멸자]{.hl}는 객체가 범위를 벗어나거나 `delete`될 때마다 호출됩니다.
 
-- 두 개의 특수 생성자는 같은 타입의 다른 객체와 동일한 상태로 초기화된 새 객체를 만듭니다:
-  - 원본이 lvalue 이면 [복사 생성자]{.hl}, rvalue(어차피 곧 소멸될 임시)이면 [이동 생성자]{.hl}를 사용합니다.
+- 두 개의 특수 생성자는 같은 자료형의 다른 객체와 동일한 상태로 초기화된 새 객체를 만듭니다:
+  - 원본이 lvalue이면 [복사 생성자]{.hl}, rvalue(어차피 곧 소멸될 임시)이면 [이동 생성자]{.hl}를 사용합니다.
 
 ---
 layout: prism
@@ -999,11 +999,11 @@ heading: The Big-Five — 할당
 }
 </style>
 
-- 할당 연산자는 이미 생성된 두 객체에 `=` 가 적용될 때 호출됩니다.
+- 할당 연산자는 이미 생성된 두 객체에 `=`가 적용될 때 호출됩니다.
 
-- `lhs = rhs` 는 `rhs` 의 상태를 `lhs` 로 복사합니다:
-  - `rhs` 가 lvalue 이면 [복사 할당 연산자]{.hl}를 통해,
-  - `rhs` 가 rvalue 이면 [이동 할당 연산자]{.hl}를 통해 이루어집니다.
+- `lhs = rhs`는 `rhs`의 상태를 `lhs`로 복사합니다:
+  - `rhs`가 lvalue이면 [복사 할당 연산자]{.hl}를 통해,
+  - `rhs`가 rvalue이면 [이동 할당 연산자]{.hl}를 통해 이루어집니다.
 
 </div>
 <div>
@@ -1038,10 +1038,10 @@ heading: 함수 템플릿
 }
 </style>
 
-- *타입에 독립적인* 알고리즘은 타입마다 다시 작성하기보다 한 번만 작성하는 편이 좋습니다.
-  - 이러한 [범용 알고리즘]{.hl}은 C++ 에서 [템플릿]{.hl}으로 작성합니다.
+- *자료형-독립적*인 알고리즘의 경우, 자료형마다 다시 코딩하기보다 코드를 한 번만 작성하는 편이 좋습니다.
+  - 이러한 [범용 알고리즘]{.hl}은 C++에서 [템플릿]{.hl}으로 작성합니다.
 
-- [함수 템플릿]{.hl}은 실제 함수가 아니라 함수의 *패턴*입니다.
+- [함수 템플릿]{.hl}은 실제 함수가 아니라 함수를 위한 *패턴*입니다.
 
 </div>
 <div>
@@ -1077,9 +1077,9 @@ heading: 함수 템플릿 — 인스턴스화
 }
 </style>
 
-- 함수 템플릿은 필요에 따라 자동으로 확장되며, 각 확장이 코드를 생성하는데 이를 [코드 팽창]{.hl}이라 합니다.
+- 함수 템플릿은 필요에 따라 자동으로 확장되며, 각 확장은 코드를 생성하는데 이를 [코드 팽창]{.hl}이라 합니다.
 
-- `findMax(v4)` 는 `IntCell` 에 대해 `operator<` 가 정의되지 않아 실패합니다.
+- `findMax(v4)`는 `IntCell`에 `operator<`가 정의되어 있지 않아 실패합니다.
 
 </div>
 <div>
@@ -1116,9 +1116,9 @@ heading: 클래스 템플릿
 }
 </style>
 
-- [클래스 템플릿]{.hl}은 함수 템플릿과 매우 비슷하게 동작합니다.
+- [클래스 템플릿]{.hl}은 함수 템플릿과 거의 같은 방식으로 동작합니다.
 
-- `MemoryCell` 은 `IntCell` 과 비슷하지만, 매개변수 없는 생성자, 복사 생성자, 복사 할당 연산자를 가진 임의의 타입 `Object` 에 대해 동작합니다.
+- `MemoryCell`은 `IntCell`과 비슷하지만, 인수 없는 생성자, 복사 생성자, 복사 할당 연산자를 가진 임의의 자료형 `Object`에 대해 동작합니다.
 
 </div>
 <div>
@@ -1158,8 +1158,8 @@ heading: 클래스 템플릿 — 사용
 }
 </style>
 
-- `Object` 는 상수 참조로 전달되며, 기본값은 `0` 이 *아닙니다*(`0` 은 유효하지 않은 `Object` 일 수 있습니다).
-  - 대신 기본값은 매개변수 없는 생성자로 만든 `Object`, 즉 `Object{}` 입니다.
+- `Object`는 상수 참조로 전달되며, 기본 변수는 `0`(유효하지 않은 `Object`일 수 있음)이 *아닙니다*.
+  - 대신 기본값은 인수 없는 생성자로 만든 `Object`, 즉 `Object{}`입니다.
 
 </div>
 <div>
@@ -1183,7 +1183,7 @@ int main() {
 
 ---
 layout: prism
-heading: "DIY: 함수 및 클래스 템플릿"
+heading: "DIY: 함수와 클래스 템플릿"
 ---
 
 <div style="height: 0rem;"></div>
@@ -1237,6 +1237,6 @@ class: text-center
 # ***감사합니다!***
 <br></br>
 
-_연락처:_ [wjko@sungshin.ac.kr](mailto:wjko@sungshin.ac.kr){style="color:#c2410c; font-family: 'JetBrains Mono', Consolas, monospace;"}
+_Contact:_ [wjko@sungshin.ac.kr](mailto:wjko@sungshin.ac.kr){style="color:#c2410c; font-family: 'JetBrains Mono', Consolas, monospace;"}
 
-_웹사이트:_ [https://sswu-prism-lab.github.io/](https://sswu-prism-lab.github.io/){style="background: linear-gradient(90deg, rgb(188,90,93), rgb(242,221,134), rgb(111,142,114), rgb(75,85,210), rgb(119,94,145)); -webkit-background-clip: text; background-clip: text; color: transparent; -webkit-text-fill-color: transparent; text-decoration: underline; font-family: 'JetBrains Mono', Consolas, monospace;"}
+_Website:_ [https://sswu-prism-lab.github.io/](https://sswu-prism-lab.github.io/){style="background: linear-gradient(90deg, rgb(188,90,93), rgb(242,221,134), rgb(111,142,114), rgb(75,85,210), rgb(119,94,145)); -webkit-background-clip: text; background-clip: text; color: transparent; -webkit-text-fill-color: transparent; text-decoration: underline; font-family: 'JetBrains Mono', Consolas, monospace;"}

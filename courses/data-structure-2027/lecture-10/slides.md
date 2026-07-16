@@ -247,12 +247,6 @@ layout: prism
 heading: "Example: Modeling with Graphs"
 ---
 
-<style>
-.slidev-layout ul > li {
-  margin-top: 1em;
-}
-</style>
-
 - A real-life situation modeled by a graph is the [airport system]{.hl}.
   - Each airport is a vertex; two vertices are connected by an edge if there is a nonstop flight between them.
   - The edge could carry a weight representing time, distance, or cost of the flight.
@@ -303,14 +297,8 @@ layout: prism
 heading: "Representation of Graphs: Adjacency Matrix"
 ---
 
-<div class="grid grid-cols-2 gap-4" style="margin-top: 1rem;">
+<div class="grid grid-cols-2 gap-4" style="margin-top: 0rem; grid-template-columns: 1.5fr 1fr;">
 <div>
-
-<style>
-.slidev-layout ul > li {
-  margin-top: 1em;
-}
-</style>
 
 - We consider directed graphs (undirected graphs are represented similarly).
 
@@ -331,7 +319,7 @@ $$
 </div>
 <div>
 
-<div style="height: 4rem;"></div>
+<div style="height: 0rem;"></div>
 
 <img src="https://raw.githubusercontent.com/sswu-prism-lab/slides/main/images/ds/ds-w10-03.svg" class="tikz-fig" style="width: 90%;" />
 
@@ -343,14 +331,8 @@ layout: prism
 heading: "Representation of Graphs: Adjacency List"
 ---
 
-<div class="grid grid-cols-2 gap-4" style="margin-top: 1.5rem;">
+<div class="grid grid-cols-2 gap-4" style="margin-top: 0rem;">
 <div>
-
-<style>
-.slidev-layout ul > li {
-  margin-top: 1.6em;
-}
-</style>
 
 - Although the adjacency matrix is extremely simple, its space requirement is $\Theta(|V|^2)$, which can be prohibitive if the graph has few edges.
   - It is appropriate when the graph is [dense]{.hl}: $|E| = \Theta(|V|^2)$.
@@ -362,7 +344,7 @@ heading: "Representation of Graphs: Adjacency List"
 </div>
 <div>
 
-<div style="height: 3rem;"></div>
+<div style="height: 0rem;"></div>
 
 <img src="https://raw.githubusercontent.com/sswu-prism-lab/slides/main/images/ds/ds-w10-04.svg" class="tikz-fig" style="width: 95%;" />
 
@@ -425,12 +407,6 @@ heading: Table of Contents
 layout: prism
 heading: The Shortest-Path Problem
 ---
-
-<style>
-.slidev-layout ul > li {
-  margin-top: 1.4em;
-}
-</style>
 
 - We examine various shortest-path problems. The input is a [weighted graph]{.hl}: associated with each edge $(v_i, v_j)$ is a cost $c_{i,j}$ to traverse the edge.
 
@@ -583,21 +559,20 @@ heading: "Dijkstra's Algorithm: Initialization"
 .slidev-layout table { font-size: 0.9em; }
 </style>
 
-<div class="grid grid-cols-2 gap-4" style="margin-top: 1rem;">
+<div class="grid grid-cols-2 gap-4" style="margin-top: 0rem; grid-template-columns: 1fr 1fr;">
 <div>
-
-<style>
-.slidev-layout ul > li {
-  margin-top: 1.6em;
-}
-</style>
 
 - The tables trace Dijkstra's algorithm on the weighted graph at the right.
   - Assume $v_1$ is the starting point.
 
 - Initially every vertex is *unknown* (`F`), with $d_{v_1} = 0$ and all other distances $\infty$.
 
-<div style="margin-top: 1.5rem;"></div>
+<div style="margin-top: 0rem;"></div>
+
+<img src="https://raw.githubusercontent.com/sswu-prism-lab/slides/main/images/ds/ds-w10-07.svg" class="tikz-fig" style="width: 80%;" />
+
+</div>
+<div>
 
 | $v$ | *known* | $d_v$ | $p_v$ |
 |:---:|:---:|:---:|:---:|
@@ -609,12 +584,6 @@ heading: "Dijkstra's Algorithm: Initialization"
 | $v_6$ | F | $\infty$ | $0$ |
 | $v_7$ | F | $\infty$ | $0$ |
 
-</div>
-<div>
-
-<div style="height: 4rem;"></div>
-
-<img src="https://raw.githubusercontent.com/sswu-prism-lab/slides/main/images/ds/ds-w10-07.svg" class="tikz-fig" style="width: 100%;" />
 
 </div>
 </div>
@@ -819,12 +788,6 @@ layout: prism
 heading: Minimum Spanning Tree
 ---
 
-<style>
-.slidev-layout ul > li {
-  margin-top: 0.7em;
-}
-</style>
-
 - The next problem is finding a [minimum spanning tree]{.hl} in an undirected graph.
   - The problem makes sense for directed graphs but appears to be more difficult.
 
@@ -832,15 +795,15 @@ heading: Minimum Spanning Tree
   - A minimum spanning tree exists *if and only if* $G$ is connected.
   - It is a *tree* because it is acyclic, *spanning* because it covers every vertex, and *minimum* for the obvious reason.
 
-<div class="grid grid-cols-2 gap-4" style="margin-top: 0.5rem;">
+<div class="grid grid-cols-2 gap-4" style="margin-top: 0rem;">
 <div>
 
-<img src="https://raw.githubusercontent.com/sswu-prism-lab/slides/main/images/ds/ds-w10-08.svg" class="tikz-fig" style="width: 80%; margin: 0 auto;" />
+<img src="https://raw.githubusercontent.com/sswu-prism-lab/slides/main/images/ds/ds-w10-08.svg" class="tikz-fig" style="width: 65%; margin: 0 auto;" />
 
 </div>
 <div>
 
-<img src="https://raw.githubusercontent.com/sswu-prism-lab/slides/main/images/ds/ds-w10-09.svg" class="tikz-fig" style="width: 80%; margin: 0 auto;" />
+<img src="https://raw.githubusercontent.com/sswu-prism-lab/slides/main/images/ds/ds-w10-09.svg" class="tikz-fig" style="width: 65%; margin: 0 auto;" />
 
 </div>
 </div>
@@ -877,25 +840,25 @@ heading: "Prim's Algorithm: Growing the Tree"
 
 <div class="grid grid-cols-3 gap-2" style="margin-top: 1rem;">
 <div>
-<img src="https://raw.githubusercontent.com/sswu-prism-lab/slides/main/images/ds/ds-w10-10.svg" class="tikz-fig" style="width: 100%;" />
+<img src="https://raw.githubusercontent.com/sswu-prism-lab/slides/main/images/ds/ds-w10-10.svg" class="tikz-fig" style="width: 70%;" />
 </div>
 <div>
-<img src="https://raw.githubusercontent.com/sswu-prism-lab/slides/main/images/ds/ds-w10-11.svg" class="tikz-fig" style="width: 100%;" />
+<img src="https://raw.githubusercontent.com/sswu-prism-lab/slides/main/images/ds/ds-w10-11.svg" class="tikz-fig" style="width: 70%;" />
 </div>
 <div>
-<img src="https://raw.githubusercontent.com/sswu-prism-lab/slides/main/images/ds/ds-w10-12.svg" class="tikz-fig" style="width: 100%;" />
+<img src="https://raw.githubusercontent.com/sswu-prism-lab/slides/main/images/ds/ds-w10-12.svg" class="tikz-fig" style="width: 70%;" />
 </div>
 </div>
 
 <div class="grid grid-cols-3 gap-2" style="margin-top: 0.6rem;">
 <div>
-<img src="https://raw.githubusercontent.com/sswu-prism-lab/slides/main/images/ds/ds-w10-13.svg" class="tikz-fig" style="width: 100%;" />
+<img src="https://raw.githubusercontent.com/sswu-prism-lab/slides/main/images/ds/ds-w10-13.svg" class="tikz-fig" style="width: 70%;" />
 </div>
 <div>
-<img src="https://raw.githubusercontent.com/sswu-prism-lab/slides/main/images/ds/ds-w10-14.svg" class="tikz-fig" style="width: 100%;" />
+<img src="https://raw.githubusercontent.com/sswu-prism-lab/slides/main/images/ds/ds-w10-14.svg" class="tikz-fig" style="width: 70%;" />
 </div>
 <div>
-<img src="https://raw.githubusercontent.com/sswu-prism-lab/slides/main/images/ds/ds-w10-15.svg" class="tikz-fig" style="width: 100%;" />
+<img src="https://raw.githubusercontent.com/sswu-prism-lab/slides/main/images/ds/ds-w10-15.svg" class="tikz-fig" style="width: 70%;" />
 </div>
 </div>
 
@@ -909,7 +872,7 @@ heading: "Kruskal's Algorithm: Idea"
 .slidev-layout table { font-size: 0.9em; }
 </style>
 
-<div class="grid grid-cols-2 gap-4" style="margin-top: 1.5rem;">
+<div class="grid grid-cols-2 gap-4" style="margin-top: 1.5rem; grid-template-columns: 1.5fr 1fr;">
 <div>
 
 <style>

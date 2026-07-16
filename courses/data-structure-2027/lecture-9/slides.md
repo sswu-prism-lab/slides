@@ -158,7 +158,7 @@ heading: "Recap: insert — Percolate Up"
 
 <style>
 .slidev-layout ul > li {
-  margin-top: 1.1em;
+  margin-top: 1em;
 }
 </style>
 
@@ -177,8 +177,8 @@ layout: prism
 heading: "Recap: insert — Example"
 ---
 
-<div class="flex justify-center" style="margin-top: 1.5rem;">
-  <img src="https://raw.githubusercontent.com/sswu-prism-lab/slides/main/images/ds/ds-w09-02.svg" class="tikz-fig" style="width: 78%;" />
+<div class="flex justify-center" style="margin-top: 0rem;">
+  <img src="https://raw.githubusercontent.com/sswu-prism-lab/slides/main/images/ds/ds-w09-02.svg" class="tikz-fig" style="width: 58%;" />
 </div>
 
 ---
@@ -209,8 +209,8 @@ layout: prism
 heading: "Recap: removeMin — Example"
 ---
 
-<div class="flex justify-center" style="margin-top: 2rem;">
-  <img src="https://raw.githubusercontent.com/sswu-prism-lab/slides/main/images/ds/ds-w09-03.svg" class="tikz-fig" style="width: 92%;" />
+<div class="flex justify-center" style="margin-top: 0rem;">
+  <img src="https://raw.githubusercontent.com/sswu-prism-lab/slides/main/images/ds/ds-w09-03.svg" class="tikz-fig" style="width: 82%;" />
 </div>
 
 ---
@@ -378,12 +378,6 @@ layout: prism
 heading: "The merge Operation"
 ---
 
-<style>
-.slidev-layout ul > li {
-  margin-top: 1.5em;
-}
-</style>
-
 - The most glaring weakness of the heap implementation is that combining two heaps into one is a hard operation.
   - This extra operation is known as a [`merge`]{.hl}.
 
@@ -464,7 +458,7 @@ heading: "Leftist Operations — merge (1/2)"
 - If either heap is empty, we return the other heap.
 
 - Otherwise, to merge the two heaps, we compare their roots.
-  - Consider two heaps to be merged, $H_1$ and $H_2$.
+  - Let us consider two heaps to be merged, $H_1$ and $H_2$.
 
 </div>
 <div>
@@ -479,19 +473,13 @@ layout: prism
 heading: "Leftist Operations — merge (2/2)"
 ---
 
-<style>
-.slidev-layout ul > li {
-  margin-top: 0.8em;
-}
-</style>
-
 - First, we recursively merge the heap with the *larger* root with the *right subheap* of the heap with the smaller root.
   - If that right subheap is empty, we attach the other heap as the right subheap.
 
 - We update the $npl$ of the merged root and swap the left and right subtrees just below the root, if needed, to keep the leftist property of the merged result.
 
 <div class="flex justify-center" style="margin-top: 0.6rem;">
-  <img src="https://raw.githubusercontent.com/sswu-prism-lab/slides/main/images/ds/ds-w09-07.svg" class="tikz-fig" style="width: 52%;" />
+  <img src="https://raw.githubusercontent.com/sswu-prism-lab/slides/main/images/ds/ds-w09-07.svg" class="tikz-fig" style="width: 32%;" />
 </div>
 
 ---

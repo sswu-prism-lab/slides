@@ -190,25 +190,19 @@ layout: prism
 heading: "Mathematical Background: Asymptotic Notation"
 ---
 
-<style>
-.slidev-layout ul > li {
-  margin-top: 0.8em;
-}
-</style>
-
 - Estimating the resource use of an algorithm is generally a theoretical issue, so a formal framework is required. We use four definitions to establish a [relative order]{.hl} among functions.
 
 <div class="theorem-box">
 <div class="theorem-box-title">Definition. A relative order among functions</div>
 <div class="theorem-box-body">
 
-$T(N) = \mathcal{O}(f(N))$ if there exist positive *constants* $c, n_0$ such that $T(N) \leq c\,f(N)$ when $N \geq n_0$.
+$T(N) = \mathcal{O}(f(N))$ if there exist positive *constants* $c, n_0$ s.t. $T(N) \leq c\,f(N)$ when $N \geq n_0$.
 
-$T(N) = \Omega(g(N))$ if there exist positive *constants* $c, n_0$ such that $T(N) \geq c\,g(N)$ when $N \geq n_0$.
+$T(N) = \Omega(g(N))$ if there exist positive *constants* $c, n_0$ s.t. $T(N) \geq c\,g(N)$ when $N \geq n_0$.
 
 $T(N) = \Theta(h(N))$ if and only if $T(N) = \mathcal{O}(h(N))$ *and* $T(N) = \Omega(h(N))$.
 
-$T(N) = o(p(N))$ if, for *all* positive constants $c$, there exists $n_0$ such that $T(N) < c\,p(N)$ when $N > n_0$.
+$T(N) = o(p(N))$ if, for *all* positive constants $c$, there exists $n_0$ s.t. $T(N) < c\,p(N)$ when $N > n_0$.
 
 </div>
 </div>
@@ -240,7 +234,7 @@ heading: "Comparing Growth Rates"
 
 <style>
 .slidev-layout ul > li {
-  margin-top: 2.2em;
+  margin-top: 1.5em;
 }
 </style>
 
@@ -367,7 +361,7 @@ heading: "What to Analyze — Worst Case"
 
 <style>
 .slidev-layout ul > li {
-  margin-top: 2.2em;
+  margin-top: 1.5em;
 }
 </style>
 
@@ -504,8 +498,6 @@ layout: prism
 heading: "General Rules — Loops"
 ---
 
-<div style="height: 0.5rem;"></div>
-
 <div class="theorem-box">
 <div class="theorem-box-title">Rule 1 — FOR loops</div>
 <div class="theorem-box-body">
@@ -524,7 +516,7 @@ The total running time of a statement inside a group of nested loops is the runn
 </div>
 </div>
 
-<div class="grid grid-cols-2 gap-4" style="margin-top: 1rem;">
+<div class="grid grid-cols-2 gap-4" style="margin-top: 0rem;">
 <div>
 
 The following fragment is $\mathcal{O}(N^2)$:
@@ -857,7 +849,7 @@ layout: prism
 heading: "DIY: Maximum Subsequence Sum"
 ---
 
-<div style="height: 0.2rem;"></div>
+<div style="height: 0rem;"></div>
 
 <CppRunner>
 
@@ -1022,7 +1014,7 @@ layout: prism
 heading: "DIY: Binary Search"
 ---
 
-<div style="height: 0.2rem;"></div>
+<div style="height: 0rem;"></div>
 
 <CppRunner>
 
@@ -1044,7 +1036,6 @@ int binarySearch(const vector<Comparable> &a, const Comparable &x) {
     }
     return NOT_FOUND;
 }
-
 int main() {
     vector<int> a = {2, 5, 8, 12, 16, 23, 38, 56, 72, 91};  // presorted
     for (int x : {23, 91, 2, 17}) {

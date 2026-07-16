@@ -227,13 +227,7 @@ layout: prism
 heading: List Model
 ---
 
-<style>
-.slidev-layout ul > li {
-  margin-top: 1.1em;
-}
-</style>
-
-- We will deal with a general list of the form $A_0, A_1, A_2, \ldots, A_{N-1}$, and we say that the [size]{.hl} of this list is $N$.
+- We will deal with a general list of the form $A_0, A_1, A_2, \ldots, A_{N-1}$, and the [size]{.hl} of the list is $N$.
   - We call the special list of size $0$ an [empty list]{.hl}.
   - $A_i$ _follows_ (succeeds) $A_{i-1}$ $(i<N)$ and $A_{i-1}$ _precedes_ $A_i$ $(i>0)$; the first element is $A_0$ and the last is $A_{N-1}$.
   - The [position]{.hl} of element $A_i$ in the list is $i$.
@@ -250,12 +244,6 @@ heading: List Model
 layout: prism
 heading: Simple Array Implementation of Lists
 ---
-
-<style>
-.slidev-layout ul > li {
-  margin-top: 1.3em;
-}
-</style>
 
 - All these list ADT instructions can be implemented by using an [array]{.hl}.
   - Although arrays are created with a fixed capacity, the `vector` class, which internally stores an array, allows the array to grow by _doubling_ its capacity when needed.
@@ -349,7 +337,7 @@ layout: prism
 heading: "Linked List — Traversal and remove"
 ---
 
-<div class="grid grid-cols-2 gap-4" style="margin-top: 1rem;">
+<div class="grid grid-cols-2 gap-4" style="margin-top: 0rem;">
 <div>
 
 <style>
@@ -380,14 +368,8 @@ layout: prism
 heading: "Linked List — insert"
 ---
 
-<div class="grid grid-cols-2 gap-4" style="margin-top: 1rem;">
+<div class="grid grid-cols-2 gap-4" style="margin-top: 0rem;">
 <div>
-
-<style>
-.slidev-layout ul > li {
-  margin-top: 1.2em;
-}
-</style>
 
 - The `insert` method obtains a new node from the system via a `new` call and then performs _two_ `next` pointer maneuvers.
 
@@ -441,14 +423,9 @@ layout: prism
 heading: "Doubly Linked List — Sentinel Nodes"
 ---
 
-<div class="grid grid-cols-2 gap-4" style="margin-top: 1rem;">
+<div class="grid grid-cols-2 gap-4" style="margin-top: 0rem;">
 <div>
 
-<style>
-.slidev-layout ul > li {
-  margin-top: 1.4em;
-}
-</style>
 
 - Because iterator classes store a pointer to the _current node_ and the end marker is a valid position, it makes sense to create an extra node at the end to represent the endmarker.
 
@@ -509,7 +486,7 @@ layout: prism
 heading: "Doubly Linked List — insert and erase"
 ---
 
-<div class="grid grid-cols-2 gap-4" style="margin-top: 0.8rem;">
+<div class="grid grid-cols-2 gap-4" style="margin-top: 0rem;">
 <div>
 
 <style>
@@ -557,7 +534,7 @@ layout: prism
 heading: "DIY: A Singly Linked List"
 ---
 
-<div style="height: 0.2rem;"></div>
+<div style="height: 0rem;"></div>
 
 <CppRunner>
 
@@ -570,7 +547,6 @@ struct Node {
     Node* next;
     Node(int d, Node* n = nullptr) : data{d}, next{n} {}
 };
-
 int main() {
     // Build A0 -> A1 -> A2 -> nullptr by inserting at the front
     Node* head = nullptr;
@@ -620,12 +596,6 @@ layout: prism
 heading: "STL Containers — Common Methods"
 ---
 
-<style>
-.slidev-layout ul > li {
-  margin-top: 1.4em;
-}
-</style>
-
 - Both `vector` and `list` are _class templates_ instantiated with the type of items they store.
 
 - Three methods are available for _all_ STL containers:
@@ -643,12 +613,6 @@ heading: "STL Containers — Common Methods"
 layout: prism
 heading: "vector-only and list-only Methods"
 ---
-
-<style>
-.slidev-layout ul > li {
-  margin-top: 1.2em;
-}
-</style>
 
 - The `vector` has its own methods that are not part of `list`. Two allow efficient _indexing_:
   - `Object& operator[](int idx)` returns the object at `idx`, with _no_ bounds-checking.
@@ -686,14 +650,8 @@ layout: prism
 heading: Stack Model
 ---
 
-<div class="grid grid-cols-2 gap-4" style="margin-top: 1.5rem;">
+<div class="grid grid-cols-2 gap-4" style="margin-top: 0rem;">
 <div>
-
-<style>
-.slidev-layout ul > li {
-  margin-top: 1.6em;
-}
-</style>
 
 - A [stack]{.hl} is a list with the restriction that insertions and deletions can be performed in only one position — _the end of the list_, called the [top]{.hl}.
   - [Last-In-First-Out]{.hl} (LIFO) property.
@@ -705,9 +663,9 @@ heading: Stack Model
 </div>
 <div>
 
-<div style="height: 1.5rem;"></div>
+<div style="height: 0rem;"></div>
 
-<img src="https://raw.githubusercontent.com/sswu-prism-lab/slides/main/images/ds/ds-w04-06.svg" class="tikz-fig" style="width: 70%;" />
+<img src="https://raw.githubusercontent.com/sswu-prism-lab/slides/main/images/ds/ds-w04-06.svg" class="tikz-fig" style="width: 60%;" />
 
 </div>
 </div>
@@ -719,7 +677,7 @@ heading: Linked List Implementation of Stacks
 
 <style>
 .slidev-layout ul > li {
-  margin-top: 1.3em;
+  margin-top: 1em;
 }
 </style>
 
@@ -727,7 +685,7 @@ heading: Linked List Implementation of Stacks
   - `list` and `vector` support stack operations, and 99% of the time they are the most reasonable choice.
 
 - Occasionally a special-purpose implementation can be faster.
-  - $\because$ stack operations are constant-time, this is unlikely to yield any discernible improvement except under very unique circumstances.
+  - Stack operations are constant-time, this is unlikely to yield any discernible improvement except under very unique circumstances.
 
 - The first implementation of a stack uses a _singly linked list_:
   - We `push` by inserting at the _front_ of the list.
@@ -739,7 +697,7 @@ layout: prism
 heading: "Linked List Stack — Implementation"
 ---
 
-<div class="grid grid-cols-2 gap-4" style="margin-top: 1rem;">
+<div class="grid grid-cols-2 gap-4" style="margin-top: 0rem;">
 <div>
 
 <style>

@@ -231,12 +231,6 @@ layout: prism
 heading: "사전 지식 — 용어"
 ---
 
-<style>
-.slidev-layout ul > li {
-  margin-top: 0.9em;
-}
-</style>
-
 - 아래에서 *루트*는 $A$이고, 노드 $F$는 $A$를 부모로, $K$, $L$, $M$을 자식으로 가진다.
   - 각 노드는 임의의 개수의 자식을 가질 수 있으며, 없을 수도 있다. *조부모*와 *손자* 관계도 비슷하게 정의된다.
 
@@ -244,8 +238,8 @@ heading: "사전 지식 — 용어"
 
 - 같은 부모를 가진 노드는 [형제자매]{.hl}이며, 따라서 $K$, $L$, $M$은 모두 형제자매이다.
 
-<div style="margin-top: 1rem; display: flex; justify-content: center;">
-  <img src="https://raw.githubusercontent.com/sswu-prism-lab/slides/main/images/ds/ds-w06-04.svg" class="tikz-fig" style="width: 72%;" />
+<div style="margin-top: 0.5rem; display: flex; justify-content: center;">
+  <img src="https://raw.githubusercontent.com/sswu-prism-lab/slides/main/images/ds/ds-w06-04.svg" class="tikz-fig" style="width: 50%;" />
 </div>
 
 ---
@@ -253,19 +247,13 @@ layout: prism
 heading: "사전 지식 — 구현"
 ---
 
-<style>
-.slidev-layout ul > li {
-  margin-top: 1.1em;
-}
-</style>
-
 - 트리를 구현하는 한 가지 방법은 각 노드에 데이터 외에도 *각* 자식으로의 링크를 두는 것이다.
   - 노드당 자식 수는 다양하고 미리 알 수 없으므로, 자식들을 직접 링크로 두면 너무 많은 공간을 낭비할 수 있다.
 
 - 이를 해결하기 위해, 각 노드의 자식들을 트리 노드의 *연결 리스트*로 유지한다.
 
 <div style="margin-top: 1rem; display: flex; justify-content: center;">
-  <img src="https://raw.githubusercontent.com/sswu-prism-lab/slides/main/images/ds/ds-w06-05.svg" class="tikz-fig" style="width: 72%;" />
+  <img src="https://raw.githubusercontent.com/sswu-prism-lab/slides/main/images/ds/ds-w06-05.svg" class="tikz-fig" style="width: 62%;" />
 </div>
 
 ---
@@ -340,14 +328,9 @@ layout: prism
 heading: "이진 트리 — 노드 선언"
 ---
 
-<div class="grid grid-cols-2 gap-4" style="margin-top: 1.5rem;">
+<div class="grid grid-cols-2 gap-4" style="margin-top: 0rem;">
 <div>
 
-<style>
-.slidev-layout ul > li {
-  margin-top: 1.3em;
-}
-</style>
 
 - 이진 트리 노드는 최대 두 개의 자식을 가지므로, 그들로의 직접 링크를 유지할 수 있다.
   - 안타깝게도 깊이는 여전히 $N - 1$까지 커질 수 있다.
@@ -365,7 +348,7 @@ struct BinaryNode {
 </div>
 <div>
 
-<div style="height: 2rem;"></div>
+<div style="height: 1rem;"></div>
 
 <img src="https://raw.githubusercontent.com/sswu-prism-lab/slides/main/images/ds/ds-w06-07.svg" class="tikz-fig" style="width: 55%;" />
 
@@ -482,7 +465,7 @@ layout: prism
 heading: "이진 탐색 트리 — contains, findMin, insert"
 ---
 
-<div class="grid grid-cols-2 gap-4" style="margin-top: 1.5rem;">
+<div class="grid grid-cols-2 gap-4" style="margin-top: 0rem;">
 <div>
 
 <style>
@@ -512,12 +495,6 @@ heading: "이진 탐색 트리 — contains, findMin, insert"
 layout: prism
 heading: "이진 탐색 트리 — 제거"
 ---
-
-<style>
-.slidev-layout ul > li {
-  margin-top: 1.0em;
-}
-</style>
 
 - 삭제할 노드를 찾은 후에는 여러 경우가 발생한다:
   - 노드가 *리프*이면 즉시 삭제할 수 있다.
@@ -678,14 +655,8 @@ layout: prism
 heading: "AVL 트리"
 ---
 
-<div class="grid grid-cols-2 gap-4" style="margin-top: 1.5rem;">
+<div class="grid grid-cols-2 gap-4" style="margin-top: 0rem;">
 <div>
-
-<style>
-.slidev-layout ul > li {
-  margin-top: 1.0em;
-}
-</style>
 
 - [Adelson-Velskii와 Landis (AVL) 트리]{.hl}는 *균형 조건*을 가진 이진 탐색 트리이다.
   - 이 조건은 유지하기 쉬워야 하고 깊이가 $\mathcal{O}(\log N)$가 되도록 보장해야 한다.
@@ -696,9 +667,9 @@ heading: "AVL 트리"
 </div>
 <div>
 
-<div style="height: 3rem;"></div>
+<div style="height: 0rem;"></div>
 
-<img src="https://raw.githubusercontent.com/sswu-prism-lab/slides/main/images/ds/ds-w06-12.svg" class="tikz-fig" style="width: 75%;" />
+<img src="https://raw.githubusercontent.com/sswu-prism-lab/slides/main/images/ds/ds-w06-12.svg" class="tikz-fig" style="width: 65%;" />
 
 </div>
 </div>
@@ -708,12 +679,6 @@ layout: prism
 heading: "AVL 트리 — 균형 조건"
 ---
 
-<style>
-.slidev-layout ul > li {
-  margin-top: 1.4em;
-}
-</style>
-
 - AVL 트리는 모든 노드에 대해 왼쪽과 오른쪽 서브트리의 높이 차이가 최대 $1$인 이진 탐색 트리이다.
   - 아래 *왼쪽* 트리만이 AVL 트리이다.
 
@@ -721,8 +686,8 @@ heading: "AVL 트리 — 균형 조건"
 
 - 삽입과 삭제를 제외하면, 모든 트리 연산은 $\mathcal{O}(\log N)$ 시간에 수행할 수 있다.
 
-<div style="margin-top: 0.6rem; display: flex; justify-content: center;">
-  <img src="https://raw.githubusercontent.com/sswu-prism-lab/slides/main/images/ds/ds-w06-13.svg" class="tikz-fig" style="width: 62%;" />
+<div style="margin-top: 0rem; display: flex; justify-content: center;">
+  <img src="https://raw.githubusercontent.com/sswu-prism-lab/slides/main/images/ds/ds-w06-13.svg" class="tikz-fig" style="width: 52%;" />
 </div>
 
 ---
@@ -776,15 +741,9 @@ layout: prism
 heading: "AVL — 단일 회전 (추상)"
 ---
 
-<div style="margin-top: 2rem; display: flex; justify-content: center;">
-  <img src="https://raw.githubusercontent.com/sswu-prism-lab/slides/main/images/ds/ds-w06-14.svg" class="tikz-fig" style="width: 78%;" />
+<div style="margin-top: 0rem; display: flex; justify-content: center;">
+  <img src="https://raw.githubusercontent.com/sswu-prism-lab/slides/main/images/ds/ds-w06-14.svg" class="tikz-fig" style="width: 60%;" />
 </div>
-
-<style>
-.slidev-layout ul > li {
-  margin-top: 1.6em;
-}
-</style>
 
 - 피봇 $k_1$이 루트로 올라가고, $k_2$가 그 오른쪽 자식이 되며, ($k_1$과 $k_2$ 사이의) 서브트리 $Y$가 $k_2$의 왼쪽 자식으로 다시 붙는다.
 
@@ -829,15 +788,9 @@ layout: prism
 heading: "AVL — 단일 회전이 실패하는 이유"
 ---
 
-<div style="margin-top: 2rem; display: flex; justify-content: center;">
-  <img src="https://raw.githubusercontent.com/sswu-prism-lab/slides/main/images/ds/ds-w06-16.svg" class="tikz-fig" style="width: 78%;" />
+<div style="margin-top: 0rem; display: flex; justify-content: center;">
+  <img src="https://raw.githubusercontent.com/sswu-prism-lab/slides/main/images/ds/ds-w06-16.svg" class="tikz-fig" style="width: 60%;" />
 </div>
-
-<style>
-.slidev-layout ul > li {
-  margin-top: 1.6em;
-}
-</style>
 
 - $k_2$와 $k_1$을 회전해도 깊은 서브트리 $Y$(빨강)가 같은 깊이에 남는다 — 불균형이 해소되지 않으므로 여기서는 단일 회전으로 충분하지 않다.
 
@@ -846,12 +799,6 @@ layout: prism
 heading: "AVL — 이중 회전 (예시)"
 ---
 
-<style>
-.slidev-layout ul > li {
-  margin-top: 1.4em;
-}
-</style>
-
 - $k_3$를 루트로 남겨둘 수 없고, $k_3$와 $k_1$ 사이의 회전도 작동하지 않으므로 $k_2$가 새 루트가 된다.
 
 - 이로 인해 $k_1$은 $k_2$의 왼쪽 자식, $k_3$는 오른쪽 자식이 되며, 네 서브트리의 위치가 완전히 결정된다.
@@ -859,7 +806,7 @@ heading: "AVL — 이중 회전 (예시)"
 - 그 결과는 AVL 성질을 만족하고 높이를 삽입 전 값으로 복원하므로, 모든 재균형과 높이 갱신이 완료된다.
 
 <div style="margin-top: 0.6rem; display: flex; justify-content: center;">
-  <img src="https://raw.githubusercontent.com/sswu-prism-lab/slides/main/images/ds/ds-w06-17.svg" class="tikz-fig" style="width: 62%;" />
+  <img src="https://raw.githubusercontent.com/sswu-prism-lab/slides/main/images/ds/ds-w06-17.svg" class="tikz-fig" style="width: 60%;" />
 </div>
 
 ---
@@ -867,8 +814,8 @@ layout: prism
 heading: "AVL — 이중 회전 (추상)"
 ---
 
-<div style="margin-top: 2rem; display: flex; justify-content: center;">
-  <img src="https://raw.githubusercontent.com/sswu-prism-lab/slides/main/images/ds/ds-w06-18.svg" class="tikz-fig" style="width: 80%;" />
+<div style="margin-top: 0rem; display: flex; justify-content: center;">
+  <img src="https://raw.githubusercontent.com/sswu-prism-lab/slides/main/images/ds/ds-w06-18.svg" class="tikz-fig" style="width: 60%;" />
 </div>
 
 <style>
@@ -893,9 +840,7 @@ struct AvlNode {
     AvlNode(const Comparable& e, AvlNode* l, AvlNode* r, int h = 0)
         : element{e}, left{l}, right{r}, height{h} {}
 };
-
 int height(AvlNode* t) const { return t == nullptr ? -1 : t->height; }
-
 void rotateWithLeftChild(AvlNode*& k2) {            // 단일 회전 (LL 경우)
     AvlNode* k1 = k2->left;
     k2->left  = k1->right;
@@ -904,7 +849,6 @@ void rotateWithLeftChild(AvlNode*& k2) {            // 단일 회전 (LL 경우)
     k1->height = max(height(k1->left), k2->height) + 1;
     k2 = k1;
 }
-
 void doubleWithLeftChild(AvlNode*& k3) {            // 이중 회전 (LR 경우)
     rotateWithRightChild(k3->left);
     rotateWithLeftChild(k3);
@@ -1000,15 +944,9 @@ layout: prism
 heading: "레드-블랙 트리 — 예시"
 ---
 
-<div style="margin-top: 2.5rem; display: flex; justify-content: center;">
-  <img src="https://raw.githubusercontent.com/sswu-prism-lab/slides/main/images/ds/ds-w06-19.svg" class="tikz-fig" style="width: 92%;" />
+<div style="margin-top: 0rem; display: flex; justify-content: center;">
+  <img src="https://raw.githubusercontent.com/sswu-prism-lab/slides/main/images/ds/ds-w06-19.svg" class="tikz-fig" style="width: 70%;" />
 </div>
-
-<style>
-.slidev-layout ul > li {
-  margin-top: 1.6em;
-}
-</style>
 
 - 루트에서 널까지의 모든 경로는 같은 수의 블랙 노드를 지나며, 어떤 레드 노드도 레드 자식을 갖지 않는다.
 
@@ -1038,12 +976,6 @@ layout: prism
 heading: "레드-블랙 트리 — 경우 1 (레드 형제)"
 ---
 
-<style>
-.slidev-layout ul > li {
-  margin-top: 1.0em;
-}
-</style>
-
 - $P$는 레드이지만, 그 부모 $G$($X$의 조부모)는 반드시 블랙이다. $P$의 형제 $S$의 색에 따라 두 가지 경우가 있다:
 
 <div class="sub-item-enum">
@@ -1065,34 +997,22 @@ layout: prism
 heading: "레드-블랙 트리 — 경우 2 (블랙 형제)"
 ---
 
-<style>
-.slidev-layout ul > li {
-  margin-top: 0.6em;
-}
-</style>
-
 - 경우 2.1에서는 $P$를 피봇으로 *좌회전*하여 트리를 경우 2.2로 변환한다.
 
 <div style="margin-top: 0.3rem; display: flex; justify-content: center;">
-  <img src="https://raw.githubusercontent.com/sswu-prism-lab/slides/main/images/ds/ds-w06-22.svg" class="tikz-fig" style="width: 52%;" />
+  <img src="https://raw.githubusercontent.com/sswu-prism-lab/slides/main/images/ds/ds-w06-22.svg" class="tikz-fig" style="width: 40%;" />
 </div>
 
 - 경우 2.2에서는 $G$를 피봇으로 *우회전*하고, $P$와 $G$의 색을 서로 바꾼다.
 
 <div style="margin-top: 0.3rem; display: flex; justify-content: center;">
-  <img src="https://raw.githubusercontent.com/sswu-prism-lab/slides/main/images/ds/ds-w06-23.svg" class="tikz-fig" style="width: 52%;" />
+  <img src="https://raw.githubusercontent.com/sswu-prism-lab/slides/main/images/ds/ds-w06-23.svg" class="tikz-fig" style="width: 40%;" />
 </div>
 
 ---
 layout: prism
 heading: "HW: 레드-블랙 트리 클래스 구현하기"
 ---
-
-<style>
-.slidev-layout ul > li {
-  margin-top: 1.1em;
-}
-</style>
 
 - 레드-블랙 트리의 삭제 메커니즘을 찾아보라.
   - 삽입 메커니즘과 비슷하게 경우가 나뉜다.
@@ -1158,12 +1078,6 @@ heading: "다진 트리 모델 — 디스크 입출력"
 layout: prism
 heading: "다진 트리 모델"
 ---
-
-<style>
-.slidev-layout ul > li {
-  margin-top: 1.6em;
-}
-</style>
 
 - [다진 트리]{.hl}([$M$진 트리]{.hl}라고도 함)는 $M$-갈래 분기를 허용한다.
 
@@ -1273,7 +1187,7 @@ layout: prism
 heading: "트라이 — 구조"
 ---
 
-<div class="grid grid-cols-2 gap-4" style="margin-top: 2rem;">
+<div class="grid grid-cols-2 gap-4" style="margin-top: 0rem;">
 <div>
 
 <style>
@@ -1289,7 +1203,7 @@ heading: "트라이 — 구조"
 </div>
 <div>
 
-<img src="https://raw.githubusercontent.com/sswu-prism-lab/slides/main/images/ds/ds-w06-28.svg" class="tikz-fig" style="width: 100%;" />
+<img src="https://raw.githubusercontent.com/sswu-prism-lab/slides/main/images/ds/ds-w06-28.svg" class="tikz-fig" style="width: 65%;" />
 
 </div>
 </div>

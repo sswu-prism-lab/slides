@@ -82,12 +82,6 @@ layout: prism
 heading: "Recap: List Model"
 ---
 
-<style>
-.slidev-layout ul > li {
-  margin-top: 0.9em;
-}
-</style>
-
 - We deal with a general list of the form $A_0, A_1, A_2, \ldots, A_{N-1}$, whose *size* is $N$.
   - The list of size $0$ is the [empty list]{.hl}.
   - Except for the empty list, $A_i$ *follows* (succeeds) $A_{i-1}$ $(i < N)$ and $A_{i-1}$ *precedes* $A_i$ $(i > 0)$.
@@ -106,7 +100,7 @@ layout: prism
 heading: "Recap: Stack Model"
 ---
 
-<div class="grid grid-cols-2 gap-4" style="margin-top: 1.5rem;">
+<div class="grid grid-cols-2 gap-4" style="margin-top: 0rem;">
 <div>
 
 <style>
@@ -202,7 +196,7 @@ layout: prism
 heading: "Circular Queue Model (1/2)"
 ---
 
-<div class="grid grid-cols-2 gap-4" style="margin-top: 1rem;">
+<div class="grid grid-cols-2 gap-4" style="margin-top: 0rem;">
 <div>
 
 <style>
@@ -534,14 +528,8 @@ layout: prism
 heading: "Simple Implementations (1/2)"
 ---
 
-<div class="grid grid-cols-2 gap-4" style="margin-top: 1rem;">
+<div class="grid grid-cols-2 gap-4" style="margin-top: 0rem;">
 <div>
-
-<style>
-.slidev-layout ul > li {
-  margin-top: 1.1em;
-}
-</style>
 
 - There are several obvious ways to implement a priority queue.
   - A simple *linked list*: insert at the front in $\mathcal{O}(1)$, but traverse the list in $\mathcal{O}(N)$ to delete the minimum.
@@ -556,7 +544,7 @@ heading: "Simple Implementations (1/2)"
 
 <div style="height: 1.5rem;"></div>
 
-<img src="https://raw.githubusercontent.com/sswu-prism-lab/slides/main/images/ds/ds-w05-06.svg" class="tikz-fig" style="width: 92%; margin: 0 auto;" />
+<img src="https://raw.githubusercontent.com/sswu-prism-lab/slides/main/images/ds/ds-w05-06.svg" class="tikz-fig" style="width: 75%; margin: 0 auto;" />
 
 </div>
 </div>
@@ -636,12 +624,6 @@ layout: prism
 heading: "Structure Property (2/2)"
 ---
 
-<style>
-.slidev-layout ul > li {
-  margin-top: 1em;
-}
-</style>
-
 - Because a complete binary tree is so regular, it can be represented in an [array]{.hl} — no links are necessary. (Note that the $0$-th element is left empty.)
   - For any element in array position $i$, the left child is in position $2i$ and the right child is in the next cell, $2i+1$; the parent is in $\lfloor i/2 \rfloor$.
 
@@ -690,12 +672,6 @@ layout: prism
 heading: "Heap Operations — insert (1/2)"
 ---
 
-<style>
-.slidev-layout ul > li {
-  margin-top: 1.1em;
-}
-</style>
-
 - To insert an element $X$, we create a *hole* in the next available location (otherwise the tree would not be complete).
   - If $X$ can be placed in the hole without violating heap order, we do so and are done.
   - Otherwise, we slide the element in the hole's parent into the hole, bubbling the hole up toward the root, and continue until $X$ can be placed.
@@ -711,8 +687,8 @@ layout: prism
 heading: "Heap Operations — insert (2/2)"
 ---
 
-<div style="margin-top: 0.5rem;">
-<img src="https://raw.githubusercontent.com/sswu-prism-lab/slides/main/images/ds/ds-w05-10.svg" class="tikz-fig" style="width: 74%; margin: 0 auto;" />
+<div style="margin-top: 0rem;">
+<img src="https://raw.githubusercontent.com/sswu-prism-lab/slides/main/images/ds/ds-w05-10.svg" class="tikz-fig" style="width: 50%; margin: 0 auto;" />
 </div>
 
 <div class="sub-item" style="margin-top: 1rem;">
@@ -728,7 +704,7 @@ heading: "Heap Operations — removeMin (1/2)"
 
 <style>
 .slidev-layout ul > li {
-  margin-top: 1.6em;
+  margin-top: 1em;
 }
 </style>
 
@@ -747,8 +723,8 @@ layout: prism
 heading: "Heap Operations — removeMin (2/2)"
 ---
 
-<div style="margin-top: 0.5rem;">
-<img src="https://raw.githubusercontent.com/sswu-prism-lab/slides/main/images/ds/ds-w05-11.svg" class="tikz-fig" style="width: 100%; margin: 0 auto;" />
+<div style="margin-top: 0rem;">
+<img src="https://raw.githubusercontent.com/sswu-prism-lab/slides/main/images/ds/ds-w05-11.svg" class="tikz-fig" style="width: 65%; margin: 0 auto;" />
 </div>
 
 <div class="sub-item" style="margin-top: 1rem;">
@@ -762,7 +738,7 @@ layout: prism
 heading: "Binary Heap — insert (percolate up)"
 ---
 
-<div style="height: 0.5rem;"></div>
+<div style="height: 0rem;"></div>
 
 ```cpp
 class BinaryHeap {                       // min-heap, 1-indexed array
@@ -771,7 +747,6 @@ public:
         : array(capacity + 1), currentSize(0) {}
     bool isEmpty() const { return currentSize == 0; }
     const int& findMin() const { return array[1]; }
-
     void insert(int x) {                 // O(log N)
         if (currentSize == (int)array.size() - 1)
             array.resize(array.size() * 2);
@@ -969,11 +944,6 @@ layout: prism
 heading: "Applications — Operating Systems"
 ---
 
-<style>
-.slidev-layout ul > li {
-  margin-top: 1em;
-}
-</style>
 
 - In operating systems, priority queues are an effective method to manage processes and tasks based on their [priority]{.hl}.
   - The main purpose is to ensure that higher-priority tasks are executed before lower-priority ones, optimizing performance and responsiveness.

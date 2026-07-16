@@ -79,28 +79,17 @@ heading: Course Schedule
 
 ---
 layout: prism
-heading: "Recap: Representation of Graphs (Adjacency Matrix)"
+heading: "Recap: Representation of Graphs"
 ---
 
-<div class="grid grid-cols-2 gap-4" style="margin-top: 1.2rem;">
+<div class="grid grid-cols-2 gap-4" style="margin-top: 0rem;">
 <div>
-
-<style>
-.slidev-layout ul > li {
-  margin-top: 1.1em;
-}
-</style>
 
 - We will consider directed graphs (undirected graphs are similarly represented).
 
 - One simple way is a two-dimensional array — an [adjacency matrix]{.hl} representation.
   - For each edge $(u, v)$ we set $A[u][v]$ to `true`; otherwise the entry is `false`.
   - For a weighted edge, set $A[u][v]$ to the weight, using a very large or very small sentinel for nonexistent edges.
-
-</div>
-<div>
-
-<div style="height: 1rem;"></div>
 
 $$
 A=\begin{bmatrix}
@@ -112,17 +101,22 @@ A=\begin{bmatrix}
 \end{bmatrix}
 $$
 
-<img src="https://raw.githubusercontent.com/sswu-prism-lab/slides/main/images/ds/ds-w11-01.svg" class="tikz-fig" style="width: 80%; margin: 0.6rem auto 0;" />
+</div>
+<div>
+
+<div style="height: 0rem;"></div>
+
+<img src="https://raw.githubusercontent.com/sswu-prism-lab/slides/main/images/ds/ds-w11-01.svg" class="tikz-fig" style="width: 70%; margin: 0rem auto 0;" />
 
 </div>
 </div>
 
 ---
 layout: prism
-heading: "Recap: Representation of Graphs (Adjacency List)"
+heading: "Recap: Representation of Graphs"
 ---
 
-<div class="grid grid-cols-2 gap-4" style="margin-top: 2.2rem;">
+<div class="grid grid-cols-2 gap-4" style="margin-top: 0rem; grid-template-columns: 1.2fr 1fr;">
 <div>
 
 <style>
@@ -140,7 +134,7 @@ heading: "Recap: Representation of Graphs (Adjacency List)"
 </div>
 <div>
 
-<img src="https://raw.githubusercontent.com/sswu-prism-lab/slides/main/images/ds/ds-w11-02.svg" class="tikz-fig" style="width: 100%;" />
+<img src="https://raw.githubusercontent.com/sswu-prism-lab/slides/main/images/ds/ds-w11-02.svg" class="tikz-fig" style="width: 90%;" />
 
 </div>
 </div>
@@ -178,12 +172,6 @@ layout: prism
 heading: "Recap: Minimum Spanning Tree"
 ---
 
-<style>
-.slidev-layout ul > li {
-  margin-top: 0.7em;
-}
-</style>
-
 - The next problem is finding a [minimum spanning tree]{.hl} in an undirected graph — a tree of graph edges connecting all vertices of $G$ at lowest total cost.
   - It exists *if and only if* $G$ is connected.
   - It is a *tree* because it is acyclic, *spanning* because it covers every vertex, and *minimum* for the obvious reason.
@@ -191,12 +179,12 @@ heading: "Recap: Minimum Spanning Tree"
 <div class="grid grid-cols-2 gap-4" style="margin-top: 0.8rem;">
 <div>
 
-<img src="https://raw.githubusercontent.com/sswu-prism-lab/slides/main/images/ds/ds-w11-04.svg" class="tikz-fig" style="width: 92%; margin: 0 auto;" />
+<img src="https://raw.githubusercontent.com/sswu-prism-lab/slides/main/images/ds/ds-w11-04.svg" class="tikz-fig" style="width: 82%; margin: 0 auto;" />
 
 </div>
 <div>
 
-<img src="https://raw.githubusercontent.com/sswu-prism-lab/slides/main/images/ds/ds-w11-05.svg" class="tikz-fig" style="width: 92%; margin: 0 auto;" />
+<img src="https://raw.githubusercontent.com/sswu-prism-lab/slides/main/images/ds/ds-w11-05.svg" class="tikz-fig" style="width: 82%; margin: 0 auto;" />
 
 </div>
 </div>
@@ -205,12 +193,6 @@ heading: "Recap: Minimum Spanning Tree"
 layout: prism
 heading: Sets and Maps
 ---
-
-<style>
-.slidev-layout ul > li {
-  margin-top: 1.3em;
-}
-</style>
 
 - Data structures such as lists, stacks, queues, priority queues, trees, and graphs each have their own caliber for carrying data.
 
@@ -396,11 +378,11 @@ layout: prism
 heading: "Disjoint Sets: Linked List (Merging)"
 ---
 
-<div style="margin-top: 0.5rem;"></div>
+<div style="margin-top: 0rem;"></div>
 
 - The linked list implementation saves time when updating, because we need not search the entire array.
 
-<img src="https://raw.githubusercontent.com/sswu-prism-lab/slides/main/images/ds/ds-w11-06.svg" class="tikz-fig" style="width: 78%; margin: 1.5rem auto 0; display: block;" />
+<img src="https://raw.githubusercontent.com/sswu-prism-lab/slides/main/images/ds/ds-w11-06.svg" class="tikz-fig" style="width: 58%; margin: 0rem auto 0; display: block;" />
 
 ---
 layout: prism
@@ -518,16 +500,10 @@ layout: prism
 heading: "Smart Union Algorithms: Union-by-Height"
 ---
 
-<style>
-.slidev-layout ul > li {
-  margin-top: 0.7em;
-}
-</style>
-
 - An alternative that also guarantees depth at most $\mathcal{O}(\log N)$ is [union-by-height]{.hl}: track the *height* rather than the size, and make the shallower tree a subtree of the deeper one.
   - The height increases only when two equally deep trees are joined (then it grows by one) — a trivial modification of union-by-size.
 
-<div class="grid grid-cols-2 gap-4" style="margin-top: 0.8rem;">
+<div class="grid grid-cols-2 gap-4" style="margin-top: 0rem;">
 <div>
 
 <img src="https://raw.githubusercontent.com/sswu-prism-lab/slides/main/images/ds/ds-w11-10.svg" class="tikz-fig" style="width: 100%;" />
@@ -565,12 +541,6 @@ heading: "Path Compression: Motivation"
 layout: prism
 heading: "Path Compression: Union-by-Rank"
 ---
-
-<style>
-.slidev-layout ul > li {
-  margin-top: 1.4em;
-}
-</style>
 
 - Path compression is perfectly compatible with union-by-size, but *not* entirely with union-by-height, because compression can change tree heights.
   - The stored heights become estimated heights — called [ranks]{.hl} — so the combined strategy is known as [union-by-rank]{.hl}.

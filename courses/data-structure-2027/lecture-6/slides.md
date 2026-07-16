@@ -231,12 +231,6 @@ layout: prism
 heading: "Preliminaries — Terminology"
 ---
 
-<style>
-.slidev-layout ul > li {
-  margin-top: 0.9em;
-}
-</style>
-
 - Below, the *root* is $A$; node $F$ has $A$ as a parent and $K$, $L$, $M$ as children.
   - Each node may have an arbitrary number of children, possibly zero. *Grandparent* and *grandchild* relations are defined similarly.
 
@@ -244,8 +238,8 @@ heading: "Preliminaries — Terminology"
 
 - Nodes with the same parent are [siblings]{.hl}; thus $K$, $L$, $M$ are all siblings.
 
-<div style="margin-top: 1rem; display: flex; justify-content: center;">
-  <img src="https://raw.githubusercontent.com/sswu-prism-lab/slides/main/images/ds/ds-w06-04.svg" class="tikz-fig" style="width: 72%;" />
+<div style="margin-top: 0.5rem; display: flex; justify-content: center;">
+  <img src="https://raw.githubusercontent.com/sswu-prism-lab/slides/main/images/ds/ds-w06-04.svg" class="tikz-fig" style="width: 50%;" />
 </div>
 
 ---
@@ -253,19 +247,13 @@ layout: prism
 heading: "Preliminaries — Implementation"
 ---
 
-<style>
-.slidev-layout ul > li {
-  margin-top: 1.1em;
-}
-</style>
-
 - One way to implement a tree is to keep in each node, besides its data, a link to *each* child.
   - The number of children per node can vary and is not known in advance, so making the children direct links may waste too much space.
 
 - To tackle this, we keep the children of each node in a *linked list* of tree nodes.
 
 <div style="margin-top: 1rem; display: flex; justify-content: center;">
-  <img src="https://raw.githubusercontent.com/sswu-prism-lab/slides/main/images/ds/ds-w06-05.svg" class="tikz-fig" style="width: 72%;" />
+  <img src="https://raw.githubusercontent.com/sswu-prism-lab/slides/main/images/ds/ds-w06-05.svg" class="tikz-fig" style="width: 62%;" />
 </div>
 
 ---
@@ -340,14 +328,9 @@ layout: prism
 heading: "Binary Trees — Node Declaration"
 ---
 
-<div class="grid grid-cols-2 gap-4" style="margin-top: 1.5rem;">
+<div class="grid grid-cols-2 gap-4" style="margin-top: 0rem;">
 <div>
 
-<style>
-.slidev-layout ul > li {
-  margin-top: 1.3em;
-}
-</style>
 
 - Because a binary tree node has at most two children, we can keep direct links to them.
   - Unfortunately, the depth can still be as large as $N - 1$.
@@ -365,7 +348,7 @@ struct BinaryNode {
 </div>
 <div>
 
-<div style="height: 2rem;"></div>
+<div style="height: 1rem;"></div>
 
 <img src="https://raw.githubusercontent.com/sswu-prism-lab/slides/main/images/ds/ds-w06-07.svg" class="tikz-fig" style="width: 55%;" />
 
@@ -482,7 +465,7 @@ layout: prism
 heading: "BST — contains, findMin, insert"
 ---
 
-<div class="grid grid-cols-2 gap-4" style="margin-top: 1.5rem;">
+<div class="grid grid-cols-2 gap-4" style="margin-top: 0rem;">
 <div>
 
 <style>
@@ -512,12 +495,6 @@ heading: "BST — contains, findMin, insert"
 layout: prism
 heading: "BST — Removal"
 ---
-
-<style>
-.slidev-layout ul > li {
-  margin-top: 1.0em;
-}
-</style>
 
 - Once we have found the node to be deleted, several cases arise:
   - If the node is a *leaf*, it can be deleted immediately.
@@ -678,14 +655,8 @@ layout: prism
 heading: "AVL Trees"
 ---
 
-<div class="grid grid-cols-2 gap-4" style="margin-top: 1.5rem;">
+<div class="grid grid-cols-2 gap-4" style="margin-top: 0rem;">
 <div>
-
-<style>
-.slidev-layout ul > li {
-  margin-top: 1.0em;
-}
-</style>
 
 - An [Adelson-Velskii and Landis (AVL) tree]{.hl} is a binary search tree with a *balance condition*.
   - The condition must be easy to maintain and ensure the depth is $\mathcal{O}(\log N)$.
@@ -696,9 +667,9 @@ heading: "AVL Trees"
 </div>
 <div>
 
-<div style="height: 3rem;"></div>
+<div style="height: 0rem;"></div>
 
-<img src="https://raw.githubusercontent.com/sswu-prism-lab/slides/main/images/ds/ds-w06-12.svg" class="tikz-fig" style="width: 75%;" />
+<img src="https://raw.githubusercontent.com/sswu-prism-lab/slides/main/images/ds/ds-w06-12.svg" class="tikz-fig" style="width: 65%;" />
 
 </div>
 </div>
@@ -708,12 +679,6 @@ layout: prism
 heading: "AVL Trees — Balance Condition"
 ---
 
-<style>
-.slidev-layout ul > li {
-  margin-top: 1.4em;
-}
-</style>
-
 - An AVL tree is a binary search tree in which, for every node, the heights of the left and right subtrees differ by at most $1$.
   - Only the below *left* tree is an AVL tree.
 
@@ -721,8 +686,8 @@ heading: "AVL Trees — Balance Condition"
 
 - All tree operations can be performed in $\mathcal{O}(\log N)$ time, except possibly insertion and deletion.
 
-<div style="margin-top: 0.6rem; display: flex; justify-content: center;">
-  <img src="https://raw.githubusercontent.com/sswu-prism-lab/slides/main/images/ds/ds-w06-13.svg" class="tikz-fig" style="width: 62%;" />
+<div style="margin-top: 0rem; display: flex; justify-content: center;">
+  <img src="https://raw.githubusercontent.com/sswu-prism-lab/slides/main/images/ds/ds-w06-13.svg" class="tikz-fig" style="width: 52%;" />
 </div>
 
 ---
@@ -776,15 +741,9 @@ layout: prism
 heading: "AVL — Single Rotation (Abstract)"
 ---
 
-<div style="margin-top: 2rem; display: flex; justify-content: center;">
-  <img src="https://raw.githubusercontent.com/sswu-prism-lab/slides/main/images/ds/ds-w06-14.svg" class="tikz-fig" style="width: 78%;" />
+<div style="margin-top: 0rem; display: flex; justify-content: center;">
+  <img src="https://raw.githubusercontent.com/sswu-prism-lab/slides/main/images/ds/ds-w06-14.svg" class="tikz-fig" style="width: 60%;" />
 </div>
-
-<style>
-.slidev-layout ul > li {
-  margin-top: 1.6em;
-}
-</style>
 
 - The pivot $k_1$ rises to the root; $k_2$ becomes its right child, and subtree $Y$ (between $k_1$ and $k_2$) reattaches as $k_2$'s left child.
 
@@ -829,15 +788,9 @@ layout: prism
 heading: "AVL — Why a Single Rotation Fails"
 ---
 
-<div style="margin-top: 2rem; display: flex; justify-content: center;">
-  <img src="https://raw.githubusercontent.com/sswu-prism-lab/slides/main/images/ds/ds-w06-16.svg" class="tikz-fig" style="width: 78%;" />
+<div style="margin-top: 0rem; display: flex; justify-content: center;">
+  <img src="https://raw.githubusercontent.com/sswu-prism-lab/slides/main/images/ds/ds-w06-16.svg" class="tikz-fig" style="width: 60%;" />
 </div>
-
-<style>
-.slidev-layout ul > li {
-  margin-top: 1.6em;
-}
-</style>
 
 - Rotating $k_2$ and $k_1$ leaves the deep subtree $Y$ (red) at the same depth — the imbalance is not resolved, so a single rotation is insufficient here.
 
@@ -846,12 +799,6 @@ layout: prism
 heading: "AVL — Double Rotation (Example)"
 ---
 
-<style>
-.slidev-layout ul > li {
-  margin-top: 1.4em;
-}
-</style>
-
 - We cannot leave $k_3$ as the root, and a rotation between $k_3$ and $k_1$ does not work — so $k_2$ becomes the new root.
 
 - This forces $k_1$ to be $k_2$'s left child and $k_3$ to be its right child, and fully determines the locations of the four subtrees.
@@ -859,7 +806,7 @@ heading: "AVL — Double Rotation (Example)"
 - The result satisfies the AVL property and restores the height to its pre-insertion value, so all rebalancing and height updating is complete.
 
 <div style="margin-top: 0.6rem; display: flex; justify-content: center;">
-  <img src="https://raw.githubusercontent.com/sswu-prism-lab/slides/main/images/ds/ds-w06-17.svg" class="tikz-fig" style="width: 62%;" />
+  <img src="https://raw.githubusercontent.com/sswu-prism-lab/slides/main/images/ds/ds-w06-17.svg" class="tikz-fig" style="width: 60%;" />
 </div>
 
 ---
@@ -867,8 +814,8 @@ layout: prism
 heading: "AVL — Double Rotation (Abstract)"
 ---
 
-<div style="margin-top: 2rem; display: flex; justify-content: center;">
-  <img src="https://raw.githubusercontent.com/sswu-prism-lab/slides/main/images/ds/ds-w06-18.svg" class="tikz-fig" style="width: 80%;" />
+<div style="margin-top: 0rem; display: flex; justify-content: center;">
+  <img src="https://raw.githubusercontent.com/sswu-prism-lab/slides/main/images/ds/ds-w06-18.svg" class="tikz-fig" style="width: 60%;" />
 </div>
 
 <style>
@@ -893,9 +840,7 @@ struct AvlNode {
     AvlNode(const Comparable& e, AvlNode* l, AvlNode* r, int h = 0)
         : element{e}, left{l}, right{r}, height{h} {}
 };
-
 int height(AvlNode* t) const { return t == nullptr ? -1 : t->height; }
-
 void rotateWithLeftChild(AvlNode*& k2) {            // single rotation (LL case)
     AvlNode* k1 = k2->left;
     k2->left  = k1->right;
@@ -904,7 +849,6 @@ void rotateWithLeftChild(AvlNode*& k2) {            // single rotation (LL case)
     k1->height = max(height(k1->left), k2->height) + 1;
     k2 = k1;
 }
-
 void doubleWithLeftChild(AvlNode*& k3) {            // double rotation (LR case)
     rotateWithRightChild(k3->left);
     rotateWithLeftChild(k3);
@@ -1000,15 +944,9 @@ layout: prism
 heading: "Red-Black Trees — Example"
 ---
 
-<div style="margin-top: 2.5rem; display: flex; justify-content: center;">
-  <img src="https://raw.githubusercontent.com/sswu-prism-lab/slides/main/images/ds/ds-w06-19.svg" class="tikz-fig" style="width: 92%;" />
+<div style="margin-top: 0rem; display: flex; justify-content: center;">
+  <img src="https://raw.githubusercontent.com/sswu-prism-lab/slides/main/images/ds/ds-w06-19.svg" class="tikz-fig" style="width: 70%;" />
 </div>
-
-<style>
-.slidev-layout ul > li {
-  margin-top: 1.6em;
-}
-</style>
 
 - Every root-to-null path passes through the same number of black nodes, and no red node has a red child.
 
@@ -1038,12 +976,6 @@ layout: prism
 heading: "Red-Black Trees — Case 1 (Red Sibling)"
 ---
 
-<style>
-.slidev-layout ul > li {
-  margin-top: 1.0em;
-}
-</style>
-
 - Although $P$ is red, its parent $G$ (the grandparent of $X$) must be black. There are two cases, based on the color of $P$'s sibling $S$:
 
 <div class="sub-item-enum">
@@ -1065,34 +997,22 @@ layout: prism
 heading: "Red-Black Trees — Case 2 (Black Sibling)"
 ---
 
-<style>
-.slidev-layout ul > li {
-  margin-top: 0.6em;
-}
-</style>
-
 - For case 2.1, perform a *left rotation* with pivot $P$, converting the tree into case 2.2.
 
 <div style="margin-top: 0.3rem; display: flex; justify-content: center;">
-  <img src="https://raw.githubusercontent.com/sswu-prism-lab/slides/main/images/ds/ds-w06-22.svg" class="tikz-fig" style="width: 52%;" />
+  <img src="https://raw.githubusercontent.com/sswu-prism-lab/slides/main/images/ds/ds-w06-22.svg" class="tikz-fig" style="width: 40%;" />
 </div>
 
 - For case 2.2, perform a *right rotation* with pivot $G$, and swap the colors of $P$ and $G$.
 
 <div style="margin-top: 0.3rem; display: flex; justify-content: center;">
-  <img src="https://raw.githubusercontent.com/sswu-prism-lab/slides/main/images/ds/ds-w06-23.svg" class="tikz-fig" style="width: 52%;" />
+  <img src="https://raw.githubusercontent.com/sswu-prism-lab/slides/main/images/ds/ds-w06-23.svg" class="tikz-fig" style="width: 40%;" />
 </div>
 
 ---
 layout: prism
 heading: "HW: Implement a Red-Black Tree Class"
 ---
-
-<style>
-.slidev-layout ul > li {
-  margin-top: 1.1em;
-}
-</style>
 
 - Find the deletion mechanism of the red-black tree.
   - It has separated cases, similar to the insertion mechanism.
@@ -1158,12 +1078,6 @@ heading: "Multiway Tree Model — Disk I/O"
 layout: prism
 heading: "Multiway Tree Model"
 ---
-
-<style>
-.slidev-layout ul > li {
-  margin-top: 1.6em;
-}
-</style>
 
 - A [multiway tree]{.hl} (also known as an [$M$-ary tree]{.hl}) allows $M$-way branching.
 
@@ -1273,7 +1187,7 @@ layout: prism
 heading: "Tries — Structure"
 ---
 
-<div class="grid grid-cols-2 gap-4" style="margin-top: 2rem;">
+<div class="grid grid-cols-2 gap-4" style="margin-top: 0rem;">
 <div>
 
 <style>
@@ -1289,7 +1203,7 @@ heading: "Tries — Structure"
 </div>
 <div>
 
-<img src="https://raw.githubusercontent.com/sswu-prism-lab/slides/main/images/ds/ds-w06-28.svg" class="tikz-fig" style="width: 100%;" />
+<img src="https://raw.githubusercontent.com/sswu-prism-lab/slides/main/images/ds/ds-w06-28.svg" class="tikz-fig" style="width: 65%;" />
 
 </div>
 </div>

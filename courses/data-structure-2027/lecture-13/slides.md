@@ -105,14 +105,8 @@ layout: prism
 heading: "Recap: Linear Probing"
 ---
 
-<div class="grid grid-cols-2 gap-4" style="margin-top: 1.5rem;">
+<div class="grid grid-cols-2 gap-4" style="margin-top: 0rem;">
 <div>
-
-<style>
-.slidev-layout ul > li {
-  margin-top: 1.2em;
-}
-</style>
 
 - In [linear probing]{.hl}, $f$ is a linear function of $i$, typically $f(i) = i$.
   - This amounts to trying cells sequentially in search of an empty cell.
@@ -135,14 +129,8 @@ layout: prism
 heading: "Recap: Quadratic Probing"
 ---
 
-<div class="grid grid-cols-2 gap-4" style="margin-top: 1.5rem;">
+<div class="grid grid-cols-2 gap-4" style="margin-top: 0rem;">
 <div>
-
-<style>
-.slidev-layout ul > li {
-  margin-top: 1.6em;
-}
-</style>
 
 - [Quadratic probing]{.hl} is a collision resolution method that eliminates the primary clustering problem of linear probing.
 
@@ -164,14 +152,8 @@ layout: prism
 heading: "Recap: Double Hashing"
 ---
 
-<div class="grid grid-cols-2 gap-4" style="margin-top: 2rem;">
+<div class="grid grid-cols-2 gap-4" style="margin-top: 0rem;">
 <div>
-
-<style>
-.slidev-layout ul > li {
-  margin-top: 2.2em;
-}
-</style>
 
 - The last collision resolution method we examine is [double hashing]{.hl}.
 
@@ -231,12 +213,6 @@ heading: Table of Contents
 layout: prism
 heading: Greedy Algorithm
 ---
-
-<style>
-.slidev-layout ul > li {
-  margin-top: 1.1em;
-}
-</style>
 
 - The first type of algorithm we examine is the [greedy algorithm]{.hl}.
   - Dijkstra's, Prim's, and Kruskal's algorithms are greedy: in each phase, a decision is made that appears good, without regard for future consequences.
@@ -357,7 +333,7 @@ heading: "A Scheduling Problem — Multiple Processors"
 
 <style>
 .slidev-layout ul > li {
-  margin-top: 2.4em;
+  margin-top: 1.5em;
 }
 </style>
 
@@ -398,7 +374,7 @@ heading: "Huffman Codes"
 .slidev-layout table { font-size: 0.9em; }
 </style>
 
-<div class="grid grid-cols-2 gap-4" style="margin-top: 1rem;">
+<div class="grid grid-cols-2 gap-4" style="margin-top: 0rem; grid-template-columns: 1.2fr 1fr;">
 <div>
 
 <style>
@@ -632,12 +608,6 @@ heading: Divide and Conquer
 layout: prism
 heading: Running Time of Divide and Conquer Algorithms
 ---
-
-<style>
-.slidev-layout ul > li {
-  margin-top: 1.4em;
-}
-</style>
 
 - Assume a divide and conquer algorithm operates on two problems, each half the size of the original, plus $\mathcal{O}(N)$ additional work. This yields the recurrence:
 
@@ -996,7 +966,11 @@ $$
 x_{i+1} = (A\,x_i + c) \bmod 2^B,
 $$
 
+<div style="sub-item;">
+
 where $B$ matches the number of bits in the machine's integer, and $A$ and $c$ are odd.
+
+</div>
 
 ---
 layout: prism

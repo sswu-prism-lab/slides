@@ -304,14 +304,9 @@ layout: prism
 heading: Separate Chaining
 ---
 
-<div class="grid grid-cols-2 gap-4" style="margin-top: 1.2rem;">
+<div class="grid grid-cols-2 gap-4" style="margin-top: 0rem;">
 <div>
 
-<style>
-.slidev-layout ul > li {
-  margin-top: 1.3em;
-}
-</style>
 
 - The main programming detail left is [collision resolution]{.hl}.
 
@@ -324,7 +319,7 @@ heading: Separate Chaining
 </div>
 <div>
 
-<div style="height: 0.5rem;"></div>
+<div style="height: 0rem;"></div>
 
 | Cell | Chain |
 |:----:|:------|
@@ -448,12 +443,6 @@ heading: "Linear Probing — Primary Clustering"
 <div class="grid grid-cols-2 gap-4" style="margin-top: 1.5rem;">
 <div>
 
-<style>
-.slidev-layout ul > li {
-  margin-top: 1.3em;
-}
-</style>
-
 - In [linear probing]{.hl}, $f$ is a linear function of $i$, typically $f(i) = i$.
   - This amounts to trying cells sequentially in search of an empty cell.
 
@@ -543,12 +532,6 @@ heading: Double Hashing
 <div class="grid grid-cols-2 gap-4" style="margin-top: 1.5rem;">
 <div>
 
-<style>
-.slidev-layout ul > li {
-  margin-top: 2.0em;
-}
-</style>
-
 - The last collision resolution method we examine is [double hashing]{.hl}.
 
 - A popular choice is $f(i) = i \cdot hash_2(x)$, so a *second* hash function determines the step size.
@@ -569,16 +552,11 @@ layout: prism
 heading: Rehashing
 ---
 
-<style>
-.slidev-layout ul > li {
-  margin-top: 1.1em;
-}
-</style>
-
 - If the table gets too full, operations take too long, and for quadratic resolution insertions might even *fail*.
   - This can also happen when many removals are intermixed with insertions.
 
 - The solution is to build another table about *twice* as big (with a new hash function), scan the entire original table, and re-insert each non-deleted element at its new hash value.
+  - This entire operation is called [rehashing]{.hl}. It is expensive: the running time is $\mathcal{O}(N)$, but it occurs so infrequently that its *amortized* cost is small.
 
 <div class="theorem-box">
 <div class="theorem-box-title">Example</div>
@@ -588,8 +566,6 @@ Insert $13, 15, 24, 6$ into a linear-probing table of size $7$ with $h(x) = x \b
 
 </div>
 </div>
-
-- This entire operation is called [rehashing]{.hl}. It is expensive: the running time is $\mathcal{O}(N)$, but it occurs so infrequently that its *amortized* cost is small.
 
 ---
 layout: prism
@@ -676,14 +652,8 @@ layout: prism
 heading: "Perfect Hashing — Example"
 ---
 
-<div class="grid grid-cols-2 gap-4" style="margin-top: 1.2rem;">
+<div class="grid grid-cols-2 gap-4" style="margin-top: 0rem;">
 <div>
-
-<style>
-.slidev-layout ul > li {
-  margin-top: 1.1em;
-}
-</style>
 
 - The primary hash table has ten bins:
   - Bins 1, 3, 5, 7 are empty.
@@ -692,11 +662,12 @@ heading: "Perfect Hashing — Example"
   - Bin 9 has three items — a secondary table with nine positions.
 
 - Each secondary table is built with a different hash function until it is collision-free. This scheme is [perfect hashing]{.hl}.
+  - Secondary size $= (\text{bin size})^2$.
 
 </div>
 <div>
 
-<div style="height: 0.5rem;"></div>
+<div style="height: 0rem;"></div>
 
 | Bin | Items | 2nd table size |
 |:---:|:-----:|:--------------:|
@@ -706,12 +677,6 @@ heading: "Perfect Hashing — Example"
 | 6 | 2 | 4 |
 | 8 | 1 | 1 |
 | 9 | 3 | 9 |
-
-<div class="sub-item">
-
-Secondary size $= (\text{bin size})^2$.
-
-</div>
 
 </div>
 </div>
@@ -742,22 +707,15 @@ layout: prism
 heading: "Cuckoo Hashing — Cycles"
 ---
 
-<div class="grid grid-cols-2 gap-4" style="margin-top: 1.0rem;">
+<div class="grid grid-cols-2 gap-4" style="margin-top: 0rem; grid-template-columns: 1.2fr 1fr;">
 <div>
-
-<style>
-.slidev-layout ul > li {
-  margin-top: 1.1em;
-}
-</style>
 
 - After inserting $A{:}(0,2)$, $B{:}(0,0)$, $C{:}(1,4)$, $D{:}(1,0)$, $E{:}(3,2)$, $F{:}(3,4)$ we obtain the two tables at right ($X{:}(y,z)$ gives $X$'s two hash locations).
 
 - Now inserting $G{:}(1,2)$ forces items to be displaced, replaced, and displaced *forever* — a [cycle]{.hl}.
 
 - Key questions: what is the probability of a cycle, and what is the expected number of displacements for a successful insertion?
-
-- If the load factor is below $0.5$, a cycle is very unlikely; at $0.5$ or above it becomes drastically more likely and cuckoo hashing works poorly.
+  - If the load factor is below $0.5$, a cycle is very unlikely; at $0.5$ or above it becomes drastically more likely and cuckoo hashing works poorly.
 
 </div>
 <div>
@@ -816,13 +774,11 @@ int main() {
         auto& L = table[myhash(k)];
         L.push_front(k);
     }
-
     for (int i = 0; i < TS; i++) {            // print every slot's chain
         cout << i << ":";
         for (int v : table[i]) cout << " -> " << v;
         cout << "\n";
     }
-
     int target = 58;                          // find(58)
     auto& L = table[myhash(target)];
     bool found = false;
