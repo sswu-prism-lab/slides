@@ -184,7 +184,8 @@ jobs:
           rendercv render cv/Wonjun_Ko_CV.yaml
           mkdir -p dist/cv
           cp cv/index.html dist/cv/index.html
-          cp rendercv_output/*.pdf "dist/cv/Wonjun_Ko_CV.pdf"
+          cp cv/rendercv_output/Wonjun_Ko_CV.pdf "dist/cv/Wonjun_Ko_CV.pdf"
+
 
       - name: Setup Pages
         uses: actions/configure-pages@v4
