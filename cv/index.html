@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Wonjun Ko — Curriculum Vitae</title>
+<meta name="description" content="Curriculum Vitae of Wonjun Ko, Assistant Professor, School of AI Convergence, Sungshin Women's University.">
+<style>
+  :root{ --accent:#5b21b6; --accent-soft:#f3e8ff; --border:#e9d5ff; --ink:#2b2b33; --muted:#6b7280; }
+  *{ box-sizing:border-box; }
+  body{
+    font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+    margin:0; color:var(--ink); background:#faf9fc; line-height:1.5;
+  }
+  .wrap{ max-width:900px; margin:0 auto; padding:40px 20px 60px; }
+  header.cv{ border-bottom:2px solid var(--accent); padding-bottom:18px; margin-bottom:22px; }
+  h1{ color:var(--accent); font-size:2rem; margin:0 0 4px; }
+  .role{ color:var(--muted); font-size:1rem; margin-bottom:12px; }
+  .contact{ font-size:.9rem; color:var(--muted); }
+  .contact a{ color:var(--accent); text-decoration:none; }
+  .contact a:hover{ text-decoration:underline; }
+  .sep{ margin:0 8px; color:var(--border); }
+  .actions{ display:flex; flex-wrap:wrap; gap:12px; margin:22px 0 18px; }
+  .btn{
+    display:inline-flex; align-items:center; gap:8px; padding:11px 18px; border-radius:10px;
+    font-weight:600; text-decoration:none; font-size:.95rem; border:1px solid var(--border);
+  }
+  .btn.primary{ background:var(--accent); color:#fff; border-color:var(--accent); }
+  .btn.primary:hover{ background:#4c1d95; }
+  .btn.ghost{ background:#fff; color:var(--accent); }
+  .btn.ghost:hover{ background:var(--accent-soft); }
+  .viewer{
+    border:1px solid var(--border); border-radius:12px; overflow:hidden;
+    background:#fff; box-shadow:0 1px 6px rgba(91,33,182,.08); height:80vh; min-height:560px;
+  }
+  .viewer iframe{ width:100%; height:100%; border:0; }
+  .fallback{ font-size:.85rem; color:var(--muted); margin-top:10px; text-align:center; }
+  footer{ margin-top:26px; padding-top:16px; border-top:1px solid var(--border);
+    font-size:.85rem; color:var(--muted); display:flex; flex-wrap:wrap; gap:14px; }
+  footer a{ color:var(--accent); text-decoration:none; }
+  footer a:hover{ text-decoration:underline; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header class="cv">
+    <h1>Wonjun Ko, Ph.D.</h1>
+    <div class="role">Assistant Professor · School of AI Convergence, Sungshin Women's University</div>
+    <div class="contact">
+      <a href="mailto:wjko@sungshin.ac.kr">wjko@sungshin.ac.kr</a>
+      <span class="sep">|</span> +82-2-920-7191
+      <span class="sep">|</span> <a href="https://sites.google.com/sungshin.ac.kr/prism" target="_blank" rel="noopener">PRISM Lab</a>
+      <span class="sep">|</span> <a href="https://scholar.google.com/citations?user=mzssJTUAAAAJ" target="_blank" rel="noopener">Google Scholar</a>
+      <span class="sep">|</span> <a href="https://orcid.org/0000-0001-7496-9007" target="_blank" rel="noopener">ORCID</a>
+      <span class="sep">|</span> <a href="https://www.linkedin.com/in/wonjun-ko-30475a19a/" target="_blank" rel="noopener">LinkedIn</a>
+    </div>
+  </header>
+
+  <div class="actions">
+    <a class="btn primary" href="./Wonjun_Ko_CV.pdf" download>⬇ Download CV (PDF)</a>
+    <a class="btn ghost" href="./Wonjun_Ko_CV.pdf" target="_blank" rel="noopener">Open PDF in new tab ↗</a>
+  </div>
+
+  <div class="viewer">
+    <iframe src="./Wonjun_Ko_CV.pdf#view=FitH" title="Wonjun Ko — Curriculum Vitae (PDF)"></iframe>
+  </div>
+  <p class="fallback">PDF가 보이지 않으면 위의 <strong>Download CV (PDF)</strong> 버튼을 눌러 주세요.</p>
+
+  <footer>
+    <a href="https://sites.google.com/sungshin.ac.kr/prism" target="_blank" rel="noopener">← PRISM Lab Home</a>
+    <a href="/slides/">Prof. Ko's Lectures</a>
+    <a href="https://sswu-prism-lab.github.io/teaching/" target="_blank" rel="noopener">Teaching</a>
+  </footer>
+</div>
+</body>
+</html>

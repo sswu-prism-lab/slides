@@ -17,4 +17,7 @@ hero:
     - theme: alt
       text: C++ Programming - Notes
       link: /cpp-programming-2027/
+    - theme: alt
+      text: Data Structures & Applications - Notes
+      link: /data-structures-and-applications-2027/
 ---

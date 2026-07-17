@@ -1,0 +1,131 @@
+# RenderCV source - Wonjun Ko
+# Rendered to PDF automatically in CI. Edit content here.
+
+cv:
+  name: Wonjun Ko
+  location: Seoul, Republic of Korea
+  email: wjko@sungshin.ac.kr
+  phone: +82-2-920-7191
+  website: https://sites.google.com/sungshin.ac.kr/prism
+  social_networks:
+  - network: LinkedIn
+    username: wonjun-ko-30475a19a
+  - network: ORCID
+    username: 0000-0001-7496-9007
+  - network: GoogleScholar
+    username: mzssJTUAAAAJ
+  sections:
+    Work Experience:
+    - company: Sungshin Women's University
+      position: Assistant Professor, School of AI Convergence
+      start_date: 2023-09
+      end_date: present
+      location: Seoul, Republic of Korea
+    - company: SK hynix Inc.
+      position: Data Scientist (Senior Researcher)
+      start_date: 2022-08
+      end_date: 2023-08
+      location: Icheon, Republic of Korea
+      highlights:
+      - R&D/M&T Data Analytics, Division of Data Intelligence, DT
+    Education:
+    - institution: Korea University
+      area: Brain and Cognitive Engineering
+      degree: PhD
+      start_date: 2017-09
+      end_date: 2022-08
+      location: Seoul, Republic of Korea
+      highlights:
+      - 'Dissertation: Deep Representation Learning in Biomedicine'
+      - 'Advisor: Prof. Heung-Il Suk'
+    - institution: Sogang University
+      area: Physics
+      degree: BS
+      start_date: 2013-03
+      end_date: 2017-02
+      location: Seoul, Republic of Korea
+    Research Interests:
+    - name: Large Language Models for Data-Oriented Representation
+      highlights:
+      - Retrieval-augmented generation-inspired feature representation learning
+      - Service-specialized generative language models for biomedical applications
+    - name: Deep Learning Algorithms and Neural Network Structures for Biomedical Data Analysis
+      highlights:
+      - Optimization algorithms based on reinforcement learning (J7, J8), semi-supervised (C11), unsupervised (J6), and self-supervised learning (J1, J2, C3)
+      - Novel deep architectures for spectro-spatio-temporal feature representation (J12, C7, C9, C12)
+      - Neurodegenerative disease-related brain region discovery via graph neural networks (J11)
+      - Bayesian- and topology-grounded machine/deep learning methods (J3)
+    - name: Multi-modal Data Representation and Decision-Making
+      highlights:
+      - Neuroimaging-genetic data association mining via deep generative-discriminative learning (C1, C6, J5)
+      - 'Deep learning for industrial problems: synthetic device image generation, yield prediction, and job scheduling'
+    Publications - International Journals:
+    - '(J1) **W. Ko**, J. Choe, and J. Kang, "SLEEP-SAFE: Self-supervised Learning for Estimating Electroencephalogram Patterns with Structural Analysis of Fatigue Evidence," *IEEE Access*, vol. 13, pp. 35805-35817, 2025. (JCR-IF 3.400; CS-Information Systems 87/250) [link](https://ieeexplore.ieee.org/abstract/document/10902181)'
+    - (J2) **W. Ko**, S. Jeong, S.-K. Song, and H.-I. Suk, "EEG-Oriented Self-Supervised Learning with Triple Information Pathways Network," *IEEE Trans. Cybernetics*, vol. 54, no. 11, pp. 6495-6508, 2024. (JCR-IF 11.800; CS-Cybernetics 1/24) [link](https://ieeexplore.ieee.org/abstract/document/10588965)
+    - (J3) S. Jeong, **W. Ko**, A. W. Mulyadi, and H.-I. Suk, "Deep Efficient Continuous Manifold Learning for Time Series Modeling," *IEEE Trans. Pattern Analysis and Machine Intelligence*, vol. 46, no. 1, pp. 171-184, 2023. (JCR-IF 23.600; CS-Artificial Intelligence 2/145) [link](https://ieeexplore.ieee.org/abstract/document/10266751)
+    - '(J4) J. Phyo, **W. Ko**, E. Jeon, and H.-I. Suk, "TransSleep: Transitioning-aware Attention-based Deep Neural Network for Sleep Staging," *IEEE Trans. Cybernetics*, vol. 53, no. 9, pp. 4500-4510, 2023. (JCR-IF 19.118; Automation & Control Systems 1/65) [link](https://ieeexplore.ieee.org/document/9877908)'
+    - (J5) **W. Ko**, W. Jung, E. Jeon, and H.-I. Suk, "A Deep Generative-Discriminative Learning for Multi-modal Representation in Imaging Genetics," *IEEE Trans. Medical Imaging*, vol. 41, no. 9, pp. 2348-2359, 2022. (JCR-IF 11.037; Radiology, Nuclear Medicine & Medical Imaging 5/136) [link](https://ieeexplore.ieee.org/document/9743914)
+    - (J6) **W. Ko**, E. Jeon, J. S. Yoon, and H.-I. Suk, "Semi-Supervised Generative and Discriminative Adversarial Learning for Motor Imagery-based Brain-Computer Interface," *Scientific Reports*, vol. 12, no. 1, pp. 1-14, 2022. (JCR-IF 4.997; Multidisciplinary Sciences 19/74) [link](https://www.nature.com/articles/s41598-022-08490-9)
+    - (J7) **W. Ko**, E. Jeon, and H.-I. Suk, "A Novel RL-assisted Deep Learning Framework for Task-informative Signals Selection and Classification for Spontaneous BCIs," *IEEE Trans. Industrial Informatics*, vol. 18, pp. 1873-1882, 2022. (JCR-IF 11.648; CS-Interdisciplinary Applications 4/112) [link](https://ieeexplore.ieee.org/abstract/document/9293035)
+    - (J8) E. Jeon, **W. Ko**, J. S. Yoon, and H.-I. Suk, "Mutual Information-driven Subject-invariant and Class-relevant Deep Representation Learning in BCI," *IEEE Trans. Neural Networks and Learning Systems*, vol. 34, no. 2, pp. 739-749, 2023. (JCR-IF 14.255; CS-Theory & Methods 4/110) [link](https://ieeexplore.ieee.org/document/9508768)
+    - (J9) **W. Ko**†, E. Jeon†, S. Jeong, J. Phyo, and H.-I. Suk (†equal contribution), "A Survey on Deep Learning-based Short/Zero-calibration Approaches for EEG-based Brain-Computer Interfaces," *Frontiers in Human Neuroscience*, vol. 15, p. 258, 2021. (JCR-IF 3.473; Psychology 29/80) [link](https://www.frontiersin.org/articles/10.3389/fnhum.2021.643386/full)
+    - (J10) B.-K. Min, H.-S. Kim, **W. Ko**, M.-H. Ahn, H.-I. Suk, D. Pantazis, and R. T. Knight, "Electrophysiological Decoding of Spatial and Color Processing in Human Prefrontal Cortex," *NeuroImage*, vol. 237, p. 118165, 2021. (JCR-IF 7.400; Neuroimaging 2/14) [link](https://www.sciencedirect.com/science/article/pii/S1053811921004420?via%3Dihub)
+    - (J11) J. Lee†, **W. Ko**†, E. Kang, and H.-I. Suk (†equal contribution), "A Unified Framework for Personalized Regions Selection and Functional Relation Modeling for Early MCI Identification," *NeuroImage*, vol. 236, p. 118048, 2021. (JCR-IF 7.400; Neuroimaging 2/14) [link](https://www.sciencedirect.com/science/article/pii/S1053811921003256)
+    - (J12) **W. Ko**, E. Jeon, S. Jeong, and H.-I. Suk, "Multi-Scale Neural Network for EEG Representation Learning in BCI," *IEEE Computational Intelligence Magazine*, vol. 16, pp. 31-45, 2021. (JCR-IF 9.809; CS-Artificial Intelligence 15/145) [link](https://ieeexplore.ieee.org/abstract/document/9403717)
+    Publications - International Conferences:
+    - (C1) C. Park†, M. Cho†, Y. Kim, W. Jung, and **W. Ko** (†equal contribution), "A Novel Self-Supervised Deep Learning Framework for Pattern Recognition of Neurodegenerative Disease via Graph-based Phenotype-Genotype Relation Modeling," in *Proc. ACM/SIGAPP Symposium on Applied Computing (SAC)*, 2026, pp. 219-221. (Acceptance rate 23.4%) [link](https://dl.acm.org/doi/abs/10.1145/3748522.3779733)
+    - (C2) Y. Kang, C. Park, Y. Kim, and **W. Ko**, "Unsupervised Latent Context Representation of Electroencephalography for Label-Efficient Sleep Apnea Screening," in *Proc. International Conference on Pattern Recognition (ICPR)*, 2026, Accepted. (Acceptance rate 49.6%)
+    - (C3) **W. Ko** and H.-I. Suk, "EEG-Oriented Self-Supervised Learning and Cluster-Aware Adaptation," in *Proc. ACM Int. Conf. Information and Knowledge Management (CIKM)*, 2022, pp. 4143-4147. (Acceptance rate 27.51%) [link](https://dl.acm.org/doi/abs/10.1145/3511808.3557589)
+    - (C4) J. Phyo, **W. Ko**, E. Jeon, and H.-I. Suk, "Enhancing Contextual Encoding with Stage-Confusion and Stage-Transition Estimation for EEG-based Sleep Staging," in *Proc. IEEE Int. Conf. Acoustics, Speech and Signal Processing (ICASSP)*, 2022, pp. 1301-1305. (Acceptance rate 45%) [link](https://ieeexplore.ieee.org/abstract/document/9746353)
+    - (C5) S. Jeong, **W. Ko**, A. W. Mulyadi, and H.-I. Suk, "Continuous Riemannian Geometric Learning for Sleep Staging Classification," in *Proc. Int. Winter Conf. Brain-Computer Interface (BCI)*, 2022, pp. 1-2. [link](https://ieeexplore.ieee.org/abstract/document/9734855)
+    - '(C6) **W. Ko**, W. Jung, A. W. Mulyadi, E. Jeon, and H.-I. Suk, "ENGINE: Enhancing Neuroimaging and Genetic Information by Neural Embedding," in *Proc. IEEE Int. Conf. Data Mining (ICDM)*, 2021, pp. 1162-1167. (Acceptance rate 20%) [link](https://ieeexplore.ieee.org/abstract/document/9679140)'
+    - (C7) **W. Ko**, E. Jeon, and H.-I. Suk, "Spectro-Spatio-Temporal EEG Representation Learning for Imagined Speech Recognition," in *Proc. Asian Conf. Pattern Recognition (ACPR)*, 2021, pp. 335-346. (Acceptance rate 55.1%) [link](https://link.springer.com/chapter/10.1007/978-3-031-02444-3_25)
+    - (C8) S. Jeong, E. Jeon, **W. Ko**, and H.-I. Suk, "Fine-grained Temporal Attention Network for EEG-based Seizure Detection," in *Proc. Int. Winter Conf. Brain-Computer Interface (BCI)*, 2021, pp. 1-4. [link](https://ieeexplore.ieee.org/abstract/document/9385307)
+    - '(C9) **W. Ko**, K. Oh, E. Jeon, and H.-I. Suk, "VIGNet: A Deep Convolutional Neural Network for EEG-based Driver Vigilance Estimation," in *Proc. Int. Winter Conf. Brain-Computer Interface (BCI)*, 2020, pp. 1-3. [link](https://ieeexplore.ieee.org/abstract/document/9061668)'
+    - (C10) E. Jeon, **W. Ko**, and H.-I. Suk, "Domain Adaptation with Source Selection for Motor-Imagery based BCI," in *Proc. Int. Winter Conf. Brain-Computer Interface (BCI)*, 2019, pp. 1-4. [link](https://ieeexplore.ieee.org/abstract/document/8737340)
+    - (C11) **W. Ko**, E. Jeon, J. Lee, and H.-I. Suk, "Semi-Supervised Deep Adversarial Learning for Brain-Computer Interface," in *Proc. Int. Winter Conf. Brain-Computer Interface (BCI)*, 2019, pp. 1-4. [link](https://ieeexplore.ieee.org/abstract/document/8737345)
+    - (C12) **W. Ko**, J. S. Yoon, E. Kang, E. Jun, J.-S. Choi, and H.-I. Suk, "Deep Recurrent Spatio-Temporal Neural Network for Motor Imagery based BCI," in *Proc. Int. Winter Conf. Brain-Computer Interface (BCI)*, 2018, pp. 1-3. [link](https://ieeexplore.ieee.org/document/8311535)
+    Research Projects & Grants:
+    - name: Development of a Unified Diagnostic Framework for Mental Disorder/Brain Disease through User-independent and Protocol-agnostic EEG Representation based on Interpretable Topological Deep Learning Techniques
+      date: 2025 - 2028
+      highlights:
+      - National Research Foundation of Korea, Outstanding Young Scientist (~$400,000)
+    Teaching:
+    - '**Advanced Machine Learning** (LH002800) - Spring 2025. [Slides](https://sswu-prism-lab.github.io/slides/advanced-machine-learning-2027/) / [Notes & Exams](https://sswu-prism-lab.github.io/slides/notes/advanced-machine-learning-2027/)'
+    - '**Introduction to AI Convergence** (LH000100) - Spring 2025, Fall 2024'
+    - '**Mathematics for Artificial Intelligence** (LH002500) - Fall 2024. [Slides](https://sswu-prism-lab.github.io/slides/mathematics-for-artificial-intelligence-2027/) / [Notes & Exams](https://sswu-prism-lab.github.io/slides/notes/mathematics-for-artificial-intelligence-2027/)'
+    - '**Artificial Intelligence** (LZ001600) - Fall 2024, Spring 2024'
+    - '**Data Structures** (LZ000500) - Spring 2024. [Slides](https://sswu-prism-lab.github.io/slides/data-structure-2027/) / [Notes & Exams](https://sswu-prism-lab.github.io/slides/notes/data-structure-2027/)'
+    - '**Data Structures and Applications** (LH000500) - Fall 2023'
+    - '**C++ Programming** (LZ000500) - Fall 2023. [Slides](https://sswu-prism-lab.github.io/slides/cpp-programming-2027/) / [Exams](https://sswu-prism-lab.github.io/slides/notes/cpp-programming-2027/)'
+    Editorial & Review Service:
+    - '**Editor** - Frontiers in Human Neuroscience'
+    - '**Reviewer** - IEEE Trans. Neural Networks and Learning Systems; IEEE Trans. Cybernetics; Biomedical Signal Processing and Control; Scientific Reports; Artificial Intelligence in Medicine; Asian Conf. on Pattern Recognition'
+    Advisory:
+    - 초거대 AI 확산 조성 사업(군 대상품 상태 검사 데이터), (주)에스지앤아이 (2024)
+    Awards & Honors:
+    - Sungshin Excellent Teaching Award, Sungshin Women's University (2024)
+    - Korea University Achievement Award, Korea University (2022)
+    - NAVER Ph.D. Fellowship (~$5,000), NAVER (2021)
+    - Fundamental Scientist Scholarship (~$20,000), JW Foundation (2021)
+    - Outstanding Trainee Award, Korean Society for Human Brain Mapping (2021)
+    - Graduate School Junior Research Fellow Grant, Korea University (2021)
+    - Best Paper Award, Korea University (2021)
+    - Student Award, International BCI Society (2021, 2018)
+    - Best Presentation Award, Korean Society for Human Brain Mapping (2019)
+    - Best Paper Award, Korea Computer Congress (2018)
+    Invited Talks & Seminars:
+    - Design and Implementation of Deep Learning Models using PyTorch, Sungshin Women's University (2025, 2024)
+    - Deep Representation Learning in EEG Analysis, Korean Society for EEG and Neurophysiology (2024)
+    - Deep Representation Learning in Biomedicine, The Catholic University of Korea (2024)
+    - SK Winter Data Science Engineer School, SK Inc. (2023)
+    - Deep Reinforcement Learning and Applications, SK hynix Inc. (2022)
+    Skills:
+    - label: Programming Languages
+      details: Python, MATLAB, C, C++
+    - label: ML/DL Frameworks
+      details: TensorFlow, PyTorch, Scikit-Learn
+    - label: Others
+      details: LaTeX, Linux, Git, Microsoft Office
+design:
+  theme: classic
