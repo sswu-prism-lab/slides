@@ -271,7 +271,7 @@ heading: "Practice: Chinese Zodiac"
 
 - Given a year, determine its animal sign ([Chinese Zodiac]{.hl}, 띠) from `year % 12`.
 
-<img src="https://raw.githubusercontent.com/sswu-prism-lab/slides/main/images/cpp-2027/w04/cpp-w04-image8.png" class="tikz-fig" style="width: 70%;" />
+<img src="https://raw.githubusercontent.com/sswu-prism-lab/slides/main/images/cpp/cpp-2027/w04/cpp-w04-image8.png" class="tikz-fig" style="width: 70%;" />
 
 </div>
 <div>
@@ -469,7 +469,7 @@ heading: "Mathematical Functions"
 
 <div style="height: 1rem;"></div>
 
-<img src="https://raw.githubusercontent.com/sswu-prism-lab/slides/main/images/cpp-2027/w04/cpp-w04-image12.png" class="tikz-fig" style="width: 100%;" />
+<img src="https://raw.githubusercontent.com/sswu-prism-lab/slides/main/images/cpp/cpp-2027/w04/cpp-w04-image12.png" class="tikz-fig" style="width: 100%;" />
 
 </div>
 </div>
@@ -738,7 +738,7 @@ C = acos((c*c - b*b - a*a) / (-2*a*b))
 
 <div style="height: 2rem;"></div>
 
-<img src="https://raw.githubusercontent.com/sswu-prism-lab/slides/main/images/cpp-2027/w04/cpp-w04-image17.png" class="tikz-fig" style="width: 100%;" />
+<img src="https://raw.githubusercontent.com/sswu-prism-lab/slides/main/images/cpp/cpp-2027/w04/cpp-w04-image17.png" class="tikz-fig" style="width: 100%;" />
 
 </div>
 </div>

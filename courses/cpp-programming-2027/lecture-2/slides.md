@@ -74,14 +74,8 @@ layout: prism
 heading: What is a Computer?
 ---
 
-<div class="grid grid-cols-2 gap-4" style="margin-top: 2.5rem;">
+<div class="grid grid-cols-2 gap-4" style="margin-top: 0rem;">
 <div>
-
-<style>
-.slidev-layout ul > li {
-  margin-top: 1.2em;
-}
-</style>
 
 - A computer's components are interconnected by a [bus]{.hl}; in personal computers the bus is built into the [motherboard]{.hl}.
 
@@ -94,9 +88,9 @@ heading: What is a Computer?
 </div>
 <div>
 
-<div style="height: 2rem;"></div>
+<div style="height: 0rem;"></div>
 
-<img src="https://raw.githubusercontent.com/sswu-prism-lab/slides/main/images/cpp-2027/w02/cpp-w02-image2.png" class="tikz-fig" style="width: 100%;" />
+<img src="https://raw.githubusercontent.com/sswu-prism-lab/slides/main/images/cpp/cpp-2027/w02/cpp-w02-image2.png" class="tikz-fig" style="width: 100%;" />
 
 </div>
 </div>
@@ -126,7 +120,7 @@ heading: Digital and Analogue
 
 <div style="height: 3rem;"></div>
 
-<img src="https://raw.githubusercontent.com/sswu-prism-lab/slides/main/images/cpp-2027/w02/cpp-w02-image3.png" class="tikz-fig" style="width: 100%;" />
+<img src="https://raw.githubusercontent.com/sswu-prism-lab/slides/main/images/cpp/cpp-2027/w02/cpp-w02-image3.png" class="tikz-fig" style="width: 100%;" />
 
 </div>
 </div>
@@ -156,7 +150,7 @@ heading: Binary
 
 <div style="height: 3rem;"></div>
 
-<img src="https://raw.githubusercontent.com/sswu-prism-lab/slides/main/images/cpp-2027/w02/cpp-w02-image4.png" class="tikz-fig" style="width: 100%;" />
+<img src="https://raw.githubusercontent.com/sswu-prism-lab/slides/main/images/cpp/cpp-2027/w02/cpp-w02-image4.png" class="tikz-fig" style="width: 100%;" />
 
 </div>
 </div>
@@ -188,7 +182,7 @@ heading: Bit and Byte
 
 <div style="height: 3rem;"></div>
 
-<img src="https://raw.githubusercontent.com/sswu-prism-lab/slides/main/images/cpp-2027/w02/cpp-w02-image5.png" class="tikz-fig" style="width: 100%;" />
+<img src="https://raw.githubusercontent.com/sswu-prism-lab/slides/main/images/cpp/cpp-2027/w02/cpp-w02-image5.png" class="tikz-fig" style="width: 100%;" />
 
 </div>
 </div>
@@ -225,11 +219,11 @@ table { font-size: 0.85em; }
 </div>
 <div>
 
-<img src="https://raw.githubusercontent.com/sswu-prism-lab/slides/main/images/cpp-2027/w02/cpp-w02-image7.png" class="tikz-fig" style="width: 100%;" />
+<img src="https://raw.githubusercontent.com/sswu-prism-lab/slides/main/images/cpp/cpp-2027/w02/cpp-w02-image7.png" class="tikz-fig" style="width: 100%;" />
 
 <div style="margin-top: 0.6rem; text-align: center; color:#9aa0a6; font-size: 0.9rem;">Multiplying A0A1 and B0B1</div>
 
-<img src="https://raw.githubusercontent.com/sswu-prism-lab/slides/main/images/cpp-2027/w02/cpp-w02-image6.png" class="tikz-fig" style="width: 100%; margin-top: 0.3rem;" />
+<img src="https://raw.githubusercontent.com/sswu-prism-lab/slides/main/images/cpp/cpp-2027/w02/cpp-w02-image6.png" class="tikz-fig" style="width: 100%; margin-top: 0.3rem;" />
 
 </div>
 </div>
@@ -242,7 +236,7 @@ heading: Hierarchy of Programming Language (1/3)
 <div class="grid grid-cols-2 gap-4" style="margin-top: 2.5rem;">
 <div>
 
-<img src="https://raw.githubusercontent.com/sswu-prism-lab/slides/main/images/cpp-2027/w02/cpp-w02-image8.png" class="tikz-fig" style="width: 100%;" />
+<img src="https://raw.githubusercontent.com/sswu-prism-lab/slides/main/images/cpp/cpp-2027/w02/cpp-w02-image8.png" class="tikz-fig" style="width: 100%;" />
 
 <div style="margin-top: 0.8rem; text-align: center; color:#9aa0a6; font-size: 1rem; font-style: italic;">"Can't you see? Neo is here."</div>
 
@@ -267,7 +261,7 @@ heading: Hierarchy of Programming Language (2/3)
 ---
 
 <div class="flex justify-center" style="margin-top: 1.5rem;">
-  <img src="https://raw.githubusercontent.com/sswu-prism-lab/slides/main/images/cpp-2027/w02/cpp-w02-image9.png" class="tikz-fig" style="width: 70%;" />
+  <img src="https://raw.githubusercontent.com/sswu-prism-lab/slides/main/images/cpp/cpp-2027/w02/cpp-w02-image9.png" class="tikz-fig" style="width: 70%;" />
 </div>
 
 ---
@@ -276,7 +270,7 @@ heading: Hierarchy of Programming Language (3/3)
 ---
 
 <div class="flex justify-center" style="margin-top: 1.5rem;">
-  <img src="https://raw.githubusercontent.com/sswu-prism-lab/slides/main/images/cpp-2027/w02/cpp-w02-image10.png" class="tikz-fig" style="width: 70%;" />
+  <img src="https://raw.githubusercontent.com/sswu-prism-lab/slides/main/images/cpp/cpp-2027/w02/cpp-w02-image10.png" class="tikz-fig" style="width: 70%;" />
 </div>
 
 ---
@@ -304,7 +298,7 @@ heading: We Need High-Level Language (1/3)
 
 <div style="height: 2rem;"></div>
 
-<img src="https://raw.githubusercontent.com/sswu-prism-lab/slides/main/images/cpp-2027/w02/cpp-w02-image11.png" class="tikz-fig" style="width: 100%;" />
+<img src="https://raw.githubusercontent.com/sswu-prism-lab/slides/main/images/cpp/cpp-2027/w02/cpp-w02-image11.png" class="tikz-fig" style="width: 100%;" />
 
 </div>
 </div>
@@ -334,7 +328,7 @@ heading: We Need High-Level Language (2/3)
 
 <div style="height: 2rem;"></div>
 
-<img src="https://raw.githubusercontent.com/sswu-prism-lab/slides/main/images/cpp-2027/w02/cpp-w02-image12.png" class="tikz-fig" style="width: 100%;" />
+<img src="https://raw.githubusercontent.com/sswu-prism-lab/slides/main/images/cpp/cpp-2027/w02/cpp-w02-image12.png" class="tikz-fig" style="width: 100%;" />
 
 </div>
 </div>
@@ -366,9 +360,9 @@ heading: We Need High-Level Language (3/3)
 
 <div style="height: 1rem;"></div>
 
-<img src="https://raw.githubusercontent.com/sswu-prism-lab/slides/main/images/cpp-2027/w02/cpp-w02-image14.png" class="tikz-fig" style="width: 100%;" />
+<img src="https://raw.githubusercontent.com/sswu-prism-lab/slides/main/images/cpp/cpp-2027/w02/cpp-w02-image14.png" class="tikz-fig" style="width: 100%;" />
 
-<img src="https://raw.githubusercontent.com/sswu-prism-lab/slides/main/images/cpp-2027/w02/cpp-w02-image13.png" class="tikz-fig" style="width: 100%; margin-top: 0.5rem;" />
+<img src="https://raw.githubusercontent.com/sswu-prism-lab/slides/main/images/cpp/cpp-2027/w02/cpp-w02-image13.png" class="tikz-fig" style="width: 100%; margin-top: 0.5rem;" />
 
 </div>
 </div>
@@ -421,7 +415,7 @@ heading: VS Code for Windows PC (1/7)
 - Download the [VS Code]{.hl} installer from the official website and start the setup.
 
 <div class="flex justify-center" style="margin-top: 1rem;">
-  <img src="https://raw.githubusercontent.com/sswu-prism-lab/slides/main/images/cpp-2027/w02/cpp-w02-image19.png" class="tikz-fig" style="width: 62%;" />
+  <img src="https://raw.githubusercontent.com/sswu-prism-lab/slides/main/images/cpp/cpp-2027/w02/cpp-w02-image19.png" class="tikz-fig" style="width: 62%;" />
 </div>
 
 ---
@@ -432,7 +426,7 @@ heading: VS Code for Windows PC (2/7)
 - Accept the license agreement and choose the installation location.
 
 <div class="flex justify-center" style="margin-top: 1rem;">
-  <img src="https://raw.githubusercontent.com/sswu-prism-lab/slides/main/images/cpp-2027/w02/cpp-w02-image20.png" class="tikz-fig" style="width: 62%;" />
+  <img src="https://raw.githubusercontent.com/sswu-prism-lab/slides/main/images/cpp/cpp-2027/w02/cpp-w02-image20.png" class="tikz-fig" style="width: 62%;" />
 </div>
 
 ---
@@ -443,7 +437,7 @@ heading: VS Code for Windows PC (3/7)
 - Select the additional tasks (add to PATH, context-menu entries) and finish the installation.
 
 <div class="flex justify-center" style="margin-top: 1rem;">
-  <img src="https://raw.githubusercontent.com/sswu-prism-lab/slides/main/images/cpp-2027/w02/cpp-w02-image21.png" class="tikz-fig" style="width: 62%;" />
+  <img src="https://raw.githubusercontent.com/sswu-prism-lab/slides/main/images/cpp/cpp-2027/w02/cpp-w02-image21.png" class="tikz-fig" style="width: 62%;" />
 </div>
 
 ---
@@ -454,7 +448,7 @@ heading: VS Code for Windows PC (4/7)
 - Open the [Extensions]{.hl} view and install the C/C++ extension pack.
 
 <div class="flex justify-center" style="margin-top: 1rem;">
-  <img src="https://raw.githubusercontent.com/sswu-prism-lab/slides/main/images/cpp-2027/w02/cpp-w02-image22.png" class="tikz-fig" style="width: 62%;" />
+  <img src="https://raw.githubusercontent.com/sswu-prism-lab/slides/main/images/cpp/cpp-2027/w02/cpp-w02-image22.png" class="tikz-fig" style="width: 62%;" />
 </div>
 
 ---
@@ -465,7 +459,7 @@ heading: VS Code for Windows PC (5/7)
 - Install a compiler (e.g. [MinGW-w64]{.hl}) and make sure it is on your system PATH.
 
 <div class="flex justify-center" style="margin-top: 1rem;">
-  <img src="https://raw.githubusercontent.com/sswu-prism-lab/slides/main/images/cpp-2027/w02/cpp-w02-image23.png" class="tikz-fig" style="width: 62%;" />
+  <img src="https://raw.githubusercontent.com/sswu-prism-lab/slides/main/images/cpp/cpp-2027/w02/cpp-w02-image23.png" class="tikz-fig" style="width: 62%;" />
 </div>
 
 ---
@@ -511,7 +505,7 @@ heading: VS Code for Windows PC (7/7)
 - The program output appears in the integrated [terminal]{.hl} at the bottom of the window.
 
 <div class="flex justify-center" style="margin-top: 1rem;">
-  <img src="https://raw.githubusercontent.com/sswu-prism-lab/slides/main/images/cpp-2027/w02/cpp-w02-image24.png" class="tikz-fig" style="width: 62%;" />
+  <img src="https://raw.githubusercontent.com/sswu-prism-lab/slides/main/images/cpp/cpp-2027/w02/cpp-w02-image24.png" class="tikz-fig" style="width: 62%;" />
 </div>
 
 ---
@@ -522,7 +516,7 @@ heading: VS Code for Mac PC (1/9)
 - Download [VS Code]{.hl} for macOS and drag the app into the Applications folder.
 
 <div class="flex justify-center" style="margin-top: 1rem;">
-  <img src="https://raw.githubusercontent.com/sswu-prism-lab/slides/main/images/cpp-2027/w02/cpp-w02-image25.png" class="tikz-fig" style="width: 60%;" />
+  <img src="https://raw.githubusercontent.com/sswu-prism-lab/slides/main/images/cpp/cpp-2027/w02/cpp-w02-image25.png" class="tikz-fig" style="width: 60%;" />
 </div>
 
 ---
@@ -533,7 +527,7 @@ heading: VS Code for Mac PC (2/9)
 - Install the [C/C++]{.hl} extension and related tools from the Extensions view.
 
 <div class="flex justify-center" style="margin-top: 1rem;">
-  <img src="https://raw.githubusercontent.com/sswu-prism-lab/slides/main/images/cpp-2027/w02/cpp-w02-image26.png" class="tikz-fig" style="width: 60%;" />
+  <img src="https://raw.githubusercontent.com/sswu-prism-lab/slides/main/images/cpp/cpp-2027/w02/cpp-w02-image26.png" class="tikz-fig" style="width: 60%;" />
 </div>
 
 ---
@@ -544,14 +538,14 @@ heading: VS Code for Mac PC (3/9)
 <div class="grid grid-cols-2 gap-6" style="margin-top: 1rem;">
 <div>
 
-<img src="https://raw.githubusercontent.com/sswu-prism-lab/slides/main/images/cpp-2027/w02/cpp-w02-image28.png" class="tikz-fig" style="width: 100%;" />
+<img src="https://raw.githubusercontent.com/sswu-prism-lab/slides/main/images/cpp/cpp-2027/w02/cpp-w02-image28.png" class="tikz-fig" style="width: 100%;" />
 
 <div style="margin-top: 0.5rem; text-align:center; color:#9aa0a6;">1. Create a folder</div>
 
 </div>
 <div>
 
-<img src="https://raw.githubusercontent.com/sswu-prism-lab/slides/main/images/cpp-2027/w02/cpp-w02-image27.png" class="tikz-fig" style="width: 100%;" />
+<img src="https://raw.githubusercontent.com/sswu-prism-lab/slides/main/images/cpp/cpp-2027/w02/cpp-w02-image27.png" class="tikz-fig" style="width: 100%;" />
 
 <div style="margin-top: 0.5rem; text-align:center; color:#9aa0a6;">2. Select the folder</div>
 
@@ -566,7 +560,7 @@ heading: VS Code for Mac PC (4/9)
 - Open the working folder in VS Code so the editor treats it as your project.
 
 <div class="flex justify-center" style="margin-top: 1rem;">
-  <img src="https://raw.githubusercontent.com/sswu-prism-lab/slides/main/images/cpp-2027/w02/cpp-w02-image29.png" class="tikz-fig" style="width: 60%;" />
+  <img src="https://raw.githubusercontent.com/sswu-prism-lab/slides/main/images/cpp/cpp-2027/w02/cpp-w02-image29.png" class="tikz-fig" style="width: 60%;" />
 </div>
 
 ---
@@ -613,14 +607,14 @@ heading: VS Code for Mac PC (6/9)
 <div class="grid grid-cols-2 gap-6" style="margin-top: 1rem;">
 <div>
 
-<img src="https://raw.githubusercontent.com/sswu-prism-lab/slides/main/images/cpp-2027/w02/cpp-w02-image31.png" class="tikz-fig" style="width: 100%;" />
+<img src="https://raw.githubusercontent.com/sswu-prism-lab/slides/main/images/cpp/cpp-2027/w02/cpp-w02-image31.png" class="tikz-fig" style="width: 100%;" />
 
 <div style="margin-top: 0.5rem; text-align:center; color:#9aa0a6;">Select "Run in Terminal"</div>
 
 </div>
 <div>
 
-<img src="https://raw.githubusercontent.com/sswu-prism-lab/slides/main/images/cpp-2027/w02/cpp-w02-image30.png" class="tikz-fig" style="width: 100%;" />
+<img src="https://raw.githubusercontent.com/sswu-prism-lab/slides/main/images/cpp/cpp-2027/w02/cpp-w02-image30.png" class="tikz-fig" style="width: 100%;" />
 
 <div style="margin-top: 0.5rem; text-align:center; color:#9aa0a6;">Select "Edit in settings.json"</div>
 
@@ -628,7 +622,7 @@ heading: VS Code for Mac PC (6/9)
 </div>
 
 <div class="flex justify-center" style="margin-top: 0.6rem;">
-  <img src="https://raw.githubusercontent.com/sswu-prism-lab/slides/main/images/cpp-2027/w02/cpp-w02-image32.png" class="tikz-fig" style="width: 42%;" />
+  <img src="https://raw.githubusercontent.com/sswu-prism-lab/slides/main/images/cpp/cpp-2027/w02/cpp-w02-image32.png" class="tikz-fig" style="width: 42%;" />
 </div>
 
 ---
@@ -641,12 +635,12 @@ heading: VS Code for Mac PC (7/9)
 <div class="grid grid-cols-2 gap-6" style="margin-top: 1rem;">
 <div>
 
-<img src="https://raw.githubusercontent.com/sswu-prism-lab/slides/main/images/cpp-2027/w02/cpp-w02-image34.png" class="tikz-fig" style="width: 100%;" />
+<img src="https://raw.githubusercontent.com/sswu-prism-lab/slides/main/images/cpp/cpp-2027/w02/cpp-w02-image34.png" class="tikz-fig" style="width: 100%;" />
 
 </div>
 <div>
 
-<img src="https://raw.githubusercontent.com/sswu-prism-lab/slides/main/images/cpp-2027/w02/cpp-w02-image33.png" class="tikz-fig" style="width: 100%;" />
+<img src="https://raw.githubusercontent.com/sswu-prism-lab/slides/main/images/cpp/cpp-2027/w02/cpp-w02-image33.png" class="tikz-fig" style="width: 100%;" />
 
 </div>
 </div>
@@ -701,7 +695,7 @@ heading: VS Code for Mac PC (8/9)
 
 - Build the program with `Command + Shift + B`.
 
-<img src="https://raw.githubusercontent.com/sswu-prism-lab/slides/main/images/cpp-2027/w02/cpp-w02-image35.png" class="tikz-fig" style="width: 100%; margin-top: 0.5rem;" />
+<img src="https://raw.githubusercontent.com/sswu-prism-lab/slides/main/images/cpp/cpp-2027/w02/cpp-w02-image35.png" class="tikz-fig" style="width: 100%; margin-top: 0.5rem;" />
 
 </div>
 </div>
@@ -714,14 +708,14 @@ heading: VS Code for Mac PC (9/9)
 <div class="grid grid-cols-2 gap-6" style="margin-top: 1rem;">
 <div>
 
-<img src="https://raw.githubusercontent.com/sswu-prism-lab/slides/main/images/cpp-2027/w02/cpp-w02-image36.png" class="tikz-fig" style="width: 100%;" />
+<img src="https://raw.githubusercontent.com/sswu-prism-lab/slides/main/images/cpp/cpp-2027/w02/cpp-w02-image36.png" class="tikz-fig" style="width: 100%;" />
 
 <div style="margin-top: 0.5rem; text-align:center; color:#9aa0a6;">1. Build with <code>Command + Shift + B</code></div>
 
 </div>
 <div>
 
-<img src="https://raw.githubusercontent.com/sswu-prism-lab/slides/main/images/cpp-2027/w02/cpp-w02-image37.png" class="tikz-fig" style="width: 100%;" />
+<img src="https://raw.githubusercontent.com/sswu-prism-lab/slides/main/images/cpp/cpp-2027/w02/cpp-w02-image37.png" class="tikz-fig" style="width: 100%;" />
 
 <div style="margin-top: 0.5rem; text-align:center; color:#9aa0a6;">2. Run with right-click or <code>Command + Option + N</code></div>
 
@@ -830,7 +824,7 @@ heading: Programming Style and Documentation
 
 <div style="height: 3rem;"></div>
 
-<img src="https://raw.githubusercontent.com/sswu-prism-lab/slides/main/images/cpp-2027/w02/cpp-w02-image39.png" class="tikz-fig" style="width: 100%;" />
+<img src="https://raw.githubusercontent.com/sswu-prism-lab/slides/main/images/cpp/cpp-2027/w02/cpp-w02-image39.png" class="tikz-fig" style="width: 100%;" />
 
 </div>
 </div>

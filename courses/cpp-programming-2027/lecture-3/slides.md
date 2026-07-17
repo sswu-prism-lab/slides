@@ -91,11 +91,11 @@ heading: Conditional Statement
 </div>
 <div>
 
-<img src="https://raw.githubusercontent.com/sswu-prism-lab/slides/main/images/cpp-2027/w03/cpp-w03-image2.png" class="tikz-fig" style="width: 60%; margin: 0 auto;" />
+<img src="https://raw.githubusercontent.com/sswu-prism-lab/slides/main/images/cpp/cpp-2027/w03/cpp-w03-image2.png" class="tikz-fig" style="width: 60%; margin: 0 auto;" />
 
 <div style="height: 1rem;"></div>
 
-<img src="https://raw.githubusercontent.com/sswu-prism-lab/slides/main/images/cpp-2027/w03/cpp-w03-image3.png" class="tikz-fig" style="width: 90%; margin: 0 auto;" />
+<img src="https://raw.githubusercontent.com/sswu-prism-lab/slides/main/images/cpp/cpp-2027/w03/cpp-w03-image3.png" class="tikz-fig" style="width: 90%; margin: 0 auto;" />
 
 </div>
 </div>
@@ -276,7 +276,7 @@ if (boolean-expression)
 
 <div style="height: 3rem;"></div>
 
-<img src="https://raw.githubusercontent.com/sswu-prism-lab/slides/main/images/cpp-2027/w03/cpp-w03-image6.png" class="tikz-fig" style="width: 75%; margin: 0 auto;" />
+<img src="https://raw.githubusercontent.com/sswu-prism-lab/slides/main/images/cpp/cpp-2027/w03/cpp-w03-image6.png" class="tikz-fig" style="width: 75%; margin: 0 auto;" />
 
 <div class="sub-item" style="text-align:center; margin-top: 0.6rem;">
 
@@ -396,7 +396,7 @@ else
 
 <div style="height: 4rem;"></div>
 
-<img src="https://raw.githubusercontent.com/sswu-prism-lab/slides/main/images/cpp-2027/w03/cpp-w03-image11.png" class="tikz-fig" style="width: 100%; margin: 0 auto;" />
+<img src="https://raw.githubusercontent.com/sswu-prism-lab/slides/main/images/cpp/cpp-2027/w03/cpp-w03-image11.png" class="tikz-fig" style="width: 100%; margin: 0 auto;" />
 
 <div class="sub-item" style="text-align:center; margin-top: 0.6rem;">
 
@@ -529,7 +529,7 @@ heading: "Nested if and Multi-Way if-else (3/4)"
 ---
 
 <div class="flex justify-center" style="margin-top: 1rem;">
-  <img src="https://raw.githubusercontent.com/sswu-prism-lab/slides/main/images/cpp-2027/w03/cpp-w03-image15.png" class="tikz-fig" style="width: 82%;" />
+  <img src="https://raw.githubusercontent.com/sswu-prism-lab/slides/main/images/cpp/cpp-2027/w03/cpp-w03-image15.png" class="tikz-fig" style="width: 82%;" />
 </div>
 
 <div class="sub-item" style="text-align:center; margin-top: 0.8rem;">
@@ -1183,7 +1183,7 @@ heading: "Practice: Chinese Zodiac"
 
 - Given a year, determine its [Chinese Zodiac]{.hl} (띠) using `year % 12`.
 
-<img src="https://raw.githubusercontent.com/sswu-prism-lab/slides/main/images/cpp-2027/w03/cpp-w03-image41.png" class="tikz-fig" style="width: 78%; margin: 0.5rem auto;" />
+<img src="https://raw.githubusercontent.com/sswu-prism-lab/slides/main/images/cpp/cpp-2027/w03/cpp-w03-image41.png" class="tikz-fig" style="width: 78%; margin: 0.5rem auto;" />
 
 </div>
 <div>
