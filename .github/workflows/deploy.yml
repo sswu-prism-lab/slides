@@ -180,7 +180,7 @@ jobs:
           sudo apt-get update -qq
           sudo apt-get install -y -qq fonts-noto-cjk
           fc-cache -f >/dev/null 2>&1 || true
-          pipx install rendercv
+          pipx install "rendercv[full]"
           rendercv render cv/Wonjun_Ko_CV.yaml
           mkdir -p dist/cv
           cp cv/index.html dist/cv/index.html
