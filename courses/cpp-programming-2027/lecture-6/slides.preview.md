@@ -201,7 +201,7 @@ heading: "Loops (1/2)"
 </div>
 <div>
 
-<img src="https://raw.githubusercontent.com/sswu-prism-lab/slides/main/images/cpp-2027/w06/cpp-w06-image5.png" class="tikz-fig" style="width: 100%;" />
+<img src="https://raw.githubusercontent.com/sswu-prism-lab/slides/main/images/cpp/cpp-2027/w06/cpp-w06-image5.png" class="tikz-fig" style="width: 100%;" />
 
 </div>
 </div>
@@ -275,7 +275,7 @@ while (loop-continuation-condition) {
 </div>
 <div>
 
-<img src="https://raw.githubusercontent.com/sswu-prism-lab/slides/main/images/cpp-2027/w06/cpp-w06-image4.png" class="tikz-fig" style="width: 100%;" />
+<img src="https://raw.githubusercontent.com/sswu-prism-lab/slides/main/images/cpp/cpp-2027/w06/cpp-w06-image4.png" class="tikz-fig" style="width: 100%;" />
 
 </div>
 </div>
@@ -511,7 +511,7 @@ do {
 </div>
 <div>
 
-<img src="https://raw.githubusercontent.com/sswu-prism-lab/slides/main/images/cpp-2027/w06/cpp-w06-image19.png" class="tikz-fig" style="width: 100%;" />
+<img src="https://raw.githubusercontent.com/sswu-prism-lab/slides/main/images/cpp/cpp-2027/w06/cpp-w06-image19.png" class="tikz-fig" style="width: 100%;" />
 
 </div>
 </div>
@@ -585,7 +585,7 @@ for (initial-action;
 </div>
 <div>
 
-<img src="https://raw.githubusercontent.com/sswu-prism-lab/slides/main/images/cpp-2027/w06/cpp-w06-image24.png" class="tikz-fig" style="width: 100%;" />
+<img src="https://raw.githubusercontent.com/sswu-prism-lab/slides/main/images/cpp/cpp-2027/w06/cpp-w06-image24.png" class="tikz-fig" style="width: 100%;" />
 
 </div>
 </div>
@@ -824,7 +824,7 @@ heading: "Practice: Monte-Carlo Simulation (2/3)"
 </div>
 <div>
 
-<img src="https://raw.githubusercontent.com/sswu-prism-lab/slides/main/images/cpp-2027/w06/cpp-w06-image34.png" class="tikz-fig" style="width: 100%;" />
+<img src="https://raw.githubusercontent.com/sswu-prism-lab/slides/main/images/cpp/cpp-2027/w06/cpp-w06-image34.png" class="tikz-fig" style="width: 100%;" />
 
 </div>
 </div>

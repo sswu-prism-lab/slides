@@ -985,7 +985,7 @@ $$
 </div>
 <div>
 
-<img src="https://raw.githubusercontent.com/sswu-prism-lab/slides/main/images/cpp-2027/w07/cpp-w07-image25.png" class="tikz-fig" style="width: 100%;" />
+<img src="https://raw.githubusercontent.com/sswu-prism-lab/slides/main/images/cpp/cpp-2027/w07/cpp-w07-image25.png" class="tikz-fig" style="width: 100%;" />
 
 </div>
 </div>
@@ -1042,7 +1042,7 @@ heading: "Midterm Exam (7/7)"
 </div>
 <div>
 
-<img src="https://raw.githubusercontent.com/sswu-prism-lab/slides/main/images/cpp-2027/w07/cpp-w07-image27.png" class="tikz-fig" style="width: 90%;" />
+<img src="https://raw.githubusercontent.com/sswu-prism-lab/slides/main/images/cpp/cpp-2027/w07/cpp-w07-image27.png" class="tikz-fig" style="width: 90%;" />
 
 </div>
 </div>

@@ -7,7 +7,5 @@ dist
 components.d.ts
 notes/.vitepress/dist
 notes/.vitepress/cache
-
-# Cowork 파일 전송용 임시 산출물 / 정리 대기 (커밋 대상 아님)
 _*.tar.gz
 _to_delete/

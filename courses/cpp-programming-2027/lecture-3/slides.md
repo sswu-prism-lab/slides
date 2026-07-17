@@ -11,6 +11,7 @@ info: |
 class: text-center
 transition: slide-left
 mdc: true
+otherLangUrl: /slides/cpp-programming-2027/lecture-3-ko/
 ---
 <style>
 .dark .slidev-page,
