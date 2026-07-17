@@ -170,6 +170,22 @@ jobs:
           mkdir -p dist/notes
           cp -r notes/.vitepress/dist/. dist/notes/
 
+      # ---- CV 사이트 빌드 (RenderCV -> PDF, cv/index.html 웹 뷰) ----
+      # cv/Wonjun_Ko_CV.yaml 를 RenderCV로 PDF 렌더한 뒤, 웹 뷰(index.html)와 함께
+      # dist/cv/ 로 복사합니다. 최종 URL: https://<user>.github.io/slides/cv/
+      # (한글이 들어간 항목이 있어 CJK 폰트(fonts-noto-cjk)를 설치해 Typst 폰트 폴백을 활성화합니다.)
+      - name: Build CV (RenderCV -> PDF)
+        run: |
+          set -e
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq fonts-noto-cjk
+          fc-cache -f >/dev/null 2>&1 || true
+          pipx install rendercv
+          rendercv render cv/Wonjun_Ko_CV.yaml
+          mkdir -p dist/cv
+          cp cv/index.html dist/cv/index.html
+          cp rendercv_output/*.pdf "dist/cv/Wonjun_Ko_CV.pdf"
+
       - name: Setup Pages
         uses: actions/configure-pages@v4
 
