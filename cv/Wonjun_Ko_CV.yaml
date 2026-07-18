@@ -38,12 +38,6 @@ cv:
       highlights:
       - 'Dissertation: Deep Representation Learning in Biomedicine'
       - 'Advisor: Prof. Heung-Il Suk'
-    - institution: Sogang University
-      area: Physics
-      degree: BS
-      start_date: 2013-03
-      end_date: 2017-02
-      location: Seoul, Republic of Korea
     Research Interests:
     - name: Large Language Models for Data-Oriented Representation
       highlights:
