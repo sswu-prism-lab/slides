@@ -174,7 +174,7 @@ jobs:
       # cv/Wonjun_Ko_CV.yaml 를 RenderCV로 PDF 렌더한 뒤, 웹 뷰(index.html)와 함께
       # dist/cv/ 로 복사합니다. 최종 URL: https://<user>.github.io/slides/cv/
       # (한글이 들어간 항목이 있어 CJK 폰트(fonts-noto-cjk)를 설치해 Typst 폰트 폴백을 활성화합니다.)
-      - name: Build CV (RenderCV -> PDF)
+      - name: Build CV (RenderCV -> PDF + web view)
         run: |
           set -e
           sudo apt-get update -qq
@@ -183,7 +183,8 @@ jobs:
           pipx install "rendercv[full]"
           rendercv render cv/Wonjun_Ko_CV.yaml
           mkdir -p dist/cv
-          cp cv/index.html dist/cv/index.html
+          python3 -c "import yaml" 2>/dev/null || pip install --quiet --break-system-packages pyyaml
+          python3 cv/build_web.py cv/Wonjun_Ko_CV.yaml dist/cv/index.html Wonjun_Ko_CV.pdf
           cp cv/rendercv_output/Wonjun_Ko_CV.pdf "dist/cv/Wonjun_Ko_CV.pdf"
 
 
